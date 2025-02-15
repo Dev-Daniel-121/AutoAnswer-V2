@@ -1,7 +1,7 @@
 import unittest
 import os
 # import json
-from project.utils.json_handler import JSONHandler
+from project.utils import JSONHandler
 
 class TestJSONHandler(unittest.TestCase):
     def setUp(self):

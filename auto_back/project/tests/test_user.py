@@ -1,7 +1,7 @@
 import unittest
 import os
-from project.models.user_system import SistemaUsuarios
-from project.services.user_service import UserService
+from project.models import SistemaUsuarios
+from project.services import UserService
 
 class TestUserSystem(unittest.TestCase):
     def setUp(self):

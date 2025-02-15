@@ -1,6 +1,6 @@
 import json
 from project.config import types
-from project.utils.json_handler import JSONHandler
+from project.utils import JSONHandler
 
 class JSONService:
     def __init__(self, file_path):

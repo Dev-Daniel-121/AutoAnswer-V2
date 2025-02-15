@@ -1,4 +1,4 @@
-from project.models.user_system import SistemaUsuarios
+from project.models import SistemaUsuarios
 from project.config import types
 
 class UserService:
