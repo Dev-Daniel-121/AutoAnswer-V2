@@ -17,12 +17,12 @@ class JSONHandler:
             with open(self.file_path, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except json.JSONDecodeError:
-            print(f"[{types[4]}] Erro: Arquivo {self.file_path} está mal formatado.")
-            input(f"\n[{types[6]}] Pressione Enter para continuar...")
+            print(f'[{types[4]}] Erro: Arquivo {self.file_path} está mal formatado.')
+            input(f'\n[{types[6]}] Pressione Enter para continuar...')
             return {}
         except Exception as e:
-            print(f"[{types[4]}] Erro ao carregar o arquivo {self.file_path}: {e}")
-            input(f"\n[{types[6]}] Pressione Enter para continuar...")
+            print(f'[{types[4]}] Erro ao carregar o arquivo {self.file_path}: {e}')
+            input(f'\n[{types[6]}] Pressione Enter para continuar...')
             return {}
 
     def salvar(self, data):
@@ -36,6 +36,6 @@ class JSONHandler:
             self.carregar()
             return True
         except Exception as e:
-            print(f"[{types[4]}] Erro ao salvar o arquivo {self.file_path}: {e}")
-            input(f"\n[{types[6]}] Pressione Enter para continuar...")
+            print(f'[{types[4]}] Erro ao salvar o arquivo {self.file_path}: {e}')
+            input(f'\n[{types[6]}] Pressione Enter para continuar...')
             return False

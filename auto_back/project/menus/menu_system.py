@@ -24,7 +24,6 @@ class MenuSystem:
             print(f'[{types[4]}] Opção inválida')
 
     def selectUser(self):
-
         os.system('cls' if os.name == 'nt' else 'clear')
 
         sistema = SistemaUsuarios()
@@ -33,28 +32,28 @@ class MenuSystem:
 
         ids_selecionados = selecionar.get_usuarios_selecionados()
         if not ids_selecionados:
-            print(f"[{types[8]}] Nenhum usuário selecionado.")
+            print(f'[{types[8]}] Nenhum usuário selecionado.')
             return
 
         sistema.usuarios = sistema.carregar_usuarios()
 
-        print(f"\n[{types[9]}] Usuários selecionados:")
+        print(f'\n[{types[9]}] Usuários selecionados:')
 
         for id_usuario in ids_selecionados:
             id_usuario = str(id_usuario)
 
             if id_usuario not in sistema.usuarios:
-                print(f"[{types[4]}] Erro: ID '{id_usuario}' não encontrado no dicionário!")
+                print(f'[{types[4]}] Erro: ID "{id_usuario}" não encontrado no dicionário!')
                 continue
 
             usuario = sistema.usuarios[id_usuario]
-            print(f"[{types[5]}] ID: {usuario.id_usuario} - Nome: {usuario.nome} {usuario.sobrenome}")
+            print(f'[{types[5]}] ID: {usuario.id_usuario} - Nome: {usuario.nome} {usuario.sobrenome}')
 
         for id_usuario in ids_selecionados:
             usuario = sistema.usuarios[str(id_usuario)]
-            nome_completo = f"{usuario.nome} {usuario.sobrenome}"
+            nome_completo = f'{usuario.nome} {usuario.sobrenome}'
             self.apps(nome_completo)
-            print(f"\n[{types[9]}] Processando usuário ID {id_usuario}...")
+            print(f'\n[{types[9]}] Processando usuário ID {id_usuario}...')
 
     def apps(self, nome_usuario):
         options_data = [(2, 'Sala do futuro')]
@@ -65,11 +64,11 @@ class MenuSystem:
             from project.apps.sala_do_futuro import printa, SalaDoFuturo
             printa()
             sala_do_futuro = SalaDoFuturo()
-            sala_do_futuro.iniciar()
-            input(f"\n[{types[6]}] Pressione Enter para continuar...")
+            sala_do_futuro.run()
+            input(f'\n[{types[6]}] Pressione Enter para continuar...')
         else:
             print(f'[{types[4]}] Opção inválida')
-            input(f"\n[{types[6]}] Pressione Enter para continuar...")
+            input(f'\n[{types[6]}] Pressione Enter para continuar...')
             sys.exit()
 
     def settings(self):
