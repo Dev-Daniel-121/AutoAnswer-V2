@@ -1,26 +1,27 @@
+from project.apps.sala_do_futuro.menus.menusystem import MenuSystem
 from playwright.sync_api import sync_playwright
-from project.apps.sala_do_futuro.classes._global.menu_system.menusystem import MenuSystem
+from project import SistemaUsuarios, types
 
 class SalaDoFuturo:
     def __init__(self):
-        pass
-        self.nome = "Sala do Futuro"
+        self.sistema_usuarios = SistemaUsuarios()
 
-    def printa(self):
-        print(f"Bem-vindo à {self.nome}!")
+    def run(self, id_usuario):
+        usuarios = self.sistema_usuarios.carregar_usuarios()
+        usuario = usuarios.get(str(id_usuario))
 
-    def iniciar(self):
-        print(f"Iniciando {self.nome}...")
+        if not usuario:
+            print(f'[{types[4]}] Erro: Usuário com ID {id_usuario} não encontrado.')
+            return
 
-    def run(self):
+        print(f'\n[{types[9]}] Iniciando automação para {usuario.nome} {usuario.sobrenome} ({usuario.tipo_conta})')
+
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=False)
             page = browser.new_page()
             page.goto('https://saladofuturo.educacao.sp.gov.br/')
 
-            menu_system = MenuSystem()
-            menu_system.run()
-
-def printa():
-    sala = SalaDoFuturo()
-    sala.printa()
+            print(f'Usando email: {usuario.email}, RA: {usuario.ra}')
+            
+            menu_system = MenuSystem(page)
+            menu_system.run(usuario)

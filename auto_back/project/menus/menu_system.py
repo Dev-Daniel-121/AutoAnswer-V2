@@ -52,19 +52,17 @@ class MenuSystem:
         for id_usuario in ids_selecionados:
             usuario = sistema.usuarios[str(id_usuario)]
             nome_completo = f'{usuario.nome} {usuario.sobrenome}'
-            self.apps(nome_completo)
-            print(f'\n[{types[9]}] Processando usuário ID {id_usuario}...')
+            self.apps(nome_completo, id_usuario)
 
-    def apps(self, nome_usuario):
+    def apps(self, nome_usuario, id_usuario):
         options_data = [(2, 'Sala do futuro')]
         options = self.display(options_data, 'APPS', answer=True, user=nome_usuario, title_quest='')
         user_choice = options.display()
 
         if user_choice == 1:
-            from project.apps.sala_do_futuro import printa, SalaDoFuturo
-            printa()
+            from project.apps.sala_do_futuro import SalaDoFuturo
             sala_do_futuro = SalaDoFuturo()
-            sala_do_futuro.run()
+            sala_do_futuro.run(id_usuario)
             input(f'\n[{types[6]}] Pressione Enter para continuar...')
         else:
             print(f'[{types[4]}] Opção inválida')

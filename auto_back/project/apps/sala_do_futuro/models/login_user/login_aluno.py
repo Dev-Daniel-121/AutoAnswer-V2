@@ -24,21 +24,21 @@ class LoginAluno:
             btn = self.page.locator(f':nth-match({self.btn_tipo_class}, 1)')
             btn.click()
         except Exception as e:
-            print(f"[{types[4]}] Erro ao clicar no botão de tipo: {e}")
+            print(f"\n[{types[4]}] Erro ao clicar no botão de tipo: {e}")
 
     def input_ra(self):
         try:
             input_ra = self.page.locator(f'{self.input_ra_id}')
             input_ra.fill(self.ra)
         except Exception as e:
-            print(f"[{types[4]}] Erro ao preencher o campo RA: {e}")
+            print(f"\n[{types[4]}] Erro ao preencher o campo RA: {e}")
 
     def input_dg_ra(self):
         try:
             input_dg_ra = self.page.locator(f'{self.input_dg_ra_name}')
             input_dg_ra.fill(self.dg_ra)
         except Exception as e:
-            print(f"[{types[4]}] Erro ao preencher o campo dígito do RA: {e}")
+            print(f"\n[{types[4]}] Erro ao preencher o campo dígito do RA: {e}")
 
     def input_uf_ra(self):
         try:
@@ -48,14 +48,14 @@ class LoginAluno:
             li_uf_ra = self.page.locator(f'{self.li_uf_ra_class}')
             li_uf_ra.select_option(value=self.uf_ra)
         except Exception as e:
-            print(f"[{types[4]}] Erro ao selecionar a UF do RA: {e}")
+            print(f"\n[{types[4]}] Erro ao selecionar a UF do RA: {e}")
 
     def input_senha(self):
         try:
             input_senha = self.page.locator(f'{self.input_senha_id}')
             input_senha.fill(self.senha)
         except Exception as e:
-            print(f"[{types[4]}] Erro ao preencher o campo de senha: {e}")
+            print(f"\n[{types[4]}] Erro ao preencher o campo de senha: {e}")
 
     def run(self):
         try:

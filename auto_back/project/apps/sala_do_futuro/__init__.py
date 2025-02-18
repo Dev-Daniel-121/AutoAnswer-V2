@@ -1,3 +1,9 @@
-from .main import printa, SalaDoFuturo, MenuSystem, sync_playwright, run
+from .main import SalaDoFuturo
+from .menus import MenuSystem
+from .models import Agenda, Data, Geral, Tarefas, Activities, Go, Sections, LoginUser, LoginAluno, RealizarAtividades
 
-__all__ = ['printa', 'SalaDoFuturo', 'MenuSystem', 'sync_playwright', 'run']
+__all__ = [
+    'SalaDoFuturo',
+    'MenuSystem',
+    'Agenda', 'Data', 'Geral', 'Tarefas', 'Activities', 'Go', 'Sections', 'LoginUser', 'LoginAluno', 'RealizarAtividades'
+]

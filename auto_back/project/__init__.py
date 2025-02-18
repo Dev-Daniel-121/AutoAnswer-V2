@@ -2,7 +2,7 @@ from .config.types import types
 from .models import SistemaUsuarios, SelecionarUsuarios
 from .services import JSONService, UserService
 from .utils import Display, JSONHandler
-from .apps.sala_do_futuro import printa, SalaDoFuturo
+from .apps.sala_do_futuro import SalaDoFuturo, MenuSystem, Agenda, Data, Geral, Tarefas, Activities, Go, Sections, LoginUser, LoginAluno, RealizarAtividades
 from .menus.menu_system import MenuSystem
 
 __all__ = [
@@ -10,6 +10,6 @@ __all__ = [
     'SistemaUsuarios', 'SelecionarUsuarios',
     'JSONService', 'UserService',
     'Display', 'JSONHandler',
-    'printa', 'SalaDoFuturo',
+    'SalaDoFuturo', 'MenuSystem', 'Agenda', 'Data', 'Geral', 'Tarefas', 'Activities', 'Go', 'Sections', 'LoginUser', 'LoginAluno', 'RealizarAtividades',
     'MenuSystem'
 ]
