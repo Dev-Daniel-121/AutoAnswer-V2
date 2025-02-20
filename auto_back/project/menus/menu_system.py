@@ -43,7 +43,7 @@ class MenuSystem:
             id_usuario = str(id_usuario)
 
             if id_usuario not in sistema.usuarios:
-                print(f'[{types[4]}] Erro: ID "{id_usuario}" não encontrado no dicionário!')
+                print(f'[{types[4]}] Erro: ID \'{id_usuario}\' não encontrado no dicionário!')
                 continue
 
             usuario = sistema.usuarios[id_usuario]

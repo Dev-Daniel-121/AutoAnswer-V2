@@ -20,8 +20,9 @@ class SalaDoFuturo:
             browser = p.chromium.launch(headless=False)
             page = browser.new_page()
             page.goto('https://saladofuturo.educacao.sp.gov.br/')
-
+            
             print(f'Usando email: {usuario.email}, RA: {usuario.ra}')
             
             menu_system = MenuSystem(page)
             menu_system.run(usuario)
+

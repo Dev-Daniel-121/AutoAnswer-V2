@@ -44,11 +44,11 @@ class Activities:
         materia_closest_date = {}
         for materia, dates in materia_dates.items():
             closest_date = min(
-                [datetime.strptime(date, "%d/%m/%Y") for date in dates],
+                [datetime.strptime(date, '%d/%m/%Y') for date in dates],
                 default=None
             )
             if closest_date:
-                materia_closest_date[materia] = closest_date.strftime("%d/%m/%Y")
+                materia_closest_date[materia] = closest_date.strftime('%d/%m/%Y')
 
         return materia_closest_date
 
@@ -56,9 +56,9 @@ class Activities:
         materia_count = self.get_activities_num()
         materia_closest_date = self.get_activities_date()
 
-        print("Atividades por Matéria:")
+        print('Atividades por Matéria:')
         for materia, count in materia_count.items():
             if exibir_datas and materia in materia_closest_date:
-                print(f"{materia}: \t{count} (Data mais próxima: {materia_closest_date[materia]})")
+                print(f'{materia}: \t{count} (Data mais próxima: {materia_closest_date[materia]})')
             else:
-                print(f"{materia}: \t{count}")
+                print(f'{materia}: \t{count}')

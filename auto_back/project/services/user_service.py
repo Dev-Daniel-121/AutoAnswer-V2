@@ -27,7 +27,7 @@ class UserService:
             if hasattr(usuario, key):
                 setattr(usuario, key, value)
             else:
-                print(f'[{types[4]}] Erro: Atributo "{key}" não existe no usuário.')
+                print(f'[{types[4]}] Erro: Atributo \'{key}\' não existe no usuário.')
                 return False
 
         self.sistema_usuarios.salvar_usuarios()

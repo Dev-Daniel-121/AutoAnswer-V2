@@ -1,19 +1,32 @@
+from project import types
+
 class Sections:
-    def __init__(self, page, container_sec_class, text_sec_class, component_sec_class):
+    def __init__(self, page):
         self.page = page
-        self.container_sec_class = container_sec_class
-        self.text_sec_class = text_sec_class
-        self.component_sec_class = component_sec_class
+
+    def sections_turmas(self):
+        sections_turmas_class = ':nth-match(div.css-39ukww, 1)'
+        sections_turmas = self.page.locator(f'{sections_turmas_class}')
+        sections_turmas = sections_turmas.inner_text()
+
+        return sections_turmas
+    
+    def sections_status(self):
+        sections_status_class = ':nth-match(div.css-39ukww, 2)'
+        sections_status = self.page.locator(f'{sections_status_class}')
+        sections_status = sections_status.inner_text()
+
+        return sections_status
+    
+    def sections_componentes(self):
+        sections_componentes_class = 'input.css-scvshb'
+        sections_componentes = self.page.input_value(f'{sections_componentes_class}')
+
+        return sections_componentes
 
     def run(self):
-        container_sec = self.page.locator(self.container_sec_class).all()
-        content_sec_class = []
+        sections_turmas = self.sections_turmas()
+        sections_status = self.sections_status()
+        sections_componentes = self.sections_componentes()
 
-        for item in container_sec:
-            text = item.locator(self.text_sec_class).text_content()
-            content_sec_class.append(text)
-
-        component_sec = self.page.locator(self.component_sec_class)
-        componente = component_sec.get_attribute('value')
-
-        print(f'Turmas: {content_sec_class[0]} | Status: {content_sec_class[1]} | Componente: {componente}')
+        print(f'\n[{types[9]}] Turmas: {sections_turmas} | Status: {sections_status} | Componente: {sections_componentes}')

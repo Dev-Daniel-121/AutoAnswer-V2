@@ -90,7 +90,7 @@ class SistemaUsuarios:
             tipo_conta = input(f'[{types[9]}] Digite o tipo de conta (Aluno/Professor): ').strip()
             tipo_conta = self.converter_tipo_conta(tipo_conta)
             if tipo_conta not in ['Aluno', 'Professor']:
-                print(f'[{types[4]}] Tipo de conta inválido! Escolha entre "Aluno/Al" ou "Professor/Pr".')
+                print(f'[{types[4]}] Tipo de conta inválido! Escolha entre \'Aluno/Al\' ou \'Professor/Pr\'.')
                 continue
             break
         
@@ -139,7 +139,7 @@ class SistemaUsuarios:
             return
 
         while True:
-            ids_input = input(f'\n[{types[9]}] Digite os IDs dos usuários que deseja alterar (separados por vírgula, "*" para todos): ').strip().lower()
+            ids_input = input(f'\n[{types[9]}] Digite os IDs dos usuários que deseja alterar (separados por vírgula, \'*\' para todos): ').strip().lower()
             
             if ids_input in ['*', 'all']:
                 ids = list(self.usuarios.keys())
@@ -210,7 +210,7 @@ class SistemaUsuarios:
             return
 
         while True:
-            ids_input = input(f'\n[{types[9]}] Digite os IDs dos usuários que deseja deletar (separados por vírgula, "*" para todos): ').strip().lower()
+            ids_input = input(f'\n[{types[9]}] Digite os IDs dos usuários que deseja deletar (separados por vírgula, \'*\' para todos): ').strip().lower()
             
             if ids_input in ['*', 'all']:
                 ids = list(self.usuarios.keys())

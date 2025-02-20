@@ -2,21 +2,16 @@
 from project.apps.sala_do_futuro.models.data.tarefas.activities.activities import Activities
 from project.apps.sala_do_futuro.models.data.tarefas.go.go import Go
 from project.apps.sala_do_futuro.models.data.tarefas.sections.sections import Sections
+from project import types
 
 class Tarefas:
     def __init__(self, page):
         self.page = page
 
     def run(self):
-        go = Go(
-            self.page, 
-            btn_go_tarefas_class=':nht-match(div.css-lumvx8, 2)', container_go_class='div.css-1b52nvd', btn_go_class='div.css-39ukww, 2', list_go_class='li.css-4dqmvd'
-        )
+        go = Go(self.page, btn_go_tarefas_class=':nth-match(a.css-lumvx8, 2)', go_btn_class=':nth-match(div.css-39ukww, 2)', go_list_class='li.css-4dqmvd')
 
-        sections = Sections(
-            self.page,
-            container_sec_class='div.css-57y2f3', text_sec_class='div.css-39ukww', component_sec_class='input.css-scvshb'
-        )
+        sections = Sections(self.page)
 
         activities = Activities(
             self.page,
@@ -24,18 +19,23 @@ class Tarefas:
         )
 
         go.go_tarefas()
+
         go.go_aFazer()
-
         sections.run()
         activities.run()
 
-        go.go_expiradas()
+        input(f'\n[{types[6]}] Pressione Enter para continuar...')
 
-        sections.run()
-        activities.run()
 
         go.go_entregues()
-
         sections.run()
         activities.run()
+
+        input(f'\n[{types[6]}] Pressione Enter para continuar...')
+
+        go.go_expiradas()
+        sections.run()
+        activities.run()
+
+        input(f'\n[{types[6]}] Pressione Enter para continuar...')
 

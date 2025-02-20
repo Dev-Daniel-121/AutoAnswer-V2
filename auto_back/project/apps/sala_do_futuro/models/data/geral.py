@@ -1,55 +1,101 @@
+from project import types
+
 class Geral:
-    def __init__(self, page, values_class):
+    def __init__(
+            self, page, values_class, 
+            pendencias_box_class, pendencias_box_close_class, 
+            pendencias_p_elements, pendencias_b_elements):
         self.page = page
         self.values_class = values_class
+        self.pendencias_box_class = pendencias_box_class
+        self.pendencias_box_close_class = pendencias_box_close_class
+        self.pendencias_p_elements = pendencias_p_elements
+        self.pendencias_b_elements = pendencias_b_elements
 
     def pendencias(self):
-        pendencias_value = self.page.locator(f':nth-match({self.values_class}, 1)').text_content()
-        pendencias = self.page.locator(f':nth-match({self.values_class}, 1)')
-        pendencias.click()
+        pendencias_box_class = self.pendencias_box_class
+        pendencias_box_close_class = self.pendencias_box_close_class
 
-        pendencias_values_p = self.page.query_selector_all('p.css-1f9zvnk')
-        pendencias_values = []
+        try:
+            self.page.wait_for_selector(pendencias_box_class, state='visible', timeout=5000)
 
-        for pendencias_value_p in pendencias_values_p:
-            pendencias_value_b = pendencias_value_p.query_selector('b')
-            if pendencias_value_b:
-                pendencias_values.append(pendencias_value_b.text_content())
-            else:
-                pendencias_values.append(None)
+            pendencias_box = self.page.locator(pendencias_box_class)
+            pendencias_box.click()
 
-        return pendencias_value, pendencias_values
-    
+            self.page.wait_for_timeout(1000)
+
+            pendencias_tarefas, pendencias_redacoes, pendencias_provas, pendencias_total = self.pendencias_activities()
+
+            pendencias_box_close = self.page.locator(pendencias_box_close_class)
+            pendencias_box_close.click()
+
+            return {
+                'pendencias_tarefas': pendencias_tarefas,
+                'pendencias_redacoes': pendencias_redacoes,
+                'pendencias_provas': pendencias_provas,
+                'pendencias_total': pendencias_total
+            }
+        except Exception as e:
+            print(f'[{types[4]}] Tempo excedido ao tentar interagir com a caixa de pendências.')
+            return None
+
+    def pendencias_activities(self):
+        pendencias_p_elements = self.pendencias_p_elements
+        pendencias_b_elements = self.pendencias_b_elements
+
+        try:
+            self.page.wait_for_selector(pendencias_p_elements, timeout=5000)
+
+            pendencias_tarefas = int(self.page.locator(f':nth-match({pendencias_p_elements} > {pendencias_b_elements}, 1)').inner_text())
+            pendencias_redacoes = int(self.page.locator(f':nth-match({pendencias_p_elements} > {pendencias_b_elements}, 2)').inner_text())
+            pendencias_provas = int(self.page.locator(f':nth-match({pendencias_p_elements} > {pendencias_b_elements}, 3)').inner_text())
+            pendencias_total = pendencias_tarefas + pendencias_redacoes + pendencias_provas
+
+            return pendencias_tarefas, pendencias_redacoes, pendencias_provas, pendencias_total
+        except Exception as e:
+            print(f'[{types[4]}] Erro ao extrair pendências: {e}')
+            return 0, 0, 0, 0
+
     def mensagem_nao_lida(self):
-        mensagem_nao_lida_num = self.page.locator(f':nth-match({self.values_class}, 2)').text_content()
+        mensagem_nao_lida_num = self.page.locator(f':nth-match({self.values_class}, 2)').inner_text()
         return mensagem_nao_lida_num
-    
+
     def faltas(self):
-        faltas_num = self.page.locator(f':nth-match({self.values_class}, 3)').text_content()
+        faltas_num = self.page.locator(f':nth-match({self.values_class}, 3)').inner_text()
         return faltas_num
-    
+
     def boletim(self):
-        boletim_num = self.page.locator(f':nth-match({self.values_class}, 4)').text_content()
+        boletim_num = self.page.locator(f':nth-match({self.values_class}, 4)').inner_text()
         return 'Indisponível' if boletim_num == 'Boletim' else boletim_num
 
     def run(self):
-        pendencias_value, pendencias_values = self.pendencias()
+        pendencias = self.pendencias()
+        if pendencias:
+            pendencias_tarefas = pendencias['pendencias_tarefas']
+            pendencias_redacoes = pendencias['pendencias_redacoes']
+            pendencias_provas = pendencias['pendencias_provas']
+            pendencias_total = pendencias['pendencias_total']
+        else:
+            pendencias_tarefas = pendencias_redacoes = pendencias_provas = pendencias_total = 0
+
         mensagem_nao_lida_num = self.mensagem_nao_lida()
         faltas_num = self.faltas()
         boletim_num = self.boletim()
 
-        print(f'Geral')
-        print(f'Pendências: \t\t{pendencias_value}')
-        print(f'\tTarefas: \t{pendencias_values[0]}')
-        print(f'\tRedação: \t{pendencias_values[1]}')
-        print(f'\tProvas: \t{pendencias_values[2]}')
-        print(f'Faltas: \t\t{faltas_num}')
-        print(f'Mensagem não lida: \t\t{mensagem_nao_lida_num}')
-        print(f'Boletim: \t\t{boletim_num}')
+        print(f'\n~~~~~~ Geral ~~~~~~\n')
+        print(f'[{types[9]}] Pendências: \t\t{pendencias_total}')
+        print(f'[{types[9]}]    Tarefas: \t\t{pendencias_tarefas}')
+        print(f'[{types[9]}]    Redação: \t\t{pendencias_redacoes}')
+        print(f'[{types[9]}]    Provas:  \t\t{pendencias_provas}')
+        print(f'[{types[9]}] Faltas: \t\t\t{faltas_num}')
+        print(f'[{types[9]}] Mensagem não lida: \t{mensagem_nao_lida_num}')
+        print(f'[{types[9]}] Boletim: \t\t{boletim_num}')
 
         return {
-            'pendencias_value': pendencias_value,
-            'pendencias_values': pendencias_values,
+            'pendencias_total': pendencias_total,
+            'tarefas': pendencias_tarefas,
+            'redacoes': pendencias_redacoes,
+            'provas': pendencias_provas,
             'mensagem_nao_lida': mensagem_nao_lida_num,
             'faltas': faltas_num,
             'boletim': boletim_num

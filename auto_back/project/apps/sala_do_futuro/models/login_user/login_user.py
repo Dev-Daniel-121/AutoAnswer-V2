@@ -19,10 +19,13 @@ class LoginUser:
             dg_ra=self.dg_ra,
             uf_ra=self.uf_ra,
             senha=self.senha,
-            btn_tipo_class='div.css-m1mmqw',
+            
+            btn_tipo_class=':nth-match(div.css-m1mmqw, 1)',
+            btn_entrar_class='button.css-xbwxkd',
             input_ra_id='input#input-usuario-sed',
-            input_dg_ra_name='input[name=\'digito-ra\']',
+            input_dg_ra_name=':nth-match(input.css-1frrzr1, 2)',
             input_uf_ra_class='div.css-r1nef8',
+            ul_uf_ra_class='ul.css-r8u8y9',
             li_uf_ra_class='li.css-4dqmvd',
             input_senha_id='input#input-senha'
         )
