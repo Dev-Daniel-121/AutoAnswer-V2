@@ -38,4 +38,4 @@ class Display:
                     print(f'[{self.types[4]}] Opção inválida! Escolha um número entre 1 e {len(self.data)}.')
 
                 except ValueError:
-                    print(f'[{self.types[4]}] Erro: Entrada inválida! Digite um número válido.')
+                    print(f'[{self.types[4]}]  Entrada inválida! Digite um número válido.')

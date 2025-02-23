@@ -1,8 +1,7 @@
-import os
-import sys
-from project.config import types
-from project.utils import Display
 from project.models import SelecionarUsuarios, SistemaUsuarios
+from project import Display, types
+import sys
+import os
 
 class MenuSystem:
     def __init__(self):
@@ -43,7 +42,7 @@ class MenuSystem:
             id_usuario = str(id_usuario)
 
             if id_usuario not in sistema.usuarios:
-                print(f'[{types[4]}] Erro: ID \'{id_usuario}\' não encontrado no dicionário!')
+                print(f'[{types[4]}] ID \'{id_usuario}\' não encontrado no dicionário!')
                 continue
 
             usuario = sistema.usuarios[id_usuario]

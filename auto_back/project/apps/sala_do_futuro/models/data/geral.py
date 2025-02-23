@@ -13,20 +13,17 @@ class Geral:
         self.pendencias_b_elements = pendencias_b_elements
 
     def pendencias(self):
-        pendencias_box_class = self.pendencias_box_class
-        pendencias_box_close_class = self.pendencias_box_close_class
-
         try:
-            self.page.wait_for_selector(pendencias_box_class, state='visible', timeout=5000)
+            self.page.wait_for_selector(self.pendencias_box_class, state='visible', timeout=5000)
 
-            pendencias_box = self.page.locator(pendencias_box_class)
+            pendencias_box = self.page.locator(self.pendencias_box_class)
             pendencias_box.click()
 
             self.page.wait_for_timeout(1000)
 
             pendencias_tarefas, pendencias_redacoes, pendencias_provas, pendencias_total = self.pendencias_activities()
 
-            pendencias_box_close = self.page.locator(pendencias_box_close_class)
+            pendencias_box_close = self.page.locator(self.pendencias_box_close_class)
             pendencias_box_close.click()
 
             return {
@@ -40,15 +37,12 @@ class Geral:
             return None
 
     def pendencias_activities(self):
-        pendencias_p_elements = self.pendencias_p_elements
-        pendencias_b_elements = self.pendencias_b_elements
-
         try:
-            self.page.wait_for_selector(pendencias_p_elements, timeout=5000)
+            self.page.wait_for_selector(self.pendencias_p_elements, timeout=5000)
 
-            pendencias_tarefas = int(self.page.locator(f':nth-match({pendencias_p_elements} > {pendencias_b_elements}, 1)').inner_text())
-            pendencias_redacoes = int(self.page.locator(f':nth-match({pendencias_p_elements} > {pendencias_b_elements}, 2)').inner_text())
-            pendencias_provas = int(self.page.locator(f':nth-match({pendencias_p_elements} > {pendencias_b_elements}, 3)').inner_text())
+            pendencias_tarefas = int(self.page.locator(f':nth-match({self.pendencias_p_elements} > {self.pendencias_b_elements}, 1)').inner_text())
+            pendencias_redacoes = int(self.page.locator(f':nth-match({self.pendencias_p_elements} > {self.pendencias_b_elements}, 2)').inner_text())
+            pendencias_provas = int(self.page.locator(f':nth-match({self.pendencias_p_elements} > {self.pendencias_b_elements}, 3)').inner_text())
             pendencias_total = pendencias_tarefas + pendencias_redacoes + pendencias_provas
 
             return pendencias_tarefas, pendencias_redacoes, pendencias_provas, pendencias_total
@@ -57,15 +51,27 @@ class Geral:
             return 0, 0, 0, 0
 
     def mensagem_nao_lida(self):
-        mensagem_nao_lida_num = self.page.locator(f':nth-match({self.values_class}, 2)').inner_text()
+        try:
+            mensagem_nao_lida_num = self.page.locator(f':nth-match({self.values_class}, 2)').inner_text()
+        except Exception as e:
+            print(f'[{types[4]}] Erro ao obter o número de mensagems não lidas: {e}')
+
         return mensagem_nao_lida_num
 
     def faltas(self):
-        faltas_num = self.page.locator(f':nth-match({self.values_class}, 3)').inner_text()
+        try:
+            faltas_num = self.page.locator(f':nth-match({self.values_class}, 3)').inner_text()
+        except Exception as e:
+            print(f'[{types[4]}] Erro ao o número de faltas: {e}')
+
         return faltas_num
 
     def boletim(self):
-        boletim_num = self.page.locator(f':nth-match({self.values_class}, 4)').inner_text()
+        try:
+            boletim_num = self.page.locator(f':nth-match({self.values_class}, 4)').inner_text()
+        except Exception as e:
+            print(f'[{types[4]}] Erro ao obter o status do boletim: {e}')
+            
         return 'Indisponível' if boletim_num == 'Boletim' else boletim_num
 
     def run(self):

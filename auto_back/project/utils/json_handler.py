@@ -17,7 +17,7 @@ class JSONHandler:
             with open(self.file_path, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except json.JSONDecodeError:
-            print(f'[{types[4]}] Erro: Arquivo {self.file_path} está mal formatado.')
+            print(f'[{types[4]}] Arquivo {self.file_path} está mal formatado.')
             input(f'\n[{types[6]}] Pressione Enter para continuar...')
             return {}
         except Exception as e:

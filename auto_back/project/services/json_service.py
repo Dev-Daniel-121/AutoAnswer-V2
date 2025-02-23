@@ -18,5 +18,5 @@ class JSONService:
             json.dumps(data)
             return True
         except (TypeError, ValueError):
-            print(f'[{types[4]}] Erro: Dados inválidos para JSON.')
+            print(f'[{types[4]}] Dados inválidos para JSON.')
             return False

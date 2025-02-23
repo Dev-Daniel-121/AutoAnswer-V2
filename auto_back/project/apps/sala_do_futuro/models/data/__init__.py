@@ -1,10 +1,11 @@
 from .tarefas import Tarefas, Activities, Go, Sections
+from .geral import Geral
 from .agenda import Agenda
 from .data import Data
-from .geral import Geral
 
 __all__ = [
     'Tarefas', 'Activities', 'Go', 'Sections',
+    'Geral',
     'Agenda',
-    'Data',
-    'Geral']
+    'Data'
+]

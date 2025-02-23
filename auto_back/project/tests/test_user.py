@@ -1,7 +1,7 @@
-import unittest
-import os
 from project.models import SistemaUsuarios
 from project.services import UserService
+import unittest
+import os
 
 class TestUserSystem(unittest.TestCase):
     def setUp(self):

@@ -1,7 +1,6 @@
-import os
-from project.config import types
 from project.utils import Display, JSONHandler
-
+from project.config import types
+import os
 
 class Usuario:
     def __init__(self, id_usuario, nome, sobrenome, tipo_conta, ra, dg_ra, uf_ra):
@@ -14,7 +13,18 @@ class Usuario:
         self.uf_ra = uf_ra
         self.email = f'0000{ra}{dg_ra}{uf_ra}@al.educacao.sp.gov.br'
         self.senha = f'Bp{ra[:6]}#'
+        self.user = self.gerar_user()
         self.types = types
+
+    def gerar_user(self):
+        nome_part = self.nome[:5].lower()
+        sobrenome_part = self.sobrenome[:5].lower()
+        
+        ra_part = self.ra[-9:]
+        
+        uf_part = self.uf_ra.lower()
+        
+        return f'{nome_part}{sobrenome_part}{ra_part}-{uf_part}'
 
     def __str__(self):
         return f'ID: {self.id_usuario} - Nome: {self.nome} - Sobrenome: {self.sobrenome} - Tipo de Conta: {self.tipo_conta}'
@@ -50,7 +60,8 @@ class SistemaUsuarios:
                 'dg_ra': usuario.dg_ra,
                 'uf_ra': usuario.uf_ra,
                 'email': usuario.email,
-                'senha': usuario.senha
+                'senha': usuario.senha,
+                'user': usuario.user
             }
         return self.json_handler.salvar(data)
 
@@ -197,6 +208,7 @@ class SistemaUsuarios:
             
             usuario.email = f'0000{usuario.ra}{usuario.dg_ra}{usuario.uf_ra}@al.educacao.sp.gov.br'
             usuario.senha = f'Bp{usuario.ra[:6]}#'
+            usuario.user = usuario.gerar_user()
             
             print(f'\n[{types[7]}] Usuário {usuario.nome} {usuario.sobrenome} (ID: {usuario.id_usuario}) alterado com sucesso!')
         

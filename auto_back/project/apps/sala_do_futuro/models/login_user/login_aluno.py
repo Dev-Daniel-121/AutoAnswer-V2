@@ -33,7 +33,7 @@ class LoginAluno:
             btn_entrar = self.page.locator(f'{self.btn_entrar_class}')
             btn_entrar.click()
         except Exception as e:
-            print('f')
+            print(f'[{types[4]}] Erro ao clicar no botão entrar: {e}')
 
     def input_ra(self):
         try:

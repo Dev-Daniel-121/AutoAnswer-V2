@@ -1,4 +1,4 @@
-from project.apps.sala_do_futuro.menus.menusystem import MenuSystem
+from project.apps.sala_do_futuro.menus import MenuSystem
 from playwright.sync_api import sync_playwright
 from project import SistemaUsuarios, types
 
@@ -11,7 +11,7 @@ class SalaDoFuturo:
         usuario = usuarios.get(str(id_usuario))
 
         if not usuario:
-            print(f'[{types[4]}] Erro: Usuário com ID {id_usuario} não encontrado.')
+            print(f'[{types[4]}] Usuário com ID {id_usuario} não encontrado.')
             return
 
         print(f'\n[{types[9]}] Iniciando automação para {usuario.nome} {usuario.sobrenome} ({usuario.tipo_conta})')

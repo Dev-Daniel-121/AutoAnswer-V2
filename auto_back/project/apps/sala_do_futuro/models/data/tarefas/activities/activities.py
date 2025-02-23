@@ -1,64 +1,100 @@
+from project import types
+from collections import defaultdict
+
 class Activities:
-    def __init__(
-            self, page,
-            container_activities_class, box_activities_class, activities_component_class, activities_dates_class):
+    def __init__(self, page):
         self.page = page
-        self.container_activities_class = container_activities_class
-        self.box_activities_class = box_activities_class
-        self.activities_component_class = activities_component_class
-        self.activities_dates_class = activities_dates_class
 
-    def get_activities_component(self):
-        container_activities = self.page.locator(self.container_activities_class).all()
-        activities_component = []
+    def total_activities(self):
+        return self.page.locator('div.css-fm7u1u').all()
 
-        for box in container_activities:
-            component = box.locator(self.activities_component_class).text_content()
-            activities_component.append(component)
+    def get_component_name(self, materia):
+        return materia.locator('p.css-9kams2').inner_text()
 
-        return activities_component
+    def get_component_day(self, materia):
+        return materia.locator('p.css-1d78sd9').inner_text()
 
-    def get_activities_num(self):
-        activities_component = self.get_activities_component()
-        from collections import defaultdict
+    def get_component_date(self, materia):
+        dates = materia.locator('p.css-1gwkyaz').all()
+        if len(dates) >= 2:
+            return dates[0].inner_text(), dates[1].inner_text()
+        return None, None
 
-        materia_count = defaultdict(int)
-        for materia in activities_component:
-            materia_count[materia] += 1
+    def run_aFazer(self):
+        atividades = self.total_activities()
+        if not atividades:
+            print('Não há lições disponíveis.')
+            return {}, {}
+        
+        materias_count = defaultdict(int)
+        datas = defaultdict(list)
 
-        return materia_count
+        for materia in atividades:
+            nome = self.get_component_name(materia)
+            materias_count[nome] += 1
+            datas[nome].append(self.get_component_day(materia))
 
-    def get_activities_date(self):
-        from collections import defaultdict
-        container_activities = self.page.locator(self.container_activities_class).all()
-        materia_dates = defaultdict(list)
+        for nome in datas:
+            datas[nome].sort()
 
-        for box in container_activities:
-            materia = box.locator(self.activities_component_class).text_content()
-            date = box.locator(self.activities_dates_class).text_content()
-            if date:
-                materia_dates[materia].append(date)
+        return materias_count, datas
 
-        from datetime import datetime
+    def run_expiradas(self):
+        atividades = self.total_activities()
+        if not atividades:
+            print(f'[{types[8]}] Não há lições disponíveis.')
+            return {}, {}
+        
+        materias_count = defaultdict(int)
+        datas = defaultdict(list)
 
-        materia_closest_date = {}
-        for materia, dates in materia_dates.items():
-            closest_date = min(
-                [datetime.strptime(date, '%d/%m/%Y') for date in dates],
-                default=None
-            )
-            if closest_date:
-                materia_closest_date[materia] = closest_date.strftime('%d/%m/%Y')
+        for materia in atividades:
+            nome = self.get_component_name(materia)
+            materias_count[nome] += 1
+            start_date, end_date = self.get_component_date(materia)
+            if start_date and end_date:
+                datas[nome].append((start_date, end_date))
 
-        return materia_closest_date
+        for nome in datas:
+            datas[nome].sort(key=lambda x: (x[0], x[1]))
 
-    def run(self, exibir_datas=True):
-        materia_count = self.get_activities_num()
-        materia_closest_date = self.get_activities_date()
+        return materias_count, datas
 
-        print('Atividades por Matéria:')
-        for materia, count in materia_count.items():
-            if exibir_datas and materia in materia_closest_date:
-                print(f'{materia}: \t{count} (Data mais próxima: {materia_closest_date[materia]})')
+    def run_entregues(self):
+        atividades = self.total_activities()
+        if not atividades:
+            print(f'[{types[8]}] Não há lições disponíveis.')
+            return {}
+        
+        materias_count = defaultdict(int)
+
+        for materia in atividades:
+            nome = self.get_component_name(materia)
+            materias_count[nome] += 1
+
+        return materias_count
+
+    def display(self, status, materias_count, datas=None):
+        if not materias_count:
+            print(f'[{types[8]}] Nenhuma atividade encontrada.')
+            return
+        
+        for nome, quantidade in materias_count.items():
+            if status == 'A fazer':
+                print(f'{nome}: [{quantidade}] ({datas[nome][0]})')
+            elif status == 'Expiradas':
+                data_inicial, data_final = datas[nome][-1]
+                print(f'{nome}: [{quantidade}] ({data_inicial} - {data_final})')
             else:
-                print(f'{materia}: \t{count}')
+                print(f'{nome}: [{quantidade}]')
+
+    def run(self, status):
+        if status == 'A fazer':
+            materias_count, datas = self.run_aFazer()
+            self.display(status, materias_count, datas)
+        elif status == 'Expiradas':
+            materias_count, datas = self.run_expiradas()
+            self.display(status, materias_count, datas)
+        elif status == 'Entregues':
+            materias_count = self.run_entregues()
+            self.display(status, materias_count)

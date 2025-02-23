@@ -9,19 +9,25 @@ class Agenda:
         self.day_content_class = day_content_class
 
     def agenda(self):
-        rows = self.page.locator(self.row_class).all()
+        try:
+            rows = self.page.locator(self.row_class).all()
+        except Exception as e:
+            print(f'[{types[4]}] Erro ao obter as linhas da agenda: {e}')
         
         agenda_data = []
 
         for row in rows:
-            day = row.locator(f':nth-match({self.day_class}, 1)').text_content()
-            day_of_the_week = row.locator(f':nth-match({self.day_of_the_week_class}, 1)').text_content()
-            day_content = row.locator(f':nth-match({self.day_content_class}, 1)').text_content()
+            try:
+                day = row.locator(f':nth-match({self.day_class}, 1)').text_content()
+                day_of_the_week = row.locator(f':nth-match({self.day_of_the_week_class}, 1)').text_content()
+                day_content = row.locator(f':nth-match({self.day_content_class}, 1)').text_content()
 
-            if len(day_content) > 48:
-                day_content = day_content[:48] + '...'
+                if len(day_content) > 48:
+                    day_content = day_content[:48] + '...'
 
-            agenda_data.append((day, day_of_the_week, day_content))
+                agenda_data.append((day, day_of_the_week, day_content))
+            except Exception as e:
+                print(f'[{types[4]}] Erro ao processar linha {row} na agenda: {e}')
 
         return agenda_data
 
