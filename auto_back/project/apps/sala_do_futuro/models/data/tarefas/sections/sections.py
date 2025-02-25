@@ -1,7 +1,7 @@
 from project import types
 
 class Sections:
-    def __init__(self, page, sections_turmas_class, sections_status_class, sections_componentes_class):
+    def __init__(self, page, sections_turmas_class='', sections_status_class='', sections_componentes_class=''):
         self.page = page
         self.sections_turmas_class = sections_turmas_class
         self.sections_status_class = sections_status_class

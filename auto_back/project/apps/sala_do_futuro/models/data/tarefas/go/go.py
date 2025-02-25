@@ -1,3 +1,4 @@
+from project.apps.sala_do_futuro.config import status
 from project import types
 
 class Go:
@@ -66,9 +67,9 @@ class Go:
     def go_list(self, content):
         i = 0
 
-        if content == 'A fazer': i = 1 
-        elif content == 'Entregues': i = 2
-        elif content == 'Expiradas': i = 3
+        if content == f'{status[0]}': i = 1 
+        elif content == f'{status[1]}': i = 2
+        elif content == f'{status[2]}': i = 3
         else: print(f'[{types[4]}] Conteúdo inválido: \'{content}\'')
 
         try:
@@ -79,12 +80,12 @@ class Go:
     
     def go_aFazer(self):
         self.go_btn()
-        self.go_list(content='A fazer')
+        self.go_list(content=f'{status[0]}')
         
     def go_entregues(self):
         self.go_btn()
-        self.go_list(content='Entregues')
+        self.go_list(content=f'{status[1]}')
 
     def go_expiradas(self):
         self.go_btn()
-        self.go_list(content='Expiradas')
+        self.go_list(content=f'{status[2]}')

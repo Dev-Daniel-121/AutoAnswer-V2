@@ -54,7 +54,7 @@ class MenuSystem:
             self.apps(nome_completo, id_usuario)
 
     def apps(self, nome_usuario, id_usuario):
-        options_data = [(2, 'Sala do futuro')]
+        options_data = [(2, 'Sala do futuro'), (2, 'Sair')]
         options = self.display(options_data, 'APPS', answer=True, user=nome_usuario, title_quest='')
         user_choice = options.display()
 
@@ -63,6 +63,9 @@ class MenuSystem:
             sala_do_futuro = SalaDoFuturo()
             sala_do_futuro.run(id_usuario)
             input(f'\n[{types[6]}] Pressione Enter para continuar...')
+        elif user_choice == 2:
+            print(f'\n[{types[9]}] Encerrando o sistema...')
+            return
         else:
             print(f'[{types[4]}] Opção inválida')
             input(f'\n[{types[6]}] Pressione Enter para continuar...')

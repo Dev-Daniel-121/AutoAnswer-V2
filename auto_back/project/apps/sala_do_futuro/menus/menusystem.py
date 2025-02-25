@@ -68,8 +68,14 @@ class MenuSystem:
                     realizar = RealizarAtividades()
                     realizar.run(self.usuario)
                 elif choice == 4:
-                    print(f'[{types[4]}] Saindo...')
-                    return
+                    try:
+                        self.page.close()
+                    except Exception as e:
+                        print(f'[{types[4]}] Erro ao fechar o navegador: {e}')
+
+                    from project import MenuSystem
+                    menu_system = MenuSystem()
+                    menu_system.apps(nome_usuario=f'{self.usuario.nome} {self.usuario.sobrenome}', id_usuario=self.usuario.id_usuario)
                 else:
                     print(f'[{types[4]}] Opção inválida: {choice}')
                     continue

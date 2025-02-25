@@ -11,19 +11,19 @@ class Tarefas:
 
         go.go_aFazer()
         sections.run()
-        activities.run(status='A fazer')
+        activities.run()
 
         input(f'\n[{types[6]}] Pressione Enter para continuar...')
 
         go.go_entregues()
         sections.run()
-        activities.run(status='Entregues')
+        activities.run()
 
         input(f'\n[{types[6]}] Pressione Enter para continuar...')
 
         go.go_expiradas()
         sections.run()
-        activities.run(status='Expiradas')
+        activities.run()
 
         input(f'\n[{types[6]}] Pressione Enter para continuar...')
 
@@ -32,19 +32,19 @@ class Tarefas:
 
         go.go_aFazer()
         sections.run()
-        activities.run(status='A fazer')
+        activities.run()
 
         input(f'\n[{types[6]}] Pressione Enter para continuar...')
 
         go.go_entregues()
         sections.run()
-        activities.run(status='Entregues')
+        activities.run()
 
         input(f'\n[{types[6]}] Pressione Enter para continuar...')
 
         go.go_expiradas()
         sections.run()
-        activities.run(status='Expiradas')
+        activities.run()
 
         input(f'\n[{types[6]}] Pressione Enter para continuar...')
 
@@ -53,19 +53,19 @@ class Tarefas:
 
         go.go_aFazer()
         sections.run()
-        activities.run(status='A fazer')
+        activities.run()
 
         input(f'\n[{types[6]}] Pressione Enter para continuar...')
 
         go.go_entregues()
         sections.run()
-        activities.run(status='Entregues')
+        activities.run()
 
         input(f'\n[{types[6]}] Pressione Enter para continuar...')
 
         go.go_expiradas()
         sections.run()
-        activities.run(status='Expiradas')
+        activities.run()
 
         input(f'\n[{types[6]}] Pressione Enter para continuar...')
 
