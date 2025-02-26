@@ -72,7 +72,7 @@ class Geral:
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter o status do boletim: {e}')
             
-        return 'Indisponível' if boletim_num == 'Boletim' else boletim_num
+        return 'Indisponível' if boletim_num == 'Boletim' else 'Boletim Disponível para Visualização'
 
     def run(self):
         pendencias = self.pendencias()

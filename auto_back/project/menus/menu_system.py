@@ -64,7 +64,7 @@ class MenuSystem:
             sala_do_futuro.run(id_usuario)
             input(f'\n[{types[6]}] Pressione Enter para continuar...')
         elif user_choice == 2:
-            print(f'\n[{types[9]}] Encerrando o sistema...')
+            print(f'\n[{types[9]}] Encerrando processos...')
             return
         else:
             print(f'[{types[4]}] Opção inválida')
