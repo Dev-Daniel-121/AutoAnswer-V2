@@ -1,0 +1,16 @@
+ Resumo dos Dados Cruciais para Análise da IA:
+    - Tempo gasto - Para avaliar a eficiência do aluno.
+    - Erros cometidos e tipos de erro - Para identificar pontos fracos.
+    - Número de tentativas e histórico de tentativas - Para entender a persistência e as dificuldades.
+    - Pontuação - Para monitorar o progresso quantitativo.
+    - Feedback do usuário e da IA - Para análise qualitativa e para detectar áreas que necessitam de mais suporte.
+    - Status da atividade e redação - Para monitorar o progresso e possíveis problemas.
+    - Tipos de questões e respostas - Para entender quais habilidades o aluno está dominando.
+    - Critérios de avaliação - Para detectar competências específicas que precisam ser aprimoradas.
+    - Dificuldade - Para ajustar o nível de desafios e oferecer um aprendizado adaptativo.
+
+ Como a IA pode utilizar esses dados:
+    - Análise preditiva: A IA pode prever quais áreas o aluno precisa melhorar com base em dados históricos de desempenho.
+    - Personalização: Com base no desempenho do aluno, a IA pode ajustar a dificuldade e sugerir materiais de estudo.
+    - Identificação de padrões: A IA pode identificar padrões de erros frequentes e sugerir abordagens específicas para corrigir esses erros.
+    - Feedback em tempo real: A IA pode fornecer feedback em tempo real para o aluno, ajudando-o a melhorar seu desempenho.
