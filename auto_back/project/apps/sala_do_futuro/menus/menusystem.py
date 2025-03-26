@@ -62,11 +62,11 @@ class MenuSystem:
                     data.run()
                 elif choice == 3:
                     if not self.logged_in:
-                        print(f'[{types[4]}] Você precisa estar logado para realizar atividades.')
+                        print(f'[{types[4]}] Você precisa estar logado para Realizar Atividades.')
                         input(f'\n[{types[6]}] Pressione Enter para continuar...')
                         continue
-                    realizar = RealizarAtividades()
-                    realizar.run(self.usuario)
+                    realizar = RealizarAtividades(page=self.page)
+                    realizar.run(nome_usuario=f'{self.usuario.nome} {self.usuario.sobrenome}', id_usuario=self.usuario.id_usuario)
                 elif choice == 4:
                     from project import MenuSystem
                     menu_system = MenuSystem()
