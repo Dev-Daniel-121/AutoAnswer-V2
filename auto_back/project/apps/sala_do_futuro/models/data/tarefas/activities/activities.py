@@ -34,20 +34,20 @@ class Activities:
 
         try:
             name = materia.locator(get_component_name_class).inner_text()
-            return name if name else "Desconhecido"
+            return name if name else 'Desconhecido'
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter o nome da atividade: {e}')
-            return "Desconhecido"
+            return 'Desconhecido'
 
     def get_component_day(self, materia):
         get_component_day_class = 'p.css-1d78sd9'
 
         try:
             day = materia.locator(get_component_day_class).inner_text()
-            return day if day else "Data não disponível"
+            return day if day else 'Data não disponível'
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter o dia de expiração da atividade: {e}')
-            return "Data não disponível"
+            return 'Data não disponível'
 
 
     def get_component_date(self, materia):
@@ -59,7 +59,7 @@ class Activities:
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter o Dia Inicial - Dia Final da atividade: {e}')
         
-        return "Data inicial não disponível", "Data final não disponível"
+        return 'Data inicial não disponível', 'Data final não disponível'
 
     def run_aFazer(self):
         atividades = self.total_activities()
@@ -75,7 +75,7 @@ class Activities:
             materias_count[nome] += 1
             dia = self.get_component_day(materia)
 
-            if dia and dia != "Data não disponível":
+            if dia and dia != 'Data não disponível':
                 datas[nome].append(dia)
 
         for nome in datas:

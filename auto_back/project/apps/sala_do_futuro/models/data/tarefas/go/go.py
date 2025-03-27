@@ -4,8 +4,8 @@ from project import types
 class Go:
     def __init__(
             self, page, 
-            get_title_class, btn_go_home_class, btn_go_tarefas_class, btn_go_redacoes_class, btn_go_provas_class, 
-            go_btn_class, go_list_class):
+            get_title_class='', btn_go_home_class='', btn_go_tarefas_class='', btn_go_redacoes_class='', btn_go_provas_class='', 
+            go_btn_class='', go_list_class=''):
         self.page = page
         self.get_title_class = get_title_class
         self.btn_go_home_class = btn_go_home_class

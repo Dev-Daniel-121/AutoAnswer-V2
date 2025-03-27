@@ -1,4 +1,4 @@
-from project.apps.sala_do_futuro.models import Data, LoginUser, RealizarAtividades
+from project.apps.sala_do_futuro.models import Data, LoginUser, RealizarAtividades, Go
 from project import types, Display
 
 class MenuSystem:
@@ -59,6 +59,10 @@ class MenuSystem:
                         input(f'\n[{types[6]}] Pressione Enter para continuar...')
                         continue
                     data = Data(page=self.page)
+                    go = Go(
+                            page=self.page, get_title_class='span.css-14ra0qi', 
+                            btn_go_home_class=':nth-match(a.css-lumvx8, 1)')
+                    go.go_home()
                     data.run()
                 elif choice == 3:
                     if not self.logged_in:

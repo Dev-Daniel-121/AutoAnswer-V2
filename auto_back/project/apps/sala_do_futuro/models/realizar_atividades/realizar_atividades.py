@@ -32,7 +32,6 @@ class RealizarAtividades:
                 go_list_class='li.css-4dqmvd')
             
             if user_choice == '4':
-                print(f'\n[{types[2]}] Saindo do programa...')
                 go.go_home()
                 break
             

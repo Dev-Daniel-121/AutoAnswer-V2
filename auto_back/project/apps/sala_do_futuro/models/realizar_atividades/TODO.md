@@ -198,13 +198,13 @@
 
 # Entrar nas tarefas
 
-|              Importância               | Tarefas                         | Duração 15min |                  Status                   |                                             Porcent                                             |
-| :------------------------------------: | :------------------------------ | :-----------: | :---------------------------------------: | :---------------------------------------------------------------------------------------------: |
-| <div class="classification a">A1</div> | Planejar como irá ser feito     |     2 min     |    <div class="status done">Done</div>    | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
-| <div class="classification a">A2</div> | Entrar em 1 array de componente |    10 min     |    <div class="status done">Done</div>    | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
-| <div class="classification a">A3</div> | Entrar em todos o componentes   |    10 min     |    <div class="status done">Done</div>    | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
-| <div class="classification a">A4</div> | Entrar em 1 array de tarefas    |    10 min     | <div class="status waiting">Waiting</div> |     <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div>      |
-| <div class="classification a">A5</div> | Fazer todas as tarefas          |     3 min     | <div class="status waiting">Waiting</div> |     <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div>      |
+|              Importância               | Tarefas                         | Duração 15min |                Status                 |                                             Porcent                                             |
+| :------------------------------------: | :------------------------------ | :-----------: | :-----------------------------------: | :---------------------------------------------------------------------------------------------: |
+| <div class="classification a">A1</div> | Planejar como irá ser feito     |     2 min     |  <div class="status done">Done</div>  | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
+| <div class="classification a">A2</div> | Entrar em 1 array de componente |    10 min     |  <div class="status done">Done</div>  | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
+| <div class="classification a">A3</div> | Entrar em todos o componentes   |    10 min     |  <div class="status done">Done</div>  | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
+| <div class="classification a">A4</div> | Entrar em 1 array de tarefas    |    10 min     | <div class="status doing">Doing</div> |     <div class="progress_porcent half"><div class="porcent" style="width: 50%">50</div></div>      |
+| <div class="classification a">A5</div> | Fazer todas as tarefas          |     3 min     | <div class="status doing">Doing</div> |     <div class="progress_porcent half"><div class="porcent" style="width: 50%">50</div></div>      |
 
 
 <br>
