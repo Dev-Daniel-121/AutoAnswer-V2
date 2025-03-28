@@ -72,7 +72,7 @@ class SistemaUsuarios:
             print('\n~~~~~~ Usuários Cadastrados ~~~~~~')
             for usuario in self.usuarios.values():
                 print(f'\n[{types[5]}] - ID: [{usuario.id_usuario}]\n\t Nome: {usuario.nome} {usuario.sobrenome}\n\t Tipo de Conta: {usuario.tipo_conta}\n\t Email: {usuario.email}')
-            print('\n----------------------------')
+            print(f'\n{'-' * 30}')
 
     def converter_tipo_conta(self, tipo_conta):
         if tipo_conta.lower() in ['al', 'aluno']:
@@ -150,7 +150,7 @@ class SistemaUsuarios:
             return
 
         while True:
-            ids_input = input(f'\n[{types[9]}] Digite os IDs dos usuários que deseja alterar (separados por vírgula, \'*\' para todos): ').strip().lower()
+            ids_input = input(f'\n[{types[9]}] Digite os IDs dos usuários que deseja alterar (separados por \',\' \'*\' para todos): ').strip().lower()
             
             if ids_input in ['*', 'all']:
                 ids = list(self.usuarios.keys())
@@ -222,7 +222,7 @@ class SistemaUsuarios:
             return
 
         while True:
-            ids_input = input(f'\n[{types[9]}] Digite os IDs dos usuários que deseja deletar (separados por vírgula, \'*\' para todos): ').strip().lower()
+            ids_input = input(f'\n[{types[9]}] Digite os IDs dos usuários que deseja deletar (separados por \',\' \'*\' para todos): ').strip().lower()
             
             if ids_input in ['*', 'all']:
                 ids = list(self.usuarios.keys())

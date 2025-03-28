@@ -1,7 +1,6 @@
 from project.models import SelecionarUsuarios, SistemaUsuarios
 from project import Display, types
-import sys
-import os
+import os, sys
 
 class MenuSystem:
     def __init__(self):

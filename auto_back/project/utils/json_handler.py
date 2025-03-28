@@ -1,6 +1,5 @@
 from project.config import types
-import json
-import os
+import json, os
 
 class JSONHandler:
     def __init__(self, file_path):

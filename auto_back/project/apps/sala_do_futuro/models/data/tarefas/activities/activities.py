@@ -4,11 +4,14 @@ from collections import defaultdict
 from project import types
 
 class Activities:
-    def __init__(self, page):
+    def __init__(self, page, total_activities_class='', get_component_name_class='', get_component_day_class='', get_component_date_class=''):
         self.page = page
         self.status = status
         self.sections = Sections(page=self.page, sections_status_class=':nth-match(div.css-39ukww, 2)')
-        self.total_activities_class = 'div.css-fm7u1u'
+        self.total_activities_class = total_activities_class
+        self.get_component_name_class = get_component_name_class
+        self.get_component_day_class = get_component_day_class
+        self.get_component_date_class = get_component_date_class
 
     def wait_for_element(self, selector, timeout=5):
         try:
@@ -17,6 +20,18 @@ class Activities:
         except Exception:
             print(f'[{types[9]}] Elemento {selector} não encontrado após {timeout} segundos.')
             return False
+    
+    """
+    def enter_the_activity(self, activity_class='', btn_enter_activity_class=''):
+        try:
+            activity = self.page.locator(f'{activity_class}')
+            btn_enter_activity = self.page.locator(f'{btn_enter_activity_class}')
+
+            activity.hover()
+            btn_enter_activity.click()
+        except Exception:
+            print(f'[{types[9]}] Não foi possível entrar na atividade.')
+    """
 
     def total_activities(self):
         if not self.wait_for_element(self.total_activities_class):
@@ -30,7 +45,7 @@ class Activities:
             return []
         
     def get_component_name(self, materia):
-        get_component_name_class = 'p.css-9kams2'
+        get_component_name_class = self.get_component_name_class
 
         try:
             name = materia.locator(get_component_name_class).inner_text()
@@ -40,7 +55,7 @@ class Activities:
             return 'Desconhecido'
 
     def get_component_day(self, materia):
-        get_component_day_class = 'p.css-1d78sd9'
+        get_component_day_class = self.get_component_day_class
 
         try:
             day = materia.locator(get_component_day_class).inner_text()
@@ -51,7 +66,7 @@ class Activities:
 
 
     def get_component_date(self, materia):
-        get_component_date_class = 'p.css-1gwkyaz'
+        get_component_date_class = self.get_component_date_class
         try:
             dates = materia.locator(get_component_date_class).all()
             if len(dates) >= 2:
@@ -144,3 +159,4 @@ class Activities:
         elif status == f'{self.status[1]}':
             materias_count = self.run_entregues()
             self.display(status, materias_count)
+            

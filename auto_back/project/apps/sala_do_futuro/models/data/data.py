@@ -1,5 +1,4 @@
 from project.apps.sala_do_futuro.models.data import Geral, Agenda, Tarefas
-# from project import Display
 from project import types
 import os
 

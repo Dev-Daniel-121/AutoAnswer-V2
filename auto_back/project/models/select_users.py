@@ -29,7 +29,7 @@ class SelecionarUsuarios:
 
             self.sistema_usuarios.mostrar_usuarios()
 
-            escolha = input(f'\n[{types[9]}] Digite os IDs dos usuários separados por vírgula ou \'*\' para todos: ').strip()
+            escolha = input(f'\n[{types[9]}] Digite os IDs dos usuários separados por \',\' ou \'*\' para todos: ').strip()
             
             if escolha.lower() in ('*', 'all'):
                 self.usuarios_selecionados = list(usuarios.keys())

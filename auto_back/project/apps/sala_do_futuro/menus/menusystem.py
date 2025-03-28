@@ -14,7 +14,7 @@ class MenuSystem:
             options_data = [(2, 'Efetuar login'), (2, 'Exibir dados escolares'), (2, 'Realizar Atividades'), (2, 'Sair')]
             options = self.display(options_data, 'MENU', answer=False, user=f'{self.usuario.nome} {self.usuario.sobrenome}', title_quest='')
             options.display()
-            user_choice = input(f'\n[{types[1]}] Digite as opções desejadas (separadas por vírgula) ou \'*\' para todas: ')
+            user_choice = input(f'\n[{types[1]}] Digite as opções desejadas (separadas por \',\') ou \'*\' para todas: ')
 
             if user_choice.strip().lower() in ['*', 'all']:
                 choices = [1, 2, 3, 4]
@@ -22,7 +22,7 @@ class MenuSystem:
                 try:
                     choices = [int(choice.strip()) for choice in user_choice.split(',')]
                 except ValueError:
-                    print(f'[{types[4]}] Entrada inválida. Por favor, digite números válidos separados por vírgula, \'*\' ou \'all\'.')
+                    print(f'[{types[4]}] Entrada inválida. Por favor, digite números válidos separados por \',\' \'*\' ou \'all\'.')
                     input(f'\n[{types[6]}] Pressione Enter para continuar...')
                     continue
 
@@ -76,7 +76,7 @@ class MenuSystem:
                     menu_system = MenuSystem()
                     menu_system.apps(nome_usuario=f'{self.usuario.nome} {self.usuario.sobrenome}', id_usuario=self.usuario.id_usuario)
 
-                    return
+                    # return
                 else:
                     print(f'[{types[4]}] Opção inválida: {choice}')
                     continue

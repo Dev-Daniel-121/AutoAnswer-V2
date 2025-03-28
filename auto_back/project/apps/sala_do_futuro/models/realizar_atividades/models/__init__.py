@@ -1,3 +1,15 @@
-from . import do_provas, do_redacao, do_tarefas
+from .do_provas import DoProvas
+from .do_redacao import DoRedacao
+from .do_tarefas import DoTarefas
+from .provas import RealizarProva
+from .redacoes import RealizarRedacao
+from .tarefas import RealizarTarefa
 
-__all__ = ['do_provas', 'do_redacao', 'do_tarefas']
+__all__ = [
+    'DoProvas',
+    'DoRedacao',
+    'DoTarefas',
+    'RealizarProva',
+    'RealizarRedacao',
+    'RealizarTarefa'
+]

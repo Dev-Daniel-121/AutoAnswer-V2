@@ -1,11 +1,11 @@
 from .main import SalaDoFuturo
 from .menus import MenuSystem
 from .config import status
-from .models import Agenda, Data, Geral, Tarefas, Activities, Go, Sections, LoginUser, LoginAluno, VerifyLogin, RealizarAtividades, do_provas, do_redacao, do_tarefas
+from .models import Agenda, Data, Geral, Tarefas, Activities, Go, Sections, LoginUser, LoginAluno, VerifyLogin, RealizarAtividades, DoProvas, DoRedacao, DoTarefas, RealizarProva, RealizarRedacao, RealizarTarefa
 
 __all__ = [
     'SalaDoFuturo',
     'MenuSystem',
     'status',
-    'Agenda', 'Data', 'Geral', 'Tarefas', 'Activities', 'Go', 'Sections', 'LoginUser', 'LoginAluno', 'VerifyLogin', 'RealizarAtividades', 'do_provas', 'do_redacao', 'do_tarefas'
+    'Agenda', 'Data', 'Geral', 'Tarefas', 'Activities', 'Go', 'Sections', 'LoginUser', 'LoginAluno', 'VerifyLogin', 'RealizarAtividades', 'DoProvas', 'DoRedacao', 'DoTarefas', 'RealizarProva', 'RealizarRedacao', 'RealizarTarefa'
 ]
