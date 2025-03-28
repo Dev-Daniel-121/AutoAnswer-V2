@@ -21,17 +21,21 @@ class Activities:
             print(f'[{types[9]}] Elemento {selector} não encontrado após {timeout} segundos.')
             return False
     
-    """
-    def enter_the_activity(self, activity_class='', btn_enter_activity_class=''):
+    def enter_activity(self, activity_class='', btn_enter_activity_class=''):
         try:
             activity = self.page.locator(f'{activity_class}')
             btn_enter_activity = self.page.locator(f'{btn_enter_activity_class}')
 
-            activity.hover()
-            btn_enter_activity.click()
-        except Exception:
-            print(f'[{types[9]}] Não foi possível entrar na atividade.')
-    """
+            if activity.is_visible():
+                activity.hover()
+
+                btn_enter_activity.wait_for(state="visible")
+                btn_enter_activity.click()
+            else:
+                print(f'[{types[4]}] Atividade não está visível: {activity_class}')
+
+        except Exception as e:
+            print(f'[{types[4]}] Erro ao tentar entrar na atividade: {e}')
 
     def total_activities(self):
         if not self.wait_for_element(self.total_activities_class):

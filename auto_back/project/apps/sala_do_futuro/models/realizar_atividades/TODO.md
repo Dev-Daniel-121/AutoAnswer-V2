@@ -198,13 +198,13 @@
 
 # Entrar nas tarefas
 
-|              Importância               | Tarefas                         | Duração 15min |                Status                 |                                             Porcent                                             |
-| :------------------------------------: | :------------------------------ | :-----------: | :-----------------------------------: | :---------------------------------------------------------------------------------------------: |
-| <div class="classification a">A1</div> | Planejar como irá ser feito     |     2 min     |  <div class="status done">Done</div>  | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
-| <div class="classification a">A2</div> | Entrar em 1 array de componente |    10 min     |  <div class="status done">Done</div>  | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
-| <div class="classification a">A3</div> | Entrar em todos o componentes   |    10 min     |  <div class="status done">Done</div>  | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
-| <div class="classification a">A4</div> | Entrar em 1 array de tarefas    |    10 min     | <div class="status doing">Doing</div> |     <div class="progress_porcent good"><div class="porcent" style="width: 75%">75</div></div>      |
-| <div class="classification a">A5</div> | Fazer todas as tarefas          |     3 min     | <div class="status doing">Doing</div> |     <div class="progress_porcent good"><div class="porcent" style="width: 75%">75</div></div>      |
+|              Importância               | Tarefas                         | Duração 15min |               Status                |                                             Porcent                                             |
+| :------------------------------------: | :------------------------------ | :-----------: | :---------------------------------: | :---------------------------------------------------------------------------------------------: |
+| <div class="classification a">A1</div> | Planejar como irá ser feito     |     2 min     | <div class="status done">Done</div> | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
+| <div class="classification a">A2</div> | Entrar em 1 array de componente |    10 min     | <div class="status done">Done</div> | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
+| <div class="classification a">A3</div> | Entrar em todos o componentes   |    10 min     | <div class="status done">Done</div> | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
+| <div class="classification a">A4</div> | Entrar em 1 array de tarefas    |    10 min     | <div class="status done">Done</div> | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
+| <div class="classification a">A5</div> | Fazer todas as tarefas          |     3 min     | <div class="status done">Done</div> | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
 
 
 <br>
@@ -213,9 +213,9 @@
 
 |              Importância               | Tarefas                                                                                                 | Duração |                  Status                   |                                        Porcent                                         |
 | :------------------------------------: | :------------------------------------------------------------------------------------------------------ | :-----: | :---------------------------------------: | :------------------------------------------------------------------------------------: |
-| <div class="classification a">A1</div> | Varrer a lição                                                                                          | 50 min  | <div class="status waiting">Waiting</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
-| <div class="classification a">A2</div> | Classificar como TXT, IMG, Mp4 ou Quest                                                                 | 50 min  | <div class="status waiting">Waiting</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
-| <div class="classification a">A3</div> | Númerar e classifcar as quest como Radios, Checkbox, Textarea, Dragable, Order, Select ou Select Order. | 50 min  | <div class="status waiting">Waiting</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
+| <div class="classification a">A1</div> | Varrer a lição                                                                                          | 20 min  |   <div class="status doing">Doing</div>   | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
+| <div class="classification a">A2</div> | Classificar como TXT, IMG, Mp4 ou Quest                                                                 | 20 min  | <div class="status waiting">Waiting</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
+| <div class="classification a">A3</div> | Númerar e classifcar as quest como Radios, Checkbox, Textarea, Dragable, Order, Select ou Select Order. | 20 min  | <div class="status waiting">Waiting</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
 
 <br>
 
@@ -238,6 +238,26 @@
 | <div class="classification a">A2</div> | Pegar os dados do data_quest_answer | 50 min  | <div class="status waiting">Waiting</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
 | <div class="classification a">A3</div> | Validar answer com cada quest       | 50 min  | <div class="status waiting">Waiting</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
 | <div class="classification a">A4</div> | Responder cada quest                | 50 min  | <div class="status waiting">Waiting</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
+
+<br><br><br>
+
+| O que está sendo feito                                                   | Tempo Inicio | Tempo Fim | Tempo Total |
+| :----------------------------------------------------------------------- | :----------: | :-------: | :---------: |
+| Fazer o código aceitar 1 array de elementos, podendo se quiser ser todos |    11:00     |   11:05   |    5min     |
+| Realização de testes                                                     |    11:05     |   11:35   |    30min    |
+| Dá hover no elemento e clicar no Btn para entrar na atividade            |    11:35     |   11:47   |    12min    |
+| Realização de testes                                                     |    11:48     |   11:53   |    5min     |
+| Corrigindo Bugs                                                          |    11:53     |   11:55   |    2min     |
+| Realização de testes                                                     |    11:55     |   11:57   |    2min     |
+| Planejando realização do código de varredura do site                     |    12:01     |   12:31   |    30min    |
+| Analisando, listando elementos, encontrando padrões                      |    12:06     |   12:31   |    25min    |
+| Documentando resultados encontrados                                      |    12:31     |   13:44   |    73min    |
+| Pausa                                                                    |    13:44     |   14:31   |    47min    |
+| Forum ETEC                                                               |    14:36     |   15:25   |    49min    |
+| Almoço                                                                   |    15:25     |   15:36   |    11min    |
+| Pausa                                                                    |    15:36     |   15:51   |    15min    |
+| Fazer o código para varrer e Exibir dados                                |              |           |             |
+|                                                                          |              |           |             |
 
 <br><br><br>
 

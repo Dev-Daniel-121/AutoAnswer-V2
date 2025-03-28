@@ -3,4 +3,4 @@ class RealizarTarefa:
         pass
 
     def run(self):
-        pass
+        input(f'\n\nPrecione\n\n')
