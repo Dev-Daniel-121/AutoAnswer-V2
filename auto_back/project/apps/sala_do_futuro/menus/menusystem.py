@@ -76,7 +76,7 @@ class MenuSystem:
                     menu_system = MenuSystem()
                     menu_system.apps(nome_usuario=f'{self.usuario.nome} {self.usuario.sobrenome}', id_usuario=self.usuario.id_usuario)
 
-                    # return
+                    return
                 else:
                     print(f'[{types[4]}] Opção inválida: {choice}')
                     continue

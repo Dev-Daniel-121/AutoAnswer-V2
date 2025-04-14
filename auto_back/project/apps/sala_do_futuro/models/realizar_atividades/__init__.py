@@ -1,7 +1,7 @@
 from .realizar_atividades import RealizarAtividades
-from .models import DoProvas, DoRedacao, DoTarefas, RealizarProva, RealizarRedacao, RealizarTarefa
+from .models import DoProvas, DoRedacao, DoTarefas, RealizarProva, RealizarRedacao, CollectInfo, RealizarTarefa
 
 __all__ = [
     'RealizarAtividades',
-    'DoProvas', 'DoRedacao', 'DoTarefas', 'RealizarProva', 'RealizarRedacao', 'RealizarTarefa'
+    'DoProvas', 'DoRedacao', 'DoTarefas', 'RealizarProva', 'RealizarRedacao', 'CollectInfo', 'RealizarTarefa'
 ]

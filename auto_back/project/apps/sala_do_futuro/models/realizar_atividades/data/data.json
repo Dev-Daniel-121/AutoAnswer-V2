@@ -1,0 +1,151 @@
+{
+    "answers": {
+        "tarefas": {
+            "task_1": {
+                "quest_1": {
+                    "time": {
+                        "day": "02/05/2025",
+                        "start_time": "12:00",
+                        "end_time": "12:05"
+                    },
+                    "quest_type": "Radio",
+                    "quest": "Escolha alteranativa correta",
+                    "alters": {
+                        "A": "Alternativa A",
+                        "B": "Alternativa B",
+                        "C": "Alternativa C",
+                        "D": "Alternativa D"
+                    },
+                    "answer": {
+                        "A": "Alternativa A"
+                    }
+                },
+                "quest_2": {
+                    "time": {
+                        "day": "02/05/2025",
+                        "start_time": "12:00",
+                        "end_time": "12:05"
+                    },
+                    "quest_type": "Check",
+                    "quest": "Escolha alteranativa correta",
+                    "alters": {
+                        "A": "Alternativa A",
+                        "B": "Alternativa B",
+                        "C": "Alternativa C",
+                        "D": "Alternativa D"
+                    },
+                    "answer": {
+                        "A": "Alternativa A",
+                        "C": "Alternativa C",
+                        "D": "Alternativa D"
+                    }
+                }
+            }
+        },
+        "redacao": {
+            "task_1": {
+                "quest_1": {
+                    "time": {
+                        "day": "02/05/2025",
+                        "start_time": "12:00",
+                        "end_time": "12:05"
+                    },
+                    "quest_type": "Radio",
+                    "quest": "Escolha alteranativa correta",
+                    "alters": {
+                        "A": "Alternativa A",
+                        "B": "Alternativa B",
+                        "C": "Alternativa C",
+                        "D": "Alternativa D"
+                    },
+                    "answer": {
+                        "A": "Alternativa A"
+                    }
+                },
+                "quest_2": {
+                    "time": {
+                        "day": "02/05/2025",
+                        "start_time": "12:00",
+                        "end_time": "12:05"
+                    },
+                    "quest_type": "Check",
+                    "quest": "Escolha alteranativa correta",
+                    "alters": {
+                        "A": "Alternativa A",
+                        "B": "Alternativa B",
+                        "C": "Alternativa C",
+                        "D": "Alternativa D"
+                    },
+                    "answer": {
+                        "A": "Alternativa A",
+                        "C": "Alternativa C",
+                        "D": "Alternativa D"
+                    }
+                }
+            }
+        },
+        "prova": {
+            "task_1": {
+                "quest_1": {
+                    "time": {
+                        "day": "02/05/2025",
+                        "start_time": "12:00",
+                        "end_time": "12:05"
+                    },
+                    "quest_type": "Radio",
+                    "quest": "Escolha alteranativa correta",
+                    "alters": {
+                        "A": "Alternativa A",
+                        "B": "Alternativa B",
+                        "C": "Alternativa C",
+                        "D": "Alternativa D"
+                    },
+                    "answer": {
+                        "A": "Alternativa A"
+                    }
+                },
+                "quest_2": {
+                    "time": {
+                        "day": "02/05/2025",
+                        "start_time": "12:00",
+                        "end_time": "12:05"
+                    },
+                    "quest_type": "Check",
+                    "quest": "Escolha alteranativa correta",
+                    "alters": {
+                        "A": "Alternativa A",
+                        "B": "Alternativa B",
+                        "C": "Alternativa C",
+                        "D": "Alternativa D"
+                    },
+                    "answer": {
+                        "A": "Alternativa A",
+                        "C": "Alternativa C",
+                        "D": "Alternativa D"
+                    }
+                }
+            }
+        }
+    },
+    "tarefas": {
+        "task_1": {
+            "task_info": {},
+            "user_1": {},
+            "user_2": {}
+        }
+    },
+    "redacao": {
+        "task_1": {
+            "task_info": {},
+            "user_1": {},
+            "user_2": {}
+        }
+    },
+    "prova": {
+        "task_1": {
+            "task_info": {},
+            "user_1": {},
+            "user_2": {}
+        }
+    }
+}

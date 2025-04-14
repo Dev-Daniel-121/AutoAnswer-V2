@@ -3,7 +3,7 @@ from .do_redacao import DoRedacao
 from .do_tarefas import DoTarefas
 from .provas import RealizarProva
 from .redacoes import RealizarRedacao
-from .tarefas import RealizarTarefa
+from .tarefas import CollectInfo, RealizarTarefa
 
 __all__ = [
     'DoProvas',
@@ -11,5 +11,6 @@ __all__ = [
     'DoTarefas',
     'RealizarProva',
     'RealizarRedacao',
+    'CollectInfo',
     'RealizarTarefa'
 ]
