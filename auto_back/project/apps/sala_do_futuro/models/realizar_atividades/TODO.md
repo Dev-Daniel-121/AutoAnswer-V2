@@ -249,13 +249,15 @@
 
 <br><br><br>
 
-| O que está sendo feito     | Tempo Inicio | Tempo Fim | Tempo Total |
-| :------------------------- | :----------: | :-------: | :---------: |
-| Planejado DATA JSON        |    15:15     |   15:30   |    15min    |
-| Varredura do Site          |    15:31     |           |             |
-| Correção no Código e Teste |    15:31     |   15:34   |    3min     |
-| Fazendo coletar Task Info  |    16:40     |           |             |
-|                            |              |           |             |
+| O que está sendo feito                                             | Tempo Inicio | Tempo Fim | Tempo Total |
+| :----------------------------------------------------------------- | :----------: | :-------: | :---------: |
+| Coletanto Informações da Lição                                     |    15:04     |           |             |
+| Refatoração do Código para importação do CollectInfo e subarquivos |    15:10     |           |             |
+| Criação das pastas e subpastas do Collect_Info                     |    15:10     |   15:15   |    5min     |
+| Almoço                                                             |    15:15     |   15:41   |    26min    |
+| Estudo Promi.                                                      |    15:41     |           |             |
+| ETEC                                                               |    16:12     |   16:50   |    38min    |
+|                                                                    |              |           |             |
 
 <br><br><br>
 

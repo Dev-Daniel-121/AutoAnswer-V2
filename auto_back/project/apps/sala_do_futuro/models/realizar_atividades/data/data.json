@@ -1,7 +1,7 @@
 {
     "answers": {
-        "tarefas": {
-            "task_1": {
+        "tarefa": {
+            "id_task": {
                 "quest_1": {
                     "time": {
                         "day": "02/05/2025",
@@ -43,7 +43,7 @@
             }
         },
         "redacao": {
-            "task_1": {
+            "id_task": {
                 "quest_1": {
                     "time": {
                         "day": "02/05/2025",
@@ -85,7 +85,7 @@
             }
         },
         "prova": {
-            "task_1": {
+            "id_task": {
                 "quest_1": {
                     "time": {
                         "day": "02/05/2025",

@@ -54,7 +54,7 @@ class DoProvas:
                 print(f'[{types[3]}] Sua escolha foi: {user_choices}')
 
                 for choice in user_choices:
-                    print(f'\nExecutando escolha: {choice}')
+                    print(f'\nExecutando escolha: {choice}\n')
                 
                 input('\nPressione Enter para continuar...')
                 return
@@ -82,7 +82,7 @@ class DoProvas:
                 print(f'[{types[3]}] Sua escolha foi: {user_choices}')
 
                 for choice in user_choices:
-                    print(f'\nExecutando escolha: {choice}')
+                    print(f'\nExecutando escolha: {choice}\n')
                 
                 input('\nPressione Enter para continuar...')
                 return

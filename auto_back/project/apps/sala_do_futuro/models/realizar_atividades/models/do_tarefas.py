@@ -57,7 +57,7 @@ class DoTarefas:
                 print(f'[{types[3]}] Sua escolha foi: {user_choices}')
 
                 for choice in user_choices:
-                    print(f'\n[{types[9]}] Executando escolha: {choice}')
+                    print(f'\n[{types[9]}] Executando escolha: {choice}\n')
                     self.activities.enter_activity(activity_class=f':nth-match(div.css-fm7u1u, {choice})', btn_enter_activity_class='button.css-g82asz')
                     self.realizarTarefa.run(user=user, id_usuario=id_usuario)
                 
@@ -87,7 +87,7 @@ class DoTarefas:
                 print(f'[{types[3]}] Sua escolha foi: {user_choices}')
 
                 for choice in user_choices:
-                    print(f'\n[{types[9]}] Executando escolha: {choice}')
+                    print(f'\n[{types[9]}] Executando escolha: {choice}\n')
                 
                 input(f'\n[{types[6]}] Pressione Enter para continuar...')
                 return
