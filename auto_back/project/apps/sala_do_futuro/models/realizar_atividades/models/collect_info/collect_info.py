@@ -1,98 +1,33 @@
-from project import types
-import json, os
+from .collect_tarefas import CollectTarefas, CollectTaskInfos
+from .collect_json import CollectJson
+from project import Display, types
 
 class CollectInfo:
-    def __init__(self, page, 
-                component_class = 'h6.css-yq44kw',
-                title_activity_class = 'p.css-zscg42',
-                user_activity_class = ':nth-match(p.css-dyxuuh, 1)',
-                author_activity_class = ':nth-match(p.css-dyxuuh, 2)',
-                class_activity_class = ':nth-match(p.css-dyxuuh, 3)',
-                expire_activity_class = ':nth-match(p.css-dyxuuh, 4)',
-                id_activity_class = ':nth-match(p.css-dyxuuh, 5)'
-            ):
+    def __init__(self, page):
         self.page = page
-        self.component_class = component_class
-        self.title_activity_class = title_activity_class
-        self.user_activity_class = user_activity_class
-        self.author_activity_class = author_activity_class
-        self.class_activity_class = class_activity_class
-        self.expire_activity_class = expire_activity_class
-        self.id_activity_class = id_activity_class
+        self.display = Display
+        self.collect_json = CollectJson()
+        self.collect_tarefas = CollectTarefas()
+        self.collect_task_infos = CollectTaskInfos(
+            page = self.page,
+            component_class = 'h6.css-yq44kw',
+            title_activity_class = 'p.css-zscg42',
+            user_activity_class = ':nth-match(p.css-dyxuuh, 1)',
+            author_activity_class = ':nth-match(p.css-dyxuuh, 2)',
+            class_activity_class = ':nth-match(p.css-dyxuuh, 3)',
+            expire_activity_class = ':nth-match(p.css-dyxuuh, 4)',
+            id_activity_class = ':nth-match(p.css-dyxuuh, 5)'
+        )
 
-    def collect_task_info(self):
+    def run(self, user, id_usuario):
+        component, title_activity, user_activity, author_activity, class_activity, expire_activity, id_activity = self.collect_task_infos.run()
+
+        options = self.display(data='', title=f'{component} - {id_activity}', answer=False, user=f'{user}', title_quest='')
+        options.display()
+        
+        self.collect_json.run(component='tarefa', id_activity=id_activity)
+
         print(f'[{types[9]}] Coletando informações da Atividade...\n')
-        
-        def extract_clean_text(selector):
-            return self.page.locator(selector).evaluate(
-                '''
-                node => {
-                    const label = node.querySelector("p");
-                    return node.textContent.replace(label?.textContent || "", "").trim();
-                }
-                '''
-            )
-
-        component = self.page.locator(self.component_class).inner_text()
-        title_activity = self.page.locator(self.title_activity_class).inner_text()
-        user_activity = extract_clean_text(self.user_activity_class)
-        author_activity = extract_clean_text(self.author_activity_class)
-        class_activity = extract_clean_text(self.class_activity_class)
-        expire_activity = extract_clean_text(self.expire_activity_class)
-        id_activity = extract_clean_text(self.id_activity_class)
-
-        return component, title_activity, user_activity, author_activity, class_activity, expire_activity, id_activity
-
-    def collect_quest(self):
-        pass
-
-    def collect_text(self):
-        pass
-
-    def collect_img(self):
-        pass
-
-    def collect_mp4(self):
-        pass
-
-    def collect_json(self, component, id_activity):
-        print(f'[{types[9]}] Vericando se há JSON respostas para essa Atividade...')
-
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        json_path = os.path.join(base_dir, 'data', 'data.json')
-
-        if not os.path.exists(json_path):
-            print(f'[{types[4]}] O arquivo JSON não foi encontrado em {json_path}')
-            return
-
-        with open(json_path, 'r') as file:
-            data = json.load(file)
-
-        if component not in data['answers']:
-            print(f'[{types[4]}] Componente \'{component}\' não encontrado nas respostas.')
-            return
-        
-        component_data = data['answers'][component]
-        
-        if id_activity in component_data:
-            print(f'[{types[7]}] Encontrado \'Respostas Salvas\' para essa Atividade!')
-
-            resposta = input(f'[{types[0]}] Usar \'data.json\'? (Y/n): ').strip().upper()
-            if resposta == '': 
-                resposta = 'Y'
-            
-            if resposta == 'Y':
-                print('Usando \'data.json\'')
-            else:
-                print('\'data.json\' não será utilizado')
-        else:
-            print(f'[{types[4]}] Nenhum \'Respostas Salvas\' encontrado para essa Atividade!')
-
-    def run_collect(self):
-        pass
-
-    def run(self):
-        pass
 
 """
 

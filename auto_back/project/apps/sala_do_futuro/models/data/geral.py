@@ -61,14 +61,23 @@ class Geral:
     def faltas(self):
         try:
             faltas_num = self.page.locator(f':nth-match({self.values_class}, 3)').inner_text()
+
+            if faltas_num == """Boletim
+
+e Avaliações""":
+                return 'Sem faltas'
+            
         except Exception as e:
             print(f'[{types[4]}] Erro ao o número de faltas: {e}')
 
         return faltas_num
 
-    def boletim(self):
+    def boletim(self, faltas_num):
         try:
-            boletim_num = self.page.locator(f':nth-match({self.values_class}, 4)').inner_text()
+            if faltas_num == 'Sem faltas': 
+                boletim_num = self.page.locator(f':nth-match({self.values_class}, 3)').inner_text()
+            else: 
+                boletim_num = self.page.locator(f':nth-match({self.values_class}, 4)').inner_text()
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter o status do boletim: {e}')
             
@@ -86,7 +95,7 @@ class Geral:
 
         mensagem_nao_lida_num = self.mensagem_nao_lida()
         faltas_num = self.faltas()
-        boletim_num = self.boletim()
+        boletim_num = self.boletim(faltas_num=faltas_num)
 
         print(f'\n~~~~~~ Geral ~~~~~~\n')
         print(f'[{types[9]}] Pendências: \t\t{pendencias_total}')

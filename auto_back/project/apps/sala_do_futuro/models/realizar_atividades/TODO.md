@@ -249,15 +249,12 @@
 
 <br><br><br>
 
-| O que está sendo feito                                             | Tempo Inicio | Tempo Fim | Tempo Total |
-| :----------------------------------------------------------------- | :----------: | :-------: | :---------: |
-| Coletanto Informações da Lição                                     |    15:04     |           |             |
-| Refatoração do Código para importação do CollectInfo e subarquivos |    15:10     |           |             |
-| Criação das pastas e subpastas do Collect_Info                     |    15:10     |   15:15   |    5min     |
-| Almoço                                                             |    15:15     |   15:41   |    26min    |
-| Estudo Promi.                                                      |    15:41     |           |             |
-| ETEC                                                               |    16:12     |   16:50   |    38min    |
-|                                                                    |              |           |             |
+| O que está sendo feito             | Tempo Inicio | Tempo Fim | Tempo Total |
+| :--------------------------------- | :----------: | :-------: | :---------: |
+| Refatoração do Código              |    09:41     |   10:34   |    53min    |
+| Coletando informações da Lição     |    09:42     |   10:00   |    18min    |
+| Coletando informações das questões |    13:30     |           |             |
+|                                    |              |           |             |
 
 <br><br><br>
 
