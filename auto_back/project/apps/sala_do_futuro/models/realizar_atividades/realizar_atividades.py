@@ -9,7 +9,7 @@ class RealizarAtividades:
         self.doTarefas = DoTarefas(page=self.page)
         self.doRedacao = DoRedacao(page=self.page)
         self.doProvas = DoProvas(page=self.page)
-        self.activities = Activities(page=self.page, total_activities_class='div.css-fm7u1u', get_component_name_class='p.css-9kams2', get_component_day_class='p.css-1d78sd9', get_component_date_class='p.css-1gwkyaz')
+        self.activities = Activities(page=self.page, total_activities_class='div.css-fm7u1u', get_component_name_class='p.css-1is68np', get_component_day_class='p.css-1d78sd9', get_component_date_class='p.css-1gwkyaz')
         self.sections = Sections(page=self.page, sections_turmas_class=':nth-match(div.css-39ukww, 1)', sections_status_class=':nth-match(div.css-39ukww, 2)', sections_componentes_class='input.css-scvshb')
 
     def get_task_infos(self):

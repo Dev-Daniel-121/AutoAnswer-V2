@@ -1,11 +1,13 @@
 from .collect_tarefas import CollectTarefas, CollectTaskInfos
 from .collect_json import CollectJson
 from project import Display, types
+from .collect_time import Time
 
 class CollectInfo:
     def __init__(self, page):
         self.page = page
         self.display = Display
+        self.time = Time()
         self.collect_json = CollectJson()
         self.collect_tarefas = CollectTarefas()
         self.collect_task_infos = CollectTaskInfos(
@@ -24,10 +26,14 @@ class CollectInfo:
 
         options = self.display(data='', title=f'{component} - {id_activity}', answer=False, user=f'{user}', title_quest='')
         options.display()
-        
+
+        self.time.timer(seconds=60)
+
         self.collect_json.run(component='tarefa', id_activity=id_activity)
 
         print(f'[{types[9]}] Coletando informações da Atividade...\n')
+
+        self.time.tempo_restante()
 
 """
 

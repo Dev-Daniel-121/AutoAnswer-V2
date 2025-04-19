@@ -213,13 +213,13 @@
 
 # Classificação e Númeração
 
-|              Importância               | Tarefas                                                                                                 | Duração |                  Status                   |                                        Porcent                                         |
-| :------------------------------------: | :------------------------------------------------------------------------------------------------------ | :-----: | :---------------------------------------: | :------------------------------------------------------------------------------------: |
-| <div class="classification a">A1</div> | Varrer a lição                                                                                          | 20 min  |   <div class="status doing">Doing</div>   | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
-| <div class="classification a">A2</div> | Classificar como TXT, IMG, Mp4 ou Quest                                                                 | 20 min  | <div class="status waiting">Waiting</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
-| <div class="classification a">A3</div> | Númerar e classifcar as quest como Radios, Checkbox, Textarea, Dragable, Order, Select ou Select Order. | 20 min  | <div class="status waiting">Waiting</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
+|              Importância               | Tarefas                                                                                                 | Duração |                Status                 |                                        Porcent                                         |
+| :------------------------------------: | :------------------------------------------------------------------------------------------------------ | :-----: | :-----------------------------------: | :------------------------------------------------------------------------------------: |
+| <div class="classification a">A1</div> | Varrer a lição                                                                                          | 20 min  | <div class="status doing">Doing</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
+| <div class="classification a">A2</div> | Classificar como TXT, IMG, Mp4 ou Quest                                                                 | 20 min  | <div class="status doing">Doing</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
+| <div class="classification a">A3</div> | Númerar e classifcar as quest como Radios, Checkbox, Textarea, Dragable, Order, Select ou Select Order. | 20 min  | <div class="status doing">Doing</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
 
-<div class="progress bad"><div class="porcent" style="width: 33%">33</div></div>
+<div class="progress half"><div class="porcent" style="width: 50%">50</div></div>
 
 <br>
 
@@ -249,12 +249,12 @@
 
 <br><br><br>
 
-| O que está sendo feito             | Tempo Inicio | Tempo Fim | Tempo Total |
-| :--------------------------------- | :----------: | :-------: | :---------: |
-| Refatoração do Código              |    09:41     |   10:34   |    53min    |
-| Coletando informações da Lição     |    09:42     |   10:00   |    18min    |
-| Coletando informações das questões |    13:30     |           |             |
-|                                    |              |           |             |
+| O que está sendo feito                           | Tempo Inicio | Tempo Fim |  Tempo Total  |
+| :----------------------------------------------- | :----------: | :-------: | :-----------: |
+| Cronometrar e verificar tempo gasto na atividade |    12:15     |   12:30   |     15min     |
+| Coletar informações da Lição                     |              |           | 30min + 15min |
+| Respondendo a Lição                              |              |           | 30min + 15min |
+|                                                  |              |           |               |
 
 <br><br><br>
 

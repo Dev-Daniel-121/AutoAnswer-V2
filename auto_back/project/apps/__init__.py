@@ -1,5 +1,5 @@
-from .sala_do_futuro import SalaDoFuturo, MenuSystem, Agenda, Data, Geral, Tarefas, Activities, Go, Sections, LoginUser, LoginAluno, VerifyLogin, RealizarAtividades, CollectJson, CollectProvas, CollectRedacoes, CollectTarefas, CollectTaskInfos, CollectInfo, DoProvas, DoRedacao, DoTarefas, RealizarProva, RealizarRedacao, RealizarTarefa
+from .sala_do_futuro import SalaDoFuturo, MenuSystem, Agenda, Data, Geral, Tarefas, Activities, Go, Sections, LoginUser, LoginAluno, VerifyLogin, RealizarAtividades, CollectJson, CollectProvas, CollectRedacoes, CollectTarefas, CollectTaskInfos, Time, CollectInfo, DoProvas, DoRedacao, DoTarefas, RealizarProva, RealizarRedacao, RealizarTarefa
 
 __all__ = [
-    'SalaDoFuturo', 'MenuSystem', 'Agenda', 'Data', 'Geral', 'Tarefas', 'Activities', 'Go', 'Sections', 'LoginUser', 'LoginAluno', 'VerifyLogin', 'RealizarAtividades', 'CollectJson', 'CollectProvas', 'CollectRedacoes', 'CollectTarefas', 'CollectTaskInfos', 'CollectInfo', 'DoProvas', 'DoRedacao', 'DoTarefas', 'RealizarProva', 'RealizarRedacao', 'RealizarTarefa'
+    'SalaDoFuturo', 'MenuSystem', 'Agenda', 'Data', 'Geral', 'Tarefas', 'Activities', 'Go', 'Sections', 'LoginUser', 'LoginAluno', 'VerifyLogin', 'RealizarAtividades', 'CollectJson', 'CollectProvas', 'CollectRedacoes', 'CollectTarefas', 'CollectTaskInfos', 'Time', 'CollectInfo', 'DoProvas', 'DoRedacao', 'DoTarefas', 'RealizarProva', 'RealizarRedacao', 'RealizarTarefa'
 ]
