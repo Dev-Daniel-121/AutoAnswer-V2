@@ -9,7 +9,7 @@ class CollectInfo:
         self.display = Display
         self.time = Time()
         self.collect_json = CollectJson()
-        self.collect_tarefas = CollectTarefas()
+        self.collect_tarefas = CollectTarefas(page=self.page)
         self.collect_task_infos = CollectTaskInfos(
             page = self.page,
             component_class = 'h6.css-yq44kw',
@@ -31,7 +31,7 @@ class CollectInfo:
 
         self.collect_json.run(component='tarefa', id_activity=id_activity)
 
-        print(f'[{types[9]}] Coletando informações da Atividade...\n')
+        self.collect_tarefas.run()
 
         self.time.tempo_restante()
 
