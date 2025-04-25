@@ -17,12 +17,18 @@ class SalaDoFuturo:
         print(f'\n[{types[9]}] Iniciando automação para {usuario.nome} {usuario.sobrenome} ({usuario.tipo_conta})')
 
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=False)
-            page = browser.new_page()
-            page.goto('https://saladofuturo.educacao.sp.gov.br/')
+            try:
+                browser = p.chromium.launch(headless=False)
+                page = browser.new_page()
+                page.goto('https://saladofuturo.educacao.sp.gov.br/')
+            except Exception as e:
+                print(f'[{types[4]}] Erro ao entrar no site Sala Do Futuro. {e}')
             
-            menu_system = MenuSystem(page)
-            menu_system.run(usuario)
+            try:
+                menu_system = MenuSystem(page)
+                menu_system.run(usuario)
+            except Exception as e:
+                print(f'[{types[4]}] Erro ao inicializar Sistema De Menu. {e}')
 
 '''
     {

@@ -213,11 +213,11 @@
 
 # Classificação e Númeração
 
-|              Importância               | Tarefas                                                                                                 | Duração |                Status                 |                                        Porcent                                         |
-| :------------------------------------: | :------------------------------------------------------------------------------------------------------ | :-----: | :-----------------------------------: | :------------------------------------------------------------------------------------: |
-| <div class="classification a">A1</div> | Varrer a lição                                                                                          | 20 min  | <div class="status doing">Done</div> | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
-| <div class="classification a">A2</div> | Classificar como TXT, IMG, Mp4 ou Quest                                                                 | 20 min  | <div class="status doing">Doing</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 25%">25</div></div> |
-| <div class="classification a">A3</div> | Númerar e classifcar as quest como Radios, Checkbox, Textarea, Dragable, Order, Select ou Select Order. | 20 min  | <div class="status doing">Doing</div> | <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div> |
+|              Importância               | Tarefas                                                                                                 | Duração |                Status                 |                                             Porcent                                             |
+| :------------------------------------: | :------------------------------------------------------------------------------------------------------ | :-----: | :-----------------------------------: | :---------------------------------------------------------------------------------------------: |
+| <div class="classification a">A1</div> | Varrer a lição                                                                                          | 20 min  | <div class="status doing">Done</div>  | <div class="progress_porcent excelent"><div class="porcent" style="width: 100%">100</div></div> |
+| <div class="classification a">A2</div> | Classificar como TXT, IMG, Mp4 ou Quest                                                                 | 20 min  | <div class="status doing">Doing</div> |    <div class="progress_porcent bad"><div class="porcent" style="width: 25%">25</div></div>     |
+| <div class="classification a">A3</div> | Númerar e classifcar as quest como Radios, Checkbox, Textarea, Dragable, Order, Select ou Select Order. | 20 min  | <div class="status doing">Doing</div> |     <div class="progress_porcent bad"><div class="porcent" style="width: 0%">0</div></div>      |
 
 <div class="progress half"><div class="porcent" style="width: 50%">50</div></div>
 
@@ -252,8 +252,14 @@
 | O que está sendo feito                           | Tempo Inicio | Tempo Fim |  Tempo Total  |
 | :----------------------------------------------- | :----------: | :-------: | :-----------: |
 | Cronometrar e verificar tempo gasto na atividade |    12:15     |   12:30   |     15min     |
-| Coletar informações da Lição                     |    12:57     |           | 30min + 15min |
+| Coletar informações da Lição                     |    14:25     |   14:50   |     25min     |
+| Coletar inforamções das Questões                 |    16:39     |   17:04   |     25min     |
+| Criar JSON para receber resposta                 |              |           |               |
+| Colocar na área de Transferencia do Usuário      |              |           |               |
+| Esperar respostas                                |              |           |               |
 | Respondendo a Lição                              |              |           | 30min + 15min |
+| Esperar 1min pela resposta                       |              |           |               |
+|                                                  |              |           |               |
 |                                                  |              |           |               |
 
 <br><br><br>
@@ -302,7 +308,7 @@
                     "num_de_chutes": "", # Número total de chutes
                     "num_de_user_resposta": "", # Número total de vezes que o usuário respondeu sem o programa
                     "feedback_usuario": "",
-                    "dificuldade": "", # Fácil, Média, Difícil
+                    "dificuldade": "", # 1- Fácil, 2- Média, 3- Difícil
                     "historico_tentativas": [
                         { "tentativa": 1, "autor": "", "resultado": "", "tempo": "" },
                     ],

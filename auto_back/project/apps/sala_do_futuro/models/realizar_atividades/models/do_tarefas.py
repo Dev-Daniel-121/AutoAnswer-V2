@@ -19,6 +19,9 @@ class DoTarefas:
         if choice_input in ('*', 'all'):
             return list(range(1, len(task_infos)))
         
+        if choice_input == len(task_infos):
+            return
+        
         for part in choice_input.split(','):
             part = part.strip()
             if not part:
