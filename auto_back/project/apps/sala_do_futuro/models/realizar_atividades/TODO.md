@@ -253,7 +253,9 @@
 | :----------------------------------------------- | :----------: | :-------: | :-----------: |
 | Cronometrar e verificar tempo gasto na atividade |    12:15     |   12:30   |     15min     |
 | Coletar informações da Lição                     |    14:25     |   14:50   |     25min     |
-| Coletar inforamções das Questões                 |    16:39     |   17:04   |     25min     |
+| Coletar inforamções das Questões                 |    17:57     |   18:21   |     25min     |
+| melhorado códiog task_info (self)                |    18:00     |   18:09   |     9min      |
+| Teste das altearções                             |    18:09     |   18:16   |     7min      |
 | Criar JSON para receber resposta                 |              |           |               |
 | Colocar na área de Transferencia do Usuário      |              |           |               |
 | Esperar respostas                                |              |           |               |

@@ -1,4 +1,4 @@
-from .question import Question
+from .questionarie import Question
 from .task_info import TaskInfo
 from .collect_task_info import CollectTaskInfo
 

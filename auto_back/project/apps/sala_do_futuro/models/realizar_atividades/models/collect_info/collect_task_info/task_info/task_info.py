@@ -1,8 +1,17 @@
 from project import types
+import re
 
 class TaskInfo:
-    def __init__(self, page, activity_status):
+    def __init__(
+            self, page, activity_status,
+            activity_type_class = ':nth-match(li.MuiBreadcrumbs-li, 2)',
+            material_activity_class = 'h6.css-yq44kw',
+            activity_title_class = 'p.css-zscg42'
+        ):
         self.activity_status = activity_status
+        self.activity_type_class = activity_type_class
+        self.material_activity_class = material_activity_class
+        self.activity_title_class = activity_title_class
         self.types = types
         self.page = page
 
@@ -15,8 +24,7 @@ class TaskInfo:
 
     def get_activity_type(self):
         try:
-            activity_type_class = ':nth-match(li.MuiBreadcrumbs-li, 2)'
-            activity_type = self.page.locator(f'{activity_type_class}').text_content()
+            activity_type = self.page.locator(f'{self.activity_type_class}').text_content()
             return activity_type
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter tipo da atividade: {e}')
@@ -24,17 +32,17 @@ class TaskInfo:
     
     def get_material_activity(self):
         try:
-            material_activity_class = 'h6.css-yq44kw'
-            material_activity = self.page.locator(f'{material_activity_class}').text_content()
-            return material_activity
+            material_activity = self.page.locator(f'{self.material_activity_class}').text_content()
+            subject_name = re.sub(r'\s*-\s*\d+$', '', material_activity.strip())
+            
+            return subject_name
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter matéria da atividade: {e}')
             return
 
     def get_activity_title(self):
         try:
-            activity_title_class = 'p.css-zscg42'
-            activity_title = self.page.locator(f'{activity_title_class}').text_content()
+            activity_title = self.page.locator(f'{self.activity_title_class}').text_content()
             return activity_title
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter título da atividade: {e}')
