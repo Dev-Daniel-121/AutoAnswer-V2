@@ -29,7 +29,7 @@ class Activities:
             if activity.is_visible():
                 activity.hover()
 
-                btn_enter_activity.wait_for(state="visible")
+                btn_enter_activity.wait_for(state='visible')
                 btn_enter_activity.click()
             else:
                 print(f'[{types[4]}] Atividade não está visível: {activity_class}')

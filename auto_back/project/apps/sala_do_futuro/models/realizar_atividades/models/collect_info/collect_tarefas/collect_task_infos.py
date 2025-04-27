@@ -23,8 +23,8 @@ class CollectTaskInfos:
         return self.page.locator(selector).evaluate(
             '''
             node => {
-                const label = node.querySelector("p");
-                return node.textContent.replace(label?.textContent || "", "").trim();
+                const label = node.querySelector(\'p\');
+                return node.textContent.replace(label?.textContent || \'\', \'\').trim();
             }
             '''
         )

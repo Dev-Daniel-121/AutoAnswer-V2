@@ -2,6 +2,7 @@ from .collect_tarefas import CollectTarefas, CollectTaskInfos
 from .collect_json import CollectJson
 from project import Display, types
 from .collect_time import Time
+# from 
 
 class CollectInfo:
     def __init__(self, page):

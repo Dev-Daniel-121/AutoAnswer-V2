@@ -50,18 +50,18 @@ class TaskInfo:
 
     def get_activity_infos(self):
         try:
-            elements = self.page.query_selector_all("p.css-dyxuuh")
+            elements = self.page.query_selector_all('p.css-dyxuuh')
 
             extracted_texts = []
 
             for el in elements:
                 full_text = (el.text_content()).strip()
 
-                inner_p = el.query_selector_all("p")
+                inner_p = el.query_selector_all('p')
 
                 for inner in inner_p:
                     inner_text = (inner.text_content()).strip()
-                    full_text = full_text.replace(inner_text, "").strip()
+                    full_text = full_text.replace(inner_text, '').strip()
 
                 extracted_texts.append(full_text)
 
