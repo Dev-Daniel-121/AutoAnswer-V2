@@ -9,8 +9,6 @@ class CollectTarefas:
         self.card_quests = CardQuests(page=self.page, quests_card_class='div.css-b200pa')
 
     def run(self):
-        print(f'[{types[9]}] Coletando informações da Lição...\n')
-
         num_card_info = self.card_info.count()
         radios, checkboxes, right_wrong, total, unknown_type_indexes = self.card_quests.count_quest_types()
 

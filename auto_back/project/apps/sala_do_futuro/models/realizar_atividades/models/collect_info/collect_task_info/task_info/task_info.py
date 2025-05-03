@@ -4,9 +4,9 @@ import re
 class TaskInfo:
     def __init__(
             self, page, activity_status,
-            activity_type_class = ':nth-match(li.MuiBreadcrumbs-li, 2)',
-            material_activity_class = 'h6.css-yq44kw',
-            activity_title_class = 'p.css-zscg42'
+            activity_type_class,
+            material_activity_class,
+            activity_title_class
         ):
         self.activity_status = activity_status
         self.activity_type_class = activity_type_class
@@ -80,12 +80,14 @@ class TaskInfo:
         activity_title = self.get_activity_title()
         user, author, class_school, expires_in, site_activity_id = self.get_activity_infos()
 
-        print(f'Status Atividade: {status_activity}')
-        print(f'Tipo Atividade: {activity_type}')
-        print(f'Matéria: {material_activity}')
-        print(f'Título Atividade: {activity_title}')
-        print(f'Usuário: {user}')
-        print(f'Autor: {author}')
-        print(f'Turma: {class_school}')
-        print(f'Expira em: {expires_in}')
-        print(f'ID Atividade Site: {site_activity_id}\n')
+        # print(f'Status Atividade: {status_activity}')
+        # print(f'Tipo Atividade: {activity_type}')
+        # print(f'Matéria: {material_activity}')
+        # print(f'Título Atividade: {activity_title}')
+        # print(f'Usuário: {user}')
+        # print(f'Autor: {author}')
+        # print(f'Turma: {class_school}')
+        # print(f'Expira em: {expires_in}')
+        # print(f'ID Atividade Site: {site_activity_id}\n')
+
+        return status_activity, activity_type, material_activity, activity_title, user, author, class_school, expires_in, site_activity_id

@@ -1,26 +1,26 @@
 from project import types
 
 class GetRadios:
-    def __init__(
-            self, page,
-            alternative_class='div.css-10zfeld',
-        ):
+    def __init__(self, page, has_radios_class, radios_alternative_class, actual_quest):
         self.page = page
         self.types = types
-        self.alternative_class = alternative_class,
-        self.quest_container = self.page.locator(':nth-match(div.css-b200pa, 1)')
+        self.has_radios_class = has_radios_class
+        self.radios_alternative_class = radios_alternative_class
+        self.actual_quest = actual_quest
 
     def get_alternatives(self):
         try:
             alternatives = []
-            elements = self.quest_container.query_selector_all(self.alternative_class)
-            for el in elements:
-                p = el.query_selector("div.css-1p78i1z p")
-                if p:
-                    text = p.inner_text().strip()
-                    alternatives.append(text)
+            alternatives_container = self.actual_quest.locator(f'{self.has_radios_class}')
+            alternatives_elements = alternatives_container.locator(f'{self.radios_alternative_class}')
+
+            count = alternatives_elements.count()
+            for i in range(count):
+                alt_text = alternatives_elements.nth(i).locator('p').text_content()
+                alternatives.append(alt_text.strip() if alt_text else '')
+            
             return alternatives
+
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter alternatvias da questão: {e}')
-            input('Precione')
-            return
+            print(f'[{self.types[4]}] Erro ao obter alternativas: {e}')
+            return []

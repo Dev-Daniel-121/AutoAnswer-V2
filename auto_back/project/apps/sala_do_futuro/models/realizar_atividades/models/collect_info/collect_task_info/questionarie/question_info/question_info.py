@@ -18,8 +18,5 @@ class QuestionInfo:
             print(f'[{types[4]}] Erro ao obter pontuação: {e}')
             return
 
-    def get_acquired_score(self):
-        pass
-
     def run(self):
         pass

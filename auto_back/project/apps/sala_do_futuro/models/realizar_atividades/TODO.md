@@ -249,8 +249,16 @@
 
 <br><br><br>
 
-| O que está sendo feito                           | Tempo Inicio | Tempo Fim |  Tempo Total  |
-| :----------------------------------------------- | :----------: | :-------: | :-----------: |
+| O que está sendo feito                | Tempo Inicio | Tempo Fim | Tempo Total |
+| :------------------------------------ | :----------: | :-------: | :---------: |
+| Realizar apenas questões Obrigarórias |    20:01     |   20:21   |    20min    |
+| Usar as collect_task_info             |    21:12     |   21:35   |    23min    |
+| Usar o questionarie                   |    21:59     |   22:13   |    14min    |
+| Coletar CardInformativos              |              |           |             |
+|                                       |              |           |             |
+
+<!--
+
 | Cronometrar e verificar tempo gasto na atividade |    12:15     |   12:30   |     15min     |
 | Coletar informações da Lição                     |    14:25     |   14:50   |     25min     |
 | Coletar inforamções das Questões                 |    17:57     |   18:21   |     25min     |
@@ -261,8 +269,8 @@
 | Esperar respostas                                |              |           |               |
 | Respondendo a Lição                              |              |           | 30min + 15min |
 | Esperar 1min pela resposta                       |              |           |               |
-|                                                  |              |           |               |
-|                                                  |              |           |               |
+
+-->
 
 <br><br><br>
 

@@ -1,0 +1,5 @@
+Bugs:
+
+## Ao Carregar Atividades
+   - Erro ao carregar atividades, tente novamente.
+   - Pressionar button.css-1l5shij

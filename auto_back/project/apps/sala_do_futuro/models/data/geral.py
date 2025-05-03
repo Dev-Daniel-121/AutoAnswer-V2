@@ -62,9 +62,9 @@ class Geral:
         try:
             faltas_num = self.page.locator(f':nth-match({self.values_class}, 3)').inner_text()
 
-            if faltas_num == """Boletim
+            if faltas_num == '''Boletim
 
-e Avaliações""":
+e Avaliações''':
                 return 'Sem faltas'
             
         except Exception as e:
