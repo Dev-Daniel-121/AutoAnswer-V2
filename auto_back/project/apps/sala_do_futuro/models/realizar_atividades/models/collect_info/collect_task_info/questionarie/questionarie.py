@@ -1,4 +1,4 @@
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie import Questions
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie import Questions, QuestionInfo
 from project import types
 
 class Questionarie:
@@ -26,6 +26,14 @@ class Questionarie:
                     has_checkbox_class='div.css-107ow6p',
                     actual_quest=actual_quest
                 )
+                question_info = QuestionInfo(
+                    page=self.page,
+                    actual_quest=actual_quest, activity_score_class='p.css-yy9bdr',
+                    score_class='p.css-1dej7zy', quest_section_class='div.css-8atqhb h2'
+                )
+
+                section_text = question_info.get_quest_section()
+                activity_score, score = question_info.get_activity_score()
 
                 quest_type = question_obj.get_quest_type()
                 statement = question_obj.get_question_statement()
@@ -34,6 +42,29 @@ class Questionarie:
 
                 data[i] = {
                     'quest_info': {
+                        'pontuação_da_questao': activity_score or '',
+                        'pontuação_adiquirida': score or '',
+                        'secao': section_text or '',
+                        'num_de_chutes': "",
+                        'num_de_user_resposta': "",
+                        'feedback_usuario': "",
+                        'dificuldade': "",
+                        'historico_tentativas': {
+                            # 0: { 'quest': "", 'autor': "", 'resultado': "", 'tempo': "" },
+                            # 1: { 'quest': "", 'autor': "", 'resultado': "", 'tempo': "" }
+                        },
+                        'num_de_erro': "",
+                        'tipos_de_erro': ["", "", ""],
+                        'logs_de_erro': {
+                            '0': {
+                                'tipo': "",
+                                'detalhes': "",
+                                'questao': "",
+                                'timestamp': ""
+                            }
+                        },
+                        'ia': "",
+                        'tempo_gasto': "",
                     },
                     'quest': {
                         'type': quest_type or '',

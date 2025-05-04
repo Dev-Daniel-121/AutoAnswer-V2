@@ -1,6 +1,5 @@
 from project import types
-import json
-import os
+import json, os
 
 class CollectJson:
     def __init__(self):

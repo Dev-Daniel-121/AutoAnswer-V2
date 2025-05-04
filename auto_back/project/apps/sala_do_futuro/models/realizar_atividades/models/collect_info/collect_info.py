@@ -55,6 +55,7 @@ class CollectInfo:
         self.collect_json.run(component=self.component, id_activity=site_activity_id)
 
         data = self.questionarie.run()
+        print(data)
 
         # self.collect_tarefas.run()
 

@@ -249,13 +249,15 @@
 
 <br><br><br>
 
-| O que está sendo feito                | Tempo Inicio | Tempo Fim | Tempo Total |
-| :------------------------------------ | :----------: | :-------: | :---------: |
-| Realizar apenas questões Obrigarórias |    20:01     |   20:21   |    20min    |
-| Usar as collect_task_info             |    21:12     |   21:35   |    23min    |
-| Usar o questionarie                   |    21:59     |   22:13   |    14min    |
-| Coletar CardInformativos              |              |           |             |
-|                                       |              |           |             |
+| O que está sendo feito         | Tempo Inicio | Tempo Fim | Tempo Total |
+| :----------------------------- | :----------: | :-------: | :---------: |
+| Aramazenar dados no JSON       |    14:37     |           |             |
+| Planejando JSON                |    14:39     |   14:59   |    20min    |
+| Passar dados para answer JSON  |    17:22     |           |             |
+| Coletar Seção e Score da lição |    17:48     |   18:24   |    25min    |
+| Coletar pontos e pontuação Atv |    23:50     |   23:52   |    2min     |
+| Coletar CardInformativos       |              |           |             |
+|                                |              |           |             |
 
 <!--
 

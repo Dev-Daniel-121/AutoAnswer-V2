@@ -2,15 +2,17 @@
     "answers": {
         "tarefa": {
             "id_task": {
-                "quest_1": {
+                "-": {
+                    "user": "",
                     "time": {
                         "day": "02/05/2025",
                         "start_time": "12:00",
                         "end_time": "12:05"
                     },
-                    "quest_type": "Radio",
-                    "quest": "Escolha alteranativa correta",
-                    "alters": {
+                    "required": "",
+                    "type": "Radio",
+                    "statement": "Escolha alteranativa correta",
+                    "alternatives": {
                         "A": "Alternativa A",
                         "B": "Alternativa B",
                         "C": "Alternativa C",
@@ -20,179 +22,23 @@
                         "A": "Alternativa A"
                     }
                 },
-                "quest_2": {
+                "0": {
+                    "user": "",
                     "time": {
                         "day": "02/05/2025",
                         "start_time": "12:00",
                         "end_time": "12:05"
                     },
-                    "quest_type": "Check",
-                    "quest": "Escolha alteranativa correta",
-                    "alters": {
-                        "A": "Alternativa A",
-                        "B": "Alternativa B",
-                        "C": "Alternativa C",
-                        "D": "Alternativa D"
-                    },
-                    "answer": {
-                        "A": "Alternativa A",
-                        "C": "Alternativa C",
-                        "D": "Alternativa D"
-                    }
-                }
-            },
-            "67212663": {
-                "task_info": {
-                    "status_atividade": "",
-                    "id_da_atividade_do_site": "",
-                    "id_da_atividade_gerado_automaticamente": "",
-                    "tipo_atividade": "",
-                    "matéria": "",
-                    "titulo_atividade": "",
-                    "usuario": "",
-                    "autor": "",
-                    "turma": "",
-                    "data_expiracao": "",
-                    "tempo_gasto": "",
-                    "rascunho": "",
-                    "enviado": "",
-                    "tipos_de_questões": {
-                        "card-img": "",
-                        "card-gif": "",
-                        "card-video": "",
-                        "Text": "",
-                        "Radios": "",
-                        "Checkbox": "",
-                        "Dragable": "",
-                        "Order": "",
-                        "Textarea": "",
-                        "Select": ""
-                    }
-                },
-                "questionnaire": {
-                    "general": {
-                        "pontuação_da_atividade": "",
-                        "pontuação_adiquirida": "",
-                        "num_de_textos": "",
-                        "num_de_questoes": "",
-                        "num_de_secoes": "",
-                        "secoes": {
-                            "0": "",
-                            "1": ""
-                        },
-                        "num_de_chutes": "",
-                        "num_de_user_resposta": "",
-                        "feedback_usuario": "",
-                        "dificuldade": "",
-                        "historico_tentativas": {
-                            "0": {
-                                "quest": "",
-                                "autor": "",
-                                "resultado": "",
-                                "tempo": ""
-                            },
-                            "1": {
-                                "quest": "",
-                                "autor": "",
-                                "resultado": "",
-                                "tempo": ""
-                            }
-                        },
-                        "ia": {
-                            "ia1": {
-                                "desempenho_geral": "",
-                                "questoes": [
-                                    "",
-                                    "",
-                                    ""
-                                ],
-                                "sugestoes": {
-                                    "0": "",
-                                    "1": ""
-                                }
-                            },
-                            "ia2": {
-                                "desempenho_geral": "",
-                                "questoes": [
-                                    "",
-                                    "",
-                                    ""
-                                ],
-                                "sugestoes": {
-                                    "0": "",
-                                    "1": ""
-                                }
-                            }
-                        },
-                        "num_de_erros": "",
-                        "tipos_de_erros": [
-                            "",
-                            "",
-                            ""
+                    "quest": {
+                        "type": "Radios",
+                        "required": "True",
+                        "statement": "O tema principal da charge é o Tratado de Versalhes. Leia a frase com atenção:\"O Tratado de Versalhes, assinado no ano de 1919, é o acordo que oficializou o fim da Primeira Guerra Mundial, resolvendo as divergências e, consequentemente, estabelecendo a definitiva paz entre as nações signatárias.\"A partir da análise da charge e de seus conhecimentos sobre o fim da Primeira Guerra Mundial, pode-se dizer que essa afirmação é...",
+                        "alternatives": [
+                            "A) correta.",
+                            "B) parcialmente correta.",
+                            "C) incorreta."
                         ],
-                        "logs_de_erros": {
-                            "0": {
-                                "tipo": "",
-                                "detalhes": "",
-                                "questao": "",
-                                "timestamp": ""
-                            }
-                        }
-                    },
-                    "questions": {
-                        "0": {
-                            "quest_info": {
-                                "pontuação_da_questao": "",
-                                "pontuação_adiquirida": "",
-                                "secao": "",
-                                "num_de_chutes": "",
-                                "num_de_user_resposta": "",
-                                "feedback_usuario": "",
-                                "dificuldade": "",
-                                "historico_tentativas": {
-                                    "0": {
-                                        "quest": "",
-                                        "autor": "",
-                                        "resultado": "",
-                                        "tempo": ""
-                                    },
-                                    "1": {
-                                        "quest": "",
-                                        "autor": "",
-                                        "resultado": "",
-                                        "tempo": ""
-                                    }
-                                },
-                                "num_de_erro": "",
-                                "tipos_de_erro": [
-                                    "",
-                                    "",
-                                    ""
-                                ],
-                                "logs_de_erro": {
-                                    "0": {
-                                        "tipo": "",
-                                        "detalhes": "",
-                                        "questao": "",
-                                        "timestamp": ""
-                                    }
-                                },
-                                "ia": "",
-                                "tempo_gasto": ""
-                            },
-                            "quest": {
-                                "tipo": "",
-                                "enunciado": "",
-                                "alternativas": [
-                                    "",
-                                    "",
-                                    "",
-                                    "",
-                                    ""
-                                ],
-                                "resposta": ""
-                            }
-                        }
+                        "answer": ""
                     }
                 }
             }
@@ -283,10 +129,296 @@
         }
     },
     "tarefas": {
-        "task_1": {
-            "task_info": {},
-            "user_1": {},
-            "user_2": {}
+        "task_id": {
+            "task_info": {
+                "status_atividade": "",
+                "id_da_atividade_do_site": "",
+                "id_da_atividade_gerado_automaticamente": "",
+                "tipo_atividade": "",
+                "matéria": "",
+                "titulo_atividade": "",
+                "usuario": "",
+                "autor": "",
+                "turma": "",
+                "data_expiracao": "",
+                "tempo_gasto": "",
+                "rascunho": "",
+                "enviado": "",
+                "tipos_de_questões": {
+                    "card-img": "",
+                    "card-gif": "",
+                    "card-video": "",
+                    "Text": "",
+                    "Radios": "",
+                    "Checkbox": "",
+                    "Dragable": "",
+                    "Order": "",
+                    "Textarea": "",
+                    "Select": ""
+                }
+            },
+            "user_1": {
+                "id_da_atividade_gerado_automaticamente": {
+                    "questionnaire": {
+                        "general": {
+                            "pontuação_da_atividade": "",
+                            "pontuação_adiquirida": "",
+                            "num_de_textos": "",
+                            "num_de_questoes": "",
+                            "num_de_secoes": "",
+                            "secoes": {
+                                "0": "",
+                                "1": ""
+                            },
+                            "num_de_chutes": "",
+                            "num_de_user_resposta": "",
+                            "feedback_usuario": "",
+                            "dificuldade": "",
+                            "historico_tentativas": {
+                                "0": {
+                                    "quest": "",
+                                    "autor": "",
+                                    "resultado": "",
+                                    "tempo": ""
+                                },
+                                "1": {
+                                    "quest": "",
+                                    "autor": "",
+                                    "resultado": "",
+                                    "tempo": ""
+                                }
+                            },
+                            "ia": {
+                                "ia1": {
+                                    "desempenho_geral": "",
+                                    "questoes": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "sugestoes": {
+                                        "0": "",
+                                        "1": ""
+                                    }
+                                },
+                                "ia2": {
+                                    "desempenho_geral": "",
+                                    "questoes": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "sugestoes": {
+                                        "0": "",
+                                        "1": ""
+                                    }
+                                }
+                            },
+                            "num_de_erros": "",
+                            "tipos_de_erros": [
+                                "",
+                                "",
+                                ""
+                            ],
+                            "logs_de_erros": {
+                                "0": {
+                                    "tipo": "",
+                                    "detalhes": "",
+                                    "questao": "",
+                                    "timestamp": ""
+                                }
+                            }
+                        },
+                        "questions": {
+                            "0": {
+                                "quest_info": {
+                                    "required": "",
+                                    "pontuação_da_questao": "",
+                                    "pontuação_adiquirida": "",
+                                    "secao": "",
+                                    "num_de_chutes": "",
+                                    "num_de_user_resposta": "",
+                                    "feedback_usuario": "",
+                                    "dificuldade": "",
+                                    "historico_tentativas": {
+                                        "0": {
+                                            "quest": "",
+                                            "autor": "",
+                                            "resultado": "",
+                                            "tempo": ""
+                                        },
+                                        "1": {
+                                            "quest": "",
+                                            "autor": "",
+                                            "resultado": "",
+                                            "tempo": ""
+                                        }
+                                    },
+                                    "num_de_erro": "",
+                                    "tipos_de_erro": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "logs_de_erro": {
+                                        "0": {
+                                            "tipo": "",
+                                            "detalhes": "",
+                                            "questao": "",
+                                            "timestamp": ""
+                                        }
+                                    },
+                                    "ia": "",
+                                    "tempo_gasto": ""
+                                },
+                                "quest": {
+                                    "tipo": "",
+                                    "enunciado": "",
+                                    "alternativas": [
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "resposta": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "user_2": {
+                "id_da_atividade_gerado_automaticamente": {
+                    "questionnaire": {
+                        "general": {
+                            "pontuação_da_atividade": "",
+                            "pontuação_adiquirida": "",
+                            "num_de_textos": "",
+                            "num_de_questoes": "",
+                            "num_de_secoes": "",
+                            "secoes": {
+                                "0": "",
+                                "1": ""
+                            },
+                            "num_de_chutes": "",
+                            "num_de_user_resposta": "",
+                            "feedback_usuario": "",
+                            "dificuldade": "",
+                            "historico_tentativas": {
+                                "0": {
+                                    "quest": "",
+                                    "autor": "",
+                                    "resultado": "",
+                                    "tempo": ""
+                                },
+                                "1": {
+                                    "quest": "",
+                                    "autor": "",
+                                    "resultado": "",
+                                    "tempo": ""
+                                }
+                            },
+                            "ia": {
+                                "ia1": {
+                                    "desempenho_geral": "",
+                                    "questoes": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "sugestoes": {
+                                        "0": "",
+                                        "1": ""
+                                    }
+                                },
+                                "ia2": {
+                                    "desempenho_geral": "",
+                                    "questoes": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "sugestoes": {
+                                        "0": "",
+                                        "1": ""
+                                    }
+                                }
+                            },
+                            "num_de_erros": "",
+                            "tipos_de_erros": [
+                                "",
+                                "",
+                                ""
+                            ],
+                            "logs_de_erros": {
+                                "0": {
+                                    "tipo": "",
+                                    "detalhes": "",
+                                    "questao": "",
+                                    "timestamp": ""
+                                }
+                            }
+                        },
+                        "questions": {
+                            "0": {
+                                "quest_info": {
+                                    "required": "",
+                                    "pontuação_da_questao": "",
+                                    "pontuação_adiquirida": "",
+                                    "secao": "",
+                                    "num_de_chutes": "",
+                                    "num_de_user_resposta": "",
+                                    "feedback_usuario": "",
+                                    "dificuldade": "",
+                                    "historico_tentativas": {
+                                        "0": {
+                                            "quest": "",
+                                            "autor": "",
+                                            "resultado": "",
+                                            "tempo": ""
+                                        },
+                                        "1": {
+                                            "quest": "",
+                                            "autor": "",
+                                            "resultado": "",
+                                            "tempo": ""
+                                        }
+                                    },
+                                    "num_de_erro": "",
+                                    "tipos_de_erro": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "logs_de_erro": {
+                                        "0": {
+                                            "tipo": "",
+                                            "detalhes": "",
+                                            "questao": "",
+                                            "timestamp": ""
+                                        }
+                                    },
+                                    "ia": "",
+                                    "tempo_gasto": ""
+                                },
+                                "quest": {
+                                    "tipo": "",
+                                    "enunciado": "",
+                                    "alternativas": [
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "resposta": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "redacao": {
