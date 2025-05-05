@@ -1,8 +1,0 @@
-Bugs:
-
-## Ao Carregar Atividades
-   - Erro ao carregar atividades, tente novamente.
-   - Pressionar button.css-1l5shij
-
-## Collapse
-   - O programa não consegue coletar informações quando há um atividade com colapse aberto

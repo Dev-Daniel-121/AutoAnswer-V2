@@ -36,32 +36,29 @@ class CollectInfo:
             id_activity_class = ':nth-match(p.css-dyxuuh, 5)'
         )
 
-    # def
 
     def run(self, user, id_usuario):
-        status_activity = self.task_info.get_status_activity()
-        activity_type = self.task_info.get_activity_type()
-        material_activity = self.task_info.get_material_activity()
-        activity_title = self.task_info.get_activity_title()
-        site_user, author, class_school, expires_in, site_activity_id = self.task_info.get_activity_infos()
+        task_info = self.task_info.run()
 
         # component, title_activity, user_activity, author_activity, class_activity, expire_activity, id_activity = self.collect_task_infos.run()
 
-        options = self.display(data='', title=f'{material_activity} - {site_activity_id}', answer=False, user=f'{user}', title_quest='')
+        options = self.display(data='', title=f'{task_info['material_activity']} - {task_info['site_activity_id']}', answer=False, user=f'{user}', title_quest='')
         options.display()
 
         self.time.timer(seconds=60)
 
-        self.collect_json.run(component=self.component, id_activity=site_activity_id)
+        self.collect_json.run(component=self.component, id_activity=task_info['site_activity_id'])
 
-        data = self.questionarie.run()
-        print(data)
+        print(f'\n\n\n{task_info}\n\n\n')
+
+        questionarie = self.questionarie.run()
+        print(questionarie)
 
         # self.collect_tarefas.run()
 
         self.time.tempo_restante()
 
-'''
+"""
 
     Infomações
     * Quantas questões (Count div.css-b200pa)
@@ -93,4 +90,4 @@ class CollectInfo:
         Título da opção da Alternativa  (div.css-b200pa > div.css-70qvj9 > label.css-geqbjm > span.css-1h7gjlg)
         Resposta                        (div.css-b200pa > div.css-70qvj9 > label.css-geqbjm > input.css-1m9pwf3).click
 
-'''
+"""

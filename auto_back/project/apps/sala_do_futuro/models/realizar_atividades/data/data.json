@@ -2,26 +2,6 @@
     "answers": {
         "tarefa": {
             "id_task": {
-                "-": {
-                    "user": "",
-                    "time": {
-                        "day": "02/05/2025",
-                        "start_time": "12:00",
-                        "end_time": "12:05"
-                    },
-                    "required": "",
-                    "type": "Radio",
-                    "statement": "Escolha alteranativa correta",
-                    "alternatives": {
-                        "A": "Alternativa A",
-                        "B": "Alternativa B",
-                        "C": "Alternativa C",
-                        "D": "Alternativa D"
-                    },
-                    "answer": {
-                        "A": "Alternativa A"
-                    }
-                },
                 "0": {
                     "user": "",
                     "time": {
@@ -38,7 +18,9 @@
                             "B) parcialmente correta.",
                             "C) incorreta."
                         ],
-                        "answer": ""
+                        "answer": [
+                            "C) incorreta"
+                        ]
                     }
                 }
             }
@@ -364,6 +346,11 @@
                             "0": {
                                 "quest_info": {
                                     "required": "",
+                                    "time": {
+                                        "day": "02/05/2025",
+                                        "start_time": "12:00",
+                                        "end_time": "12:05"
+                                    },
                                     "pontuação_da_questao": "",
                                     "pontuação_adiquirida": "",
                                     "secao": "",

@@ -42,7 +42,7 @@ class DoTarefas:
 
     def run_aFazer(self, RealizarAtividades, user, id_usuario):
         print('')
-        self.go.go_entregues()
+        self.go.go_aFazer()
 
         while True:
             try:

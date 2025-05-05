@@ -3,10 +3,11 @@ import re
 
 class QuestionInfo:
     def __init__(
-            self, page, actual_quest, activity_score_class, 
+            self, page, time_wait, actual_quest, activity_score_class, 
             score_class, quest_section_class
         ):
         self.page = page
+        self.time_wait = time_wait
         self.actual_quest = actual_quest
         self.activity_score_class = activity_score_class
         self.score_class = score_class
@@ -14,19 +15,33 @@ class QuestionInfo:
 
     def get_activity_score(self):
         try:
+            self.page.locator(f'{self.activity_score_class}').wait_for(state='attached', timeout=self.time_wait)
+            self.page.locator(f'{self.score_class}').wait_for(state='attached', timeout=self.time_wait)
+            
             activity_score_text = self.page.locator(f'{self.activity_score_class}').text_content()
             score_text = self.page.locator(f'{self.score_class}').text_content()
 
-            activity_number = re.search(r'\d+', activity_score_text)
-            score_number = re.search(r'\d+', score_text)
+            activity_number = re.search(r'\d+', activity_score_text) if activity_score_text else None
+            score_number = re.search(r'\d+', score_text) if score_text else None
 
             return {
-                'activity_score': activity_number.group() if activity_number else None,
-                'score': score_number.group() if score_number else None
+                'activity_score': activity_number.group() if activity_number else '',
+                'score': score_number.group() if score_number else ''
             }
+        
+        except TimeoutError:
+            print(f'[{types[4]}] Elementos não encontrados após {self.time_wait} milésimos')
+            return {
+                'activity_score': '',
+                'score': ''
+            }
+        
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter pontuações: {e}')
-            return None
+            return {
+                'activity_score': '',
+                'score': ''
+            }
 
     def get_quest_section(self):
         try:

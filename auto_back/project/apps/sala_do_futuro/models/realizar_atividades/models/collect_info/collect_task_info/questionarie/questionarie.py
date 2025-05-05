@@ -12,7 +12,7 @@ class Questionarie:
 
     def run(self):
         try:
-            data = {}
+            questionarie = {}
             elements = self.page.locator(self.question)
 
             count = elements.count()
@@ -27,48 +27,54 @@ class Questionarie:
                     actual_quest=actual_quest
                 )
                 question_info = QuestionInfo(
-                    page=self.page,
+                    page=self.page, time_wait=125,
                     actual_quest=actual_quest, activity_score_class='p.css-yy9bdr',
                     score_class='p.css-1dej7zy', quest_section_class='div.css-8atqhb h2'
                 )
 
                 section_text = question_info.get_quest_section()
-                activity_score, score = question_info.get_activity_score()
+                points = question_info.get_activity_score()
+                activity_score, score = points['activity_score'], points['score']
 
                 quest_type = question_obj.get_quest_type()
                 statement = question_obj.get_question_statement()
                 alternatives = question_obj.get_question_alternatives(quest_type)
                 isRequired = question_obj.isRequired()
 
-                data[i] = {
+                questionarie[i] = {
                     'quest_info': {
-                        'pontuação_da_questao': activity_score or '',
-                        'pontuação_adiquirida': score or '',
-                        'secao': section_text or '',
-                        'num_de_chutes': "",
-                        'num_de_user_resposta': "",
-                        'feedback_usuario': "",
-                        'dificuldade': "",
-                        'historico_tentativas': {
-                            # 0: { 'quest': "", 'autor': "", 'resultado': "", 'tempo': "" },
-                            # 1: { 'quest': "", 'autor': "", 'resultado': "", 'tempo': "" }
+                        'required': isRequired or '',
+                        'time': {
+                            'day': '',
+                            'start_time': '',
+                            'end_time': ''
                         },
-                        'num_de_erro': "",
-                        'tipos_de_erro': ["", "", ""],
-                        'logs_de_erro': {
+                        'activity_score': activity_score or '',
+                        'score': score or '',
+                        'section': section_text or '',
+                        'number_of_guesses': '',
+                        'number_of_user_responses': '',
+                        'user_feedback': '',
+                        'difficulty': '',
+                        'history_of_attempts': {
+                            # 0: { 'quest': '', 'author': '', 'result': '', 'time': '' },
+                            # 1: { 'quest': '', 'author': '', 'result': '', 'time': '' }
+                        },
+                        'error_num': '',
+                        'error_types': ['', '', ''],
+                        'error_logs': {
                             '0': {
-                                'tipo': "",
-                                'detalhes': "",
-                                'questao': "",
-                                'timestamp': ""
+                                'type': '',
+                                'details': '',
+                                'question': '',
+                                'timestamp': ''
                             }
                         },
-                        'ia': "",
-                        'tempo_gasto': "",
+                        'ia': '',
+                        'time_spent': '',
                     },
                     'quest': {
                         'type': quest_type or '',
-                        'required': isRequired or '',
                         'statement': statement or '',
                         'alternatives': alternatives if alternatives else [''],
                         'answer': ''
@@ -77,93 +83,12 @@ class Questionarie:
                 
                 # print(f'\n{'-' * 30}\n')
                 # print(f'Questão: {i + 1}')
-                # print(f'Tipo: {data[i]['quest']['type']}')
-                # print(f'Obrigatório: {data[i]['quest']['required']}\n')
-                # print(f'\nEnunciado: {data[i]['quest']['statement']}\n')
-                # print(f'\nAlternativas: {data[i]['quest']['alternatives']}\n')
+                # print(f'Tipo: {questionarie[i]['quest']['type']}')
+                # print(f'Obrigatório: {questionarie[i]['quest']['required']}\n')
+                # print(f'\nEnunciado: {questionarie[i]['quest']['statement']}\n')
+                # print(f'\nAlternativas: {questionarie[i]['quest']['alternatives']}\n')
 
-            return data
+            return questionarie
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter informações das questões: {e}')
             return
-    
-    '''
-    
-    Essa classe tem que para cada div.css-b200pa ele tem que chamar a classe QUESTIONS e QUESTION_INFO
-
-    A classe QUESTIONS coleta informações dentro da questão relacionados ao que ela solicita ser feito
-
-    A classe QUESTION_INFO coleta informações dentro da questão relacionados a dados como pontuação, ect.
-
-
-    Esse código tem que retornar isso:
-
-    0: {
-        quest_info {
-            obrigatoria: '',
-            pontuação_da_questao: '',
-            pontuação_adiquirida: '',
-            secao: '',
-            num_de_chutes: '',
-            num_de_user_resposta: '',
-            feedback_usuario: '',
-            dificuldade: '',
-            historico_tentativas: {
-                0: { quest: '', 'autor': '', 'resultado': '', 'tempo': '' },
-                1: { quest: '', 'autor': '', 'resultado': '', 'tempo': '' }
-            },
-            num_de_erro: '',
-            tipos_de_erro: ['', '', ''],
-            logs_de_erro: {
-                0: {
-                    tipo: '',
-                    detalhes: '',
-                    questao: '',
-                    timestamp: ''
-                }
-            },
-            ia: '',
-            tempo_gasto: '',
-        },
-        quest: {
-            tipo: '',
-            enunciado: '',
-            alternativas: ['', '', '', '', ''],
-            resposta: ''
-        }
-    },
-    1: {
-        quest_info {
-            pontuação_da_questao: '',
-            pontuação_adiquirida: '',
-            secao: '',
-            num_de_chutes: '',
-            num_de_user_resposta: '',
-            feedback_usuario: '',
-            dificuldade: '',
-            historico_tentativas: {
-                0: { quest: '', 'autor': '', 'resultado': '', 'tempo': '' },
-                1: { quest: '', 'autor': '', 'resultado': '', 'tempo': '' }
-            },
-            num_de_erro: '',
-            tipos_de_erro: ['', '', ''],
-            logs_de_erro: {
-                0: {
-                    tipo: '',
-                    detalhes: '',
-                    questao: '',
-                    timestamp: ''
-                }
-            },
-            ia: '',
-            tempo_gasto: '',
-        },
-        quest: {
-            tipo: '',
-            enunciado: '',
-            alternativas: ['', '', '', '', ''],
-            resposta: ''
-        }
-    },
-    
-    '''

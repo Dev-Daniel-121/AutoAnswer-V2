@@ -30,7 +30,7 @@ class SalaDoFuturo:
             except Exception as e:
                 print(f'[{types[4]}] Erro ao inicializar Sistema De Menu. {e}')
 
-'''
+"""
     {
         "id_usuario": "" { # Id do Usuário
             # Se for Tarefa
@@ -468,4 +468,4 @@ class SalaDoFuturo:
             }
         },
     }
-'''
+"""

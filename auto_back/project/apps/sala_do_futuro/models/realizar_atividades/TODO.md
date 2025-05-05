@@ -249,15 +249,14 @@
 
 <br><br><br>
 
-| O que está sendo feito         | Tempo Inicio | Tempo Fim | Tempo Total |
-| :----------------------------- | :----------: | :-------: | :---------: |
-| Aramazenar dados no JSON       |    14:37     |           |             |
-| Planejando JSON                |    14:39     |   14:59   |    20min    |
-| Passar dados para answer JSON  |    17:22     |           |             |
-| Coletar Seção e Score da lição |    17:48     |   18:24   |    25min    |
-| Coletar pontos e pontuação Atv |    23:50     |   23:52   |    2min     |
-| Coletar CardInformativos       |              |           |             |
-|                                |              |           |             |
+| O que está sendo feito        | Tempo Inicio | Tempo Fim | Tempo Total |
+| :---------------------------- | :----------: | :-------: | :---------: |
+| Ajustando o código do Score   |    13:36     |   13:49   |    13min    |
+| Usar Dict no TaskInfo         |    14:27     |   14:47   |    20min    |
+| Aramazenar dados no JSON      |    14:37     |           |             |
+| Passar dados para answer JSON |    17:22     |           |             |
+| Coletar CardInformativos      |              |           |             |
+|                               |              |           |             |
 
 <!--
 

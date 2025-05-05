@@ -74,11 +74,14 @@ class TaskInfo:
             return
 
     def run(self):
+        task_info = {}
+
         status_activity = self.get_status_activity()
         activity_type = self.get_activity_type()
         material_activity = self.get_material_activity()
         activity_title = self.get_activity_title()
         user, author, class_school, expires_in, site_activity_id = self.get_activity_infos()
+        auto_activity_id = self.get_auto_activity_id()
 
         # print(f'Status Atividade: {status_activity}')
         # print(f'Tipo Atividade: {activity_type}')
@@ -90,4 +93,23 @@ class TaskInfo:
         # print(f'Expira em: {expires_in}')
         # print(f'ID Atividade Site: {site_activity_id}\n')
 
-        return status_activity, activity_type, material_activity, activity_title, user, author, class_school, expires_in, site_activity_id
+        task_info = {
+            # 'task_info': {
+            'status_activity': status_activity or '',
+            'site_activity_id': site_activity_id or '',
+            'auto_activity_id': auto_activity_id or '',
+            'activity_type': activity_type or '',
+            'material_activity': material_activity or '',
+            'activity_title': activity_title or '',
+            'user': user or '',
+            'author': author or '',
+            'class_school': class_school or '',
+            'expires_in': expires_in or '',
+            'time_spent': '',
+            'draft': '',
+            'submitted': '',
+            'question_types': {}
+            # }
+        }
+
+        return task_info
