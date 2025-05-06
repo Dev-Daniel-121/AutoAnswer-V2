@@ -4,16 +4,24 @@ import re
 class QuestionInfo:
     def __init__(
             self, page, time_wait, actual_quest, activity_score_class, 
-            score_class, quest_section_class
+            score_class, can_get_points, btn_end_activity, btn_save_as_draft_activity
         ):
         self.page = page
         self.time_wait = time_wait
         self.actual_quest = actual_quest
         self.activity_score_class = activity_score_class
         self.score_class = score_class
-        self.quest_section_class = quest_section_class
+        self.can_get_points = can_get_points
+        self.btn_end_activity = btn_end_activity
+        self.btn_save_as_draft_activity = btn_save_as_draft_activity
 
     def get_activity_score(self):
+        if (self.can_get_points and len(self.can_get_points) > 1) or self.btn_end_activity or self.btn_save_as_draft_activity:
+            return {
+                'activity_score': '',
+                'score': ''
+            }
+
         try:
             self.page.locator(f'{self.activity_score_class}').wait_for(state='attached', timeout=self.time_wait)
             self.page.locator(f'{self.score_class}').wait_for(state='attached', timeout=self.time_wait)
@@ -30,44 +38,15 @@ class QuestionInfo:
             }
         
         except TimeoutError:
-            print(f'[{types[4]}] Elementos não encontrados após {self.time_wait} milésimos')
+            print(f'[{types[8]}] Elementos não encontrados após {self.time_wait} milésimos')
             return {
                 'activity_score': '',
                 'score': ''
             }
         
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter pontuações: {e}')
+            print(f'[{types[8]}] Erro ao obter pontuações: {e}')
             return {
                 'activity_score': '',
                 'score': ''
             }
-
-    def get_quest_section(self):
-        try:
-            if not self.quest_section_class:
-                return None
-
-            section_elements = self.page.locator(self.quest_section_class)
-            actual_box = self.actual_quest.bounding_box()
-
-            closest_section = None
-            closest_section_top = float('-inf')
-
-            for i in range(section_elements.count()):
-                section = section_elements.nth(i)
-                section_box = section.bounding_box()
-
-                if section_box and section_box['y'] <= actual_box['y']:
-                    if section_box['y'] > closest_section_top:
-                        closest_section_top = section_box['y']
-                        closest_section = section
-
-            return closest_section.text_content() if closest_section else None
-
-        except Exception as e:
-            print(f'[{types[4]}] Erro ao obter Seção da questão: {e}')
-            return None
-
-    def run(self):
-        pass

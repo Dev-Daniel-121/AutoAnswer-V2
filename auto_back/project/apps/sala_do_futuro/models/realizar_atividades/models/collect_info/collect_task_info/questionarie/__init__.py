@@ -7,4 +7,4 @@ __all__ = [
     'General', 'QuestionInfo', 
     'Questions', 'AnswerCheckbox', 'GetCheckbox', 'Checkbox', 'AnswerRadios', 'GetRadios', 'Radios',
     'Questionarie'
-    ]
+]

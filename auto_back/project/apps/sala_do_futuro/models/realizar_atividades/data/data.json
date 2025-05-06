@@ -139,6 +139,67 @@
                     "Select": ""
                 }
             },
+            "texts": {
+                "geral": {
+                    "secoes": {
+                        "0": "",
+                        "1": ""
+                    },
+                    "num_de_erros": "",
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "midias": {
+                        "video": {
+                            "0": {
+                                "type": "",
+                                "src": "",
+                                "legenda": ""
+                            }
+                        },
+                        "image": {
+                            "0": {
+                                "type": "",
+                                "src": ""
+                            }
+                        },
+                        "gif": {
+                            "0": {
+                                "type": "",
+                                "src": ""
+                            }
+                        }
+                    },
+                    "secao": "",
+                    "conteudo": "",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
             "user_1": {
                 "id_da_atividade_gerado_automaticamente": {
                     "questionnaire": {
@@ -222,6 +283,27 @@
                                     "num_de_user_resposta": "",
                                     "feedback_usuario": "",
                                     "dificuldade": "",
+                                    "midias": {
+                                        "video": {
+                                            "0": {
+                                                "type": "",
+                                                "src": "",
+                                                "legenda": ""
+                                            }
+                                        },
+                                        "image": {
+                                            "0": {
+                                                "type": "",
+                                                "src": ""
+                                            }
+                                        },
+                                        "gif": {
+                                            "0": {
+                                                "type": "",
+                                                "src": ""
+                                            }
+                                        }
+                                    },
                                     "historico_tentativas": {
                                         "0": {
                                             "quest": "",

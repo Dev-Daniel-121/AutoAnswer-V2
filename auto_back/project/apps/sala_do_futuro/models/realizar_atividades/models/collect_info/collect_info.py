@@ -1,3 +1,4 @@
+from .collect_task_info.texts import Text
 from .collect_task_info.collect_task_info import TaskInfo
 from .collect_task_info.questionarie import Questionarie
 
@@ -20,6 +21,8 @@ class CollectInfo:
             material_activity_class = 'h6.css-yq44kw',
             activity_title_class = 'p.css-zscg42'
         )
+        self.text = Text(page=self.page, information_card_class='css-1mpla7o')
+
         self.questionarie = Questionarie(page=self.page)
 
         self.time = Time()
@@ -51,12 +54,16 @@ class CollectInfo:
 
         print(f'\n\n\n{task_info}\n\n\n')
 
+        text = self.text.run()
+        print(f'\n\n\n{text}\n\n\n')
+
         questionarie = self.questionarie.run()
         print(questionarie)
 
         # self.collect_tarefas.run()
 
         self.time.tempo_restante()
+
 
 """
 
