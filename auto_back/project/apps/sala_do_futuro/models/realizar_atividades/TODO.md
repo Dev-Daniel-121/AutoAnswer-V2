@@ -249,104 +249,19 @@
 
 <br><br><br>
 
-| O que está sendo feito                                                  | Tempo Inicio | Tempo Fim | Tempo Total |
-| :---------------------------------------------------------------------- | :----------: | :-------: | :---------: |
-| Planejando Armazenamento dos Dados Obtidos                              |    09:49     |   10:14   |    25min    |
-| Planejando Coletando Informações dos texto Informativos                 |    10:35     |   11:00   |    25min    |
-| Coletando Informações dos texto Informativos                            |    11:05     |   11:17   |    12min    |
-| Transformando função de coleta de Seção em Class                        |    11:18     |   11:42   |    24min    |
-| Resolvendo Bugs da CollectSection                                       |    12:23     |   12:31   |    8min     |
-| Alterado class Activity Score e Collect Section                         |    12:34     |   12:36   |    2min     |
-| Coletando Informações dos texto Informativos                            |    12:34     |   12:59   |    25min    |
-| Atualizando a Classe Text                                               |    13:17     |   13:24   |    7min     |
-| Adicionando as Seções Corretas na Class Text                            |    13:28     |   13:35   |    7min     |
-| Planejando JSON para Receber dados de Outras Midías (Img, Youtube, etc) |    13:37     |   13:39   |    2min     |
-| Planejando Código para Coletar Img, Legendas do Youtube, etc            |    13:39     |   13:41   |    3min     |
-| Veficação antes de Coletar as Sections                                  |    16:50     |   16:52   |    2min     |
-| Veficação antes de Coletar Pontução e Pontos Obtidos da Atividade       |    16:53     |   17:07   |    14min    |
-| Procura de uma Biblioteca para Pegar Transcrição do YT Vídeo            |    17:09     |   17:19   |    10min    |
-| Procura de uma Biblioteca para Pegar Transcrição do YT Vídeo            |    17:47     |   17:49   |    2min     |
-|                                                                         |              |           |             |
-| ======================================================================= | ============ | ========= | =========== |
-|                                                                         |              |           |             |
-| Diminuir Veficações para o Collect Section e class Points e Scores      |    23:30     |   23:47   |    17min    |
-| Usar classe para verificar e coletar Youtube, Img e Gif                 |    23:50     |   23:57   |    7min     |
-| Criando collectMedia                                                    |    23:50     |   23:57   |    7min     |
-| Para Youtube Coletar Transcrição do Vídeo                               |    00:15     |   00:49   |    34min    |
-| Criado Transcript Youtube                                               |    00:15     |   00:49   |    34min    |
-| Diminuir Veficações para o Collect Section e class Points e Scores      |              |           |     min     |
-|                                                                         |              |           |             |
-| Aramazenar dados no JSON                                                |    14:37     |           |             |
-| Passar dados para answer JSON                                           |    17:22     |           |             |
-|                                                                         |              |           |             |
-
-<!--
+| O que está sendo feito                                                                     | Tempo Inicio | Tempo Fim | Tempo Total |
+| :----------------------------------------------------------------------------------------- | :----------: | :-------: | :---------: |
+| CCB -TESTEMUNHO COOP.MAUÁ OBRAS LINDAS CONTADAS NO PULPITO -IGREJA VAI AS LAGRIMAS!!OUÇA!! |    14:21     |   14:56   |    35min    |
+| CCB-VILA MARIANA SP -EXPLODE NO GLÓRIA!!OLHA QUE PALAVRA FORTE!ACONTECEU NA IGREJA ISSO!!  |    15:07     |   15:26   |    19min    |
+|                                                                                            |              |           |             |
+| Diminuir Veficações para o Collect Section                                                 |    14:21     |   14:39   |    18min    |
+| Diminuir Veficações para o Question_Info (Score)                                           |    15:07     |   15:25   |    18min    |
+|                                                                                            |              |           |             |
+| Aramazenar dados no JSON                                                                   |              |           |             |
+| Passar dados para answer JSON                                                              |              |           |             |
+|                                                                                            |              |           |             |
 
 
---- Pomodoro 1
-
-09:49 - 10:34
-CCB:JARDIM YARA-ISAQUE MARQUIZETE ANCIÃO PREGOU SEM MEDO-O AVISO FOI DADO-27/04/2025-SE PREPARE
-
-09:49 - 10:14
-Planejando passos
-
---- 25min
-
-
---- Pomodoro 2
-
-10:35 - 11:07
-CCB-JARDIM TRANSILVANIA IMPERDIVEL DEUS DÁ O ULTIMOAVISO A TERRA!SE PREPARE POVO DE DEUS!!
-
-10:35 - 11:00
-Planejado Coletando Informações dos texto Informativos
-
---- 25min
-
-
---- Pomodoro 3
-
-11:08 - 11:25
-CCB- TONINHO DO PINHAL -CAMPINAS ESTREMECEU NESTE CULTO!!NÃO TEVE QUE NÃO CHORASSE!DEUS PURO
-
-11:05 - 11:17
-Coletando Informações dos texto Informativos
-
-11:26 - 11:41
-CCB- TESTEMUNHO VIRALIZOU ANCIÃO DE SANTA CATARINA -O MENINO QUE NÃO QUERIA RECITAR!LINDO!!
-
---- 30min
-
-
---- Pomodoro 4
-
-12:23 - 12:49
-CCB-VILA BUENO AIRES EM FESTA -ULTIMO CULTO DEUS FALA ASIM COM A IRMANDADE!!FORTISSIMO!
-
-12:23 - 12:48
-Consertando Bugs da Class CollectSection
-
---- 25min
-
-
---- Pomodoro 5
-
-13:17 - 13:53
-CCB-CULTO DA LAPA SP - DEUS MANDA UM AVISO A IGREJA!!MUITO FORTE ISSO!! SANTO DEUS
-
---- 25min
-
-
---- Pomodoro 6
-
-14:53 - 15:00
-Analise do que estamos fazendo e do que foi feito
-
---- 7min
-
-
--->
 
 <!--
 

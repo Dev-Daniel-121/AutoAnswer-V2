@@ -112,4 +112,3 @@ class DoTarefas:
         print(f'\n{'-' * 30}\n')
 
         self.run_expiradas(RealizarAtividades=RealizarAtividades, user=user, id_usuario=id_usuario)
-

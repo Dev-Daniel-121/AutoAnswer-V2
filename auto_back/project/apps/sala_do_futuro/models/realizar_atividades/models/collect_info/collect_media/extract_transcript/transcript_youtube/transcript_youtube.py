@@ -27,7 +27,7 @@ class TranscriptYoutube:
                         text = ' '.join(entry.text for entry in transcript_data)
                         return {
                             'lang': transcript.language_code,
-                            'transcritp': text
+                            'transcript': text
                         }
 
                 for transcript in transcript_list:
@@ -35,7 +35,7 @@ class TranscriptYoutube:
                     text = ' '.join(entry.text for entry in transcript_data)
                     return {
                         'lang': transcript.language_code,
-                        'transcritp': text
+                        'transcript': text
                     }
 
             except Exception as e2:

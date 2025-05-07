@@ -21,9 +21,12 @@ class CollectInfo:
             material_activity_class = 'h6.css-yq44kw',
             activity_title_class = 'p.css-zscg42'
         )
-        self.text = Text(page=self.page, information_card_class='css-1mpla7o')
+        self.text = Text(page=self.page, information_card_class='css-1mpla7o', elem_section_class='div.css-8atqhb h2')
 
-        self.questionarie = Questionarie(page=self.page)
+        self.questionarie = Questionarie(
+            page=self.page, elem_section_class='div.css-8atqhb h2',
+            can_get_points='div.css-18oghjr', btn_end_activity='button.css-1wjnhbh',
+            btn_save_as_draft_activity='button.css-19d44l7')
 
         self.time = Time()
         self.collect_json = CollectJson()

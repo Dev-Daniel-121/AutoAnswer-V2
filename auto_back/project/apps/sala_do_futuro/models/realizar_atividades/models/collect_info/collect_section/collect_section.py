@@ -13,9 +13,6 @@ class CollectSection:
 
             locator = self.page.locator(self.elem_section_class)
 
-            if locator.count() == 0:
-                return ''
-
             locator.first.wait_for(state='attached', timeout=self.time_wait)
 
             count = locator.count()

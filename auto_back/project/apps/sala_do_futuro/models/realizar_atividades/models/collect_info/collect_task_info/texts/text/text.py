@@ -3,9 +3,10 @@ from project import types
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media.collect_media import CollectMedia
 
 class Text:
-    def __init__(self, page, information_card_class):
+    def __init__(self, page, information_card_class, elem_section_class):
         self.page = page
         self.information_card_class = information_card_class
+        self.elem_section_class = elem_section_class
 
     def get_content(self, card):
         try:
@@ -21,15 +22,30 @@ class Text:
         except Exception as e:
             print(f'[{types[4]}] Erro ao localizar os cards: {e}')
             return results
-        
+
+        section_finder = None
+        use_sections = False
+        section_selector = self.elem_section_class
+
         try:
-            section_finder = CollectSection(page=self.page, elem_section_class='div.css-8atqhb h2', time_wait=250)
+            locator = self.page.locator(section_selector)
+            if locator.count() > 0:
+                use_sections = True
+                section_finder = CollectSection(
+                    page=self.page,
+                    elem_section_class=section_selector,
+                    time_wait=250
+                )
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter seção: {e}')
-            return
+            print(f'[{types[4]}] Erro ao verificar seções: {e}')
 
         for idx, card in enumerate(cards):
-            section_text = section_finder.get_section_for_element(card)
+            section_text = ''
+            if use_sections and section_finder:
+                try:
+                    section_text = section_finder.get_section_for_element(card)
+                except Exception as e:
+                    print(f'[{types[4]}] Erro ao obter seção do card: {e}')
 
             results[str(idx)] = {
                 'informative_content': CollectMedia(card, video_media='div.css-pcbmqt iframe', img_media='img').extract_media(),

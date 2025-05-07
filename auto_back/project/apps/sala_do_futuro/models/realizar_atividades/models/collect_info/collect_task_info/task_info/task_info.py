@@ -83,18 +83,7 @@ class TaskInfo:
         user, author, class_school, expires_in, site_activity_id = self.get_activity_infos()
         auto_activity_id = self.get_auto_activity_id()
 
-        # print(f'Status Atividade: {status_activity}')
-        # print(f'Tipo Atividade: {activity_type}')
-        # print(f'Matéria: {material_activity}')
-        # print(f'Título Atividade: {activity_title}')
-        # print(f'Usuário: {user}')
-        # print(f'Autor: {author}')
-        # print(f'Turma: {class_school}')
-        # print(f'Expira em: {expires_in}')
-        # print(f'ID Atividade Site: {site_activity_id}\n')
-
         task_info = {
-            # 'task_info': {
             'status_activity': status_activity or '',
             'site_activity_id': site_activity_id or '',
             'auto_activity_id': auto_activity_id or '',
@@ -109,7 +98,6 @@ class TaskInfo:
             'draft': '',
             'submitted': '',
             'question_types': {}
-            # }
         }
 
         return task_info

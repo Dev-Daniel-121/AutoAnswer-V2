@@ -16,12 +16,6 @@ class QuestionInfo:
         self.btn_save_as_draft_activity = btn_save_as_draft_activity
 
     def get_activity_score(self):
-        if (self.can_get_points and len(self.can_get_points) > 1) or self.btn_end_activity or self.btn_save_as_draft_activity:
-            return {
-                'activity_score': '',
-                'score': ''
-            }
-
         try:
             self.page.locator(f'{self.activity_score_class}').wait_for(state='attached', timeout=self.time_wait)
             self.page.locator(f'{self.score_class}').wait_for(state='attached', timeout=self.time_wait)
