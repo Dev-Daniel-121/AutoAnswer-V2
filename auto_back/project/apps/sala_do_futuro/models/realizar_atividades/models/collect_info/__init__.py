@@ -1,4 +1,5 @@
 from .collect_json import CollectJson
+from .collect_media import TranscriptYoutube, CollectMedia
 from .collect_provas import CollectProvas
 from .collect_redacoes import CollectRedacoes
 from .collect_section import CollectSection
@@ -9,6 +10,7 @@ from .collect_info import CollectInfo
 
 __all__ = [
     'CollectJson',
+    'TranscriptYoutube', 'CollectMedia',
     'CollectProvas',
     'CollectRedacoes',
     'CollectSection',

@@ -267,6 +267,15 @@
 | Procura de uma Biblioteca para Pegar Transcrição do YT Vídeo            |    17:09     |   17:19   |    10min    |
 | Procura de uma Biblioteca para Pegar Transcrição do YT Vídeo            |    17:47     |   17:49   |    2min     |
 |                                                                         |              |           |             |
+| ======================================================================= | ============ | ========= | =========== |
+|                                                                         |              |           |             |
+| Diminuir Veficações para o Collect Section e class Points e Scores      |    23:30     |   23:47   |    17min    |
+| Usar classe para verificar e coletar Youtube, Img e Gif                 |    23:50     |   23:57   |    7min     |
+| Criando collectMedia                                                    |    23:50     |   23:57   |    7min     |
+| Para Youtube Coletar Transcrição do Vídeo                               |    00:15     |   00:49   |    34min    |
+| Criado Transcript Youtube                                               |    00:15     |   00:49   |    34min    |
+| Diminuir Veficações para o Collect Section e class Points e Scores      |              |           |     min     |
+|                                                                         |              |           |             |
 | Aramazenar dados no JSON                                                |    14:37     |           |             |
 | Passar dados para answer JSON                                           |    17:22     |           |             |
 |                                                                         |              |           |             |
