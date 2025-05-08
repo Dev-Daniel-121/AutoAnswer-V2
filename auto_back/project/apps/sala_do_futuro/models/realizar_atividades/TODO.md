@@ -249,17 +249,20 @@
 
 <br><br><br>
 
-| O que está sendo feito                                                                     | Tempo Inicio | Tempo Fim | Tempo Total |
-| :----------------------------------------------------------------------------------------- | :----------: | :-------: | :---------: |
-| CCB -TESTEMUNHO COOP.MAUÁ OBRAS LINDAS CONTADAS NO PULPITO -IGREJA VAI AS LAGRIMAS!!OUÇA!! |    14:21     |   14:56   |    35min    |
-| CCB-VILA MARIANA SP -EXPLODE NO GLÓRIA!!OLHA QUE PALAVRA FORTE!ACONTECEU NA IGREJA ISSO!!  |    15:07     |   15:26   |    19min    |
-|                                                                                            |              |           |             |
-| Diminuir Veficações para o Collect Section                                                 |    14:21     |   14:39   |    18min    |
-| Diminuir Veficações para o Question_Info (Score)                                           |    15:07     |   15:25   |    18min    |
-|                                                                                            |              |           |             |
-| Aramazenar dados no JSON                                                                   |              |           |             |
-| Passar dados para answer JSON                                                              |              |           |             |
-|                                                                                            |              |           |             |
+| O que está sendo feito                             |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
+| :------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
+| Planejando JSON para receber novos Dados           | 07/05/2025 |    23:48     |   23:57   |    9min     |
+| Coletar media do enunciado                         | 07/05/2025 |    00:00     |   00:44   |    44min    |
+| CCB-REUNIÃO DA MOCIDADE JARDIM MIRIAM              | 07/05/2025 |    00:01     |   00:30   |    29min    |
+|                                                    |            |              |           |             |
+|                                                    |            |              |           |             |
+| Corrigido Erro de coleta de alternativas Radios    | 07/05/2025 |    00:44     |   00:49   |    5min     |
+| Previnindo Erro de coleta de alternativas Checkbox | 07/05/2025 |    00:49     |   00:51   |    3min     |
+| Atualizr Collect Media para Text                   | 07/05/2025 |    00:54     |   01:07   |    13min    |
+|                                                    |            |              |           |             |
+| Aramazenar dados no JSON                           |            |              |           |             |
+| Passar dados para answer JSON                      |            |              |           |             |
+|                                                    |            |              |           |             |
 
 
 

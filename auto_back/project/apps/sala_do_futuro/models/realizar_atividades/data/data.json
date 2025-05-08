@@ -166,7 +166,10 @@
                             "0": {
                                 "type": "",
                                 "src": "",
-                                "legenda": ""
+                                "transcription": {
+                                    "lang": "",
+                                    "transcript": ""
+                                }
                             }
                         },
                         "image": {
@@ -288,7 +291,10 @@
                                             "0": {
                                                 "type": "",
                                                 "src": "",
-                                                "legenda": ""
+                                                "transcription": {
+                                                    "lang": "",
+                                                    "transcript": ""
+                                                }
                                             }
                                         },
                                         "image": {
@@ -339,11 +345,114 @@
                                     "tipo": "",
                                     "enunciado": "",
                                     "alternativas": [
-                                        "",
-                                        "",
-                                        "",
-                                        "",
-                                        ""
+                                        {
+                                            "midias": {
+                                                "video": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": "",
+                                                        "transcription": {
+                                                            "lang": "",
+                                                            "transcript": ""
+                                                        }
+                                                    }
+                                                },
+                                                "image": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "gif": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": ""
+                                                    }
+                                                }
+                                            },
+                                            "questao": ""
+                                        },
+                                        {
+                                            "midias": {
+                                                "video": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": "",
+                                                        "transcription": {
+                                                            "lang": "",
+                                                            "transcript": ""
+                                                        }
+                                                    }
+                                                },
+                                                "image": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "gif": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": ""
+                                                    }
+                                                }
+                                            },
+                                            "questao": ""
+                                        },
+                                        {
+                                            "midias": {
+                                                "video": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": "",
+                                                        "transcription": {
+                                                            "lang": "",
+                                                            "transcript": ""
+                                                        }
+                                                    }
+                                                },
+                                                "image": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "gif": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": ""
+                                                    }
+                                                }
+                                            },
+                                            "questao": ""
+                                        },
+                                        {
+                                            "midias": {
+                                                "video": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": "",
+                                                        "transcription": {
+                                                            "lang": "",
+                                                            "transcript": ""
+                                                        }
+                                                    }
+                                                },
+                                                "image": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "gif": {
+                                                    "0": {
+                                                        "type": "",
+                                                        "src": ""
+                                                    }
+                                                }
+                                            },
+                                            "questao": ""
+                                        }
                                     ],
                                     "resposta": ""
                                 }

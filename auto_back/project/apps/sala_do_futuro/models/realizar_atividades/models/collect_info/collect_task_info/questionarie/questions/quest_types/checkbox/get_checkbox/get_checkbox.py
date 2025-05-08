@@ -15,12 +15,12 @@ class GetCheckbox:
                 
             count = alternatives_elements.count()
             for i in range(count):
-                alt_text = alternatives_elements.nth(i).locator('p').text_content()
-                alternatives.append(alt_text.strip() if alt_text else '')
-            
+                paragraphs = alternatives_elements.nth(i).locator('p').all_text_contents()
+                alt_text = ' '.join(paragraphs).strip()
+                alternatives.append(alt_text)
+
             return alternatives
 
         except Exception as e:
             print(f'[{self.types[4]}] Erro ao obter alternativas de checkbox: {e}')
             return []
-        

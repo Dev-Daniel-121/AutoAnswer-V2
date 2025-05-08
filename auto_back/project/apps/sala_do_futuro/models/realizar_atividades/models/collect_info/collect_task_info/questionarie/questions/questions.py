@@ -1,4 +1,5 @@
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie.questions import GetRadios, GetCheckbox
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media.collect_media import CollectMedia
 from project import types
 
 class Questions:
@@ -41,7 +42,7 @@ class Questions:
 
     def get_question_statement(self):
         try:
-            question_statement = self.actual_quest.locator(f'{self.question_statement_class}').text_content()
+            question_statement = self.actual_quest.locator(f'{self.question_statement_class}').first.text_content()
             return question_statement
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter enunciado da questão: {e}')
@@ -63,5 +64,18 @@ class Questions:
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter alternativas da questão: {e}')
             return
+    
+    def get_question_statement_media(self, video_media, img_media):
+        try:
+            statement_element = self.actual_quest.locator(f'{self.question_statement_class}')
+            media_collector = CollectMedia(
+                card=statement_element,
+                video_media=video_media,
+                img_media=img_media
+            )
+            return media_collector.extract_media()
+        except Exception as e:
+            print(f'[{types[4]}] Erro ao obter mídias do enunciado: {e}')
+            return {'video': {}, 'image': {}, 'gif': {}}
     
     def isRequired(self) -> bool: return self.page.locator(self.required_class).count() > 0
