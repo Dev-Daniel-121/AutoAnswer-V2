@@ -1,5 +1,5 @@
 from project.apps.sala_do_futuro.models.realizar_atividades.models.tarefas import RealizarTarefa
-from project.apps.sala_do_futuro.models.data.tarefas import Activities, Go
+from project.apps.sala_do_futuro.models import Activities, Go
 from project import Display, types
 import os
 
@@ -100,7 +100,7 @@ class DoTarefas:
                 continue
 
     def run(self, user, id_usuario):
-        from project.apps.sala_do_futuro.models import RealizarAtividades
+        from project import RealizarAtividades
         RealizarAtividades = RealizarAtividades(page=self.page)
 
         os.system('cls' if os.name == 'nt' else 'clear')

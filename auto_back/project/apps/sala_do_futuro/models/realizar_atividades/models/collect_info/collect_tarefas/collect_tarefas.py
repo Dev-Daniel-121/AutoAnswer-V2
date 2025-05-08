@@ -1,5 +1,4 @@
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_tarefas.card_types.card_info.card_info import CardInfo
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_tarefas.card_types.card_quests.card_quests import CardQuests
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_tarefas.card_types import CardInfo, CardQuests
 from project import types
 
 class CollectTarefas:

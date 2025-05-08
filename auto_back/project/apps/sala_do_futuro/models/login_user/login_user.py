@@ -10,7 +10,7 @@ class LoginUser:
         self.senha = senha
 
     def run_login_aluno(self):
-        from project.apps.sala_do_futuro.models import LoginAluno
+        from project import LoginAluno
 
         login_aluno = LoginAluno(
             page=self.page,

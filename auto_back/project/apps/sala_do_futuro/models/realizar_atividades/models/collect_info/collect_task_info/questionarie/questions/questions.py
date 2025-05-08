@@ -1,5 +1,5 @@
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie.questions import GetRadios, GetCheckbox
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media.collect_media import CollectMedia
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectMedia
 from project import types
 
 class Questions:
@@ -19,11 +19,13 @@ class Questions:
         self.actual_quest = actual_quest
         self.get_radios = GetRadios(
             page=self.page, has_radios_class=self.has_radios_class,
-            radios_alternative_class='div.css-10zfeld', actual_quest=self.actual_quest
+            radios_alternative_class='div.css-10zfeld', actual_quest=self.actual_quest,
+            video_media_selector='div.css-pcbmqt iframe', img_media_selector='img'
         )
         self.get_checkbox = GetCheckbox(
             page=self.page, has_checkbox_class=self.has_checkbox_class,
-            checkbox_alternative_class='div.css-107ow6p', actual_quest=self.actual_quest
+            checkbox_alternative_class='div.css-107ow6p', actual_quest=self.actual_quest,
+            video_media_selector='div.css-pcbmqt iframe', img_media_selector='img'
         )
 
     def get_quest_type(self):
@@ -65,13 +67,13 @@ class Questions:
             print(f'[{types[4]}] Erro ao obter alternativas da questão: {e}')
             return
     
-    def get_question_statement_media(self, video_media, img_media):
+    def get_question_statement_media(self, video_media_selector, img_media_selector):
         try:
             statement_element = self.actual_quest.locator(f'{self.question_statement_class}')
             media_collector = CollectMedia(
                 card=statement_element,
-                video_media=video_media,
-                img_media=img_media
+                video_media_selector=video_media_selector,
+                img_media_selector=img_media_selector
             )
             return media_collector.extract_media()
         except Exception as e:

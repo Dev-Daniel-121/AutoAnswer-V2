@@ -1,6 +1,5 @@
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_section.collect_section import CollectSection
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectSection, CollectMedia
 from project import types
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media.collect_media import CollectMedia
 
 class Text:
     def __init__(self, page, information_card_class, elem_section_class):
@@ -48,7 +47,7 @@ class Text:
                     print(f'[{types[4]}] Erro ao obter seção do card: {e}')
 
             results[str(idx)] = {
-                'informative_content': CollectMedia(card, video_media='div.css-pcbmqt iframe', img_media='img').extract_media(),
+                'informative_content': CollectMedia(card, video_media_selector='div.css-pcbmqt iframe', img_media_selector='img').extract_media(),
                 'secao': section_text or '',
                 'conteudo': self.get_content(card),
                 'num_de_erros': '',

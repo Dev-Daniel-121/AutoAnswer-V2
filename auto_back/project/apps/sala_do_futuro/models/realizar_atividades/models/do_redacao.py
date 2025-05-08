@@ -1,4 +1,4 @@
-from project.apps.sala_do_futuro.models.data.tarefas import Go
+from project.apps.sala_do_futuro.models import Go
 from project import Display, types
 import os
 
@@ -92,7 +92,7 @@ class DoRedacao:
                 continue
 
     def run(self, user, id_usuario):
-        from project.apps.sala_do_futuro.models import RealizarAtividades
+        from project.apps import RealizarAtividades
         RealizarAtividades = RealizarAtividades(page=self.page)
 
         os.system('cls' if os.name == 'nt' else 'clear')

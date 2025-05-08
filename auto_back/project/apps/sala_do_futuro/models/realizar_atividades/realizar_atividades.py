@@ -1,4 +1,4 @@
-from project.apps.sala_do_futuro.models.data.tarefas import Activities, Go, Sections
+from project.apps.sala_do_futuro.models import Activities, Go, Sections
 from .models import DoProvas, DoRedacao, DoTarefas
 from project import Display, types
 

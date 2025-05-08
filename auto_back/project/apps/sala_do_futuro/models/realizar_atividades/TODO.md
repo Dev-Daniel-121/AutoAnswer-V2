@@ -249,20 +249,27 @@
 
 <br><br><br>
 
-| O que está sendo feito                             |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
-| :------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-| Planejando JSON para receber novos Dados           | 07/05/2025 |    23:48     |   23:57   |    9min     |
-| Coletar media do enunciado                         | 07/05/2025 |    00:00     |   00:44   |    44min    |
-| CCB-REUNIÃO DA MOCIDADE JARDIM MIRIAM              | 07/05/2025 |    00:01     |   00:30   |    29min    |
-|                                                    |            |              |           |             |
-|                                                    |            |              |           |             |
-| Corrigido Erro de coleta de alternativas Radios    | 07/05/2025 |    00:44     |   00:49   |    5min     |
-| Previnindo Erro de coleta de alternativas Checkbox | 07/05/2025 |    00:49     |   00:51   |    3min     |
-| Atualizr Collect Media para Text                   | 07/05/2025 |    00:54     |   01:07   |    13min    |
-|                                                    |            |              |           |             |
-| Aramazenar dados no JSON                           |            |              |           |             |
-| Passar dados para answer JSON                      |            |              |           |             |
-|                                                    |            |              |           |             |
+| O que está sendo feito                                                                       |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
+| :------------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
+| CCB:SITIO SALZEDAS UMA GLORIA!!05/05/2025 - ANCIAO DE FORA IRMÃO ADEMIR JD CONQUISTA II      | 08/05/2025 |    13:50     |   14:28   |    38min    |
+| Coletar Media das Alternativas Radios                                                        | 08/05/2025 |    13:51     |   14:07   |    16min    |
+| Coletar Media das Alternativas Checkbox                                                      | 08/05/2025 |    14:07     |   14:08   |    1min     |
+| Pegar CArta                                                                                  | 08/05/2025 |    14:08     |   14:13   |    5min     |
+| Melhorando Importação dos Pacotes                                                            | 08/05/2025 |    14:15     |   14:53   |    38min    |
+| CCB-VILA RÉ -05/05/2025 - ANCIÃO CELSO -PREGAÇÃO TERRIVEL!!DEUS FALOU CARA A CARA OUÇA ISSO! | 08/05/2025 |    14:28     |   15:04   |    36min    |
+| Ajudar Simon com a Tela                                                                      | 08/05/2025 |    14:49     |   14:53   |    4min     |
+| Melhorando Importação dos Pacotes                                                            | 08/05/2025 |    14:54     |   15:09   |    15min    |
+| TCC                                                                                          | 08/05/2025 |    14:56     |   14:57   |    1min     |
+| Almoçar                                                                                      | 08/05/2025 |    15:12     |   15:28   |    16min    |
+| CCB-JARDIM MIMAR FESTA TOTAL A IGREJA TODA MANIFESTOU A PROMESSA!QUE LINDO DEUS!             | 08/05/2025 |    16:28     |   16:56   |    28min    |
+| Analisando o OBJ-atividade                                                                   | 08/05/2025 |    16:53     |   16:56   |    3min     |
+|                                                                                              |            |              |           |             |
+| Planejar Coleta de Imagens                                                                   | 08/05/2025 |    16:30     |   16:50   |    20min    |
+| Planejar Onde e Como Guardar as Imgs e Se iremos guardar por pouco tempo (e.g 7 ou 30 dias)  | 08/05/2025 |              |           |             |
+|                                                                                              |            |              |           |             |
+| Aramazenar dados no JSON                                                                     |            |              |           |             |
+| Passar dados para answer JSON                                                                |            |              |           |             |
+|                                                                                              |            |              |           |             |
 
 
 

@@ -1,5 +1,5 @@
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie import Questions, QuestionInfo
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_section.collect_section import CollectSection
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectSection
 from project import types
 
 class Questionarie:
@@ -71,7 +71,7 @@ class Questionarie:
 
                 quest_type = question_obj.get_quest_type()
                 statement = question_obj.get_question_statement()
-                statement_media = question_obj.get_question_statement_media(video_media='div.css-pcbmqt iframe', img_media='img')
+                statement_media = question_obj.get_question_statement_media(video_media_selector='div.css-pcbmqt iframe', img_media_selector='img')
                 alternatives = question_obj.get_question_alternatives(quest_type)
                 isRequired = question_obj.isRequired()
 
@@ -123,4 +123,3 @@ class Questionarie:
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter informações das questões: {e}')
             return
-        
