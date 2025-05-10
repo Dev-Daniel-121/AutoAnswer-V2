@@ -1,5 +1,4 @@
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie.questions import GetRadios, GetCheckbox
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectMedia
 from project import types
 
 class Questions:
@@ -68,14 +67,15 @@ class Questions:
             return
     
     def get_question_statement_media(self, video_media_selector, img_media_selector):
+        from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media.util.media_utils import collect_media_if_exists
         try:
             statement_element = self.actual_quest.locator(f'{self.question_statement_class}')
-            media_collector = CollectMedia(
+            return collect_media_if_exists(
+                page=self.page,
                 card=statement_element,
                 video_media_selector=video_media_selector,
                 img_media_selector=img_media_selector
             )
-            return media_collector.extract_media()
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter mídias do enunciado: {e}')
             return {'video': {}, 'image': {}, 'gif': {}}

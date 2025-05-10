@@ -249,27 +249,35 @@
 
 <br><br><br>
 
-| O que está sendo feito                                                                       |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
-| :------------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-| CCB:SITIO SALZEDAS UMA GLORIA!!05/05/2025 - ANCIAO DE FORA IRMÃO ADEMIR JD CONQUISTA II      | 08/05/2025 |    13:50     |   14:28   |    38min    |
-| Coletar Media das Alternativas Radios                                                        | 08/05/2025 |    13:51     |   14:07   |    16min    |
-| Coletar Media das Alternativas Checkbox                                                      | 08/05/2025 |    14:07     |   14:08   |    1min     |
-| Pegar CArta                                                                                  | 08/05/2025 |    14:08     |   14:13   |    5min     |
-| Melhorando Importação dos Pacotes                                                            | 08/05/2025 |    14:15     |   14:53   |    38min    |
-| CCB-VILA RÉ -05/05/2025 - ANCIÃO CELSO -PREGAÇÃO TERRIVEL!!DEUS FALOU CARA A CARA OUÇA ISSO! | 08/05/2025 |    14:28     |   15:04   |    36min    |
-| Ajudar Simon com a Tela                                                                      | 08/05/2025 |    14:49     |   14:53   |    4min     |
-| Melhorando Importação dos Pacotes                                                            | 08/05/2025 |    14:54     |   15:09   |    15min    |
-| TCC                                                                                          | 08/05/2025 |    14:56     |   14:57   |    1min     |
-| Almoçar                                                                                      | 08/05/2025 |    15:12     |   15:28   |    16min    |
-| CCB-JARDIM MIMAR FESTA TOTAL A IGREJA TODA MANIFESTOU A PROMESSA!QUE LINDO DEUS!             | 08/05/2025 |    16:28     |   16:56   |    28min    |
-| Analisando o OBJ-atividade                                                                   | 08/05/2025 |    16:53     |   16:56   |    3min     |
-|                                                                                              |            |              |           |             |
-| Planejar Coleta de Imagens                                                                   | 08/05/2025 |    16:30     |   16:50   |    20min    |
-| Planejar Onde e Como Guardar as Imgs e Se iremos guardar por pouco tempo (e.g 7 ou 30 dias)  | 08/05/2025 |              |           |             |
-|                                                                                              |            |              |           |             |
-| Aramazenar dados no JSON                                                                     |            |              |           |             |
-| Passar dados para answer JSON                                                                |            |              |           |             |
-|                                                                                              |            |              |           |             |
+| O que está sendo feito                                           |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
+| :--------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
+| Planejar Como Guardar as Imgs por no Máx 7d                      | 09/05/2025 |    13:05     |   13:12   |    7min     |
+| Baixar img pelo seu SRC usando a biblioteca Request              | 09/05/2025 |    13:37     |   14:02   |    25min    |
+| Ajustando Local que baixa as img                                 | 09/05/2025 |    14:09     |   14:14   |    5min     |
+| Corrigir erro de Importação                                      | 09/05/2025 |    14:45     |   14:59   |    14min    |
+| Colocar o Self.Page nos items que ultilizam o CollectMedia       | 09/05/2025 |    15:28     |   15:30   |    2min     |
+| Teste                                                            | 09/05/2025 |    15:30     |   15:35   |    5min     |
+| Criando Validação para Criar pasta apenas quando tiver IMG       | 09/05/2025 |    15:35     |   15:40   |    5min     |
+| Testes                                                           | 09/05/2025 |    15:40     |   15:43   |    3min     |
+| Atualizando ExtractImg                                           | 09/05/2025 |    15:44     |   15:45   |    1min     |
+| Testes                                                           | 09/05/2025 |    15:45     |   15:46   |    1min     |
+| Consertar Bugs                                                   | 09/05/2025 |    16:11     |   16:12   |    1min     |
+| Cronometrando Tempo de Download de Media (IMG)                   | 09/05/2025 |    16:14     |   16:14   |    0min     |
+| Procurando código onde está pegando Tempo e processamento        | 09/05/2025 |    16:16     |   16:17   |    1min     |
+| Corrigindo Parte onde consome bastante  tempo e processamento    | 09/05/2025 |    16:19     |   16:38   |    19min    |
+| Corrigindo Códigos qeu usam a função media_utils.py              | 09/05/2025 |    16:40     |   16:41   |    1min     |
+| Corrigindo código Texto para usar a função media_utils.py        | 09/05/2025 |    16:13     |   16:47   |    34min    |
+| Contar Textos, Num de Quest, Tipos de Quest, Quest Desconhecidas | 09/05/2025 |    17:17     |   17:39   |    22min    |
+| Melhorando Função de Display_info                                | 09/05/2025 |    17:42     |   17:49   |    7min     |
+| Selecionar IA                                                    | 09/05/2025 |    00:07     |   00:07   |    0min     |
+| Criar Prompt para IA                                             | 09/05/2025 |    00:37     |   00:57   |    20min    |
+|                                                                  | 09/05/2025 |              |           |             |
+| Contar tempo de até 7 dias para deletar a pasta e seus items     | 09/05/2025 |              |           |             |
+|                                                                  | 09/05/2025 |              |           |             |
+|                                                                  | 09/05/2025 |              |           |             |
+| Passar esses Dados e Prompt para o JSON                          | 09/05/2025 |              |           |             |
+| Planejar automação para coletar Respostas                        | 09/05/2025 |              |           |             |
+|                                                                  | 09/05/2025 |              |           |             |
 
 
 

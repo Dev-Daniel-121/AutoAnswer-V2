@@ -1,5 +1,4 @@
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie import Questions, QuestionInfo
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectSection
 from project import types
 
 class Questionarie:
@@ -16,6 +15,7 @@ class Questionarie:
         self.question = question
 
     def run(self):
+        from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectSection
         try:
             questionarie = {}
             elements = self.page.locator(self.question)
@@ -75,7 +75,7 @@ class Questionarie:
                 alternatives = question_obj.get_question_alternatives(quest_type)
                 isRequired = question_obj.isRequired()
 
-                questionarie[i] = {
+                questionarie[str(i)] = {
                     'quest_info': {
                         'required': isRequired or '',
                         'time': {

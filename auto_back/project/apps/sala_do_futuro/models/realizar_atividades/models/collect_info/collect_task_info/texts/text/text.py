@@ -1,4 +1,3 @@
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectSection, CollectMedia
 from project import types
 
 class Text:
@@ -15,9 +14,13 @@ class Text:
             return ''
 
     def run(self):
+        from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectSection, CollectMedia
+        
         results = {}
+
         try:
-            cards = self.page.query_selector_all(f'.{self.information_card_class}')
+            cards_locator = self.page.locator(f'.{self.information_card_class}')
+            count = cards_locator.count()
         except Exception as e:
             print(f'[{types[4]}] Erro ao localizar os cards: {e}')
             return results
@@ -38,7 +41,8 @@ class Text:
         except Exception as e:
             print(f'[{types[4]}] Erro ao verificar seções: {e}')
 
-        for idx, card in enumerate(cards):
+        for idx in range(count):
+            card = cards_locator.nth(idx)
             section_text = ''
             if use_sections and section_finder:
                 try:
@@ -47,7 +51,11 @@ class Text:
                     print(f'[{types[4]}] Erro ao obter seção do card: {e}')
 
             results[str(idx)] = {
-                'informative_content': CollectMedia(card, video_media_selector='div.css-pcbmqt iframe', img_media_selector='img').extract_media(),
+                'informative_content': CollectMedia(
+                    page=self.page, card=card,
+                    video_media_selector='div.css-pcbmqt iframe',
+                    img_media_selector='img'
+                ).extract_media(),
                 'secao': section_text or '',
                 'conteudo': self.get_content(card),
                 'num_de_erros': '',

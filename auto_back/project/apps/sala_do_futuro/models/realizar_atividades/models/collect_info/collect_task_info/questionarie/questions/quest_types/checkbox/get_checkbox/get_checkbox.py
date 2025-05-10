@@ -1,4 +1,3 @@
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectMedia
 from project import types
 
 class GetCheckbox:
@@ -41,6 +40,12 @@ class GetCheckbox:
         paragraphs = alternative_element.locator('p').all_text_contents()
         return ' '.join(paragraphs).strip()
 
+
     def _extract_media_from_alternative(self, alternative_element):
-        media_collector = CollectMedia(alternative_element, self.video_media_selector, self.img_media_selector)
-        return media_collector.extract_media()
+        from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media.util.media_utils import collect_media_if_exists
+        return collect_media_if_exists(
+            page=self.page,
+            card=alternative_element,
+            video_media_selector=self.video_media_selector,
+            img_media_selector=self.img_media_selector
+        )
