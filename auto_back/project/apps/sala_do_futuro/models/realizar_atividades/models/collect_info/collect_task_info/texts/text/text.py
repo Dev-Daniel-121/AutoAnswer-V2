@@ -14,8 +14,7 @@ class Text:
             return ''
 
     def run(self):
-        from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectSection, CollectMedia
-        
+        from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info import CollectSection, CollectMedia, GeneralText
         results = {}
 
         try:
@@ -70,4 +69,8 @@ class Text:
                 }
             }
 
-        return results
+        general_summary = GeneralText(results).run()
+        results_with_general = {'general': general_summary['geral']}
+        results_with_general.update(results)
+
+        return results_with_general

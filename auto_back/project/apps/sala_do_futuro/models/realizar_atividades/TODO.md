@@ -249,35 +249,45 @@
 
 <br><br><br>
 
-| O que está sendo feito                                           |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
-| :--------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-| Planejar Como Guardar as Imgs por no Máx 7d                      | 09/05/2025 |    13:05     |   13:12   |    7min     |
-| Baixar img pelo seu SRC usando a biblioteca Request              | 09/05/2025 |    13:37     |   14:02   |    25min    |
-| Ajustando Local que baixa as img                                 | 09/05/2025 |    14:09     |   14:14   |    5min     |
-| Corrigir erro de Importação                                      | 09/05/2025 |    14:45     |   14:59   |    14min    |
-| Colocar o Self.Page nos items que ultilizam o CollectMedia       | 09/05/2025 |    15:28     |   15:30   |    2min     |
-| Teste                                                            | 09/05/2025 |    15:30     |   15:35   |    5min     |
-| Criando Validação para Criar pasta apenas quando tiver IMG       | 09/05/2025 |    15:35     |   15:40   |    5min     |
-| Testes                                                           | 09/05/2025 |    15:40     |   15:43   |    3min     |
-| Atualizando ExtractImg                                           | 09/05/2025 |    15:44     |   15:45   |    1min     |
-| Testes                                                           | 09/05/2025 |    15:45     |   15:46   |    1min     |
-| Consertar Bugs                                                   | 09/05/2025 |    16:11     |   16:12   |    1min     |
-| Cronometrando Tempo de Download de Media (IMG)                   | 09/05/2025 |    16:14     |   16:14   |    0min     |
-| Procurando código onde está pegando Tempo e processamento        | 09/05/2025 |    16:16     |   16:17   |    1min     |
-| Corrigindo Parte onde consome bastante  tempo e processamento    | 09/05/2025 |    16:19     |   16:38   |    19min    |
-| Corrigindo Códigos qeu usam a função media_utils.py              | 09/05/2025 |    16:40     |   16:41   |    1min     |
-| Corrigindo código Texto para usar a função media_utils.py        | 09/05/2025 |    16:13     |   16:47   |    34min    |
-| Contar Textos, Num de Quest, Tipos de Quest, Quest Desconhecidas | 09/05/2025 |    17:17     |   17:39   |    22min    |
-| Melhorando Função de Display_info                                | 09/05/2025 |    17:42     |   17:49   |    7min     |
-| Selecionar IA                                                    | 09/05/2025 |    00:07     |   00:07   |    0min     |
-| Criar Prompt para IA                                             | 09/05/2025 |    00:37     |   00:57   |    20min    |
-|                                                                  | 09/05/2025 |              |           |             |
-| Contar tempo de até 7 dias para deletar a pasta e seus items     | 09/05/2025 |              |           |             |
-|                                                                  | 09/05/2025 |              |           |             |
-|                                                                  | 09/05/2025 |              |           |             |
-| Passar esses Dados e Prompt para o JSON                          | 09/05/2025 |              |           |             |
-| Planejar automação para coletar Respostas                        | 09/05/2025 |              |           |             |
-|                                                                  | 09/05/2025 |              |           |             |
+| O que está sendo feito                                                                   |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
+| :--------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
+| Autoanswer (Planejando Passos)                                                           | 10/05/2025 |    12:30     |   12:35   |    5min     |
+| Autoanswer (Passar esses Dados e Prompt para o JSON)                                     | 10/05/2025 |    12:48     |   13:40   |    52min    |
+| Autoanswer (Passar dados de Tipos de Questões para TaksInfo Dict)                        | 10/05/2025 |    12:56     |   13:03   |    7min     |
+| Autoanswer (Teste de Passar dados de Tipos de Questões para TaksInfo Dict)               | 10/05/2025 |    13:03     |   13:05   |    2min     |
+| Autoanswer (Teste de Passar esses Dados JSON)                                            | 10/05/2025 |    13:40     |   13:47   |    7min     |
+| Autoanswer (Corrigindo Bug de Local do Data JSON)                                        | 10/05/2025 |    14:26     |   14:43   |    17min    |
+| Autoanswer (Salvando Text no Data JSON)                                                  | 10/05/2025 |    14:43     |   15:00   |    17min    |
+| Autoanswer (Salvando o General Text no dict do Text)                                     | 10/05/2025 |    14:50     |   15:00   |    10min    |
+| Autoanswer (Testando General Text no dict do Text)                                       | 10/05/2025 |    15:01     |   15:02   |    1min     |
+| Autoanswer (Salvando Questionarie com User_ID no Data JSON)                              | 10/05/2025 |    15:36     |   16:02   |    26min    |
+| Autoanswer (Atualizando Nome de General para GeneralQuests)                              | 10/05/2025 |    15:43     |   15:46   |    3min     |
+| Autoanswer (Salvando o General Quests no dict Questionarie)                              | 10/05/2025 |    15:47     |   16:01   |    14min    |
+| Autoanswer (Teste de Salvar o General Quests no Questionarie e no User_Id no Data JSON)  | 10/05/2025 |    16:02     |   16:04   |    2min     |
+| Autoanswer (Resolvendo Bug no display_info)                                              | 10/05/2025 |    16:04     |   16:07   |    3min     |
+| Autoanswer (Teste de Salvar o General Quests no Questionarie e no User_Id no Data JSON)  | 10/05/2025 |    16:07     |   16:09   |    2min     |
+| Autoanswer (Traduzir para ING os dados que irão para o JSON)                             | 10/05/2025 |    18:48     |   18:53   |    5min     |
+| Autoanswer (Contando Seções no GeneralQuest)                                             | 10/05/2025 |    18:54     |   19:03   |    9min     |
+| Autoanswer (Testando o Seções no GeneralQuest)                                           | 10/05/2025 |    19:03     |   19:05   |    2min     |
+| Autoanswer (Buscando por consumo excecivo)                                               | 10/05/2025 |    19:06     |   19:07   |    1min     |
+| Autoanswer (Contando Textos e passando para o task_info)                                 | 10/05/2025 |    19:08     |   19:20   |    12min    |
+| Autoanswer (Atualizando contagem de Textos na função display_info)                       | 10/05/2025 |    19:18     |   19:19   |    1min     |
+| Autoanswer (Testando contagem de Textos na função display_info e no task_info)           | 10/05/2025 |    19:20     |   19:22   |    2min     |
+| Autoanswer (Consertando equivoco na hora de passar o Num de texts para o task_info)      | 10/05/2025 |    19:22     |   19:23   |    1min     |
+| Autoanswer (Testando contagem de Textos na função display_info e no task_info)           | 10/05/2025 |    19:23     |   19:24   |    1min     |
+
+| Autoanswer (Contar tempo de até 7 dias para deletar a pasta e seus items)                | 10/05/2025 |              |           |             |
+|                                                                                          | 10/05/2025 |              |           |             |
+| Autoanswer (Contar tempo de até 7 dias para deletar a pasta e seus items)                | 10/05/2025 |              |           |             |
+| Autoanswer (Planejar automação para coletar Respostas)                                   | 10/05/2025 |              |           |             |
+| Autoanswer (Criar automação para coletar Respostas)                                      | 10/05/2025 |              |           |             |
+| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 10/05/2025 |              |           |             |
+| Autoanswer (Responder as questões)                                                       | 10/05/2025 |              |           |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 10/05/2025 |              |           |             |
+| Autoanswer (Planejar Dashboard para Ánalise)                                             | 10/05/2025 |              |           |             |
+| Autoanswer (Mostrar Resultado)                                                           | 10/05/2025 |              |           |             |
+| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 09/05/2025 |              |           |             |
+|                                                                                          | 10/05/2025 |              |           |             |
 
 
 

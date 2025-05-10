@@ -1,4 +1,4 @@
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie import Questions, QuestionInfo
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie import Questions, QuestionInfo, GeneralQuests
 from project import types
 
 class Questionarie:
@@ -119,6 +119,8 @@ class Questionarie:
                     }
                 }
 
+            general_quests = GeneralQuests(questionarie)
+            questionarie = general_quests.run()
             return questionarie
         except Exception as e:
             print(f'[{types[4]}] Erro ao obter informações das questões: {e}')

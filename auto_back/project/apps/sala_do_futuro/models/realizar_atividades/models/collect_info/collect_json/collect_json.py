@@ -1,31 +1,28 @@
+from .utils.config import JSON_PATH
 from project import types
-import json, os
+import os, json
 
 class CollectJson:
     def __init__(self):
-        pass
+        self.json_path = JSON_PATH
 
     def check_json_file(self):
-        print(f'[{types[9]}] Vericando se há \'Respostas Salvas\' para essa Atividade...\n')
-        
-        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-        json_path = os.path.join(base_dir, 'data', 'data.json')
+        print(f'[{types[9]}] Verificando se há \'Respostas Salvas\' para essa Atividade...\n')
 
-        if not os.path.exists(json_path):
-            print(f'[{types[4]}] O arquivo JSON não foi encontrado em {json_path}\n')
+        if not os.path.exists(self.json_path):
+            print(f'[{types[4]}] O arquivo JSON não foi encontrado em {self.json_path}\n')
             return None
         
-        return json_path
+        return self.json_path
 
-    def load_json_data(self, json_path):
-        with open(json_path, 'r') as file:
+    def load_json_data(self):
+        with open(self.json_path, 'r', encoding='utf-8') as file:
             return json.load(file)
 
     def check_component_in_responses(self, data, component):
         if component not in data['answers']:
             print(f'[{types[4]}] Componente \'{component}\' não encontrado nas respostas.\n')
             return None
-        
         return data['answers'][component]
 
     def check_saved_activity(self, component_data, id_activity):
@@ -49,12 +46,16 @@ class CollectJson:
     def run(self, component, id_activity):
         json_path = self.check_json_file()
         if json_path is None:
-            return
+            return None
         
-        data = self.load_json_data(json_path)
+        data = self.load_json_data()
+
         component_data = self.check_component_in_responses(data, component)
         if component_data is None:
-            return
-        
+            return None
+
         if self.check_saved_activity(component_data, id_activity):
             self.interact_with_user()
+            return component_data[id_activity]
+        
+        return None

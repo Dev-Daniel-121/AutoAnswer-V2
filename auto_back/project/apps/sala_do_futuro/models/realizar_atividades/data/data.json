@@ -1,9 +1,12 @@
 {
     "answers": {
-        "tarefa": {
+        "tarefas": {
             "id_task": {
                 "0": {
-                    "user": "",
+                    "user": {
+                        "id": "",
+                        "name": ""
+                    },
                     "time": {
                         "day": "02/05/2025",
                         "start_time": "12:00",
@@ -115,7 +118,6 @@
             "task_info": {
                 "status_atividade": "",
                 "id_da_atividade_do_site": "",
-                "id_da_atividade_gerado_automaticamente": "",
                 "tipo_atividade": "",
                 "matéria": "",
                 "titulo_atividade": "",
@@ -126,7 +128,7 @@
                 "tempo_gasto": "",
                 "rascunho": "",
                 "enviado": "",
-                "tipos_de_questões": {
+                "tipos_de_cards": {
                     "card-img": "",
                     "card-gif": "",
                     "card-video": "",
@@ -594,6 +596,423 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        },
+        "68074977": {
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "68074977",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Matemática",
+                "activity_title": "Sistemas de equações lineares – Parte 4",
+                "user": "Daniel Oliveira Matias",
+                "author": "anaselmaxavie2495862-sp",
+                "class_school": "3º B EM",
+                "expires_in": "13/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Leia o texto para responder às questões: Qual a duração ideal de um vídeo nas redes sociais? Confira agora!Que vídeos são uma das maiores tendências de marketing você provavelmente já sabe, não é mesmo? Mas qual a duração ideal de um vídeo? Descubra para Instagram, YouTube, Twitter e Facebook.Coloque-se no lugar do usuário e faça a seguinte pergunta: “afinal, quanto tempo você quer que os seus vídeos durem?”.Resposta complicada, não é mesmo? Afinal, tudo depende do grau de interesse, momento, dispositivo, necessidade e por aí vai. Apesar disso, existem diversas pesquisas que facilitam o trabalho dos empreendedores, estipulando uma duração média que traz os melhores resultados para cada uma das principais ferramentas disponíveis na web.Vamos conhecer esses números?InstagramDuração possível: até 1 minutoDuração ideal: 30 segundosYouTubeDuração possível: até 12 horasDuração ideal: 2 minutosFacebookDuração possível: até 4 horasDuração ideal: 1 minutoFonte: https://rockcontent.com/br/blog/duracao-de-videos/ (adaptado).",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "Calcule, em minutos, a duração ideal ao postar 7 vídeos no Instagram, 9 vídeos no YouTube e 4 vídeos no Facebook. Em seguida, analise a sentença a seguir e preencha a lacuna.",
+                                "Considerando ﻿xxx﻿ a quantidade de vídeos postados no Instagram, ﻿yyy﻿ no YouTube e ﻿zzz﻿ no Facebook, classifique as afirmativas a seguir como certas ou erradas.",
+                                "A quantidade de vídeos postados na rede social YouTube é:",
+                                "(UECE, 2020 – Adaptado) Na sala de reuniões de um condomínio, há mesas de 4, 5 e 6 lugares, perfazendo o total de 22 mesas. Na última reunião que houve, compareceram 113 pessoas, que foram acomodadas nessas mesas, ocupando todos os lugares. Se o número de mesas com 6 lugares era o dobro do número de mesas com 5 lugares, então, o número de mesas com 4 lugares era:"
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "Calcule, em minutos, a duração ideal ao postar 7 vídeos no Instagram, 9 vídeos no YouTube e 4 vídeos no Facebook. Em seguida, analise a sentença a seguir e preencha a lacuna.",
+                                "Considerando ﻿xxx﻿ a quantidade de vídeos postados no Instagram, ﻿yyy﻿ no YouTube e ﻿zzz﻿ no Facebook, classifique as afirmativas a seguir como certas ou erradas.",
+                                "A quantidade de vídeos postados na rede social YouTube é:",
+                                "(UECE, 2020 – Adaptado) Na sala de reuniões de um condomínio, há mesas de 4, 5 e 6 lugares, perfazendo o total de 22 mesas. Na última reunião que houve, compareceram 113 pessoas, que foram acomodadas nessas mesas, ocupando todos os lugares. Se o número de mesas com 6 lugares era o dobro do número de mesas com 5 lugares, então, o número de mesas com 4 lugares era:"
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Calcule, em minutos, a duração ideal ao postar 7 vídeos no Instagram, 9 vídeos no YouTube e 4 vídeos no Facebook. Em seguida, analise a sentença a seguir e preencha a lacuna.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Considerando ﻿xxx﻿ a quantidade de vídeos postados no Instagram, ﻿yyy﻿ no YouTube e ﻿zzz﻿ no Facebook, classifique as afirmativas a seguir como certas ou erradas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A quantidade de vídeos postados na rede social YouTube é:",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 3 vídeos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 5 vídeos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 8 vídeos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 13 vídeos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 21 vídeos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(UECE, 2020 – Adaptado) Na sala de reuniões de um condomínio, há mesas de 4, 5 e 6 lugares, perfazendo o total de 22 mesas. Na última reunião que houve, compareceram 113 pessoas, que foram acomodadas nessas mesas, ocupando todos os lugares. Se o número de mesas com 6 lugares era o dobro do número de mesas com 5 lugares, então, o número de mesas com 4 lugares era:",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 10.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 7.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 4.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 13.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 5.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
                     }
                 }
             }

@@ -97,7 +97,9 @@ class TaskInfo:
             'time_spent': '',
             'draft': '',
             'submitted': '',
+            'text_num': '',
             'question_types': {}
         }
 
         return task_info
+    

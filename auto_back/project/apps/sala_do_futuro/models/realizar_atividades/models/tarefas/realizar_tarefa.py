@@ -3,7 +3,7 @@ from project.apps.sala_do_futuro.models.realizar_atividades.models import Collec
 class RealizarTarefa:
     def __init__(self, page):
         self.page = page
-        self.collect_info = CollectInfo(page=self.page, activity_status='A Fazer', component='tarefa')
+        self.collect_info = CollectInfo(page=self.page, activity_status='A Fazer', component='tarefas')
         """
         self.collect_task_info = CollectTaskInfo(page=self.page, activity_status='A Fazer')
         self.questionarie = Questionarie(
