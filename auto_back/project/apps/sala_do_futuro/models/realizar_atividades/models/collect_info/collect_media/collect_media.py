@@ -1,11 +1,12 @@
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media import TranscriptYoutube, ExtractImg
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media import TranscriptYoutube, ExtractImg, DeleteMedia
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info import TaskInfo
 from project import types
 import os
 
 class CollectMedia:
-    def __init__(self, page, card, video_media_selector, img_media_selector):
-        if hasattr(card, 'element_handle'): card = card.element_handle()
+    def __init__(self, page, card, video_media_selector, img_media_selector, expiration_days=7):
+        if hasattr(card, 'element_handle'):
+            card = card.element_handle()
         self.page = page
         self.card = card
         self.content = {
@@ -16,8 +17,11 @@ class CollectMedia:
         self.video_media_selector = video_media_selector
         self.img_media_selector = img_media_selector
         self.transcriber = TranscriptYoutube()
+        self.expiration_days = expiration_days
+
         self.task_info = TaskInfo(
-            page=self.page, activity_status='',
+            page=self.page,
+            activity_status='',
             activity_type_class=':nth-match(li.MuiBreadcrumbs-li, 2)',
             material_activity_class='h6.css-yq44kw',
             activity_title_class='p.css-zscg42'
@@ -26,9 +30,30 @@ class CollectMedia:
         user, author, class_school, expires_in, site_activity_id = self.task_info.get_activity_infos()
 
         base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-        img_path = os.path.join(base_dir, 'data', 'img', str(site_activity_id))
+        media_base = os.path.join(base_dir, 'data', 'img')
+        os.makedirs(media_base, exist_ok=True)
 
-        self.image_downloader = ExtractImg(img_path)
+        existing_path = None
+        for item in os.listdir(media_base):
+            if item.startswith(str(site_activity_id)):
+                existing_path = os.path.join(media_base, item)
+                break
+
+        delete_media = DeleteMedia(base_path=media_base, max_age_days=self.expiration_days)
+        if existing_path and os.path.isdir(existing_path):
+            days_remaining = delete_media.get_remaining_days(existing_path)
+        else:
+            days_remaining = self.expiration_days
+
+        folder_name = f"{site_activity_id} ({days_remaining}d)"
+        img_path = os.path.join(media_base, folder_name)
+
+        self.image_downloader = ExtractImg(
+            download_path=img_path,
+            days_to_expire=self.expiration_days,
+            id_folder=folder_name,
+            time_remaining=days_remaining
+        )
 
     def extract_media(self):
         self._extract_videos()

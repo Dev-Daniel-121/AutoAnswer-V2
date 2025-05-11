@@ -1016,6 +1016,1412 @@
                     }
                 }
             }
+        },
+        "67467346": {
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "67467346",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "História",
+                "activity_title": "Crise da democracia liberal: a ascensão do nazismo",
+                "user": "Daniel Oliveira Matias",
+                "author": "rafaelcandido3034757-sp",
+                "class_school": "3º B EM",
+                "expires_in": "16/05/2025 - 23:59:59",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2,
+                    "Checkbox": 1
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Leia o trecho de artigo abaixo para responder às questões:Por que devemos recordar os anos da República de WeimarA história nunca se repete seguindo o mesmo roteiro. Será que nossa situação atual se parece em algo à daqueles turbulentos anos 1930 na Alemanha?Weimar é uma pequena cidade do Estado alemão da Turíngia, muito próxima de outras com óbvias ressonâncias marxistas, como Erfurt, Gota e a hegeliana Jena. No final do século XVIII, quando mal tinha 6.000 habitantes, foi habitada pelos dois grandes escritores alemães, Goethe e Schiller. Lá também passou grande parte de sua vida o músico Franz Liszt. E, como se tivesse um ímã para atrair gênios, foi nesse mesmo lugar que F. Nietzsche morreu, em 1900, e que nasceu o movimento arquitetônico da escola Bauhaus. Com o tempo, Weimar deixou de ser associada exclusivamente a uma população alemã de afortunado passado artístico e cultural e acabou se tornando uma grande metáfora, o epítome do fracasso da democracia liberal parlamentar. Não em vão, o que nasceu como produto de um impulso otimista de regeneração nacional e democrática acabou nas trevas do nazismo. Por isso, quando hoje em dia falamos da “síndrome de Weimar”, estamos nos referindo às tensões que ameaçam pôr em perigo a estabilidade da democracia liberal − tensões provocadas principalmente pela revitalização do populismo e pela guinada iliberal, quando não autoritária, que verificamos em alguns lugares da Europa.Fonte: https://brasil.elpais.com/brasil/2019/07/26/cultura/1564148647_990100.html.",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
+                                "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
+                                "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
+                                "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
+                                "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
+                                "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
+                                "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) O regime de Weimar teve um enorme sucesso econômico, mas não compensou as perdas sofridas com a Primeira Guerra, como prometiam os nazistas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O modelo comunista adotado por Weimar aumentou a insatisfação popular e facilitou a oposição nazista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) O governo de Weimar cancelou o Tratado de Versalhes, enfurecendo os nazistas, que apoiavam o tratado de fim da Primeira Guerra.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) A estratégia econômica de Weimar causou a crise de 1929 no mundo, o que fez com que os nazistas parassem de apoiar o governo.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) O cenário de crise econômica, política e social, gerado pela guerra e agravado pela crise de 1929, levou os nazistas a conspirarem contra Weimar.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Checkbox",
+                        "statement": "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) Em 1923, em sua primeira tentativa de golpe, conhecida como o \"Putsch de Munique\", Hitler obteve pela primeira vez o poder político na Alemanha.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O oportunismo de Hitler ao usar um incêndio no parlamento em 1933 como propaganda anticomunista foi um marco do estabelecimento da ditadura nazista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) As ambições totalitárias de Hitler se traduziram na sua ideia de reconstrução do \"império alemão\", o Terceiro Reich.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) O envolvimento da população foi pequeno, uma vez que Hitler efetuou seu assalto ao poder com apoio do exército.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) A criação de órgãos de repressão, como grupos paramilitares e órgãos policiais, foi essencial para o controle social e silenciamento da oposição.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) repudiadas – Estado – medo – eliminados – racista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) repudiadas – povo – medo – educados – racista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) defendidas – povo – diálogo – educados – econômico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) repudiadas – Estado – diálogo – educados – racista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) defendidas – povo – diálogo – eliminados – econômico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "67930997": {
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "67930997",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Língua Portuguesa",
+                "activity_title": "Textos contemporâneos na construção da opinião - Parte 1",
+                "user": "Daniel Oliveira Matias",
+                "author": "wesleydinizpe4165238-sp",
+                "class_school": "3º B EM",
+                "expires_in": "12/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Checkbox": 1,
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Leia este trecho de música contemporânea e um trecho de poema: IsmáliaPrimeiro cê sequestra eles, rouba eles, mente sobre elesNega o deus deles, ofende, separa elesSe algum sonho ousa correr, cê para ele[...]É a desunião dos preto junto à visão sagaz (Ismália)De quem tem tudo, menos cor, onde a cor importa demais[...]Olhei no espelho, Ícaro me encarou:\"Cuidado, não voa tão perto do solEles num guenta te ver livre, imagina te ver rei\"O abutre quer te ver no lixo pra dizer:\"Ó, num falei?!\"No fim das conta é tudo Ismália, IsmáliaIsmália, IsmáliaIsmália, IsmáliaQuis tocar o céu, mas terminou no chãoTer pele escura é ser Ismália, IsmáliaFonte: Ismália, Emicida. Ismália\"Quando Ismália enlouqueceuPôs-se na torre a sonharViu uma lua no céuViu outra lua no marNo sonho em que se perdeu[...]Queria a lua do céuQueria a lua do marAs asas que Deus lhe deuRuflaram de par em parSua alma subiu ao céuSeu corpo desceu ao mar\"Fonte: Ismália, Alphonsus de Guimaraens.",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "A respeito da relação entre o trecho lido da música \"Ismália\" de Emicida e o trecho do poema \"Ismália\" de Alphonsus de Guimaraens, ordene corretamente as palavras a seguir.",
+                                "Releia este fragmento da música de Emicida: \"Primeiro cê sequestra eles, rouba eles, mente sobre elesNega o deus deles, ofende, separa elesSe algum sonho ousa correr, cê para ele\"Fonte: Ismália, Emicida.As músicas utilizam de diferentes estratégias estilísticas para estabelecer diferentes efeitos de sentido. Analise as afirmativas a seguir a respeito dos efeitos de sentido desse fragmento da música \"Ismália\" e assinale as alternativas corretas.",
+                                "Releia este trecho da música: \"Cuidado, não voa tão perto do solEles num guenta te ver livre, imagina te ver rei.\"Fonte: Ismália, Emicida.Muitas vezes, o efeito de sentido das conjunções está implícito nos textos. Assinale a alternativa em que a conjunção incluída no trecho mantém o sentido original do fragmento.",
+                                "(COMVEST, 2021 - Adaptado) Esses artifícios de montagem, mixagem e scratching dão ao rap uma variedade de formas de apropriação que parecem tão volúveis e imaginativas quanto as das artes maiores – como, digamos, as exemplificadas na “Mona Lisa de bigode” de Duchamp e nas múltiplas reduplicações de imagens comerciais pré-fabricadas de Andy Warhol. O rap também apresenta uma variedade de conteúdos. Não apenas utiliza trechos de canções populares, como também absorve ecleticamente elementos da música clássica, de apresentações de TV, de jingles de publicidade e da música eletrônica de videogames. Ele se apropria até mesmo de conteúdos não musicais, como reportagens de jornais na TV e fragmentos de discursos de Malcom X e Martin Luther King. Fonte: Richard Shusterman, Vivendo a arte. São Paulo: Editora 34, 1998, p.149.Fonte: Marcel Duchamp, “Mona Lisa de Bigode”, 1919.A emergência e a consolidação do rap como linguagem artística foram cercadas de polêmicas de natureza ética, política e cultural. Com base no excerto acima e no quadro de Marcel Duchamp, assinale a alternativa correta."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "A respeito da relação entre o trecho lido da música \"Ismália\" de Emicida e o trecho do poema \"Ismália\" de Alphonsus de Guimaraens, ordene corretamente as palavras a seguir.",
+                                "Releia este fragmento da música de Emicida: \"Primeiro cê sequestra eles, rouba eles, mente sobre elesNega o deus deles, ofende, separa elesSe algum sonho ousa correr, cê para ele\"Fonte: Ismália, Emicida.As músicas utilizam de diferentes estratégias estilísticas para estabelecer diferentes efeitos de sentido. Analise as afirmativas a seguir a respeito dos efeitos de sentido desse fragmento da música \"Ismália\" e assinale as alternativas corretas.",
+                                "Releia este trecho da música: \"Cuidado, não voa tão perto do solEles num guenta te ver livre, imagina te ver rei.\"Fonte: Ismália, Emicida.Muitas vezes, o efeito de sentido das conjunções está implícito nos textos. Assinale a alternativa em que a conjunção incluída no trecho mantém o sentido original do fragmento.",
+                                "(COMVEST, 2021 - Adaptado) Esses artifícios de montagem, mixagem e scratching dão ao rap uma variedade de formas de apropriação que parecem tão volúveis e imaginativas quanto as das artes maiores – como, digamos, as exemplificadas na “Mona Lisa de bigode” de Duchamp e nas múltiplas reduplicações de imagens comerciais pré-fabricadas de Andy Warhol. O rap também apresenta uma variedade de conteúdos. Não apenas utiliza trechos de canções populares, como também absorve ecleticamente elementos da música clássica, de apresentações de TV, de jingles de publicidade e da música eletrônica de videogames. Ele se apropria até mesmo de conteúdos não musicais, como reportagens de jornais na TV e fragmentos de discursos de Malcom X e Martin Luther King. Fonte: Richard Shusterman, Vivendo a arte. São Paulo: Editora 34, 1998, p.149.Fonte: Marcel Duchamp, “Mona Lisa de Bigode”, 1919.A emergência e a consolidação do rap como linguagem artística foram cercadas de polêmicas de natureza ética, política e cultural. Com base no excerto acima e no quadro de Marcel Duchamp, assinale a alternativa correta."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "A respeito da relação entre o trecho lido da música \"Ismália\" de Emicida e o trecho do poema \"Ismália\" de Alphonsus de Guimaraens, ordene corretamente as palavras a seguir.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Checkbox",
+                        "statement": "Releia este fragmento da música de Emicida: \"Primeiro cê sequestra eles, rouba eles, mente sobre elesNega o deus deles, ofende, separa elesSe algum sonho ousa correr, cê para ele\"Fonte: Ismália, Emicida.As músicas utilizam de diferentes estratégias estilísticas para estabelecer diferentes efeitos de sentido. Analise as afirmativas a seguir a respeito dos efeitos de sentido desse fragmento da música \"Ismália\" e assinale as alternativas corretas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) A enumeração de ações negativas cria um efeito de acumulação no texto, intensificando a denúncia à violência e à opressão sistemática contra a população negra no Brasil.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) A composição das frases em um padrão sintático semelhante favorece a construção do ritmo da música, além de reforçar a ideia de uma sequência de ações opressoras e controladoras.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) A interrupção da busca pelo sonho, expressa no verso \"Se algum sonho ousa correr, cê para ele\", simboliza a repressão às aspirações e à liberdade da população negra, reforçando o tema do racismo.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) O uso de linguagem direta e coloquial, como a presença da forma \"cê\" do pronome pessoal \"você\", expressa um ponto de vista pejorativo da população branca no Brasil em relação à população negra do país.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) O uso de formas verbais no imperativo e na segunda pessoa, como \"sequestra\", \"rouba\" e \"mente\", cria um tom confrontador, sugerindo que o ouvinte/leitor pode estar envolvido ou ser cúmplice das violências e preconceitos mencionados no texto.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Releia este trecho da música: \"Cuidado, não voa tão perto do solEles num guenta te ver livre, imagina te ver rei.\"Fonte: Ismália, Emicida.Muitas vezes, o efeito de sentido das conjunções está implícito nos textos. Assinale a alternativa em que a conjunção incluída no trecho mantém o sentido original do fragmento.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) \"Cuidado, não voa tão perto do sol, ou  Eles num guenta te ver livre, imagina te ver rei.\"",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) \"Cuidado, não voa tão perto do sol, para  Eles num guenta te ver livre, imagina te ver rei.\"",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) \"Cuidado, não voa tão perto do sol, mas  Eles num guenta te ver livre, imagina te ver rei.\"",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) \"Cuidado, não voa tão perto do sol, então  Eles num guenta te ver livre, imagina te ver rei.\"",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) \"Cuidado, não voa tão perto do sol, porque Eles num guenta te ver livre, imagina te ver rei.\"",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {
+                                "0": {
+                                    "type": "image",
+                                    "src": "https://edusp-static.ip.tv/tms/edusp/tarefasplp/Tr6qDINPWeApt0yA6843f5lMgAJEfJ.jpg",
+                                    "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\67930997 (7d)\\Tr6qDINPWeApt0yA6843f5lMgAJEfJ.jpg"
+                                }
+                            },
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(COMVEST, 2021 - Adaptado) Esses artifícios de montagem, mixagem e scratching dão ao rap uma variedade de formas de apropriação que parecem tão volúveis e imaginativas quanto as das artes maiores – como, digamos, as exemplificadas na “Mona Lisa de bigode” de Duchamp e nas múltiplas reduplicações de imagens comerciais pré-fabricadas de Andy Warhol. O rap também apresenta uma variedade de conteúdos. Não apenas utiliza trechos de canções populares, como também absorve ecleticamente elementos da música clássica, de apresentações de TV, de jingles de publicidade e da música eletrônica de videogames. Ele se apropria até mesmo de conteúdos não musicais, como reportagens de jornais na TV e fragmentos de discursos de Malcom X e Martin Luther King. Fonte: Richard Shusterman, Vivendo a arte. São Paulo: Editora 34, 1998, p.149.Fonte: Marcel Duchamp, “Mona Lisa de Bigode”, 1919.A emergência e a consolidação do rap como linguagem artística foram cercadas de polêmicas de natureza ética, política e cultural. Com base no excerto acima e no quadro de Marcel Duchamp, assinale a alternativa correta.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) Os elementos poéticos do rap não podem ser comparados aos procedimentos das artes maiores, pois sua preocupação é mais política do que artística.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) A incorporação das referências culturais nas canções dos Racionais Mc’s é comparável ao gesto de Marcel Duchamp ao pintar um bigode na Mona Lisa, de Leonardo da Vinci. Ambos são apropriações imaginativas e críticas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) O modernismo de Marcel Duchamp, os quadros do pintor norte-americano Andy Wahrol e as canções de rap não têm valor artístico, pois expressam a degradação e o ecletismo de uma sociedade de massas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) O rap dos Racionais Mc’s e as artes modernas não fazem distinção entre a cultura erudita e a de massa, misturam os seus elementos e produzem obras destituídas de crítica social.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) O rap, ao contrário das artes visuais modernas, baseia-se na originalidade absoluta, rejeitando qualquer forma de apropriação ou reutilização de elementos culturais preexistentes.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "67212663": {
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "67212663",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "História",
+                "activity_title": " Os desdobramentos da Primeira Guerra e \"acordos\" de paz",
+                "user": "Daniel Oliveira Matias",
+                "author": "rafaelcandido3034757-sp",
+                "class_school": "3º B EM",
+                "expires_in": "16/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 3,
+                    "Checkbox": 1
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {
+                            "0": {
+                                "type": "image",
+                                "src": "https://edusp-static.ip.tv/tms/edusp/tspchs6/8z9PrIYU88D31slWPVSY0wpIfQ6Nw6.png",
+                                "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\67212663 (7d)\\8z9PrIYU88D31slWPVSY0wpIfQ6Nw6.png"
+                            }
+                        },
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Analise a charge para responder às questões:Legenda: No balão da fala das personagens, lê-se: você tem que engolir quer goste ou não.Na pílula que está na colher, lê-se: termos de paz.Nos dedos da não que segura a personagem, lê-se: Império Britânico, França, América, Itália, Japão.Fonte: https://brainly.com.br/tarefa/60534027",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "O tema principal da charge é o Tratado de Versalhes. Leia a frase com atenção:\"O Tratado de Versalhes, assinado no ano de 1919, é o acordo que oficializou o fim da Primeira Guerra Mundial, resolvendo as divergências e, consequentemente, estabelecendo a definitiva paz entre as nações signatárias.\"A partir da análise da charge e de seus conhecimentos sobre o fim da Primeira Guerra Mundial, pode-se dizer que essa afirmação é...",
+                                "A charge faz uma análise crítica do Tratado de Versalhes, evidenciando uma característica importante da forma como o documento foi produzido. A partir da análise do desenho, assinale a alternativa que demonstra a característica do Tratado nele ilustrada.",
+                                "A charge fala em \"termos de paz\", ou seja, medidas que deveriam garantir estabilidade política e militar ao continente europeu. Assinale as alternativas que caracterizam corretamente as medidas determinadas pelo Tratado de Versalhes.",
+                                "O fim da Primeira Guerra Mundial trouxe complexas e importantes consequências para o continente europeu e para o mundo. A criação de tratados como o de Versalhes acarretou mudanças que iriam afetar a estrutura política, econômica, social e geográfica da Europa. Analise se são verdadeiras ou falsas as afirmações sobre a Europa do pós-guerra.I - Mudanças no mapa do continente europeu, como a dissolução do Império Austro-húngaro e a criação de novos países, solucionaram as disputas e conflitos étnicos e nacionalistas que contribuíram para a guerra.II - As pesadas imposições econômicas e militares à Alemanha desestabilizaram completamente o projeto republicano implementado no país após a guerra, criando um ambiente de disputas e conflitos políticos.III - Um dos pontos positivos do fim da guerra foi o ressurgimento da Liga das Nações, organismo internacional para a manutenção da paz criado pelos países europeus no século XIX.IV - Houve uma desmilitarização de todo o continente, prevista pelo Tratado de Versalhes, que tinha como objetivo evitar o surgimento de novos conflitos nos anos imediatamente posteriores ao fim da Grande Guerra.Agora, assinale a alternativa correspondente."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "O tema principal da charge é o Tratado de Versalhes. Leia a frase com atenção:\"O Tratado de Versalhes, assinado no ano de 1919, é o acordo que oficializou o fim da Primeira Guerra Mundial, resolvendo as divergências e, consequentemente, estabelecendo a definitiva paz entre as nações signatárias.\"A partir da análise da charge e de seus conhecimentos sobre o fim da Primeira Guerra Mundial, pode-se dizer que essa afirmação é...",
+                                "A charge faz uma análise crítica do Tratado de Versalhes, evidenciando uma característica importante da forma como o documento foi produzido. A partir da análise do desenho, assinale a alternativa que demonstra a característica do Tratado nele ilustrada.",
+                                "A charge fala em \"termos de paz\", ou seja, medidas que deveriam garantir estabilidade política e militar ao continente europeu. Assinale as alternativas que caracterizam corretamente as medidas determinadas pelo Tratado de Versalhes.",
+                                "O fim da Primeira Guerra Mundial trouxe complexas e importantes consequências para o continente europeu e para o mundo. A criação de tratados como o de Versalhes acarretou mudanças que iriam afetar a estrutura política, econômica, social e geográfica da Europa. Analise se são verdadeiras ou falsas as afirmações sobre a Europa do pós-guerra.I - Mudanças no mapa do continente europeu, como a dissolução do Império Austro-húngaro e a criação de novos países, solucionaram as disputas e conflitos étnicos e nacionalistas que contribuíram para a guerra.II - As pesadas imposições econômicas e militares à Alemanha desestabilizaram completamente o projeto republicano implementado no país após a guerra, criando um ambiente de disputas e conflitos políticos.III - Um dos pontos positivos do fim da guerra foi o ressurgimento da Liga das Nações, organismo internacional para a manutenção da paz criado pelos países europeus no século XIX.IV - Houve uma desmilitarização de todo o continente, prevista pelo Tratado de Versalhes, que tinha como objetivo evitar o surgimento de novos conflitos nos anos imediatamente posteriores ao fim da Grande Guerra.Agora, assinale a alternativa correspondente."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "O tema principal da charge é o Tratado de Versalhes. Leia a frase com atenção:\"O Tratado de Versalhes, assinado no ano de 1919, é o acordo que oficializou o fim da Primeira Guerra Mundial, resolvendo as divergências e, consequentemente, estabelecendo a definitiva paz entre as nações signatárias.\"A partir da análise da charge e de seus conhecimentos sobre o fim da Primeira Guerra Mundial, pode-se dizer que essa afirmação é...",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) correta.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) parcialmente correta.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) incorreta.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A charge faz uma análise crítica do Tratado de Versalhes, evidenciando uma característica importante da forma como o documento foi produzido. A partir da análise do desenho, assinale a alternativa que demonstra a característica do Tratado nele ilustrada.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) O poder do tratado de curar todos os males e problemas da Europa.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O fato de nenhuma nação ter concordado ou aceito integralmente o documento.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) O caráter impositivo dos termos e das medidas do tratado.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) O domínio dos Estados Unidos na elaboração do documento.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) O fato de o documento impor a justa aniquilação dos perdedores.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Checkbox",
+                        "statement": "A charge fala em \"termos de paz\", ou seja, medidas que deveriam garantir estabilidade política e militar ao continente europeu. Assinale as alternativas que caracterizam corretamente as medidas determinadas pelo Tratado de Versalhes.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) Todos os países, exceto os Estados Unidos, tiveram que arcar com os custos do conflito.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) Foi exigido aos perdedores que se pagassem pesadas indenizações e compensações aos vencedores.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) Interesses coloniais, como a conquista de territórios, das nações vencedoras foram atendidos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) O Império Austro-húngaro foi considerado o principal responsável pelo conflito e recebeu as mais pesadas punições.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) Houve a determinação do fim da exploração colonial como forma de evitar novos conflitos entre as potências imperialistas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "O fim da Primeira Guerra Mundial trouxe complexas e importantes consequências para o continente europeu e para o mundo. A criação de tratados como o de Versalhes acarretou mudanças que iriam afetar a estrutura política, econômica, social e geográfica da Europa. Analise se são verdadeiras ou falsas as afirmações sobre a Europa do pós-guerra.I - Mudanças no mapa do continente europeu, como a dissolução do Império Austro-húngaro e a criação de novos países, solucionaram as disputas e conflitos étnicos e nacionalistas que contribuíram para a guerra.II - As pesadas imposições econômicas e militares à Alemanha desestabilizaram completamente o projeto republicano implementado no país após a guerra, criando um ambiente de disputas e conflitos políticos.III - Um dos pontos positivos do fim da guerra foi o ressurgimento da Liga das Nações, organismo internacional para a manutenção da paz criado pelos países europeus no século XIX.IV - Houve uma desmilitarização de todo o continente, prevista pelo Tratado de Versalhes, que tinha como objetivo evitar o surgimento de novos conflitos nos anos imediatamente posteriores ao fim da Grande Guerra.Agora, assinale a alternativa correspondente.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "﻿A) F – V – F – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) F – F – F – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) V – V – F – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) F – V – F – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) V – F – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
         }
     },
     "redacao": {

@@ -251,41 +251,24 @@
 
 | O que está sendo feito                                                                   |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
 | :--------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-| Autoanswer (Planejando Passos)                                                           | 10/05/2025 |    12:30     |   12:35   |    5min     |
-| Autoanswer (Passar esses Dados e Prompt para o JSON)                                     | 10/05/2025 |    12:48     |   13:40   |    52min    |
-| Autoanswer (Passar dados de Tipos de Questões para TaksInfo Dict)                        | 10/05/2025 |    12:56     |   13:03   |    7min     |
-| Autoanswer (Teste de Passar dados de Tipos de Questões para TaksInfo Dict)               | 10/05/2025 |    13:03     |   13:05   |    2min     |
-| Autoanswer (Teste de Passar esses Dados JSON)                                            | 10/05/2025 |    13:40     |   13:47   |    7min     |
-| Autoanswer (Corrigindo Bug de Local do Data JSON)                                        | 10/05/2025 |    14:26     |   14:43   |    17min    |
-| Autoanswer (Salvando Text no Data JSON)                                                  | 10/05/2025 |    14:43     |   15:00   |    17min    |
-| Autoanswer (Salvando o General Text no dict do Text)                                     | 10/05/2025 |    14:50     |   15:00   |    10min    |
-| Autoanswer (Testando General Text no dict do Text)                                       | 10/05/2025 |    15:01     |   15:02   |    1min     |
-| Autoanswer (Salvando Questionarie com User_ID no Data JSON)                              | 10/05/2025 |    15:36     |   16:02   |    26min    |
-| Autoanswer (Atualizando Nome de General para GeneralQuests)                              | 10/05/2025 |    15:43     |   15:46   |    3min     |
-| Autoanswer (Salvando o General Quests no dict Questionarie)                              | 10/05/2025 |    15:47     |   16:01   |    14min    |
-| Autoanswer (Teste de Salvar o General Quests no Questionarie e no User_Id no Data JSON)  | 10/05/2025 |    16:02     |   16:04   |    2min     |
-| Autoanswer (Resolvendo Bug no display_info)                                              | 10/05/2025 |    16:04     |   16:07   |    3min     |
-| Autoanswer (Teste de Salvar o General Quests no Questionarie e no User_Id no Data JSON)  | 10/05/2025 |    16:07     |   16:09   |    2min     |
-| Autoanswer (Traduzir para ING os dados que irão para o JSON)                             | 10/05/2025 |    18:48     |   18:53   |    5min     |
-| Autoanswer (Contando Seções no GeneralQuest)                                             | 10/05/2025 |    18:54     |   19:03   |    9min     |
-| Autoanswer (Testando o Seções no GeneralQuest)                                           | 10/05/2025 |    19:03     |   19:05   |    2min     |
-| Autoanswer (Buscando por consumo excecivo)                                               | 10/05/2025 |    19:06     |   19:07   |    1min     |
-| Autoanswer (Contando Textos e passando para o task_info)                                 | 10/05/2025 |    19:08     |   19:20   |    12min    |
-| Autoanswer (Atualizando contagem de Textos na função display_info)                       | 10/05/2025 |    19:18     |   19:19   |    1min     |
-| Autoanswer (Testando contagem de Textos na função display_info e no task_info)           | 10/05/2025 |    19:20     |   19:22   |    2min     |
-| Autoanswer (Consertando equivoco na hora de passar o Num de texts para o task_info)      | 10/05/2025 |    19:22     |   19:23   |    1min     |
-| Autoanswer (Testando contagem de Textos na função display_info e no task_info)           | 10/05/2025 |    19:23     |   19:24   |    1min     |
-
-| Autoanswer (Contar tempo de até 7 dias para deletar a pasta e seus items)                | 10/05/2025 |              |           |             |
+| Autoanswer (Contar tempo de até 7 dias para deletar a pasta e seus items)                | 10/05/2025 |    22:21     |   22:50   |    29min    |
+| Autoanswer (Testando Contar tempo de até 7 dias para deletar a pasta e seus items)       | 10/05/2025 |    22:50     |   22:52   |    2min     |
+| Autoanswer (Atualizadno sitema Contar tempo de até 7d para deletar a pasta e seus items) | 10/05/2025 |    23:07     |   23:14   |    7min     |
+| Autoanswer (Testando sitema Contar tempo de até 7d para deletar a pasta e seus items)    | 10/05/2025 |    23:07     |   23:14   |    7min     |
+| Autoanswer (Corrigindo sitema Contar tempo de até 7d para deletar a pasta e seus items)  | 10/05/2025 |    23:15     |   23:17   |    2min     |
+| Autoanswer (Testando sitema Contar tempo de até 7d para deletar a pasta e seus items)    | 10/05/2025 |    23:17     |   23:21   |    4min     |
+| Autoanswer (Testando sitema Contar tempo para apenas 1d para deletar a pasta)            | 10/05/2025 |    23:23     |   23:24   |    1min     |
+| Autoanswer (Corrigindo sitema Contar tempo para aceitar tempos diferentes de 7d)         | 10/05/2025 |    23:25     |   23:27   |    2min     |
+| Autoanswer (Testando sitema Contar tempo para apenas 1d para deletar a pasta)            | 10/05/2025 |    23:27     |   23:32   |    5min     |
 |                                                                                          | 10/05/2025 |              |           |             |
-| Autoanswer (Contar tempo de até 7 dias para deletar a pasta e seus items)                | 10/05/2025 |              |           |             |
+| Autoanswer (Criar sistema de Logs mostrando o que foi Baixado, Deletado ou Alterado)     | 10/05/2025 |              |           |             |
 | Autoanswer (Planejar automação para coletar Respostas)                                   | 10/05/2025 |              |           |             |
 | Autoanswer (Criar automação para coletar Respostas)                                      | 10/05/2025 |              |           |             |
 | Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 10/05/2025 |              |           |             |
 | Autoanswer (Responder as questões)                                                       | 10/05/2025 |              |           |             |
 | Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 10/05/2025 |              |           |             |
-| Autoanswer (Planejar Dashboard para Ánalise)                                             | 10/05/2025 |              |           |             |
 | Autoanswer (Mostrar Resultado)                                                           | 10/05/2025 |              |           |             |
+| Autoanswer (Planejar Dashboard para Ánalise)                                             | 10/05/2025 |              |           |             |
 | Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 09/05/2025 |              |           |             |
 |                                                                                          | 10/05/2025 |              |           |             |
 

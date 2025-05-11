@@ -1,10 +1,13 @@
 from urllib.parse import urlparse
 from project import types
-import os, requests
+import os, requests, time
 
 class ExtractImg:
-    def __init__(self, download_path):
+    def __init__(self, download_path, days_to_expire, id_folder, time_remaining):
         self.download_path = download_path
+        self.days_to_expire = days_to_expire
+        self.id_folder = id_folder
+        self.time_remaining = time_remaining
 
     def download_image(self, url, idx=None):
         try:
@@ -12,9 +15,11 @@ class ExtractImg:
 
             filename = os.path.basename(urlparse(url).path)
             if not filename:
-                filename = f'image_{idx or 'unknown'}.jpg'
+                filename = f'image_{idx or "unknown"}.jpg'
 
             filepath = os.path.join(self.download_path, filename)
+
+            start_time = time.time()
 
             response = requests.get(url, stream=True, timeout=10)
             response.raise_for_status()
@@ -22,6 +27,12 @@ class ExtractImg:
             with open(filepath, 'wb') as f:
                 for chunk in response.iter_content(1024):
                     f.write(chunk)
+
+            duration = time.time() - start_time
+
+            print(f"[{types[0]}] Imagem salva em: {filepath} (tempo: {duration:.2f}s)\n")
+            print(f"[{types[8]}] Os arquivos de mídia baixados por este programa serão armazenados por apenas {self.days_to_expire} dias.")
+            print(f"Certifique-se de verificar a pasta '{self.id_folder}' antes que o tempo expire ({self.time_remaining} dias restantes).\n")
 
             return filepath
         except Exception as e:

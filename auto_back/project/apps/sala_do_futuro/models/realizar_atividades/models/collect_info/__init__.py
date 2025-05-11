@@ -1,5 +1,5 @@
 from .collect_json import CollectJson, SaveJson
-from .collect_media import ExtractImg, TranscriptYoutube, CollectMedia
+from .collect_media import DeleteMedia, ExtractImg, TranscriptYoutube, CollectMedia
 from .collect_provas import CollectProvas
 from .collect_redacoes import CollectRedacoes
 from .collect_section import CollectSection
@@ -10,7 +10,7 @@ from .collect_info import CollectInfo
 
 __all__ = [
     'CollectJson', 'SaveJson',
-    'ExtractImg', 'TranscriptYoutube', 'CollectMedia',
+    'DeleteMedia', 'ExtractImg', 'TranscriptYoutube', 'CollectMedia',
     'CollectProvas',
     'CollectRedacoes',
     'CollectSection',

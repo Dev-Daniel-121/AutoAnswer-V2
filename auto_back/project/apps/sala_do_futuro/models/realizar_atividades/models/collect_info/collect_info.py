@@ -107,11 +107,11 @@ class CollectInfo:
 
         """
         self.collect_tarefas.run()
-        """
 
         print(f'\n\n\n{task_info}\n\n\n')
         print(f'{text}\n\n\n')
         print(f'{questionarie}\n\n\n')
+        """
 
         self.time.tempo_restante()
 

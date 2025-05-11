@@ -5,7 +5,6 @@ class GeneralQuests:
         self.data = questionarie_data
 
     def run(self):
-        print('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
         general = {
             'activity_score': '',
             'score_acquired': '',

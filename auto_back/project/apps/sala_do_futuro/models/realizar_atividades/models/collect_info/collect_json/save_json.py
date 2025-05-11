@@ -34,4 +34,4 @@ class SaveJson:
         with open(self.json_path, 'w', encoding='utf-8') as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
 
-        print(f'[{types[9]}] Atividade salva em \'{self.json_path}\' com ID \'{site_activity_id}\'.')
+        print(f'[{types[9]}] Dados da Atividade salvos em \'{self.json_path}\' com ID \'{site_activity_id}\'.\n')
