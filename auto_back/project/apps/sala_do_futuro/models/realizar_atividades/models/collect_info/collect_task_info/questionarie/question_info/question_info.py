@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 import re
 
 class QuestionInfo:
@@ -32,14 +32,14 @@ class QuestionInfo:
             }
         
         except TimeoutError:
-            print(f'[{types[8]}] Elementos não encontrados após {self.time_wait} milésimos')
+            print(f'[{LogType.WARNING}] Elementos não encontrados após {self.time_wait} milésimos')
             return {
                 'activity_score': '',
                 'score': ''
             }
         
         except Exception as e:
-            print(f'[{types[8]}] Erro ao obter pontuações: {e}')
+            print(f'[{LogType.WARNING}] Erro ao obter pontuações: {e}')
             return {
                 'activity_score': '',
                 'score': ''

@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 
 class CollectSection:
     def __init__(self, page, elem_section_class, time_wait):
@@ -23,7 +23,7 @@ class CollectSection:
             target_box = target_element.bounding_box()
 
             if not target_box:
-                print(f'[{types[4]}] Bounding box do elemento alvo não encontrada.')
+                print(f'[{LogType.ERROR}] Bounding box do elemento alvo não encontrada.')
                 return ''
 
             closest_section = None
@@ -41,5 +41,5 @@ class CollectSection:
             return closest_section.text_content() if closest_section else ''
 
         except Exception as e:
-            print(f'[{types[8]}] Não encontrada seção do elemento: {e}')
+            print(f'[{LogType.WARNING}] Não encontrada seção do elemento: {e}')
             return ''

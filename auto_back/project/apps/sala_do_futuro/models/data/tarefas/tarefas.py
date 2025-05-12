@@ -1,5 +1,5 @@
 from project.apps.sala_do_futuro.models.data.tarefas import Activities, Go, Sections
-from project import types
+from project import LogType
 import os
 
 class Tarefas:
@@ -13,19 +13,19 @@ class Tarefas:
         sections.run()
         activities.run()
 
-        input(f'\n[{types[6]}] Pressione Enter para continuar...')
+        input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
 
         go.go_entregues()
         sections.run()
         activities.run()
 
-        input(f'\n[{types[6]}] Pressione Enter para continuar...')
+        input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
 
         go.go_expiradas()
         sections.run()
         activities.run()
 
-        input(f'\n[{types[6]}] Pressione Enter para continuar...')
+        input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
 
     def run_redacoes(self, go, sections, activities):
         go.go_redacoes()
@@ -34,19 +34,19 @@ class Tarefas:
         sections.run()
         activities.run()
 
-        input(f'\n[{types[6]}] Pressione Enter para continuar...')
+        input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
 
         go.go_entregues()
         sections.run()
         activities.run()
 
-        input(f'\n[{types[6]}] Pressione Enter para continuar...')
+        input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
 
         go.go_expiradas()
         sections.run()
         activities.run()
 
-        input(f'\n[{types[6]}] Pressione Enter para continuar...')
+        input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
 
     def run_provas(self, go, sections, activities):
         go.go_provas()
@@ -55,19 +55,19 @@ class Tarefas:
         sections.run()
         activities.run()
 
-        input(f'\n[{types[6]}] Pressione Enter para continuar...')
+        input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
 
         go.go_entregues()
         sections.run()
         activities.run()
 
-        input(f'\n[{types[6]}] Pressione Enter para continuar...')
+        input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
 
         go.go_expiradas()
         sections.run()
         activities.run()
 
-        input(f'\n[{types[6]}] Pressione Enter para continuar...')
+        input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
 
     def run(self):
         go = Go(

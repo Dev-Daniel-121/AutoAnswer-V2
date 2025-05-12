@@ -1,9 +1,8 @@
-from project import types
+from project import LogType
 
 class GetRadios:
     def __init__(self, page, has_radios_class, radios_alternative_class, actual_quest, video_media_selector, img_media_selector):
         self.page = page
-        self.types = types
         self.has_radios_class = has_radios_class
         self.radios_alternative_class = radios_alternative_class
         self.actual_quest = actual_quest
@@ -32,7 +31,7 @@ class GetRadios:
             return alternatives
 
         except Exception as e:
-            print(f'[{self.types[4]}] Erro ao obter alternativas: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter alternativas: {e}')
             return []
 
     def _extract_text_from_alternative(self, alternative_element):

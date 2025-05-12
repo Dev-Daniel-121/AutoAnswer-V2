@@ -249,28 +249,36 @@
 
 <br><br><br>
 
-| O que está sendo feito                                                                   |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
-| :--------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-| Autoanswer (Contar tempo de até 7 dias para deletar a pasta e seus items)                | 10/05/2025 |    22:21     |   22:50   |    29min    |
-| Autoanswer (Testando Contar tempo de até 7 dias para deletar a pasta e seus items)       | 10/05/2025 |    22:50     |   22:52   |    2min     |
-| Autoanswer (Atualizadno sitema Contar tempo de até 7d para deletar a pasta e seus items) | 10/05/2025 |    23:07     |   23:14   |    7min     |
-| Autoanswer (Testando sitema Contar tempo de até 7d para deletar a pasta e seus items)    | 10/05/2025 |    23:07     |   23:14   |    7min     |
-| Autoanswer (Corrigindo sitema Contar tempo de até 7d para deletar a pasta e seus items)  | 10/05/2025 |    23:15     |   23:17   |    2min     |
-| Autoanswer (Testando sitema Contar tempo de até 7d para deletar a pasta e seus items)    | 10/05/2025 |    23:17     |   23:21   |    4min     |
-| Autoanswer (Testando sitema Contar tempo para apenas 1d para deletar a pasta)            | 10/05/2025 |    23:23     |   23:24   |    1min     |
-| Autoanswer (Corrigindo sitema Contar tempo para aceitar tempos diferentes de 7d)         | 10/05/2025 |    23:25     |   23:27   |    2min     |
-| Autoanswer (Testando sitema Contar tempo para apenas 1d para deletar a pasta)            | 10/05/2025 |    23:27     |   23:32   |    5min     |
-|                                                                                          | 10/05/2025 |              |           |             |
-| Autoanswer (Criar sistema de Logs mostrando o que foi Baixado, Deletado ou Alterado)     | 10/05/2025 |              |           |             |
-| Autoanswer (Planejar automação para coletar Respostas)                                   | 10/05/2025 |              |           |             |
-| Autoanswer (Criar automação para coletar Respostas)                                      | 10/05/2025 |              |           |             |
-| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 10/05/2025 |              |           |             |
-| Autoanswer (Responder as questões)                                                       | 10/05/2025 |              |           |             |
-| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 10/05/2025 |              |           |             |
-| Autoanswer (Mostrar Resultado)                                                           | 10/05/2025 |              |           |             |
-| Autoanswer (Planejar Dashboard para Ánalise)                                             | 10/05/2025 |              |           |             |
-| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 09/05/2025 |              |           |             |
-|                                                                                          | 10/05/2025 |              |           |             |
+| O que está sendo feito                                                                     |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
+| :----------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
+| Autoanswer (Passar Prompt para o JSON)                                                     | 11/05/2025 |    13:46     |   14:13   |    27min    |
+| Autoanswer (Testando Passar Prompt para o JSON)                                            | 11/05/2025 |    14:13     |   14:15   |    2min     |
+| Autoanswer (Criar sistema de Logs mostrando o que foi Erro, Baixado, Deletado ou Alterado) | 11/05/2025 |    14:38     |   15:25   |    47min    |
+| Autoanswer (Implementando sistema de Logs no CollectMedia)                                 | 11/05/2025 |    16:20     |   16:38   |    18min    |
+| Autoanswer (Implementando sistema de Types)                                                | 11/05/2025 |    16:20     |   16:36   |    16min    |
+| Autoanswer (Testando sistema de Logs)                                                      | 11/05/2025 |    16:33     |   16:36   |    3min     |
+| Autoanswer (Implementando sistema de Logs no ExtractMedia)                                 | 11/05/2025 |    16:39     |   16:40   |    1min     |
+| Autoanswer (Implementando sistema de Logs no DeleteMedia)                                  | 11/05/2025 |    16:40     |   16:43   |    3min     |
+| Autoanswer (Testando sistema de Logs)                                                      | 11/05/2025 |    16:43     |   16:46   |    3min     |
+| Autoanswer (Implementando sistema de Types)                                                | 11/05/2025 |    21:38     |   22:13   |    35min    |
+| Autoanswer (Testando sistema de Types)                                                     | 11/05/2025 |    22:13     |   22:16   |    3min     |
+| Autoanswer (Implementando LogTypes no Display e Métodos e Clases que o ultilizam)          | 11/05/2025 |    22:37     |   22:44   |    7min     |
+| Autoanswer (Testando LogTypes no Display e Métodos e Clases que o ultilizam)               | 11/05/2025 |    22:44     |   22:45   |    1min     |
+| Autoanswer (Descontinuando Types por completo (Deletando))                                 | 11/05/2025 |    22:45     |   22:53   |    8min     |
+| Autoanswer (Testando Se Types foi Descontinuado e não houve erros)                         | 11/05/2025 |    22:54     |   22:54   |    0min     |
+| Autoanswer (Resolvendo Conflitos de Importação)                                            | 11/05/2025 |    22:54     |   22:55   |    1min     |
+| Autoanswer (Testando Se Types foi Descontinuado e não houve erros)                         | 11/05/2025 |    22:57     |   22:59   |    2min     |
+| Autoanswer (Descontinuando Arquivo Types (Deletando))                                      | 11/05/2025 |    23:03     |   23:03   |    0min     |
+| Autoanswer (Criar automação para coletar Respostas)                                        | 11/05/2025 |              |           |             |
+|                                                                                            | 12/05/2025 |              |           |             |
+| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)     | 12/05/2025 |              |           |             |
+| Autoanswer (Responder as questões)                                                         | 12/05/2025 |              |           |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                          | 12/05/2025 |              |           |             |
+| Autoanswer (Mostrar Resultado)                                                             | 12/05/2025 |              |           |             |
+|                                                                                            | 13/05/2025 |              |           |             |
+| Autoanswer (Planejar Dashboard para Ánalise)                                               | 13/05/2025 |              |           |             |
+| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão)   | 13/05/2025 |              |           |             |
+|                                                                                            | 13/05/2025 |              |           |             |
 
 
 

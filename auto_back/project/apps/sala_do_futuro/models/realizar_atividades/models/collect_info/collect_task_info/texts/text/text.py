@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 
 class Text:
     def __init__(self, page, information_card_class, elem_section_class):
@@ -10,7 +10,7 @@ class Text:
         try:
             return card.text_content() or ''
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informações do texto: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informações do texto: {e}')
             return ''
 
     def run(self):
@@ -21,7 +21,7 @@ class Text:
             cards_locator = self.page.locator(f'.{self.information_card_class}')
             count = cards_locator.count()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao localizar os cards: {e}')
+            print(f'[{LogType.ERROR}] Erro ao localizar os cards: {e}')
             return results
 
         section_finder = None
@@ -38,7 +38,7 @@ class Text:
                     time_wait=250
                 )
         except Exception as e:
-            print(f'[{types[4]}] Erro ao verificar seções: {e}')
+            print(f'[{LogType.ERROR}] Erro ao verificar seções: {e}')
 
         for idx in range(count):
             card = cards_locator.nth(idx)
@@ -47,7 +47,7 @@ class Text:
                 try:
                     section_text = section_finder.get_section_for_element(card)
                 except Exception as e:
-                    print(f'[{types[4]}] Erro ao obter seção do card: {e}')
+                    print(f'[{LogType.ERROR}] Erro ao obter seção do card: {e}')
 
             results[str(idx)] = {
                 'informative_content': CollectMedia(

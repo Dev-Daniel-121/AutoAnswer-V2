@@ -600,881 +600,11 @@
                 }
             }
         },
-        "68074977": {
-            "task_info": {
-                "status_activity": "A Fazer",
-                "site_activity_id": "68074977",
-                "auto_activity_id": "",
-                "activity_type": "Tarefa SP",
-                "material_activity": "Matemática",
-                "activity_title": "Sistemas de equações lineares – Parte 4",
-                "user": "Daniel Oliveira Matias",
-                "author": "anaselmaxavie2495862-sp",
-                "class_school": "3º B EM",
-                "expires_in": "13/05/2025 - 00:00:00",
-                "time_spent": "",
-                "draft": "",
-                "submitted": "",
-                "text_num": 1,
-                "question_types": {
-                    "Radios": 2
-                }
-            },
-            "texts": {
-                "general": {
-                    "secoes": {
-                        "0": ""
-                    },
-                    "num_de_erros": 0,
-                    "tipos_de_erros": {
-                        "0": "",
-                        "1": "",
-                        "2": ""
-                    },
-                    "logs_de_erros": {
-                        "0": {
-                            "tipo": "",
-                            "detalhes": "",
-                            "questao": "",
-                            "timestamp": ""
-                        }
-                    }
-                },
-                "0": {
-                    "informative_content": {
-                        "video": {},
-                        "image": {},
-                        "gif": {}
-                    },
-                    "secao": "",
-                    "conteudo": "Leia o texto para responder às questões: Qual a duração ideal de um vídeo nas redes sociais? Confira agora!Que vídeos são uma das maiores tendências de marketing você provavelmente já sabe, não é mesmo? Mas qual a duração ideal de um vídeo? Descubra para Instagram, YouTube, Twitter e Facebook.Coloque-se no lugar do usuário e faça a seguinte pergunta: “afinal, quanto tempo você quer que os seus vídeos durem?”.Resposta complicada, não é mesmo? Afinal, tudo depende do grau de interesse, momento, dispositivo, necessidade e por aí vai. Apesar disso, existem diversas pesquisas que facilitam o trabalho dos empreendedores, estipulando uma duração média que traz os melhores resultados para cada uma das principais ferramentas disponíveis na web.Vamos conhecer esses números?InstagramDuração possível: até 1 minutoDuração ideal: 30 segundosYouTubeDuração possível: até 12 horasDuração ideal: 2 minutosFacebookDuração possível: até 4 horasDuração ideal: 1 minutoFonte: https://rockcontent.com/br/blog/duracao-de-videos/ (adaptado).",
-                    "num_de_erros": "",
-                    "tipos_de_erros": [
-                        "",
-                        "",
-                        ""
-                    ],
-                    "logs_de_erros": {
-                        "0": {
-                            "tipo": "",
-                            "detalhes": "",
-                            "questao": "",
-                            "timestamp": ""
-                        }
-                    }
-                }
-            },
-            "1": {
-                "general": {
-                    "activity_score": "",
-                    "score_acquired": "",
-                    "number_of_questions": 4,
-                    "number_of_sections": 0,
-                    "sections": {},
-                    "number_of_guesses": "",
-                    "number_of_user_responses": "",
-                    "user_feedback": "",
-                    "difficulty": "",
-                    "history_of_attempts": {},
-                    "ia": {
-                        "ia1": {
-                            "overall_performance": "",
-                            "questions": [
-                                "Calcule, em minutos, a duração ideal ao postar 7 vídeos no Instagram, 9 vídeos no YouTube e 4 vídeos no Facebook. Em seguida, analise a sentença a seguir e preencha a lacuna.",
-                                "Considerando ﻿xxx﻿ a quantidade de vídeos postados no Instagram, ﻿yyy﻿ no YouTube e ﻿zzz﻿ no Facebook, classifique as afirmativas a seguir como certas ou erradas.",
-                                "A quantidade de vídeos postados na rede social YouTube é:",
-                                "(UECE, 2020 – Adaptado) Na sala de reuniões de um condomínio, há mesas de 4, 5 e 6 lugares, perfazendo o total de 22 mesas. Na última reunião que houve, compareceram 113 pessoas, que foram acomodadas nessas mesas, ocupando todos os lugares. Se o número de mesas com 6 lugares era o dobro do número de mesas com 5 lugares, então, o número de mesas com 4 lugares era:"
-                            ],
-                            "suggestions": {
-                                "0": "",
-                                "1": ""
-                            }
-                        },
-                        "ia2": {
-                            "desempenho_geral": "",
-                            "questoes": [
-                                "Calcule, em minutos, a duração ideal ao postar 7 vídeos no Instagram, 9 vídeos no YouTube e 4 vídeos no Facebook. Em seguida, analise a sentença a seguir e preencha a lacuna.",
-                                "Considerando ﻿xxx﻿ a quantidade de vídeos postados no Instagram, ﻿yyy﻿ no YouTube e ﻿zzz﻿ no Facebook, classifique as afirmativas a seguir como certas ou erradas.",
-                                "A quantidade de vídeos postados na rede social YouTube é:",
-                                "(UECE, 2020 – Adaptado) Na sala de reuniões de um condomínio, há mesas de 4, 5 e 6 lugares, perfazendo o total de 22 mesas. Na última reunião que houve, compareceram 113 pessoas, que foram acomodadas nessas mesas, ocupando todos os lugares. Se o número de mesas com 6 lugares era o dobro do número de mesas com 5 lugares, então, o número de mesas com 4 lugares era:"
-                            ],
-                            "sugestoes": {
-                                "0": "",
-                                "1": ""
-                            }
-                        }
-                    },
-                    "error_number": 4,
-                    "error_types": [
-                        "",
-                        "",
-                        ""
-                    ],
-                    "error_logs": {
-                        "0_0": {
-                            "type": "",
-                            "details": "",
-                            "question": "",
-                            "timestamp": ""
-                        },
-                        "1_0": {
-                            "type": "",
-                            "details": "",
-                            "question": "",
-                            "timestamp": ""
-                        },
-                        "2_0": {
-                            "type": "",
-                            "details": "",
-                            "question": "",
-                            "timestamp": ""
-                        },
-                        "3_0": {
-                            "type": "",
-                            "details": "",
-                            "question": "",
-                            "timestamp": ""
-                        }
-                    }
-                },
-                "0": {
-                    "quest_info": {
-                        "required": true,
-                        "time": {
-                            "day": "",
-                            "start_time": "",
-                            "end_time": ""
-                        },
-                        "activity_score": "",
-                        "score": "",
-                        "section": "",
-                        "number_of_guesses": "",
-                        "number_of_user_responses": "",
-                        "user_feedback": "",
-                        "difficulty": "",
-                        "media": {
-                            "video": {},
-                            "image": {},
-                            "gif": {}
-                        },
-                        "history_of_attempts": {},
-                        "error_num": "",
-                        "error_types": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "error_logs": {
-                            "0": {
-                                "type": "",
-                                "details": "",
-                                "question": "",
-                                "timestamp": ""
-                            }
-                        },
-                        "ia": "",
-                        "time_spent": ""
-                    },
-                    "quest": {
-                        "type": "Unknown Type",
-                        "statement": "Calcule, em minutos, a duração ideal ao postar 7 vídeos no Instagram, 9 vídeos no YouTube e 4 vídeos no Facebook. Em seguida, analise a sentença a seguir e preencha a lacuna.",
-                        "alternatives": {
-                            "media": {},
-                            "alternative": [
-                                ""
-                            ]
-                        },
-                        "answer": ""
-                    }
-                },
-                "1": {
-                    "quest_info": {
-                        "required": true,
-                        "time": {
-                            "day": "",
-                            "start_time": "",
-                            "end_time": ""
-                        },
-                        "activity_score": "",
-                        "score": "",
-                        "section": "",
-                        "number_of_guesses": "",
-                        "number_of_user_responses": "",
-                        "user_feedback": "",
-                        "difficulty": "",
-                        "media": {
-                            "video": {},
-                            "image": {},
-                            "gif": {}
-                        },
-                        "history_of_attempts": {},
-                        "error_num": "",
-                        "error_types": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "error_logs": {
-                            "0": {
-                                "type": "",
-                                "details": "",
-                                "question": "",
-                                "timestamp": ""
-                            }
-                        },
-                        "ia": "",
-                        "time_spent": ""
-                    },
-                    "quest": {
-                        "type": "Unknown Type",
-                        "statement": "Considerando ﻿xxx﻿ a quantidade de vídeos postados no Instagram, ﻿yyy﻿ no YouTube e ﻿zzz﻿ no Facebook, classifique as afirmativas a seguir como certas ou erradas.",
-                        "alternatives": {
-                            "media": {},
-                            "alternative": [
-                                ""
-                            ]
-                        },
-                        "answer": ""
-                    }
-                },
-                "2": {
-                    "quest_info": {
-                        "required": true,
-                        "time": {
-                            "day": "",
-                            "start_time": "",
-                            "end_time": ""
-                        },
-                        "activity_score": "",
-                        "score": "",
-                        "section": "",
-                        "number_of_guesses": "",
-                        "number_of_user_responses": "",
-                        "user_feedback": "",
-                        "difficulty": "",
-                        "media": {
-                            "video": {},
-                            "image": {},
-                            "gif": {}
-                        },
-                        "history_of_attempts": {},
-                        "error_num": "",
-                        "error_types": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "error_logs": {
-                            "0": {
-                                "type": "",
-                                "details": "",
-                                "question": "",
-                                "timestamp": ""
-                            }
-                        },
-                        "ia": "",
-                        "time_spent": ""
-                    },
-                    "quest": {
-                        "type": "Radios",
-                        "statement": "A quantidade de vídeos postados na rede social YouTube é:",
-                        "alternatives": {
-                            "media": {},
-                            "alternative": [
-                                {
-                                    "text": "A) 3 vídeos.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "B) 5 vídeos.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "C) 8 vídeos.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "D) 13 vídeos.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "E) 21 vídeos.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                }
-                            ]
-                        },
-                        "answer": ""
-                    }
-                },
-                "3": {
-                    "quest_info": {
-                        "required": true,
-                        "time": {
-                            "day": "",
-                            "start_time": "",
-                            "end_time": ""
-                        },
-                        "activity_score": "",
-                        "score": "",
-                        "section": "",
-                        "number_of_guesses": "",
-                        "number_of_user_responses": "",
-                        "user_feedback": "",
-                        "difficulty": "",
-                        "media": {
-                            "video": {},
-                            "image": {},
-                            "gif": {}
-                        },
-                        "history_of_attempts": {},
-                        "error_num": "",
-                        "error_types": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "error_logs": {
-                            "0": {
-                                "type": "",
-                                "details": "",
-                                "question": "",
-                                "timestamp": ""
-                            }
-                        },
-                        "ia": "",
-                        "time_spent": ""
-                    },
-                    "quest": {
-                        "type": "Radios",
-                        "statement": "(UECE, 2020 – Adaptado) Na sala de reuniões de um condomínio, há mesas de 4, 5 e 6 lugares, perfazendo o total de 22 mesas. Na última reunião que houve, compareceram 113 pessoas, que foram acomodadas nessas mesas, ocupando todos os lugares. Se o número de mesas com 6 lugares era o dobro do número de mesas com 5 lugares, então, o número de mesas com 4 lugares era:",
-                        "alternatives": {
-                            "media": {},
-                            "alternative": [
-                                {
-                                    "text": "A) 10.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "B) 7.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "C) 4.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "D) 13.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "E) 5.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                }
-                            ]
-                        },
-                        "answer": ""
-                    }
-                }
-            }
-        },
-        "67467346": {
-            "task_info": {
-                "status_activity": "A Fazer",
-                "site_activity_id": "67467346",
-                "auto_activity_id": "",
-                "activity_type": "Tarefa SP",
-                "material_activity": "História",
-                "activity_title": "Crise da democracia liberal: a ascensão do nazismo",
-                "user": "Daniel Oliveira Matias",
-                "author": "rafaelcandido3034757-sp",
-                "class_school": "3º B EM",
-                "expires_in": "16/05/2025 - 23:59:59",
-                "time_spent": "",
-                "draft": "",
-                "submitted": "",
-                "text_num": 1,
-                "question_types": {
-                    "Radios": 2,
-                    "Checkbox": 1
-                }
-            },
-            "texts": {
-                "general": {
-                    "secoes": {
-                        "0": ""
-                    },
-                    "num_de_erros": 0,
-                    "tipos_de_erros": {
-                        "0": "",
-                        "1": "",
-                        "2": ""
-                    },
-                    "logs_de_erros": {
-                        "0": {
-                            "tipo": "",
-                            "detalhes": "",
-                            "questao": "",
-                            "timestamp": ""
-                        }
-                    }
-                },
-                "0": {
-                    "informative_content": {
-                        "video": {},
-                        "image": {},
-                        "gif": {}
-                    },
-                    "secao": "",
-                    "conteudo": "Leia o trecho de artigo abaixo para responder às questões:Por que devemos recordar os anos da República de WeimarA história nunca se repete seguindo o mesmo roteiro. Será que nossa situação atual se parece em algo à daqueles turbulentos anos 1930 na Alemanha?Weimar é uma pequena cidade do Estado alemão da Turíngia, muito próxima de outras com óbvias ressonâncias marxistas, como Erfurt, Gota e a hegeliana Jena. No final do século XVIII, quando mal tinha 6.000 habitantes, foi habitada pelos dois grandes escritores alemães, Goethe e Schiller. Lá também passou grande parte de sua vida o músico Franz Liszt. E, como se tivesse um ímã para atrair gênios, foi nesse mesmo lugar que F. Nietzsche morreu, em 1900, e que nasceu o movimento arquitetônico da escola Bauhaus. Com o tempo, Weimar deixou de ser associada exclusivamente a uma população alemã de afortunado passado artístico e cultural e acabou se tornando uma grande metáfora, o epítome do fracasso da democracia liberal parlamentar. Não em vão, o que nasceu como produto de um impulso otimista de regeneração nacional e democrática acabou nas trevas do nazismo. Por isso, quando hoje em dia falamos da “síndrome de Weimar”, estamos nos referindo às tensões que ameaçam pôr em perigo a estabilidade da democracia liberal − tensões provocadas principalmente pela revitalização do populismo e pela guinada iliberal, quando não autoritária, que verificamos em alguns lugares da Europa.Fonte: https://brasil.elpais.com/brasil/2019/07/26/cultura/1564148647_990100.html.",
-                    "num_de_erros": "",
-                    "tipos_de_erros": [
-                        "",
-                        "",
-                        ""
-                    ],
-                    "logs_de_erros": {
-                        "0": {
-                            "tipo": "",
-                            "detalhes": "",
-                            "questao": "",
-                            "timestamp": ""
-                        }
-                    }
-                }
-            },
-            "1": {
-                "general": {
-                    "activity_score": "",
-                    "score_acquired": "",
-                    "number_of_questions": 4,
-                    "number_of_sections": 0,
-                    "sections": {},
-                    "number_of_guesses": "",
-                    "number_of_user_responses": "",
-                    "user_feedback": "",
-                    "difficulty": "",
-                    "history_of_attempts": {},
-                    "ia": {
-                        "ia1": {
-                            "overall_performance": "",
-                            "questions": [
-                                "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
-                                "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
-                                "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
-                                "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista."
-                            ],
-                            "suggestions": {
-                                "0": "",
-                                "1": ""
-                            }
-                        },
-                        "ia2": {
-                            "desempenho_geral": "",
-                            "questoes": [
-                                "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
-                                "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
-                                "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
-                                "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista."
-                            ],
-                            "sugestoes": {
-                                "0": "",
-                                "1": ""
-                            }
-                        }
-                    },
-                    "error_number": 4,
-                    "error_types": [
-                        "",
-                        "",
-                        ""
-                    ],
-                    "error_logs": {
-                        "0_0": {
-                            "type": "",
-                            "details": "",
-                            "question": "",
-                            "timestamp": ""
-                        },
-                        "1_0": {
-                            "type": "",
-                            "details": "",
-                            "question": "",
-                            "timestamp": ""
-                        },
-                        "2_0": {
-                            "type": "",
-                            "details": "",
-                            "question": "",
-                            "timestamp": ""
-                        },
-                        "3_0": {
-                            "type": "",
-                            "details": "",
-                            "question": "",
-                            "timestamp": ""
-                        }
-                    }
-                },
-                "0": {
-                    "quest_info": {
-                        "required": true,
-                        "time": {
-                            "day": "",
-                            "start_time": "",
-                            "end_time": ""
-                        },
-                        "activity_score": "",
-                        "score": "",
-                        "section": "",
-                        "number_of_guesses": "",
-                        "number_of_user_responses": "",
-                        "user_feedback": "",
-                        "difficulty": "",
-                        "media": {
-                            "video": {},
-                            "image": {},
-                            "gif": {}
-                        },
-                        "history_of_attempts": {},
-                        "error_num": "",
-                        "error_types": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "error_logs": {
-                            "0": {
-                                "type": "",
-                                "details": "",
-                                "question": "",
-                                "timestamp": ""
-                            }
-                        },
-                        "ia": "",
-                        "time_spent": ""
-                    },
-                    "quest": {
-                        "type": "Unknown Type",
-                        "statement": "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
-                        "alternatives": {
-                            "media": {},
-                            "alternative": [
-                                ""
-                            ]
-                        },
-                        "answer": ""
-                    }
-                },
-                "1": {
-                    "quest_info": {
-                        "required": true,
-                        "time": {
-                            "day": "",
-                            "start_time": "",
-                            "end_time": ""
-                        },
-                        "activity_score": "",
-                        "score": "",
-                        "section": "",
-                        "number_of_guesses": "",
-                        "number_of_user_responses": "",
-                        "user_feedback": "",
-                        "difficulty": "",
-                        "media": {
-                            "video": {},
-                            "image": {},
-                            "gif": {}
-                        },
-                        "history_of_attempts": {},
-                        "error_num": "",
-                        "error_types": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "error_logs": {
-                            "0": {
-                                "type": "",
-                                "details": "",
-                                "question": "",
-                                "timestamp": ""
-                            }
-                        },
-                        "ia": "",
-                        "time_spent": ""
-                    },
-                    "quest": {
-                        "type": "Radios",
-                        "statement": "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
-                        "alternatives": {
-                            "media": {},
-                            "alternative": [
-                                {
-                                    "text": "A) O regime de Weimar teve um enorme sucesso econômico, mas não compensou as perdas sofridas com a Primeira Guerra, como prometiam os nazistas.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "B) O modelo comunista adotado por Weimar aumentou a insatisfação popular e facilitou a oposição nazista.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "C) O governo de Weimar cancelou o Tratado de Versalhes, enfurecendo os nazistas, que apoiavam o tratado de fim da Primeira Guerra.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "D) A estratégia econômica de Weimar causou a crise de 1929 no mundo, o que fez com que os nazistas parassem de apoiar o governo.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "E) O cenário de crise econômica, política e social, gerado pela guerra e agravado pela crise de 1929, levou os nazistas a conspirarem contra Weimar.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                }
-                            ]
-                        },
-                        "answer": ""
-                    }
-                },
-                "2": {
-                    "quest_info": {
-                        "required": true,
-                        "time": {
-                            "day": "",
-                            "start_time": "",
-                            "end_time": ""
-                        },
-                        "activity_score": "",
-                        "score": "",
-                        "section": "",
-                        "number_of_guesses": "",
-                        "number_of_user_responses": "",
-                        "user_feedback": "",
-                        "difficulty": "",
-                        "media": {
-                            "video": {},
-                            "image": {},
-                            "gif": {}
-                        },
-                        "history_of_attempts": {},
-                        "error_num": "",
-                        "error_types": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "error_logs": {
-                            "0": {
-                                "type": "",
-                                "details": "",
-                                "question": "",
-                                "timestamp": ""
-                            }
-                        },
-                        "ia": "",
-                        "time_spent": ""
-                    },
-                    "quest": {
-                        "type": "Checkbox",
-                        "statement": "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
-                        "alternatives": {
-                            "media": {},
-                            "alternative": [
-                                {
-                                    "text": "A) Em 1923, em sua primeira tentativa de golpe, conhecida como o \"Putsch de Munique\", Hitler obteve pela primeira vez o poder político na Alemanha.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "B) O oportunismo de Hitler ao usar um incêndio no parlamento em 1933 como propaganda anticomunista foi um marco do estabelecimento da ditadura nazista.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "C) As ambições totalitárias de Hitler se traduziram na sua ideia de reconstrução do \"império alemão\", o Terceiro Reich.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "D) O envolvimento da população foi pequeno, uma vez que Hitler efetuou seu assalto ao poder com apoio do exército.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "E) A criação de órgãos de repressão, como grupos paramilitares e órgãos policiais, foi essencial para o controle social e silenciamento da oposição.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                }
-                            ]
-                        },
-                        "answer": ""
-                    }
-                },
-                "3": {
-                    "quest_info": {
-                        "required": true,
-                        "time": {
-                            "day": "",
-                            "start_time": "",
-                            "end_time": ""
-                        },
-                        "activity_score": "",
-                        "score": "",
-                        "section": "",
-                        "number_of_guesses": "",
-                        "number_of_user_responses": "",
-                        "user_feedback": "",
-                        "difficulty": "",
-                        "media": {
-                            "video": {},
-                            "image": {},
-                            "gif": {}
-                        },
-                        "history_of_attempts": {},
-                        "error_num": "",
-                        "error_types": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "error_logs": {
-                            "0": {
-                                "type": "",
-                                "details": "",
-                                "question": "",
-                                "timestamp": ""
-                            }
-                        },
-                        "ia": "",
-                        "time_spent": ""
-                    },
-                    "quest": {
-                        "type": "Radios",
-                        "statement": "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista.",
-                        "alternatives": {
-                            "media": {},
-                            "alternative": [
-                                {
-                                    "text": "A) repudiadas – Estado – medo – eliminados – racista.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "B) repudiadas – povo – medo – educados – racista.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "C) defendidas – povo – diálogo – educados – econômico.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "D) repudiadas – Estado – diálogo – educados – racista.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                },
-                                {
-                                    "text": "E) defendidas – povo – diálogo – eliminados – econômico.",
-                                    "media": {
-                                        "video": {},
-                                        "image": {},
-                                        "gif": {}
-                                    }
-                                }
-                            ]
-                        },
-                        "answer": ""
-                    }
-                }
-            }
-        },
         "67930997": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a \"questão\" pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                \"0\": {\n                    \"type\": \"TIPO DA QUESTÃO\",\n                    \"alternatives\": {\n                        \"media\": {DADOS DE MÍDIA DA QUESTÃO},\n                        \"alternative\": [\"ALTERNATIVAS\"]\n                    },\n                    \"answer\": \"RESPOSTA PARA TAREFA\"\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: \"0\", \"1\", etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: \"Múltipla Escolha\", \"Resposta Curta\", etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ \"type\": \"image\", \"url\": \"[link ou descrição]\" }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `[\"A) Opção 1\", \"B) Opção 2\"]`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: \"A)\", \"B)\", etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    \"0\": {\n                        \"question\": \"Qual animal está na imagem?\",\n                        \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                        \"alternatives\": [\"A) Cachorro\", \"B) Gato\"]\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"Múltipla Escolha\",\n                        \"alternatives\": {\n                            \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                            \"alternative\": [\"A) Cachorro\", \"B) Gato\"]\n                        },\n                        \"answer\": \"B)\"\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    \"0\": {\n                        \"question\": \"Qual é a capital do Brasil?\"\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"Resposta Curta\",\n                        \"alternatives\": null,\n                        \"answer\": \"Brasília\"\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    \"0\": {\n                        \"media\": {\"type\": \"image\", \"url\": \"[link]\"}\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"\",\n                        \"alternatives\": {\n                            \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                            \"alternative\": null\n                        },\n                        \"answer\": \"Descrição ou resposta baseada na análise da imagem\"\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    \"0\": {\n                        \"question\": \"Ordene as palavras.\",\n                        \"alternatives\": [\"\"]\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"\",\n                        \"alternatives\": {\n                            \"media\": null,\n                            \"alternative\": [\"\"]\n                        },\n                        \"answer\": \"\"\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
             "task_info": {
                 "status_activity": "A Fazer",
                 "site_activity_id": "67930997",
@@ -1861,7 +991,7 @@
                                 "0": {
                                     "type": "image",
                                     "src": "https://edusp-static.ip.tv/tms/edusp/tarefasplp/Tr6qDINPWeApt0yA6843f5lMgAJEfJ.jpg",
-                                    "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\67930997 (7d)\\Tr6qDINPWeApt0yA6843f5lMgAJEfJ.jpg"
+                                    "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\67930997 (0d)\\Tr6qDINPWeApt0yA6843f5lMgAJEfJ.jpg"
                                 }
                             },
                             "gif": {}
@@ -1938,6 +1068,10 @@
             }
         },
         "67212663": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a \"questão\" pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                \"0\": {\n                    \"type\": \"TIPO DA QUESTÃO\",\n                    \"alternatives\": {\n                        \"media\": {DADOS DE MÍDIA DA QUESTÃO},\n                        \"alternative\": [\"ALTERNATIVAS\"]\n                    },\n                    \"answer\": \"RESPOSTA PARA TAREFA\"\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: \"0\", \"1\", etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: \"Múltipla Escolha\", \"Resposta Curta\", etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ \"type\": \"image\", \"url\": \"[link ou descrição]\" }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `[\"A) Opção 1\", \"B) Opção 2\"]`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: \"A)\", \"B)\", etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    \"0\": {\n                        \"question\": \"Qual animal está na imagem?\",\n                        \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                        \"alternatives\": [\"A) Cachorro\", \"B) Gato\"]\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"Múltipla Escolha\",\n                        \"alternatives\": {\n                            \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                            \"alternative\": [\"A) Cachorro\", \"B) Gato\"]\n                        },\n                        \"answer\": \"B)\"\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    \"0\": {\n                        \"question\": \"Qual é a capital do Brasil?\"\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"Resposta Curta\",\n                        \"alternatives\": null,\n                        \"answer\": \"Brasília\"\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    \"0\": {\n                        \"media\": {\"type\": \"image\", \"url\": \"[link]\"}\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"\",\n                        \"alternatives\": {\n                            \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                            \"alternative\": null\n                        },\n                        \"answer\": \"Descrição ou resposta baseada na análise da imagem\"\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    \"0\": {\n                        \"question\": \"Ordene as palavras.\",\n                        \"alternatives\": [\"\"]\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"\",\n                        \"alternatives\": {\n                            \"media\": null,\n                            \"alternative\": [\"\"]\n                        },\n                        \"answer\": \"\"\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
             "task_info": {
                 "status_activity": "A Fazer",
                 "site_activity_id": "67212663",
@@ -1985,7 +1119,7 @@
                             "0": {
                                 "type": "image",
                                 "src": "https://edusp-static.ip.tv/tms/edusp/tspchs6/8z9PrIYU88D31slWPVSY0wpIfQ6Nw6.png",
-                                "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\67212663 (7d)\\8z9PrIYU88D31slWPVSY0wpIfQ6Nw6.png"
+                                "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\67212663 (0d)\\8z9PrIYU88D31slWPVSY0wpIfQ6Nw6.png"
                             }
                         },
                         "gif": {}
@@ -2410,6 +1544,857 @@
                                 },
                                 {
                                     "text": "E) V – F – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "67212628": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a \"questão\" pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                \"0\": {\n                    \"type\": \"TIPO DA QUESTÃO\",\n                    \"alternatives\": {\n                        \"media\": {DADOS DE MÍDIA DA QUESTÃO},\n                        \"alternative\": [\"ALTERNATIVAS\"]\n                    },\n                    \"answer\": \"RESPOSTA PARA TAREFA\"\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: \"0\", \"1\", etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: \"Múltipla Escolha\", \"Resposta Curta\", etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ \"type\": \"image\", \"url\": \"[link ou descrição]\" }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `[\"A) Opção 1\", \"B) Opção 2\"]`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: \"A)\", \"B)\", etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    \"0\": {\n                        \"question\": \"Qual animal está na imagem?\",\n                        \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                        \"alternatives\": [\"A) Cachorro\", \"B) Gato\"]\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"Múltipla Escolha\",\n                        \"alternatives\": {\n                            \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                            \"alternative\": [\"A) Cachorro\", \"B) Gato\"]\n                        },\n                        \"answer\": \"B)\"\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    \"0\": {\n                        \"question\": \"Qual é a capital do Brasil?\"\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"Resposta Curta\",\n                        \"alternatives\": null,\n                        \"answer\": \"Brasília\"\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    \"0\": {\n                        \"media\": {\"type\": \"image\", \"url\": \"[link]\"}\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"\",\n                        \"alternatives\": {\n                            \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                            \"alternative\": null\n                        },\n                        \"answer\": \"Descrição ou resposta baseada na análise da imagem\"\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    \"0\": {\n                        \"question\": \"Ordene as palavras.\",\n                        \"alternatives\": [\"\"]\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"\",\n                        \"alternatives\": {\n                            \"media\": null,\n                            \"alternative\": [\"\"]\n                        },\n                        \"answer\": \"\"\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "67212628",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "História",
+                "activity_title": "Potências em conflito: a Grande Guerra ",
+                "user": "Daniel Oliveira Matias",
+                "author": "rafaelcandido3034757-sp",
+                "class_school": "3º B EM",
+                "expires_in": "16/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {
+                            "0": {
+                                "type": "video",
+                                "src": "https://www.youtube.com/embed/qPt4A3OOR4Y",
+                                "transcription": {
+                                    "lang": "pt",
+                                    "transcript": "100 anos da primeira guerra mundial Entenda como assassinato de um arquiduque austríaco a exatos 100 anos levou a Europa à guerra como começou a primeira guerra mundial após o assassinato de seu herdeiro o império austro-húngaro começa a fazer acusações ao governo da Sérvia o império acusa os servos de apoiar atividades hostis e permitir nacionalistas radicais no governo o império apresenta timato Sérvia para que as atividades nacionalistas sejam coibidas publicações sejam proibidas e uma investigação sobre o assassinato do arquiduque seja feito em conjunto com oficiais austro-húngaros as exigências humilhantes aos olhos da Comunidade Internacional foram aceitas pela Sérvia mas com ressalvas isso não foi o suficiente para o império o império austro-húngaro declara então guerra Sérvia no dia 28 de julho de 1914 uma rede de ali França leva outros países da Europa à guerra Rússia que mantém laços estreitos com a Sérvia mobiliza tropas para a fronteira com a austria Alemanha que tem Aliança Militar e política com a Áustria movimenta suas tropas em direção à França que tem aliança com a Rússia e a Alemanha como tem que passar pela Bélgica para atacar a França declara guerra Bélgica por sua relação próxima com a Bélgica o Reino Unido entra em guerra contra a Alemanha o sistema de alianças e colônias provoca um Efeito Dominó encadeando conflitos em diversas regiões da Europa da África e do oriente médio o Brasil se junta às Forças de Rússia Reino Unido e França depois de ter navios atacados pelas forças [Aplausos] alemãs"
+                                }
+                            }
+                        },
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Assista ao vídeo para responder às questões:",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "A Primeira Guerra Mundial, à época conhecida como a Grande Guerra, é um conflito armado sem precedentes na história moderna. Com um contexto extremamente complexo que envolveu diversas causas e consequências, a Primeira Guerra tem eventos marcantes, como o assassinato do arquiduque austríaco Franz Ferdinand. Assinale a alternativa que demonstra a consequência direta, expressa no vídeo, desse evento para a Primeira Guerra Mundial.",
+                                "O vídeo destaca a importância do assassinato do arquiduque Franz Ferdinand para o início da Primeira Guerra Mundial. Porém, ele destaca uma série de outros fatores que estão ligados a este conflito, como o sistema de alianças políticas e militares formadas na Europa e os interesses imperialistas. Identifique as alternativas corretas sobre os antecedentes da Primeira Guerra Mundial.",
+                                "A partir da análise do vídeo e de seus conhecimentos, analise as frases e coloque-as na ordem correta para descrever as etapas da Primeira Guerra Mundial.",
+                                "O nome dado à época para o conflito, a Grande Guerra, é bastante sugestivo e tem vários significados, uma vez que a Primeira Guerra Mundial toma dimensões nunca antes vistas em vários sentidos. Analise se são verdadeiras ou falsas as afirmações sobre a Primeira Guerra e sua relação com a nomenclatura dada a ela à época:I - Apesar de apenas países europeus terem se envolvido nos conflitos, ela foi uma guerra de enormes proporções por ter sido causada por disputas imperialistas.II - Havia uma rede de relações econômicas e comerciais que conectou diversos países, como os Estados Unidos, ao conflito.III - O poderio militar dos países em conflito foi outro fator que deu grande dimensão à guerra, devido aos avanços tecnológicos da época.IV - Conflitos militares ocorreram em diversas regiões do globo, como no continente africano e no oceano Atlântico.Agora, assinale a alternativa correspondente."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "A Primeira Guerra Mundial, à época conhecida como a Grande Guerra, é um conflito armado sem precedentes na história moderna. Com um contexto extremamente complexo que envolveu diversas causas e consequências, a Primeira Guerra tem eventos marcantes, como o assassinato do arquiduque austríaco Franz Ferdinand. Assinale a alternativa que demonstra a consequência direta, expressa no vídeo, desse evento para a Primeira Guerra Mundial.",
+                                "O vídeo destaca a importância do assassinato do arquiduque Franz Ferdinand para o início da Primeira Guerra Mundial. Porém, ele destaca uma série de outros fatores que estão ligados a este conflito, como o sistema de alianças políticas e militares formadas na Europa e os interesses imperialistas. Identifique as alternativas corretas sobre os antecedentes da Primeira Guerra Mundial.",
+                                "A partir da análise do vídeo e de seus conhecimentos, analise as frases e coloque-as na ordem correta para descrever as etapas da Primeira Guerra Mundial.",
+                                "O nome dado à época para o conflito, a Grande Guerra, é bastante sugestivo e tem vários significados, uma vez que a Primeira Guerra Mundial toma dimensões nunca antes vistas em vários sentidos. Analise se são verdadeiras ou falsas as afirmações sobre a Primeira Guerra e sua relação com a nomenclatura dada a ela à época:I - Apesar de apenas países europeus terem se envolvido nos conflitos, ela foi uma guerra de enormes proporções por ter sido causada por disputas imperialistas.II - Havia uma rede de relações econômicas e comerciais que conectou diversos países, como os Estados Unidos, ao conflito.III - O poderio militar dos países em conflito foi outro fator que deu grande dimensão à guerra, devido aos avanços tecnológicos da época.IV - Conflitos militares ocorreram em diversas regiões do globo, como no continente africano e no oceano Atlântico.Agora, assinale a alternativa correspondente."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A Primeira Guerra Mundial, à época conhecida como a Grande Guerra, é um conflito armado sem precedentes na história moderna. Com um contexto extremamente complexo que envolveu diversas causas e consequências, a Primeira Guerra tem eventos marcantes, como o assassinato do arquiduque austríaco Franz Ferdinand. Assinale a alternativa que demonstra a consequência direta, expressa no vídeo, desse evento para a Primeira Guerra Mundial.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) O início da disputa entre os países europeus por colônias na África.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O acionamento do sistema de alianças militares na Europa.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) A entrada dos Estados Unidos, até então neutro, no conflito.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) O fim dos conflitos militares na Europa.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) O desmembramento do Império Austro-húngaro em vários países.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "O vídeo destaca a importância do assassinato do arquiduque Franz Ferdinand para o início da Primeira Guerra Mundial. Porém, ele destaca uma série de outros fatores que estão ligados a este conflito, como o sistema de alianças políticas e militares formadas na Europa e os interesses imperialistas. Identifique as alternativas corretas sobre os antecedentes da Primeira Guerra Mundial.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "A partir da análise do vídeo e de seus conhecimentos, analise as frases e coloque-as na ordem correta para descrever as etapas da Primeira Guerra Mundial.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "O nome dado à época para o conflito, a Grande Guerra, é bastante sugestivo e tem vários significados, uma vez que a Primeira Guerra Mundial toma dimensões nunca antes vistas em vários sentidos. Analise se são verdadeiras ou falsas as afirmações sobre a Primeira Guerra e sua relação com a nomenclatura dada a ela à época:I - Apesar de apenas países europeus terem se envolvido nos conflitos, ela foi uma guerra de enormes proporções por ter sido causada por disputas imperialistas.II - Havia uma rede de relações econômicas e comerciais que conectou diversos países, como os Estados Unidos, ao conflito.III - O poderio militar dos países em conflito foi outro fator que deu grande dimensão à guerra, devido aos avanços tecnológicos da época.IV - Conflitos militares ocorreram em diversas regiões do globo, como no continente africano e no oceano Atlântico.Agora, assinale a alternativa correspondente.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) V – F – V – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) F – V – V – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) F – F – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) F – V – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) V – F – F – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "68074977": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a \"questão\" pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                \"0\": {\n                    \"type\": \"TIPO DA QUESTÃO\",\n                    \"alternatives\": {\n                        \"media\": {DADOS DE MÍDIA DA QUESTÃO},\n                        \"alternative\": [\"ALTERNATIVAS\"]\n                    },\n                    \"answer\": \"RESPOSTA PARA TAREFA\"\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: \"0\", \"1\", etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: \"Múltipla Escolha\", \"Resposta Curta\", etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ \"type\": \"image\", \"url\": \"[link ou descrição]\" }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `[\"A) Opção 1\", \"B) Opção 2\"]`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: \"A)\", \"B)\", etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    \"0\": {\n                        \"question\": \"Qual animal está na imagem?\",\n                        \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                        \"alternatives\": [\"A) Cachorro\", \"B) Gato\"]\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"Múltipla Escolha\",\n                        \"alternatives\": {\n                            \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                            \"alternative\": [\"A) Cachorro\", \"B) Gato\"]\n                        },\n                        \"answer\": \"B)\"\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    \"0\": {\n                        \"question\": \"Qual é a capital do Brasil?\"\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"Resposta Curta\",\n                        \"alternatives\": null,\n                        \"answer\": \"Brasília\"\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    \"0\": {\n                        \"media\": {\"type\": \"image\", \"url\": \"[link]\"}\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"\",\n                        \"alternatives\": {\n                            \"media\": {\"type\": \"image\", \"url\": \"[link]\"},\n                            \"alternative\": null\n                        },\n                        \"answer\": \"Descrição ou resposta baseada na análise da imagem\"\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    \"0\": {\n                        \"question\": \"Ordene as palavras.\",\n                        \"alternatives\": [\"\"]\n                    }\n                }\n                **Saída**:\n                {\n                    \"0\": {\n                        \"type\": \"\",\n                        \"alternatives\": {\n                            \"media\": null,\n                            \"alternative\": [\"\"]\n                        },\n                        \"answer\": \"\"\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "68074977",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Matemática",
+                "activity_title": "Sistemas de equações lineares – Parte 4",
+                "user": "Daniel Oliveira Matias",
+                "author": "anaselmaxavie2495862-sp",
+                "class_school": "3º B EM",
+                "expires_in": "13/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Leia o texto para responder às questões: Qual a duração ideal de um vídeo nas redes sociais? Confira agora!Que vídeos são uma das maiores tendências de marketing você provavelmente já sabe, não é mesmo? Mas qual a duração ideal de um vídeo? Descubra para Instagram, YouTube, Twitter e Facebook.Coloque-se no lugar do usuário e faça a seguinte pergunta: “afinal, quanto tempo você quer que os seus vídeos durem?”.Resposta complicada, não é mesmo? Afinal, tudo depende do grau de interesse, momento, dispositivo, necessidade e por aí vai. Apesar disso, existem diversas pesquisas que facilitam o trabalho dos empreendedores, estipulando uma duração média que traz os melhores resultados para cada uma das principais ferramentas disponíveis na web.Vamos conhecer esses números?InstagramDuração possível: até 1 minutoDuração ideal: 30 segundosYouTubeDuração possível: até 12 horasDuração ideal: 2 minutosFacebookDuração possível: até 4 horasDuração ideal: 1 minutoFonte: https://rockcontent.com/br/blog/duracao-de-videos/ (adaptado).",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "Calcule, em minutos, a duração ideal ao postar 7 vídeos no Instagram, 9 vídeos no YouTube e 4 vídeos no Facebook. Em seguida, analise a sentença a seguir e preencha a lacuna.",
+                                "Considerando ﻿xxx﻿ a quantidade de vídeos postados no Instagram, ﻿yyy﻿ no YouTube e ﻿zzz﻿ no Facebook, classifique as afirmativas a seguir como certas ou erradas.",
+                                "A quantidade de vídeos postados na rede social YouTube é:",
+                                "(UECE, 2020 – Adaptado) Na sala de reuniões de um condomínio, há mesas de 4, 5 e 6 lugares, perfazendo o total de 22 mesas. Na última reunião que houve, compareceram 113 pessoas, que foram acomodadas nessas mesas, ocupando todos os lugares. Se o número de mesas com 6 lugares era o dobro do número de mesas com 5 lugares, então, o número de mesas com 4 lugares era:"
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "Calcule, em minutos, a duração ideal ao postar 7 vídeos no Instagram, 9 vídeos no YouTube e 4 vídeos no Facebook. Em seguida, analise a sentença a seguir e preencha a lacuna.",
+                                "Considerando ﻿xxx﻿ a quantidade de vídeos postados no Instagram, ﻿yyy﻿ no YouTube e ﻿zzz﻿ no Facebook, classifique as afirmativas a seguir como certas ou erradas.",
+                                "A quantidade de vídeos postados na rede social YouTube é:",
+                                "(UECE, 2020 – Adaptado) Na sala de reuniões de um condomínio, há mesas de 4, 5 e 6 lugares, perfazendo o total de 22 mesas. Na última reunião que houve, compareceram 113 pessoas, que foram acomodadas nessas mesas, ocupando todos os lugares. Se o número de mesas com 6 lugares era o dobro do número de mesas com 5 lugares, então, o número de mesas com 4 lugares era:"
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Calcule, em minutos, a duração ideal ao postar 7 vídeos no Instagram, 9 vídeos no YouTube e 4 vídeos no Facebook. Em seguida, analise a sentença a seguir e preencha a lacuna.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Considerando ﻿xxx﻿ a quantidade de vídeos postados no Instagram, ﻿yyy﻿ no YouTube e ﻿zzz﻿ no Facebook, classifique as afirmativas a seguir como certas ou erradas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A quantidade de vídeos postados na rede social YouTube é:",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 3 vídeos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 5 vídeos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 8 vídeos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 13 vídeos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 21 vídeos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(UECE, 2020 – Adaptado) Na sala de reuniões de um condomínio, há mesas de 4, 5 e 6 lugares, perfazendo o total de 22 mesas. Na última reunião que houve, compareceram 113 pessoas, que foram acomodadas nessas mesas, ocupando todos os lugares. Se o número de mesas com 6 lugares era o dobro do número de mesas com 5 lugares, então, o número de mesas com 4 lugares era:",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 10.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 7.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 4.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 13.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 5.",
                                     "media": {
                                         "video": {},
                                         "image": {},

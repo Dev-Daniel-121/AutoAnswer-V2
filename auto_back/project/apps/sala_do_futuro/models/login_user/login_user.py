@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 
 class LoginUser:
     def __init__(self, page, tipo, ra, dg_ra, uf_ra, senha):
@@ -32,10 +32,10 @@ class LoginUser:
         login_aluno.run()
 
     def login_servidor(self):
-        print(f'[{types[7]}] Login de servidor realizado com sucesso!')
+        print(f'[{LogType.SUCCESS}] Login de servidor realizado com sucesso!')
 
     def login_responsavel(self):
-        print(f'[{types[7]}] Login de responsável realizado com sucesso!')
+        print(f'[{LogType.SUCCESS}] Login de responsável realizado com sucesso!')
 
     def run(self):
         if self.tipo == 'Aluno':
@@ -45,4 +45,4 @@ class LoginUser:
         elif self.tipo == 'Responsavel':
             self.login_responsavel()
         else:
-            print(f'[{types[4]}] Tipo de conta inválido.')
+            print(f'[{LogType.ERROR}] Tipo de conta inválido.')

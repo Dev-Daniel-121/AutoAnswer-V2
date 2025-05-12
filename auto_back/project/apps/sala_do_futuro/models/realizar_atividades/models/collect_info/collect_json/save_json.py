@@ -1,5 +1,5 @@
 from .utils.config import JSON_PATH
-from project import types
+from project import LogType
 import json, os
 
 class SaveJson:
@@ -19,13 +19,14 @@ class SaveJson:
         with open(self.json_path, 'w', encoding='utf-8') as file:
             json.dump(base_structure, file, ensure_ascii=False, indent=4)
 
-    def save_activity(self, materia, user_id, task_info, texts, questionarie):
+    def save_activity(self, ia, materia, user_id, task_info, texts, questionarie):
         with open(self.json_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
 
         site_activity_id = task_info['site_activity_id']
 
         data[materia][site_activity_id] = {
+            'ia': ia,
             'task_info': task_info,
             'texts': texts,
             f'{user_id}': questionarie
@@ -34,4 +35,4 @@ class SaveJson:
         with open(self.json_path, 'w', encoding='utf-8') as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
 
-        print(f'[{types[9]}] Dados da Atividade salvos em \'{self.json_path}\' com ID \'{site_activity_id}\'.\n')
+        print(f'[{LogType.INFO}] Dados da Atividade salvos em \'{self.json_path}\' com ID \'{site_activity_id}\'.\n')

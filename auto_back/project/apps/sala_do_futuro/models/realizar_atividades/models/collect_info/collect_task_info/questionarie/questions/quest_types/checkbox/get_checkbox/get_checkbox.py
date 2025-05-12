@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 
 class GetCheckbox:
     def __init__(
@@ -6,7 +6,6 @@ class GetCheckbox:
             actual_quest, video_media_selector, img_media_selector
         ):
         self.page = page
-        self.types = types
         self.has_checkbox_class = has_checkbox_class
         self.checkbox_alternative_class = checkbox_alternative_class
         self.actual_quest = actual_quest
@@ -33,7 +32,7 @@ class GetCheckbox:
             return alternatives
 
         except Exception as e:
-            print(f'[{self.types[4]}] Erro ao obter alternativas de checkbox: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter alternativas de checkbox: {e}')
             return []
 
     def _extract_text_from_alternative(self, alternative_element):

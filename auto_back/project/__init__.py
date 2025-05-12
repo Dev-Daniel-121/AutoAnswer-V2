@@ -1,4 +1,4 @@
-from .config.types import types
+from .config import LogType
 from .models import SistemaUsuarios, SelecionarUsuarios
 from .services import JSONService, UserService
 from .utils import Display, JSONHandler
@@ -6,7 +6,7 @@ from .apps.sala_do_futuro import SalaDoFuturo, MenuSystem, status, Agenda, Data,
 from .menus.menu_system import MenuSystem
 
 __all__ = [
-    'types',
+    'LogType',
     'SistemaUsuarios', 'SelecionarUsuarios',
     'JSONService', 'UserService',
     'Display', 'JSONHandler',

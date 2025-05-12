@@ -1,6 +1,6 @@
 from project.apps.sala_do_futuro.menus import MenuSystem
 from playwright.sync_api import sync_playwright
-from project import SistemaUsuarios, types
+from project import SistemaUsuarios, LogType
 
 class SalaDoFuturo:
     def __init__(self):
@@ -11,10 +11,10 @@ class SalaDoFuturo:
         usuario = usuarios.get(str(id_usuario))
 
         if not usuario:
-            print(f'[{types[4]}] Usuário com ID {id_usuario} não encontrado.')
+            print(f'[{LogType.ERROR}] Usuário com ID {id_usuario} não encontrado.')
             return
 
-        print(f'\n[{types[9]}] Iniciando automação para {usuario.nome} {usuario.sobrenome} ({usuario.tipo_conta})')
+        print(f'\n[{LogType.INFO}] Iniciando automação para {usuario.nome} {usuario.sobrenome} ({usuario.tipo_conta})')
 
         with sync_playwright() as p:
             try:
@@ -22,13 +22,13 @@ class SalaDoFuturo:
                 page = browser.new_page()
                 page.goto('https://saladofuturo.educacao.sp.gov.br/')
             except Exception as e:
-                print(f'[{types[4]}] Erro ao entrar no site Sala Do Futuro. {e}')
+                print(f'[{LogType.ERROR}] Erro ao entrar no site Sala Do Futuro. {e}')
             
             try:
                 menu_system = MenuSystem(page)
                 menu_system.run(usuario)
             except Exception as e:
-                print(f'[{types[4]}] Erro ao inicializar Sistema De Menu. {e}')
+                print(f'[{LogType.ERROR}] Erro ao inicializar Sistema De Menu. {e}')
 
 """
     {

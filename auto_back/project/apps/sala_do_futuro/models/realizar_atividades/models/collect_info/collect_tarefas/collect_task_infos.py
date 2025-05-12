@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 
 class CollectTaskInfos:
     def __init__(self, page, 
@@ -34,7 +34,7 @@ class CollectTaskInfos:
             component = self.page.locator(self.component_class).inner_text()
             return component
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informação: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informação: {e}')
             return
 
     def title_activity(self):
@@ -42,7 +42,7 @@ class CollectTaskInfos:
             title_activity = self.page.locator(self.title_activity_class).inner_text()
             return title_activity
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informação: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informação: {e}')
             return
 
     def user_activity(self):
@@ -50,7 +50,7 @@ class CollectTaskInfos:
             user_activity = self.extract_clean_text(self.user_activity_class)
             return user_activity
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informação: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informação: {e}')
             return
 
     def author_activity(self):
@@ -58,7 +58,7 @@ class CollectTaskInfos:
             author_activity = self.extract_clean_text(self.author_activity_class)
             return author_activity
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informação: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informação: {e}')
             return
 
     def class_activity(self):
@@ -66,7 +66,7 @@ class CollectTaskInfos:
             class_activity = self.extract_clean_text(self.class_activity_class)
             return class_activity
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informação: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informação: {e}')
             return
 
     def expire_activity(self):
@@ -74,7 +74,7 @@ class CollectTaskInfos:
             expire_activity = self.extract_clean_text(self.expire_activity_class)
             return expire_activity
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informação: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informação: {e}')
             return
 
     def id_activity(self):
@@ -82,11 +82,11 @@ class CollectTaskInfos:
             id_activity = self.extract_clean_text(self.id_activity_class)
             return id_activity
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informação: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informação: {e}')
             return
 
     def run(self):
-        print(f'[{types[9]}] Coletando informações da Atividade...\n')
+        print(f'[{LogType.INFO}] Coletando informações da Atividade...\n')
         
         component = self.component()
         title_activity = self.title_activity()

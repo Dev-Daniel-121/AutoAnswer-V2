@@ -1,6 +1,7 @@
+from project.utils.logger import log
 from urllib.parse import urlparse
-from project import types
-import os, requests, time
+from project import LogType
+import os, time, requests
 
 class ExtractImg:
     def __init__(self, download_path, days_to_expire, id_folder, time_remaining):
@@ -20,7 +21,6 @@ class ExtractImg:
             filepath = os.path.join(self.download_path, filename)
 
             start_time = time.time()
-
             response = requests.get(url, stream=True, timeout=10)
             response.raise_for_status()
 
@@ -30,11 +30,11 @@ class ExtractImg:
 
             duration = time.time() - start_time
 
-            print(f"[{types[0]}] Imagem salva em: {filepath} (tempo: {duration:.2f}s)\n")
-            print(f"[{types[8]}] Os arquivos de mídia baixados por este programa serão armazenados por apenas {self.days_to_expire} dias.")
-            print(f"Certifique-se de verificar a pasta '{self.id_folder}' antes que o tempo expire ({self.time_remaining} dias restantes).\n")
+            log(LogType.INSTALL, f"Imagem salva em: {filepath} (tempo: {duration:.2f}s)")
+            log(LogType.WARNING, f"Os arquivos de mídia serão armazenados por {self.days_to_expire} dias. Verifique '{self.id_folder}' ({self.time_remaining} dias restantes)")
 
             return filepath
+
         except Exception as e:
-            print(f'[{types[4]}] Falha ao baixar imagem ({url}): {e}\n\n')
+            log(LogType.ERROR, f"Erro ao salvar imagem em: {filepath if 'filepath' in locals() else url}: {e}")
             return None

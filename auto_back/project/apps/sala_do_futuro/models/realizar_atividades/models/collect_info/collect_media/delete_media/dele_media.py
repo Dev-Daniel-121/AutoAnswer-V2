@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
-import os, time, shutil, re
-from project import types
+from project.utils.logger import log
+from project import LogType
+import os, shutil, re
 
 class DeleteMedia:
     def __init__(self, base_path, max_age_days):
@@ -26,21 +27,17 @@ class DeleteMedia:
                         if remaining_days == 0:
                             try:
                                 shutil.rmtree(folder_path)
-                                print(f'[{types[9]}] Pasta expirada deletada: {folder_path}')
+                                log(LogType.DELETED, f"Deletado pasta '{item}'")
                             except Exception as e:
-                                print(f'[{types[4]}] Falha ao deletar {folder_path}: {e}')
+                                log(LogType.ERROR, f"Falha ao deletar pasta '{item}': {e}")
                         else:
-                            print(f'[{types[9]}] Pasta ainda válida ({remaining_days} dias restantes): {folder_path}')
+                            log(LogType.INFO, f"Pasta ainda válida ({remaining_days} dias restantes): {folder_path}")
 
     def update_folder_names(self):
-        '''
-        Renomeia pastas com base no tempo restante real, considerando o valor original no nome.
-        Exemplo: '12345 (7d)' → '12345 (6d)' se passou 1 dia.
-        '''
         for folder_name in os.listdir(self.base_path):
             match = re.match(r'^(\d+)\s+\((\d+)d\)$', folder_name)
             if not match:
-                continue  # ignora pastas com nomes fora do padrão
+                continue
 
             activity_id = match.group(1)
             original_days = int(match.group(2))
@@ -48,7 +45,6 @@ class DeleteMedia:
             if not os.path.isdir(folder_path):
                 continue
 
-            # Usa mtime como base
             dir_mtime = os.path.getmtime(folder_path)
             days_passed = (datetime.now() - datetime.fromtimestamp(dir_mtime)).days
             remaining_days = max(0, original_days - days_passed)
@@ -56,15 +52,15 @@ class DeleteMedia:
             if remaining_days == 0:
                 try:
                     shutil.rmtree(folder_path)
-                    print(f'[{types[9]}] Pasta expirada deletada: {folder_path}')
+                    log(LogType.DELETED, f"Deletado pasta '{folder_name}'")
                 except Exception as e:
-                    print(f'[{types[4]}] Falha ao deletar {folder_path}: {e}')
+                    log(LogType.ERROR, f"Falha ao deletar pasta '{folder_name}': {e}")
             else:
                 new_folder_name = f'{activity_id} ({remaining_days}d)'
                 new_folder_path = os.path.join(self.base_path, new_folder_name)
                 if folder_name != new_folder_name:
                     try:
                         os.rename(folder_path, new_folder_path)
-                        print(f'[{types[9]}] Pasta renomeada: \'{folder_name}\' → \'{new_folder_name}\'')
+                        log(LogType.CHANGED, f"Alterado Nome da pasta '{folder_name}' → '{new_folder_name}'")
                     except Exception as e:
-                        print(f'[{types[4]}] Falha ao renomear \'{folder_name}\': {e}')
+                        log(LogType.ERROR, f"Falha ao renomear '{folder_name}': {e}")

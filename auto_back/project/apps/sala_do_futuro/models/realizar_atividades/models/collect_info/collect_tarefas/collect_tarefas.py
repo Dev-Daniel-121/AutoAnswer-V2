@@ -1,5 +1,5 @@
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_tarefas.card_types import CardInfo, CardQuests
-from project import types
+from project import LogType
 
 class CollectTarefas:
     def __init__(self, page):
@@ -11,16 +11,16 @@ class CollectTarefas:
         num_card_info = self.card_info.count()
         radios, checkboxes, right_wrong, total, unknown_type_indexes = self.card_quests.count_quest_types()
 
-        print(f'[{types[9]}] Número de Cards Informativos: {num_card_info}')
-        print(f'[{types[9]}] Número de questões: {total}\n')
+        print(f'[{LogType.INFO}] Número de Cards Informativos: {num_card_info}')
+        print(f'[{LogType.INFO}] Número de questões: {total}\n')
 
-        print(f'[{types[9]}] Tipos de questões encontradas: ')
-        if radios > 0: print(f'[{types[9]}]   Radios: {radios}')
-        if checkboxes > 0: print(f'[{types[9]}]   Checkbox: {checkboxes}')
-        if right_wrong > 0: print(f'[{types[9]}]   Right Wrong: {right_wrong}')
+        print(f'[{LogType.INFO}] Tipos de questões encontradas: ')
+        if radios > 0: print(f'[{LogType.INFO}]   Radios: {radios}')
+        if checkboxes > 0: print(f'[{LogType.INFO}]   Checkbox: {checkboxes}')
+        if right_wrong > 0: print(f'[{LogType.INFO}]   Right Wrong: {right_wrong}')
 
         if unknown_type_indexes != []:
-            print(f'\n[{types[9]}] Questões desconhecidas encontradas: ')
-            print(f'[{types[9]}]    Questões {unknown_type_indexes}')
+            print(f'\n[{LogType.INFO}] Questões desconhecidas encontradas: ')
+            print(f'[{LogType.INFO}]    Questões {unknown_type_indexes}')
 
         print('')

@@ -1,5 +1,5 @@
 from project.apps.sala_do_futuro.models import Go
-from project import Display, types
+from project import Display, LogType
 import os
 
 class DoProvas:
@@ -26,10 +26,10 @@ class DoProvas:
                     if choice != len(task_infos):
                         choices.append(choice)
                 else:
-                    print(f'[{types[4]}] Opção inválida: {choice}. As opções devem estar entre 1 e {len(task_infos)}.')
+                    print(f'[{LogType.ERROR}] Opção inválida: {choice}. As opções devem estar entre 1 e {len(task_infos)}.')
                     return None
             except ValueError:
-                print(f'[{types[4]}] Valor inválido: {part}. Deve ser um número inteiro.')
+                print(f'[{LogType.ERROR}] Valor inválido: {part}. Deve ser um número inteiro.')
                 return None
         
         return sorted(list(set(choices)))
@@ -48,10 +48,10 @@ class DoProvas:
                     continue
                 
                 if not user_choices:
-                    print(f'[{types[4]}] Nenhuma opção válida selecionada.')
+                    print(f'[{LogType.ERROR}] Nenhuma opção válida selecionada.')
                     continue
                 
-                print(f'[{types[3]}] Sua escolha foi: {user_choices}')
+                print(f'[{LogType.ANSWER}] Sua escolha foi: {user_choices}')
 
                 for choice in user_choices:
                     print(f'\nExecutando escolha: {choice}\n')
@@ -60,7 +60,7 @@ class DoProvas:
                 return
                 
             except Exception as e:
-                print(f'[{types[4]}] Erro ao obter escolha do Usuário: {e}')
+                print(f'[{LogType.ERROR}] Erro ao obter escolha do Usuário: {e}')
                 continue
 
     def run_expiradas(self, RealizarAtividades, user):
@@ -76,10 +76,10 @@ class DoProvas:
                     continue
                 
                 if not user_choices:
-                    print(f'[{types[4]}] Nenhuma opção válida selecionada.')
+                    print(f'[{LogType.ERROR}] Nenhuma opção válida selecionada.')
                     continue
                 
-                print(f'[{types[3]}] Sua escolha foi: {user_choices}')
+                print(f'[{LogType.ANSWER}] Sua escolha foi: {user_choices}')
 
                 for choice in user_choices:
                     print(f'\nExecutando escolha: {choice}\n')
@@ -88,7 +88,7 @@ class DoProvas:
                 return
                 
             except Exception as e:
-                print(f'[{types[4]}] Erro ao obter escolha do Usuário: {e}')
+                print(f'[{LogType.ERROR}] Erro ao obter escolha do Usuário: {e}')
                 continue
 
     def run(self, user, id_usuario):

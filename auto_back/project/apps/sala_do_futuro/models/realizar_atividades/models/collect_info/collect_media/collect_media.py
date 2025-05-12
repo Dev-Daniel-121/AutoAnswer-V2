@@ -1,12 +1,14 @@
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media import TranscriptYoutube, ExtractImg, DeleteMedia
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info import TaskInfo
-from project import types
+from project.utils.logger import log
+from project import LogType
 import os
 
 class CollectMedia:
-    def __init__(self, page, card, video_media_selector, img_media_selector, expiration_days=7):
+    def __init__(self, page, card, video_media_selector, img_media_selector, expiration_days=1):
         if hasattr(card, 'element_handle'):
             card = card.element_handle()
+
         self.page = page
         self.card = card
         self.content = {
@@ -74,17 +76,20 @@ class CollectMedia:
                         try:
                             transcription = self.transcriber.get_transcript(src)
                         except Exception as e:
-                            print(f'[{types[4]}] Erro na transcrição do vídeo ({src}): {e}')
+                            log(LogType.ERROR, f'Erro na transcrição do vídeo ({src}): {e}')
+                            continue
 
                     self.content['video'][str(idx)] = {
                         'type': 'video',
                         'src': src,
                         'transcription': transcription
                     }
+
+                    log(LogType.INFO, f'Vídeo processado: {src}')
                 except Exception as e:
-                    print(f'[{types[4]}] Erro ao processar iframe do vídeo: {e}')
+                    log(LogType.ERROR, f'Erro ao processar iframe do vídeo: {e}')
         except Exception as e:
-            print(f'[{types[4]}] Erro ao coletar vídeos: {e}')
+            log(LogType.ERROR, f'Erro ao coletar vídeos: {e}')
 
     def _extract_images(self):
         try:
@@ -107,12 +112,15 @@ class CollectMedia:
                             has_valid_image = True
 
                         local_path = self.image_downloader.download_image(src, idx)
-                        self.content['image'][str(idx)] = {
-                            'type': 'image',
-                            'src': src,
-                            'local_path': local_path
-                        }
+                        if local_path:
+                            self.content['image'][str(idx)] = {
+                                'type': 'image',
+                                'src': src,
+                                'local_path': local_path
+                            }
+                        else:
+                            log(LogType.ERROR, f'Erro ao baixar imagem de {src}')
                 except Exception as e:
-                    print(f'[{types[4]}] Erro ao processar imagem: {e}')
+                    log(LogType.ERROR, f'Erro ao processar imagem: {e}')
         except Exception as e:
-            print(f'[{types[4]}] Erro ao coletar imagens: {e}')
+            log(LogType.ERROR, f'Erro ao coletar imagens: {e}')

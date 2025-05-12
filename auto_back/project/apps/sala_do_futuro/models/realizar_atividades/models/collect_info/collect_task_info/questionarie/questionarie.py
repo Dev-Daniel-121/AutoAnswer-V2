@@ -1,5 +1,5 @@
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie import Questions, QuestionInfo, GeneralQuests
-from project import types
+from project import LogType
 
 class Questionarie:
     def __init__(
@@ -7,7 +7,6 @@ class Questionarie:
             can_get_points, btn_end_activity, btn_save_as_draft_activity, question
         ):
         self.page = page
-        self.types = types
         self.elem_section_class = elem_section_class
         self.can_get_points = can_get_points
         self.btn_end_activity = btn_end_activity
@@ -123,5 +122,5 @@ class Questionarie:
             questionarie = general_quests.run()
             return questionarie
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informações das questões: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informações das questões: {e}')
             return

@@ -1,5 +1,5 @@
 from .utils.config import JSON_PATH
-from project import types
+from project import LogType
 import os, json
 
 class CollectJson:
@@ -7,10 +7,10 @@ class CollectJson:
         self.json_path = JSON_PATH
 
     def check_json_file(self):
-        print(f'[{types[9]}] Verificando se há \'Respostas Salvas\' para essa Atividade...\n')
+        print(f'[{LogType.INFO}] Verificando se há \'Respostas Salvas\' para essa Atividade...\n')
 
         if not os.path.exists(self.json_path):
-            print(f'[{types[4]}] O arquivo JSON não foi encontrado em {self.json_path}\n')
+            print(f'[{LogType.ERROR}] O arquivo JSON não foi encontrado em {self.json_path}\n')
             return None
         
         return self.json_path
@@ -21,20 +21,20 @@ class CollectJson:
 
     def check_component_in_responses(self, data, component):
         if component not in data['answers']:
-            print(f'[{types[4]}] Componente \'{component}\' não encontrado nas respostas.\n')
+            print(f'[{LogType.ERROR}] Componente \'{component}\' não encontrado nas respostas.\n')
             return None
         return data['answers'][component]
 
     def check_saved_activity(self, component_data, id_activity):
         if id_activity in component_data:
-            print(f'[{types[7]}] Encontrado \'Respostas Salvas\' para essa Atividade!\n')
+            print(f'[{LogType.SUCCESS}] Encontrado \'Respostas Salvas\' para essa Atividade!\n')
             return True
         else:
-            print(f'[{types[4]}] Nenhum \'Respostas Salvas\' encontrado para essa Atividade!\n')
+            print(f'[{LogType.ERROR}] Nenhum \'Respostas Salvas\' encontrado para essa Atividade!\n')
             return False
 
     def interact_with_user(self):
-        response = input(f'[{types[0]}] Usar \'data.json\'? (Y/n): ').strip().upper()
+        response = input(f'[{LogType.QUESTION}] Usar \'data.json\'? (Y/n): ').strip().upper()
         if response == '': 
             response = 'Y'
         

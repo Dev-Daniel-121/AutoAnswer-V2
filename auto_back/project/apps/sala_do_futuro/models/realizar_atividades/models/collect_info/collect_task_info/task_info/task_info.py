@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 import re
 
 class TaskInfo:
@@ -12,7 +12,6 @@ class TaskInfo:
         self.activity_type_class = activity_type_class
         self.material_activity_class = material_activity_class
         self.activity_title_class = activity_title_class
-        self.types = types
         self.page = page
 
     def get_status_activity(self):
@@ -27,7 +26,7 @@ class TaskInfo:
             activity_type = self.page.locator(f'{self.activity_type_class}').text_content()
             return activity_type
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter tipo da atividade: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter tipo da atividade: {e}')
             return
     
     def get_material_activity(self):
@@ -37,7 +36,7 @@ class TaskInfo:
             
             return subject_name
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter matéria da atividade: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter matéria da atividade: {e}')
             return
 
     def get_activity_title(self):
@@ -45,7 +44,7 @@ class TaskInfo:
             activity_title = self.page.locator(f'{self.activity_title_class}').text_content()
             return activity_title
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter título da atividade: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter título da atividade: {e}')
             return
 
     def get_activity_infos(self):

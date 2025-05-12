@@ -1,6 +1,6 @@
 from project.apps.sala_do_futuro.models import Activities, Go, Sections
 from .models import DoProvas, DoRedacao, DoTarefas
-from project import Display, types
+from project import Display, LogType
 
 class RealizarAtividades:
     def __init__(self, page):
@@ -16,7 +16,7 @@ class RealizarAtividades:
         atividades = self.activities.total_activities()
 
         if not atividades:
-            print(f'[{types[9]}] Não há atividades disponíveis.')
+            print(f'[{LogType.INFO}] Não há atividades disponíveis.')
             return []
 
         task_infos = []
@@ -26,9 +26,9 @@ class RealizarAtividades:
             dias = self.activities.get_component_day(materia)
             start_date, end_date = self.activities.get_component_date(materia)
 
-            task_infos.append((2, f'{nome_materia} - {end_date} ({dias})'))
+            task_infos.append((LogType.OPTION, f'{nome_materia} - {end_date} ({dias})'))
 
-        task_infos.append((2, 'Sair'))
+        task_infos.append((LogType.OPTION, 'Sair'))
 
         return task_infos
 
@@ -37,21 +37,21 @@ class RealizarAtividades:
         options_data = self.get_task_infos()
 
         if not options_data:
-            print(f'[{types[9]}] Nenhuma atividade encontrada.')
+            print(f'[{LogType.INFO}] Nenhuma atividade encontrada.')
             return
 
         options = self.display(options_data, 'Realizar Atividades', answer=False, user=f'{user}', title_quest='', clear_enabled=False)
         options.display()
 
-        user_choice = input(f'\n[{types[1]}] Digite as opções desejadas (separadas por \',\'), \'*\' para todas: ')
+        user_choice = input(f'\n[{LogType.TASK}] Digite as opções desejadas (separadas por \',\'), \'*\' para todas: ')
         return user_choice
 
     def select_component(self, user):
-        options_data = [(2, 'Tarefas SP'), (2, 'Redação Paulista'), (2, 'Provas'), (2, 'Sair')]
+        options_data = [(LogType.OPTION, 'Tarefas SP'), (LogType.OPTION, 'Redação Paulista'), (LogType.OPTION, 'Provas'), (LogType.OPTION, 'Sair')]
         options = self.display(options_data, 'Realizar Atividades', answer=False, user=f'{user}', title_quest='')
         options.display()
 
-        user_choice = input(f'\n[{types[1]}] Digite as opções desejadas (separadas por \',\'), \'*\' para todas: ')
+        user_choice = input(f'\n[{LogType.TASK}] Digite as opções desejadas (separadas por \',\'), \'*\' para todas: ')
         return user_choice
     
     def run(self, nome_usuario, id_usuario):
@@ -70,7 +70,7 @@ class RealizarAtividades:
                 break
             
             if user_choice in ['*', 'all']:
-                user_choice = '1,2,3'
+                user_choice = '1,LogType.OPTION,3'
             
             choices = [choice.strip() for choice in user_choice.split(',')]
             
@@ -89,6 +89,6 @@ class RealizarAtividades:
                     elif choice_num == 4:
                         continue
                     else:
-                        print(f'[{types[4]}] Opção inválida: {choice_num}')
+                        print(f'[{LogType.ERROR}] Opção inválida: {choice_num}')
                 except ValueError:
-                    print(f'[{types[4]}] Opção inválida: {choice}')
+                    print(f'[{LogType.ERROR}] Opção inválida: {choice}')

@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 
 class CardQuests:
     def __init__(self, page, quests_card_class):
@@ -32,5 +32,5 @@ class CardQuests:
             return radios, checkboxes, right_wrong, len(elements), unknown_type_indexes
 
         except Exception as e:
-            print(f'[{types[4]}] Erro ao contar os tipos de questões: {e}')
+            print(f'[{LogType.ERROR}] Erro ao contar os tipos de questões: {e}')
             return

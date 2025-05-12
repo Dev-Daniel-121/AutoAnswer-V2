@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from project import types
+from project import LogType
 
 class Time:
     def __init__(self):
@@ -9,9 +9,9 @@ class Time:
         now = datetime.now()
         self.tempo_final = now + timedelta(seconds=seconds)
 
-        print(f'[{types[9]}] Duração: {seconds}s')
-        print(f'[{types[9]}] Tempo ini: {now.strftime('%H:%M:%S')}')
-        print(f'[{types[9]}] Tempo fim: {self.tempo_final.strftime('%H:%M:%S')}\n')
+        print(f'[{LogType.INFO}] Duração: {seconds}s')
+        print(f'[{LogType.INFO}] Tempo ini: {now.strftime('%H:%M:%S')}')
+        print(f'[{LogType.INFO}] Tempo fim: {self.tempo_final.strftime('%H:%M:%S')}\n')
 
     def tempo_restante(self):
         if self.tempo_final is None:
@@ -25,4 +25,4 @@ class Time:
             print('O tempo já terminou!')
         else:
             minutos, segundos = divmod(int(restante.total_seconds()), 60)
-            print(f'[{types[9]}] Tempo restante: {minutos} min {segundos} s\n')
+            print(f'[{LogType.INFO}] Tempo restante: {minutos} min {segundos} s\n')

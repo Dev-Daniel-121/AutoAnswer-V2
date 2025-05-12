@@ -1,7 +1,7 @@
 from project.apps.sala_do_futuro.models.data.tarefas import Sections
 from project.apps.sala_do_futuro.config import status
 from collections import defaultdict
-from project import types
+from project import LogType
 
 class Activities:
     def __init__(self, page, total_activities_class='', get_component_name_class='', get_component_day_class='', get_component_date_class=''):
@@ -18,7 +18,7 @@ class Activities:
             self.page.wait_for_selector(selector, timeout=timeout * 1000)
             return True
         except Exception:
-            print(f'[{types[9]}] Elemento {selector} não encontrado após {timeout} segundos.')
+            print(f'[{LogType.INFO}] Elemento {selector} não encontrado após {timeout} segundos.')
             return False
     
     def enter_activity(self, activity_class='', btn_enter_activity_class=''):
@@ -32,10 +32,10 @@ class Activities:
                 btn_enter_activity.wait_for(state='visible')
                 btn_enter_activity.click()
             else:
-                print(f'[{types[4]}] Atividade não está visível: {activity_class}')
+                print(f'[{LogType.ERROR}] Atividade não está visível: {activity_class}')
 
         except Exception as e:
-            print(f'[{types[4]}] Erro ao tentar entrar na atividade: {e}')
+            print(f'[{LogType.ERROR}] Erro ao tentar entrar na atividade: {e}')
 
     def total_activities(self):
         if not self.wait_for_element(self.total_activities_class):
@@ -45,7 +45,7 @@ class Activities:
             total_activities = self.page.locator(self.total_activities_class).all()
             return total_activities if total_activities else []
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter total de atividades: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter total de atividades: {e}')
             return []
         
     def get_component_name(self, materia):
@@ -55,7 +55,7 @@ class Activities:
             name = materia.locator(get_component_name_class).inner_text()
             return name if name else 'Desconhecido'
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter o nome da atividade: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter o nome da atividade: {e}')
             return 'Desconhecido'
 
     def get_component_day(self, materia):
@@ -65,7 +65,7 @@ class Activities:
             day = materia.locator(get_component_day_class).inner_text()
             return day if day else 'Data não disponível'
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter o dia de expiração da atividade: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter o dia de expiração da atividade: {e}')
             return 'Data não disponível'
 
 
@@ -76,14 +76,14 @@ class Activities:
             if len(dates) >= 2:
                 return dates[0].inner_text(), dates[1].inner_text()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter o Dia Inicial - Dia Final da atividade: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter o Dia Inicial - Dia Final da atividade: {e}')
         
         return 'Data inicial não disponível', 'Data final não disponível'
 
     def run_aFazer(self):
         atividades = self.total_activities()
         if not atividades:
-            print(f'[{types[9]}] Não há lições disponíveis.')
+            print(f'[{LogType.INFO}] Não há lições disponíveis.')
             return {}, {}
 
         materias_count = defaultdict(int)
@@ -105,7 +105,7 @@ class Activities:
     def run_expiradas(self):
         atividades = self.total_activities()
         if not atividades:
-            print(f'[{types[9]}] Não há lições disponíveis.')
+            print(f'[{LogType.INFO}] Não há lições disponíveis.')
             return {}, {}
 
         materias_count = defaultdict(int)
@@ -125,7 +125,7 @@ class Activities:
     def run_entregues(self):
         atividades = self.total_activities()
         if not atividades:
-            print(f'[{types[9]}] Não há lições disponíveis.')
+            print(f'[{LogType.INFO}] Não há lições disponíveis.')
             return {}
 
         materias_count = defaultdict(int)
@@ -137,20 +137,20 @@ class Activities:
 
     def display(self, status, materias_count, datas=None):
         if not materias_count:
-            print(f'[{types[9]}] Nenhuma atividade encontrada.')
+            print(f'[{LogType.INFO}] Nenhuma atividade encontrada.')
             return
 
         for nome, quantidade in materias_count.items():
             if status == f'{self.status[0]}':
                 if datas[nome]:
-                    print(f'[{types[9]}] {nome}: {quantidade} ({datas[nome][0]})')
+                    print(f'[{LogType.INFO}] {nome}: {quantidade} ({datas[nome][0]})')
                 else:
-                    print(f'[{types[9]}] {nome}: {quantidade} (Sem data disponível)')
+                    print(f'[{LogType.INFO}] {nome}: {quantidade} (Sem data disponível)')
             elif status == f'{self.status[2]}':
                 data_inicial, data_final = datas[nome][-1]
-                print(f'[{types[9]}] {nome}: {quantidade} ({data_inicial} - {data_final})')
+                print(f'[{LogType.INFO}] {nome}: {quantidade} ({data_inicial} - {data_final})')
             else:
-                print(f'[{types[9]}] {nome}: {quantidade}')
+                print(f'[{LogType.INFO}] {nome}: {quantidade}')
 
     def run(self):
         status = self.sections.sections_status()

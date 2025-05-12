@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 
 class Sections:
     def __init__(self, page, sections_turmas_class='', sections_status_class='', sections_componentes_class=''):
@@ -12,7 +12,7 @@ class Sections:
             sections_turmas = self.page.locator(f'{self.sections_turmas_class}')
             sections_turmas = sections_turmas.inner_text()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informações das turmas: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informações das turmas: {e}')
 
         return sections_turmas
     
@@ -21,7 +21,7 @@ class Sections:
             sections_status = self.page.locator(f'{self.sections_status_class}')
             sections_status = sections_status.inner_text()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter o status: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter o status: {e}')
 
         return sections_status
     
@@ -29,7 +29,7 @@ class Sections:
         try:
             sections_componentes = self.page.input_value(f'{self.sections_componentes_class}')
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter os componentes: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter os componentes: {e}')
 
         return sections_componentes
 
@@ -38,4 +38,4 @@ class Sections:
         sections_status = self.sections_status()
         sections_componentes = self.sections_componentes()
 
-        print(f'\n[{types[9]}] Turmas: {sections_turmas} | Status: {sections_status} | Componente: {sections_componentes}\n')
+        print(f'\n[{LogType.INFO}] Turmas: {sections_turmas} | Status: {sections_status} | Componente: {sections_componentes}\n')

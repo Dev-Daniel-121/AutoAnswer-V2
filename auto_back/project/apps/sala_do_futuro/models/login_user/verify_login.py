@@ -1,4 +1,4 @@
-from project import SistemaUsuarios, types
+from project import SistemaUsuarios, LogType
 
 class VerifyLogin:
     def __init__(self, page, open_perfil_class, close_perfil_class, get_info_nome_class, get_info_user_class):
@@ -15,7 +15,7 @@ class VerifyLogin:
             open_perfil = self.page.locator(f'{self.open_perfil_class}')
             open_perfil.click()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao tentar encontrar o botão de login: {e}')
+            print(f'[{LogType.ERROR}] Erro ao tentar encontrar o botão de login: {e}')
             return False
         return True
 
@@ -24,14 +24,14 @@ class VerifyLogin:
             close_perfil = self.page.locator(f'{self.close_perfil_class}')
             close_perfil.click()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao tentar fechar perfil: {e}')
+            print(f'[{LogType.ERROR}] Erro ao tentar fechar perfil: {e}')
 
     def get_info(self):
         try:
             nome = self.page.inner_text(f'{self.get_info_nome_class}', strict=True).split('\n')[0].strip()
             user = self.page.inner_text(f'{self.get_info_user_class}', strict=True).strip()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter informações de login do usuário: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter informações de login do usuário: {e}')
             return None, None
 
         return nome, user
@@ -63,5 +63,5 @@ class VerifyLogin:
 
             return validate
         except Exception as e:
-            print(f'[{types[3]}] Erro ao tentar obter dados de login: {e}')
-            input(f'\n[{types[6]}] Pressione Enter para continuar...')
+            print(f'[{LogType.ERROR}] Erro ao tentar obter dados de login: {e}')
+            input(f'\n[{LogType.SUCCESS}] Pressione Enter para continuar...')

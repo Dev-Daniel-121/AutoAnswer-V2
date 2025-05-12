@@ -1,5 +1,5 @@
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie.questions import GetRadios, GetCheckbox
-from project import types
+from project import LogType
 
 class Questions:
     def __init__(
@@ -38,7 +38,7 @@ class Questions:
             return 'Unknown Type'
         
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter o tipo da questão: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter o tipo da questão: {e}')
             return
 
     def get_question_statement(self):
@@ -46,7 +46,7 @@ class Questions:
             question_statement = self.actual_quest.locator(f'{self.question_statement_class}').first.text_content()
             return question_statement
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter enunciado da questão: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter enunciado da questão: {e}')
             return
 
     def get_question_alternatives(self, quest_type):
@@ -63,7 +63,7 @@ class Questions:
 
             return alternatives
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter alternativas da questão: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter alternativas da questão: {e}')
             return
     
     def get_question_statement_media(self, video_media_selector, img_media_selector):
@@ -77,7 +77,7 @@ class Questions:
                 img_media_selector=img_media_selector
             )
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter mídias do enunciado: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter mídias do enunciado: {e}')
             return {'video': {}, 'image': {}, 'gif': {}}
     
     def isRequired(self) -> bool: return self.page.locator(self.required_class).count() > 0

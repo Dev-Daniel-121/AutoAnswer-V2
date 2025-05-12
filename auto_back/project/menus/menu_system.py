@@ -1,14 +1,13 @@
 from project.models import SelecionarUsuarios, SistemaUsuarios
-from project import Display, types
+from project import Display, LogType
 import os, sys
 
 class MenuSystem:
     def __init__(self):
         self.display = Display
-        self.types = types
 
     def menu(self):
-        options_data = [(2, 'Start'), (2, 'Settings'), (2, 'Sair')]
+        options_data = [(LogType.OPTION, 'Start'), (LogType.OPTION, 'Settings'), (LogType.OPTION, 'Sair')]
         options = self.display(options_data, 'MENU', answer=True, user='', title_quest='')
         user_choice = options.display()
 
@@ -19,7 +18,7 @@ class MenuSystem:
         elif user_choice == 3:
             sys.exit()
         else:
-            print(f'[{types[4]}] Opção inválida')
+            print(f'[{LogType.ERROR}] Opção inválida')
 
     def selectUser(self):
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -30,22 +29,22 @@ class MenuSystem:
 
         ids_selecionados = selecionar.get_usuarios_selecionados()
         if not ids_selecionados:
-            print(f'[{types[8]}] Nenhum usuário selecionado.')
+            print(f'[{LogType.WARNING}] Nenhum usuário selecionado.')
             return
 
         sistema.usuarios = sistema.carregar_usuarios()
 
-        print(f'\n[{types[9]}] Usuários selecionados:')
+        print(f'\n[{LogType.INFO}] Usuários selecionados:')
 
         for id_usuario in ids_selecionados:
             id_usuario = str(id_usuario)
 
             if id_usuario not in sistema.usuarios:
-                print(f'[{types[4]}] ID \'{id_usuario}\' não encontrado no dicionário!')
+                print(f'[{LogType.ERROR}] ID \'{id_usuario}\' não encontrado no dicionário!')
                 continue
 
             usuario = sistema.usuarios[id_usuario]
-            print(f'[{types[5]}] ID: {usuario.id_usuario} - Nome: {usuario.nome} {usuario.sobrenome}')
+            print(f'[{LogType.USER}] ID: {usuario.id_usuario} - Nome: {usuario.nome} {usuario.sobrenome}')
 
         for id_usuario in ids_selecionados:
             usuario = sistema.usuarios[str(id_usuario)]
@@ -53,7 +52,7 @@ class MenuSystem:
             self.apps(nome_completo, id_usuario)
 
     def apps(self, nome_usuario, id_usuario):
-        options_data = [(2, 'Sala do futuro'), (2, 'Sair')]
+        options_data = [(LogType.OPTION, 'Sala do futuro'), (LogType.OPTION, 'Sair')]
         options = self.display(options_data, 'APPS', answer=True, user=nome_usuario, title_quest='')
         user_choice = options.display()
 
@@ -61,17 +60,17 @@ class MenuSystem:
             from project.apps.sala_do_futuro import SalaDoFuturo
             sala_do_futuro = SalaDoFuturo()
             sala_do_futuro.run(id_usuario)
-            input(f'\n[{types[6]}] Pressione Enter para continuar...')
+            input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
         elif user_choice == 2:
-            print(f'\n[{types[9]}] Encerrando processos...')
+            print(f'\n[{LogType.INFO}] Encerrando processos...')
             return
         else:
-            print(f'[{types[4]}] Opção inválida')
-            input(f'\n[{types[6]}] Pressione Enter para continuar...')
+            print(f'[{LogType.ERROR}] Opção inválida')
+            input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
             sys.exit()
 
     def settings(self):
-        options_data = [(2, 'Format'), (2, 'Browser'), (2, 'User'), (2, 'Voltar')]
+        options_data = [(LogType.OPTION, 'Format'), (LogType.OPTION, 'Browser'), (LogType.OPTION, 'User'), (LogType.OPTION, 'Voltar')]
         options = self.display(options_data, 'SETTINGS', answer=True, user='', title_quest='')
         user_choice = options.display()
 
@@ -84,11 +83,11 @@ class MenuSystem:
         elif user_choice == 4:
             self.menu()
         else:
-            print(f'[{types[4]}] Opção inválida')
+            print(f'[{LogType.ERROR}] Opção inválida')
             sys.exit()
 
     def format_(self):
-        options_data = [(2, 'WEB'), (2, 'CMD'), (2, 'Voltar')]
+        options_data = [(LogType.OPTION, 'WEB'), (LogType.OPTION, 'CMD'), (LogType.OPTION, 'Voltar')]
         options = self.display(options_data, 'FORMAT', answer=True, user='', title_quest='')
         user_choice = options.display()
 
@@ -101,11 +100,11 @@ class MenuSystem:
         elif user_choice == 3:
             self.settings()
         else:
-            print(f'[{types[4]}] Opção inválida')
+            print(f'[{LogType.ERROR}] Opção inválida')
             sys.exit()
 
     def browser(self):
-        options_data = [(2, 'Chrome'), (2, 'FireFox'), (2, 'Voltar')]
+        options_data = [(LogType.OPTION, 'Chrome'), (LogType.OPTION, 'FireFox'), (LogType.OPTION, 'Voltar')]
         options = self.display(options_data, 'BROWSER', answer=True, user='', title_quest='')
         user_choice = options.display()
 
@@ -118,7 +117,7 @@ class MenuSystem:
         elif user_choice == 3:
             self.settings()
         else:
-            print(f'[{types[4]}] Opção inválida')
+            print(f'[{LogType.ERROR}] Opção inválida')
             sys.exit()
 
     def users(self):

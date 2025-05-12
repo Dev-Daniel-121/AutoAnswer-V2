@@ -1,4 +1,4 @@
-from project.config import types
+from project.config import LogType
 
 class LoginAluno:
     def __init__(
@@ -26,28 +26,28 @@ class LoginAluno:
             btn_tipo = self.page.locator(f'{self.btn_tipo_class}')
             btn_tipo.click()
         except Exception as e:
-            print(f'\n[{types[4]}] Erro ao clicar no botão de tipo: {e}')
+            print(f'\n[{LogType.ERROR}] Erro ao clicar no botão de tipo: {e}')
 
     def btn_entrar(self):
         try:
             btn_entrar = self.page.locator(f'{self.btn_entrar_class}')
             btn_entrar.click()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao clicar no botão entrar: {e}')
+            print(f'[{LogType.ERROR}] Erro ao clicar no botão entrar: {e}')
 
     def input_ra(self):
         try:
             input_ra = self.page.locator(f'{self.input_ra_id}')
             input_ra.fill(self.ra)
         except Exception as e:
-            print(f'\n[{types[4]}] Erro ao preencher o campo RA: {e}')
+            print(f'\n[{LogType.ERROR}] Erro ao preencher o campo RA: {e}')
 
     def input_dg_ra(self):
         try:
             input_dg_ra = self.page.locator(f'{self.input_dg_ra_name}')
             input_dg_ra.fill(self.dg_ra)
         except Exception as e:
-            print(f'\n[{types[4]}] Erro ao preencher o campo dígito do RA: {e}')
+            print(f'\n[{LogType.ERROR}] Erro ao preencher o campo dígito do RA: {e}')
 
     def input_uf_ra(self):
         try:
@@ -59,14 +59,14 @@ class LoginAluno:
             li_uf_ra = self.page.locator(f'{self.ul_uf_ra_class} > {self.li_uf_ra_class}[data-value=\'{self.uf_ra}\']')
             li_uf_ra.click()
         except Exception as e:
-            print(f'\n[{types[4]}] Erro ao selecionar a UF do RA: {e}')
+            print(f'\n[{LogType.ERROR}] Erro ao selecionar a UF do RA: {e}')
 
     def input_senha(self):
         try:
             input_senha = self.page.locator(f'{self.input_senha_id}')
             input_senha.fill(self.senha)
         except Exception as e:
-            print(f'\n[{types[4]}] Erro ao preencher o campo de senha: {e}')
+            print(f'\n[{LogType.ERROR}] Erro ao preencher o campo de senha: {e}')
 
     def run(self):
         try:
@@ -76,8 +76,8 @@ class LoginAluno:
             self.input_uf_ra()
             self.input_senha()
             self.btn_entrar()
-            print(f'\n[{types[7]}] Login realizado com sucesso.')
-            input(f'\n[{types[6]}] Pressione Enter para continuar...')
+            print(f'\n[{LogType.SUCCESS}] Login realizado com sucesso.')
+            input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')
         except Exception as e:
-            print(f'\n[{types[4]}] Erro durante o processo de login: {e}')
-            input(f'\n[{types[6]}] Pressione Enter para continuar...')
+            print(f'\n[{LogType.ERROR}] Erro durante o processo de login: {e}')
+            input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')

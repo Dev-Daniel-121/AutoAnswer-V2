@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 
 class Geral:
     def __init__(
@@ -33,7 +33,7 @@ class Geral:
                 'pendencias_total': pendencias_total
             }
         except Exception as e:
-            print(f'[{types[4]}] Tempo excedido ao tentar interagir com a caixa de pendências.')
+            print(f'[{LogType.ERROR}] Tempo excedido ao tentar interagir com a caixa de pendências.')
             return None
 
     def pendencias_activities(self):
@@ -47,14 +47,14 @@ class Geral:
 
             return pendencias_tarefas, pendencias_redacoes, pendencias_provas, pendencias_total
         except Exception as e:
-            print(f'[{types[4]}] Erro ao extrair pendências: {e}')
+            print(f'[{LogType.ERROR}] Erro ao extrair pendências: {e}')
             return 0, 0, 0, 0
 
     def mensagem_nao_lida(self):
         try:
             mensagem_nao_lida_num = self.page.locator(f':nth-match({self.values_class}, 2)').inner_text()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter o número de mensagems não lidas: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter o número de mensagems não lidas: {e}')
 
         return mensagem_nao_lida_num
 
@@ -68,7 +68,7 @@ e Avaliações''':
                 return 'Sem faltas'
             
         except Exception as e:
-            print(f'[{types[4]}] Erro ao o número de faltas: {e}')
+            print(f'[{LogType.ERROR}] Erro ao o número de faltas: {e}')
 
         return faltas_num
 
@@ -79,7 +79,7 @@ e Avaliações''':
             else: 
                 boletim_num = self.page.locator(f':nth-match({self.values_class}, 4)').inner_text()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter o status do boletim: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter o status do boletim: {e}')
             
         return 'Indisponível' if boletim_num == 'Boletim' else 'Boletim Disponível para Visualização'
 
@@ -98,13 +98,13 @@ e Avaliações''':
         boletim_num = self.boletim(faltas_num=faltas_num)
 
         print(f'\n~~~~~~ Geral ~~~~~~\n')
-        print(f'[{types[9]}] Pendências: \t\t{pendencias_total}')
-        print(f'[{types[9]}]    Tarefas: \t\t{pendencias_tarefas}')
-        print(f'[{types[9]}]    Redação: \t\t{pendencias_redacoes}')
-        print(f'[{types[9]}]    Provas:  \t\t{pendencias_provas}')
-        print(f'[{types[9]}] Faltas: \t\t\t{faltas_num}')
-        print(f'[{types[9]}] Mensagem não lida: \t{mensagem_nao_lida_num}')
-        print(f'[{types[9]}] Boletim: \t\t{boletim_num}')
+        print(f'[{LogType.INFO}] Pendências: \t\t{pendencias_total}')
+        print(f'[{LogType.INFO}]    Tarefas: \t\t{pendencias_tarefas}')
+        print(f'[{LogType.INFO}]    Redação: \t\t{pendencias_redacoes}')
+        print(f'[{LogType.INFO}]    Provas:  \t\t{pendencias_provas}')
+        print(f'[{LogType.INFO}] Faltas: \t\t\t{faltas_num}')
+        print(f'[{LogType.INFO}] Mensagem não lida: \t{mensagem_nao_lida_num}')
+        print(f'[{LogType.INFO}] Boletim: \t\t{boletim_num}')
 
         return {
             'pendencias_total': pendencias_total,

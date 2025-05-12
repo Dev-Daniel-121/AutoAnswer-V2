@@ -1,3 +1,3 @@
-from .types import types
+from .log_types import LogType
 
-__all__ = ['types']
+__all__ = ['LogType']

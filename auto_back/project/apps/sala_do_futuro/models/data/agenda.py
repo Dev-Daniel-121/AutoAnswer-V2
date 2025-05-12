@@ -1,4 +1,4 @@
-from project import types
+from project import LogType
 
 class Agenda:
     def __init__(self, page, row_class, day_class, day_of_the_week_class, day_content_class):
@@ -12,7 +12,7 @@ class Agenda:
         try:
             rows = self.page.locator(self.row_class).all()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao obter as linhas da agenda: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter as linhas da agenda: {e}')
         
         agenda_data = []
 
@@ -27,7 +27,7 @@ class Agenda:
 
                 agenda_data.append((day, day_of_the_week, day_content))
             except Exception as e:
-                print(f'[{types[4]}] Erro ao processar linha {row} na agenda: {e}')
+                print(f'[{LogType.ERROR}] Erro ao processar linha {row} na agenda: {e}')
 
         return agenda_data
 
@@ -36,4 +36,4 @@ class Agenda:
         agenda_data = self.agenda()
         
         for day, day_of_the_week, day_content in agenda_data:
-            print(f'[{types[9]}] {day} - {day_of_the_week} \t[{day_content}]')
+            print(f'[{LogType.INFO}] {day} - {day_of_the_week} \t[{day_content}]')

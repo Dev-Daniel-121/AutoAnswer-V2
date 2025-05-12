@@ -1,4 +1,4 @@
-from project.config import types
+from project import LogType
 import os
 
 class Display:
@@ -9,7 +9,6 @@ class Display:
         self.title_quest = title_quest
         self.answer = answer
         self.user_answer = None
-        self.types = types
         self.clear_enabled = clear_enabled
 
     def clear_terminal(self):
@@ -20,22 +19,22 @@ class Display:
         self.clear_terminal()
         print(f'\n~~~~~~ {self.title} ~~~~~~ ({self.user})' if self.user else f'\n~~~~~~ {self.title} ~~~~~~')
         
-        print(f'\n[{self.types[0]}] {self.title_quest}\n' if self.title_quest else '')
+        print(f'\n[{LogType.QUESTION}] {self.title_quest}\n' if self.title_quest else '')
 
         for i, (tipo, value) in enumerate(self.data):
-            print(f'[{self.types[tipo]}] {i+1}. {value}')
+            print(f'[{tipo}] {i+1}. {value}')
 
         if self.answer:
             while True:
                 try:
-                    answer = int(input(f'\n[{self.types[1]}] Digite a opção: '))
+                    answer = int(input(f'\n[{LogType.TASK}] Digite a opção: '))
                     
                     if 1 <= answer <= len(self.data):
                         self.user_answer = answer
-                        print(f'[{self.types[3]}] {self.user_answer}')
+                        print(f'[{LogType.ANSWER}] {self.user_answer}')
                         return self.user_answer
                     
-                    print(f'[{self.types[4]}] Opção inválida! Escolha um número entre 1 e {len(self.data)}.')
+                    print(f'[{LogType.ERROR}] Opção inválida! Escolha um número entre 1 e {len(self.data)}.')
 
                 except ValueError:
-                    print(f'[{self.types[4]}]  Entrada inválida! Digite um número válido.')
+                    print(f'[{LogType.ERROR}]  Entrada inválida! Digite um número válido.')

@@ -1,5 +1,5 @@
 from project.apps.sala_do_futuro.config import status
-from project import types
+from project import LogType
 
 class Go:
     def __init__(
@@ -21,14 +21,14 @@ class Go:
 
             print(f'\n~~~~~~ {get_title.upper()} ~~~~~~')
         except Exception as e:
-            print(f'[{types[4]}] Erro ao pegar título: {e}')
+            print(f'[{LogType.ERROR}] Erro ao pegar título: {e}')
 
     def go_home(self):
         try:
             btn_go_home = self.page.locator(f'{self.btn_go_home_class}')
             btn_go_home.click()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao ir para Tarefas: {e}')
+            print(f'[{LogType.ERROR}] Erro ao ir para Tarefas: {e}')
 
     def go_tarefas(self):
         try:
@@ -37,7 +37,7 @@ class Go:
 
             self.get_title(get_title_position=2)
         except Exception as e:
-            print(f'[{types[4]}] Erro ao ir para Tarefas: {e}')
+            print(f'[{LogType.ERROR}] Erro ao ir para Tarefas: {e}')
 
     def go_redacoes(self):
         try:
@@ -46,7 +46,7 @@ class Go:
 
             self.get_title(get_title_position=3)
         except Exception as e:
-            print(f'[{types[4]}] Erro ao ir para Redações: {e}')
+            print(f'[{LogType.ERROR}] Erro ao ir para Redações: {e}')
 
     def go_provas(self):
         try:
@@ -55,14 +55,14 @@ class Go:
 
             self.get_title(get_title_position=4)
         except Exception as e:
-            print(f'[{types[4]}] Erro ao ir para Provas: {e}')
+            print(f'[{LogType.ERROR}] Erro ao ir para Provas: {e}')
     
     def go_btn(self):
         try:
             go_btn = self.page.locator(f'{self.go_btn_class}')
             go_btn.click()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao clicar no botão principal: {e}')
+            print(f'[{LogType.ERROR}] Erro ao clicar no botão principal: {e}')
 
     def go_list(self, content):
         i = 0
@@ -70,13 +70,13 @@ class Go:
         if content == f'{status[0]}': i = 1 
         elif content == f'{status[1]}': i = 2
         elif content == f'{status[2]}': i = 3
-        else: print(f'[{types[4]}] Conteúdo inválido: \'{content}\'')
+        else: print(f'[{LogType.ERROR}] Conteúdo inválido: \'{content}\'')
 
         try:
             go_list = self.page.locator(f':nth-match({self.go_list_class}, {i})')
             go_list.click()
         except Exception as e:
-            print(f'[{types[4]}] Erro ao clicar na lista de {content}: {e}')
+            print(f'[{LogType.ERROR}] Erro ao clicar na lista de {content}: {e}')
     
     def go_aFazer(self):
         self.go_btn()

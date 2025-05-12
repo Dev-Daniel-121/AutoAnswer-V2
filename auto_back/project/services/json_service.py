@@ -1,6 +1,6 @@
-import json
-from project.config import types
 from project.utils import JSONHandler
+from project import LogType
+import json
 
 class JSONService:
     def __init__(self, file_path):
@@ -18,5 +18,5 @@ class JSONService:
             json.dumps(data)
             return True
         except (TypeError, ValueError):
-            print(f'[{types[4]}] Dados inválidos para JSON.')
+            print(f'[{LogType.ERROR}] Dados inválidos para JSON.')
             return False
