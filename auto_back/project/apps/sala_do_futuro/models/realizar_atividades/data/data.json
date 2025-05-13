@@ -2407,6 +2407,1334 @@
                     }
                 }
             }
+        },
+        "15/05/2025 - 00:00:00": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "15/05/2025 - 00:00:00",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Física",
+                "activity_title": "Gases perfeitos (grandezas macroscópicas)",
+                "user": "Daniel Oliveira Matias",
+                "author": "francineidean1769666-sp",
+                "class_school": "3º B EM",
+                "expires_in": "13/05/2025 - 14:30:22",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {
+                            "0": {
+                                "type": "video",
+                                "src": "https://www.youtube.com/embed/gj_irF_MnP8",
+                                "transcription": {
+                                    "lang": "pt",
+                                    "transcript": "Neste vídeo usaremos um equipamento com um pistão dentro de um tubo de vidro contendo pequenas miçangas coloridas de plástico e um êmbolo feito de uma chapa Fina de plástico e um canudinho de refresco este aparelho foi construído para simular o comportamento das partículas que compõem certos tipos de gás ilustrando preceitos da teoria cinética dos gases quando ligamos o aparelho e aumentamos gradativamente a velocidade de rotação do motor o pistão começa a se movimentar dentro do tubo criando uma agitação nas miçangas as miçangas então passam a colidir umas com as outr e també com as paredes do vidro com o pistão e com o êmbolo móvel acima delas conforme a frequência do pistão aumenta as partículas ficam cada vez mais agitadas podemos notar que as partículas possuem velocidades variadas tanto em módulo como em direção e sentido é possível observar por exemplo que somente algumas das partículas chegam a bater no êmbolo superior em instantes determinados simula a agitação das partículas ligadas sua energia cinética que por sua vez depende da velocidade a energia cinética cresce com o aumento da temperatura do gás assim quanto maior a temperatura de um gás maior será a energia cinética das partículas podemos também simular o aumento da temperatura de um gás mantendo-se a pressão constante somente com o peso do êmbolo sobre as partículas quanto maior a temperatura maior a agitação térmica e maior o volume ocupado pelo gás mantendo-se essa agitação térmica constante podemos pressionar lentamente o êmbolo diminuindo o volume ocupado pelo gás assim podemos ver que neste caso a agitação térmica aumenta representando um aumento da temperatura do gás da mesma forma se diminuirmos a pressão aplicada sobre o recipiente lentamente diminuiremos a velocidade média das partículas e poderemos ter a representação da diminuição da temperatura de um gás"
+                                }
+                            }
+                        },
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Assista ao vídeo para responder às questões:",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "Com base na demonstração apresentada no vídeo, complete a frase a seguir.",
+                                "A partir das relações entre o modelo do gás ideal e a demonstração do vídeo, analise as afirmações a seguir e aponte as corretas.",
+                                "Imagine que um gás, em um recipiente fechado, receba energia de forma que sua pressão interna triplique sem que seu volume varie. Se a temperatura inicial do gás é de 300 K, determine sua temperatura após o processo descrito acima.",
+                                "Imagine que um gás foi submetido aos processos representados no diagrama P x V a seguir:Fonte: SEDUC-SPA partir da análise desse diagrama, é possível apontar que os processos representados pelo segmento AB e BC são, respectivamente..."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "Com base na demonstração apresentada no vídeo, complete a frase a seguir.",
+                                "A partir das relações entre o modelo do gás ideal e a demonstração do vídeo, analise as afirmações a seguir e aponte as corretas.",
+                                "Imagine que um gás, em um recipiente fechado, receba energia de forma que sua pressão interna triplique sem que seu volume varie. Se a temperatura inicial do gás é de 300 K, determine sua temperatura após o processo descrito acima.",
+                                "Imagine que um gás foi submetido aos processos representados no diagrama P x V a seguir:Fonte: SEDUC-SPA partir da análise desse diagrama, é possível apontar que os processos representados pelo segmento AB e BC são, respectivamente..."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Com base na demonstração apresentada no vídeo, complete a frase a seguir.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "A partir das relações entre o modelo do gás ideal e a demonstração do vídeo, analise as afirmações a seguir e aponte as corretas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Imagine que um gás, em um recipiente fechado, receba energia de forma que sua pressão interna triplique sem que seu volume varie. Se a temperatura inicial do gás é de 300 K, determine sua temperatura após o processo descrito acima.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 27 K.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 81 K.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 100 K.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 300 K.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 900 K.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Imagine que um gás foi submetido aos processos representados no diagrama P x V a seguir:Fonte: SEDUC-SPA partir da análise desse diagrama, é possível apontar que os processos representados pelo segmento AB e BC são, respectivamente...",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) uma expansão isovolumétrica e uma compressão isotérmica.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) um processo isobárico e uma expansão isovolumétrica.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) uma expansão isobárica e um processo isovolumétrico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) uma compressão isobárica e um processo isovolumétrico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) uma compressão isotérmica e um processo isobárico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "68392375": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "68392375",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Física",
+                "activity_title": "Gases perfeitos (grandezas macroscópicas)",
+                "user": "Daniel Oliveira Matias",
+                "author": "francineidean1769666-sp",
+                "class_school": "3º B EM",
+                "first_access": "13/05/2025 - 14:30:22",
+                "expires_in": "15/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {
+                            "0": {
+                                "type": "video",
+                                "src": "https://www.youtube.com/embed/gj_irF_MnP8",
+                                "transcription": {
+                                    "lang": "pt",
+                                    "transcript": "Neste vídeo usaremos um equipamento com um pistão dentro de um tubo de vidro contendo pequenas miçangas coloridas de plástico e um êmbolo feito de uma chapa Fina de plástico e um canudinho de refresco este aparelho foi construído para simular o comportamento das partículas que compõem certos tipos de gás ilustrando preceitos da teoria cinética dos gases quando ligamos o aparelho e aumentamos gradativamente a velocidade de rotação do motor o pistão começa a se movimentar dentro do tubo criando uma agitação nas miçangas as miçangas então passam a colidir umas com as outr e també com as paredes do vidro com o pistão e com o êmbolo móvel acima delas conforme a frequência do pistão aumenta as partículas ficam cada vez mais agitadas podemos notar que as partículas possuem velocidades variadas tanto em módulo como em direção e sentido é possível observar por exemplo que somente algumas das partículas chegam a bater no êmbolo superior em instantes determinados simula a agitação das partículas ligadas sua energia cinética que por sua vez depende da velocidade a energia cinética cresce com o aumento da temperatura do gás assim quanto maior a temperatura de um gás maior será a energia cinética das partículas podemos também simular o aumento da temperatura de um gás mantendo-se a pressão constante somente com o peso do êmbolo sobre as partículas quanto maior a temperatura maior a agitação térmica e maior o volume ocupado pelo gás mantendo-se essa agitação térmica constante podemos pressionar lentamente o êmbolo diminuindo o volume ocupado pelo gás assim podemos ver que neste caso a agitação térmica aumenta representando um aumento da temperatura do gás da mesma forma se diminuirmos a pressão aplicada sobre o recipiente lentamente diminuiremos a velocidade média das partículas e poderemos ter a representação da diminuição da temperatura de um gás"
+                                }
+                            }
+                        },
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Assista ao vídeo para responder às questões:",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "Com base na demonstração apresentada no vídeo, complete a frase a seguir.",
+                                "A partir das relações entre o modelo do gás ideal e a demonstração do vídeo, analise as afirmações a seguir e aponte as corretas.",
+                                "Imagine que um gás, em um recipiente fechado, receba energia de forma que sua pressão interna triplique sem que seu volume varie. Se a temperatura inicial do gás é de 300 K, determine sua temperatura após o processo descrito acima.",
+                                "Imagine que um gás foi submetido aos processos representados no diagrama P x V a seguir:Fonte: SEDUC-SPA partir da análise desse diagrama, é possível apontar que os processos representados pelo segmento AB e BC são, respectivamente..."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "Com base na demonstração apresentada no vídeo, complete a frase a seguir.",
+                                "A partir das relações entre o modelo do gás ideal e a demonstração do vídeo, analise as afirmações a seguir e aponte as corretas.",
+                                "Imagine que um gás, em um recipiente fechado, receba energia de forma que sua pressão interna triplique sem que seu volume varie. Se a temperatura inicial do gás é de 300 K, determine sua temperatura após o processo descrito acima.",
+                                "Imagine que um gás foi submetido aos processos representados no diagrama P x V a seguir:Fonte: SEDUC-SPA partir da análise desse diagrama, é possível apontar que os processos representados pelo segmento AB e BC são, respectivamente..."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Com base na demonstração apresentada no vídeo, complete a frase a seguir.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "A partir das relações entre o modelo do gás ideal e a demonstração do vídeo, analise as afirmações a seguir e aponte as corretas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Imagine que um gás, em um recipiente fechado, receba energia de forma que sua pressão interna triplique sem que seu volume varie. Se a temperatura inicial do gás é de 300 K, determine sua temperatura após o processo descrito acima.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 27 K.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 81 K.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 100 K.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 300 K.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 900 K.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {
+                                "0": {
+                                    "type": "image",
+                                    "src": "https://edusp-static.ip.tv/tms/edusp/tspcnt3/8g11VIDoYuLUjwK91YBQhaUkXfKWBr.png",
+                                    "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\68392375 (0d)\\8g11VIDoYuLUjwK91YBQhaUkXfKWBr.png"
+                                }
+                            },
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Imagine que um gás foi submetido aos processos representados no diagrama P x V a seguir:Fonte: SEDUC-SPA partir da análise desse diagrama, é possível apontar que os processos representados pelo segmento AB e BC são, respectivamente...",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) uma expansão isovolumétrica e uma compressão isotérmica.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) um processo isobárico e uma expansão isovolumétrica.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) uma expansão isobárica e um processo isovolumétrico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) uma compressão isobárica e um processo isovolumétrico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) uma compressão isotérmica e um processo isobárico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "68222880": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "68222880",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Língua Portuguesa",
+                "activity_title": "Textos contemporâneos na construção da opinião - Parte 2",
+                "user": "Samuel Oliveira Matias",
+                "author": "wesleydinizpe4165238-sp",
+                "class_school": "3º B EM",
+                "first_access": "13/05/2025 - 17:05:09",
+                "expires_in": "14/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 3
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Leia este texto e responda às atividades: Estudante de Escola Pública Conquista Medalha de Ouro em Concurso de Redação no Estado de São PauloGuilherme Vinicius Pereira, de 12 anos, aluno da escola pública Maria José, destacou-se ao conquistar a medalha de ouro na Olimpíada de Redação do Estado de São Paulo (REDASP) 2024. Estudante do sétimo ano, Guilherme atribui sua vitória ao incentivo da mãe e à influência do hip-hop e da literatura negra, que moldaram sua visão de mundo e inspiraram a redação premiada.[...]Reconhecimento e o Sonho de Estudar na USPEm um vídeo compartilhado, Guilherme lembrou um encontro no quinto ano com o rapper Eduardo Taddeo, que o incentivou a estudar. Ele acredita que esse apoio foi essencial para sua conquista no sétimo ano. “Tudo isso é graças aos livros que leio e à cultura hip-hop, que admiro profundamente”, disse o estudante, que sonha em ingressar na Universidade de São Paulo (USP).A Olimpíada de Redação do Estado de São Paulo (REDASP)Organizada pela Secretaria de Educação do Estado de São Paulo, a REDASP tem como objetivo promover a escrita e o desenvolvimento das competências previstas no Currículo Paulista. A competição incentiva estudantes da rede pública a expressarem suas ideias por meio da produção textual.Fonte: https://www.jornaldorap.com.br/noticias/estudante-de-escola-publica-conquista-medalha-de-ouro-em-concurso-de-redacao-no-estado-de-sao-paulo/.",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "2": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "O título das notícias sintetiza o fato central abordado no texto e destaca informações consideradas importantes para atrair a atenção do leitor. As informações mais importantes da notícia respondem às perguntas básicas do jornalismo: \"O quê?\", \"Quem?\", \"Quando?\", \"Onde?\", \"Como?\" e \"Por quê?\". Com relação à composição do título dessa notícia, associe corretamente às lacunas a seguir.I. O quê?II. Onde?III. Quem?( ) estudante de Escola Pública( ) conquista Medalha de Ouro( ) em Concurso de Redação no Estado de São Paulo",
+                                "Ao destacar determinadas informações a respeito do fato noticiado e apresentar o ponto de vista do aluno na notícia, o texto jornalístico expressa uma determinada perspectiva com relação ao tema abordado. A respeito disso, julgue as afirmativas a seguir em verdadeiras (V) ou falsas (F). Depois, assinale a alternativa correta.I. A notícia mostra um ponto de vista positivo em relação à influência do hip-hop e da literatura no desenvolvimento dos jovens.II. A notícia sugere que os jovens de escolas públicas devem se aproximar da cultura hip-hop para alcançarem um bom desempenho escolar.III. A notícia valoriza a participação de jovens estudantes em campeonatos e olimpíadas escolares, reconhecendo os resultados como conquistas importantes.",
+                                "A notícia utiliza diferentes recursos para apresentar aos leitores a perspectiva do aluno Guilherme a respeito de sua conquista no Concurso de Redação. Releia a seguir uma citação em discurso indireto presente no texto: Estudante do sétimo ano, Guilherme atribui sua vitória ao incentivo da mãe e à influência do hip-hop e da literatura negra, que moldaram sua visão de mundo e inspiraram a redação premiada.Fonte: https://www.jornaldorap.com.br/noticias/estudante-de-escola-publica-conquista-medalha-de-ouro-em-concurso-de-redacao-no-estado-de-sao-paulo/.Esse trecho enumera para o leitor quais foram as influências às quais Guilherme atribuiu sua vitória. A conjunção \"e\" utilizada nessa enumeração expressa sentido de...",
+                                "(COMVEST Vestibular Indígena, 2019 - Adaptado)Turismo em Terras IndígenasMais do que a possibilidade de visitar belezas naturais intocadas, o turista em uma terra indígena tem a oportunidade de entrar em contato com línguas, narrativas, conhecimentos e comidas da comunidade, algo antes restrito a populações originárias e a uma pequena parcela de não indígenas. Esse intercâmbio gera ainda outros desdobramentos, como afirma o Coordenador-Geral de Etnodesenvolvimento da Funai, Juan Scalia. “O turismo de base comunitária em terras indígenas fortalece a autonomia dos povos, propiciando uma alternativa de geração de renda com mínimos impactos ambientais e com uma distribuição mais justa dos lucros da atividade. Valorizar os diversos atrativos ecológicos e culturais, por outro lado, também contribui para a proteção dos territórios e fortalecimento das tradições”, afirmou.Fonte: http://www.funai.gov.br/index.php/comunicacao/noticias/5224-etnoturismo-ealternativa-sustentavel-de-renda-para-comunidades-indigenas-do-rio-negro.Segundo o texto, o turismo em terras indígenas"
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "O título das notícias sintetiza o fato central abordado no texto e destaca informações consideradas importantes para atrair a atenção do leitor. As informações mais importantes da notícia respondem às perguntas básicas do jornalismo: \"O quê?\", \"Quem?\", \"Quando?\", \"Onde?\", \"Como?\" e \"Por quê?\". Com relação à composição do título dessa notícia, associe corretamente às lacunas a seguir.I. O quê?II. Onde?III. Quem?( ) estudante de Escola Pública( ) conquista Medalha de Ouro( ) em Concurso de Redação no Estado de São Paulo",
+                                "Ao destacar determinadas informações a respeito do fato noticiado e apresentar o ponto de vista do aluno na notícia, o texto jornalístico expressa uma determinada perspectiva com relação ao tema abordado. A respeito disso, julgue as afirmativas a seguir em verdadeiras (V) ou falsas (F). Depois, assinale a alternativa correta.I. A notícia mostra um ponto de vista positivo em relação à influência do hip-hop e da literatura no desenvolvimento dos jovens.II. A notícia sugere que os jovens de escolas públicas devem se aproximar da cultura hip-hop para alcançarem um bom desempenho escolar.III. A notícia valoriza a participação de jovens estudantes em campeonatos e olimpíadas escolares, reconhecendo os resultados como conquistas importantes.",
+                                "A notícia utiliza diferentes recursos para apresentar aos leitores a perspectiva do aluno Guilherme a respeito de sua conquista no Concurso de Redação. Releia a seguir uma citação em discurso indireto presente no texto: Estudante do sétimo ano, Guilherme atribui sua vitória ao incentivo da mãe e à influência do hip-hop e da literatura negra, que moldaram sua visão de mundo e inspiraram a redação premiada.Fonte: https://www.jornaldorap.com.br/noticias/estudante-de-escola-publica-conquista-medalha-de-ouro-em-concurso-de-redacao-no-estado-de-sao-paulo/.Esse trecho enumera para o leitor quais foram as influências às quais Guilherme atribuiu sua vitória. A conjunção \"e\" utilizada nessa enumeração expressa sentido de...",
+                                "(COMVEST Vestibular Indígena, 2019 - Adaptado)Turismo em Terras IndígenasMais do que a possibilidade de visitar belezas naturais intocadas, o turista em uma terra indígena tem a oportunidade de entrar em contato com línguas, narrativas, conhecimentos e comidas da comunidade, algo antes restrito a populações originárias e a uma pequena parcela de não indígenas. Esse intercâmbio gera ainda outros desdobramentos, como afirma o Coordenador-Geral de Etnodesenvolvimento da Funai, Juan Scalia. “O turismo de base comunitária em terras indígenas fortalece a autonomia dos povos, propiciando uma alternativa de geração de renda com mínimos impactos ambientais e com uma distribuição mais justa dos lucros da atividade. Valorizar os diversos atrativos ecológicos e culturais, por outro lado, também contribui para a proteção dos territórios e fortalecimento das tradições”, afirmou.Fonte: http://www.funai.gov.br/index.php/comunicacao/noticias/5224-etnoturismo-ealternativa-sustentavel-de-renda-para-comunidades-indigenas-do-rio-negro.Segundo o texto, o turismo em terras indígenas"
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "O título das notícias sintetiza o fato central abordado no texto e destaca informações consideradas importantes para atrair a atenção do leitor. As informações mais importantes da notícia respondem às perguntas básicas do jornalismo: \"O quê?\", \"Quem?\", \"Quando?\", \"Onde?\", \"Como?\" e \"Por quê?\". Com relação à composição do título dessa notícia, associe corretamente às lacunas a seguir.I. O quê?II. Onde?III. Quem?( ) estudante de Escola Pública( ) conquista Medalha de Ouro( ) em Concurso de Redação no Estado de São Paulo",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Ao destacar determinadas informações a respeito do fato noticiado e apresentar o ponto de vista do aluno na notícia, o texto jornalístico expressa uma determinada perspectiva com relação ao tema abordado. A respeito disso, julgue as afirmativas a seguir em verdadeiras (V) ou falsas (F). Depois, assinale a alternativa correta.I. A notícia mostra um ponto de vista positivo em relação à influência do hip-hop e da literatura no desenvolvimento dos jovens.II. A notícia sugere que os jovens de escolas públicas devem se aproximar da cultura hip-hop para alcançarem um bom desempenho escolar.III. A notícia valoriza a participação de jovens estudantes em campeonatos e olimpíadas escolares, reconhecendo os resultados como conquistas importantes.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) F – F – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) F – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) V – F – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) V – F – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) V – V – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A notícia utiliza diferentes recursos para apresentar aos leitores a perspectiva do aluno Guilherme a respeito de sua conquista no Concurso de Redação. Releia a seguir uma citação em discurso indireto presente no texto: Estudante do sétimo ano, Guilherme atribui sua vitória ao incentivo da mãe e à influência do hip-hop e da literatura negra, que moldaram sua visão de mundo e inspiraram a redação premiada.Fonte: https://www.jornaldorap.com.br/noticias/estudante-de-escola-publica-conquista-medalha-de-ouro-em-concurso-de-redacao-no-estado-de-sao-paulo/.Esse trecho enumera para o leitor quais foram as influências às quais Guilherme atribuiu sua vitória. A conjunção \"e\" utilizada nessa enumeração expressa sentido de...",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) adição.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) oposição.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) conclusão.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) alternativa.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) consequência.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(COMVEST Vestibular Indígena, 2019 - Adaptado)Turismo em Terras IndígenasMais do que a possibilidade de visitar belezas naturais intocadas, o turista em uma terra indígena tem a oportunidade de entrar em contato com línguas, narrativas, conhecimentos e comidas da comunidade, algo antes restrito a populações originárias e a uma pequena parcela de não indígenas. Esse intercâmbio gera ainda outros desdobramentos, como afirma o Coordenador-Geral de Etnodesenvolvimento da Funai, Juan Scalia. “O turismo de base comunitária em terras indígenas fortalece a autonomia dos povos, propiciando uma alternativa de geração de renda com mínimos impactos ambientais e com uma distribuição mais justa dos lucros da atividade. Valorizar os diversos atrativos ecológicos e culturais, por outro lado, também contribui para a proteção dos territórios e fortalecimento das tradições”, afirmou.Fonte: http://www.funai.gov.br/index.php/comunicacao/noticias/5224-etnoturismo-ealternativa-sustentavel-de-renda-para-comunidades-indigenas-do-rio-negro.Segundo o texto, o turismo em terras indígenas",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) constitui a principal fonte de renda da comunidade indígena mencionada no texto.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) é útil para a divulgação respeitosa das especificidades culturais da comunidade.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) favorece alianças entre as comunidades e as agências de turismo envolvidas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) provoca, inevitavelmente, impactos ambientais sérios e indesejáveis.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) substitui os saberes ancestrais por práticas turísticas comerciais.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
         }
     },
     "redacao": {

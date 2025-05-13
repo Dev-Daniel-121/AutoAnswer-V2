@@ -50,32 +50,32 @@ class CollectInfo:
             'ia': 'Grok 3 - Smartest',
             'prompt': '''
                 ### Instruções
-                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a "questão" pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.
+                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.
 
                 ### Formato JSON Esperado
                 {
-                "0": {
-                    "type": "TIPO DA QUESTÃO",
-                    "alternatives": {
-                        "media": {DADOS DE MÍDIA DA QUESTÃO},
-                        "alternative": ["ALTERNATIVAS"]
+                '0': {
+                    'type': 'TIPO DA QUESTÃO',
+                    'alternatives': {
+                        'media': {DADOS DE MÍDIA DA QUESTÃO},
+                        'alternative': ['ALTERNATIVAS']
                     },
-                    "answer": "RESPOSTA PARA TAREFA"
+                    'answer': 'RESPOSTA PARA TAREFA'
                 }
                 }
 
                 ### Regras para Preenchimento
-                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: "0", "1", etc.).
+                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).
                 - Campo `type`:
-                - Identifique o tipo da questão (ex.: "Múltipla Escolha", "Resposta Curta", etc.).
+                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).
                 - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).
                 - Campo `alternatives`:
                 - Se houver alternativas, inclua um objeto `alternatives` com:
-                    - `media`: Dados da mídia, como `{ "type": "image", "url": "[link ou descrição]" }` se houver imagem, ou `null` se não houver.
-                    - `alternative`: Lista de alternativas (ex.: `["A) Opção 1", "B) Opção 2"]`).
+                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.
+                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).
                 - Se não houver alternativas, defina `alternatives` como `null`.
                 - Campo `answer`:
-                - Para questões com alternativas, forneça a resposta correta (ex.: "A)", "B)", etc.).
+                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).
                 - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.
                 - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.
                 - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).
@@ -83,73 +83,73 @@ class CollectInfo:
                 ### Exemplo de Entrada e Saída
                 1. **Entrada**: Questão com imagem e alternativas
                 {
-                    "0": {
-                        "question": "Qual animal está na imagem?",
-                        "media": {"type": "image", "url": "[link]"},
-                        "alternatives": ["A) Cachorro", "B) Gato"]
+                    '0': {
+                        'question': 'Qual animal está na imagem?',
+                        'media': {'type': 'image', 'url': '[link]'},
+                        'alternatives': ['A) Cachorro', 'B) Gato']
                     }
                 }
                 **Saída**:
                 {
-                    "0": {
-                        "type": "Múltipla Escolha",
-                        "alternatives": {
-                            "media": {"type": "image", "url": "[link]"},
-                            "alternative": ["A) Cachorro", "B) Gato"]
+                    '0': {
+                        'type': 'Múltipla Escolha',
+                        'alternatives': {
+                            'media': {'type': 'image', 'url': '[link]'},
+                            'alternative': ['A) Cachorro', 'B) Gato']
                         },
-                        "answer": "B)"
+                        'answer': 'B)'
                     }
                 }
 
                 2. **Entrada**: Questão sem alternativas
                 {
-                    "0": {
-                        "question": "Qual é a capital do Brasil?"
+                    '0': {
+                        'question': 'Qual é a capital do Brasil?'
                     }
                 }
                 **Saída**:
                 {
-                    "0": {
-                        "type": "Resposta Curta",
-                        "alternatives": null,
-                        "answer": "Brasília"
+                    '0': {
+                        'type': 'Resposta Curta',
+                        'alternatives': null,
+                        'answer': 'Brasília'
                     }
                 }
 
                 3. **Entrada**: Apenas uma imagem
                 {
-                    "0": {
-                        "media": {"type": "image", "url": "[link]"}
+                    '0': {
+                        'media': {'type': 'image', 'url': '[link]'}
                     }
                 }
                 **Saída**:
                 {
-                    "0": {
-                        "type": "",
-                        "alternatives": {
-                            "media": {"type": "image", "url": "[link]"},
-                            "alternative": null
+                    '0': {
+                        'type': '',
+                        'alternatives': {
+                            'media': {'type': 'image', 'url': '[link]'},
+                            'alternative': null
                         },
-                        "answer": "Descrição ou resposta baseada na análise da imagem"
+                        'answer': 'Descrição ou resposta baseada na análise da imagem'
                     }
                 }
 
                 4. **Entrada**: Questão sem informações suficientes
                 {
-                    "0": {
-                        "question": "Ordene as palavras.",
-                        "alternatives": [""]
+                    '0': {
+                        'question': 'Ordene as palavras.',
+                        'alternatives': ['']
                     }
                 }
                 **Saída**:
                 {
-                    "0": {
-                        "type": "",
-                        "alternatives": {
-                            "media": null,
-                            "alternative": [""]
+                    '0': {
+                        'type': '',
+                        'alternatives': {
+                            'media': null,
+                            'alternative': ['']
                         },
-                        "answer": ""
+                        'answer': ''
                     }
                 }
 
@@ -189,7 +189,7 @@ class CollectInfo:
 
         if unknown_type_questions:
             print(f'\n[{LogType.INFO}] Questões Desconhecidas Encontradas:')
-            print(f'   [{LogType.INFO}] Questões: {", ".join(unknown_type_questions)}\n')
+            print(f'   [{LogType.INFO}] Questões: {', '.join(unknown_type_questions)}\n')
 
     def run(self, user, id_usuario):
         task_info = self.task_info.run()
@@ -217,13 +217,13 @@ class CollectInfo:
             questionarie=questionarie
         )
 
-        """
+        '''
         self.collect_tarefas.run()
 
         print(f'\n\n\n{task_info}\n\n\n')
         print(f'{text}\n\n\n')
         print(f'{questionarie}\n\n\n')
-        """
+        '''
 
         self.time.tempo_restante()
 
@@ -261,192 +261,3 @@ class CollectInfo:
         Resposta                        (div.css-b200pa > div.css-70qvj9 > label.css-geqbjm > input.css-1m9pwf3).click
 
 """
-
-
-
-{
-    "0": {
-        "quest_info": {
-            "required": True,
-            "time": {"day": "", "start_time": "", "end_time": ""},
-            "activity_score": "",
-            "score": "",
-            "section": "",
-            "number_of_guesses": "",
-            "number_of_user_responses": "",
-            "user_feedback": "",
-            "difficulty": "",
-            "media": {"video": {}, "image": {}, "gif": {}},
-            "history_of_attempts": {},
-            "error_num": "",
-            "error_types": ["", "", ""],
-            "error_logs": {
-                "0": {"type": "", "details": "", "question": "", "timestamp": ""}
-            },
-            "ia": "",
-            "time_spent": "",
-        },
-        "quest": {
-            "type": "Unknown Type",
-            "statement": 'O título das notícias sintetiza o fato central abordado no texto e destaca informações consideradas importantes para atrair a atenção do leitor. As informações mais importantes da notícia respondem às perguntas básicas do jornalismo: "O quê?", "Quem?", "Quando?", "Onde?", "Como?" e "Por quê?". Com relação à composição do título dessa notícia, associe corretamente às lacunas a seguir.I. O quê?II. Onde?III. Quem?( ) estudante de Escola Pública( ) conquista Medalha de Ouro( ) em Concurso de Redação no Estado de São Paulo',
-            "alternatives": {"media": {}, "alternative": [""]},
-            "answer": "",
-        },
-    },
-    "1": {
-        "quest_info": {
-            "required": True,
-            "time": {"day": "", "start_time": "", "end_time": ""},
-            "activity_score": "",
-            "score": "",
-            "section": "",
-            "number_of_guesses": "",
-            "number_of_user_responses": "",
-            "user_feedback": "",
-            "difficulty": "",
-            "media": {"video": {}, "image": {}, "gif": {}},
-            "history_of_attempts": {},
-            "error_num": "",
-            "error_types": ["", "", ""],
-            "error_logs": {
-                "0": {"type": "", "details": "", "question": "", "timestamp": ""}
-            },
-            "ia": "",
-            "time_spent": "",
-        },
-        "quest": {
-            "type": "Radios",
-            "statement": "Ao destacar determinadas informações a respeito do fato noticiado e apresentar o ponto de vista do aluno na notícia, o texto jornalístico expressa uma determinada perspectiva com relação ao tema abordado. A respeito disso, julgue as afirmativas a seguir em verdadeiras (V) ou falsas (F). Depois, assinale a alternativa correta.I. A notícia mostra um ponto de vista positivo em relação à influência do hip-hop e da literatura no desenvolvimento dos jovens.II. A notícia sugere que os jovens de escolas públicas devem se aproximar da cultura hip-hop para alcançarem um bom desempenho escolar.III. A notícia valoriza a participação de jovens estudantes em campeonatos e olimpíadas escolares, reconhecendo os resultados como conquistas importantes.",
-            "alternatives": {
-                "media": {},
-                "alternative": [
-                    {
-                        "text": "A) F – F – V.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "B) F – V – V.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "C) V – F – F.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "D) V – F – V.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "E) V – V – F.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                ],
-            },
-            "answer": "",
-        },
-    },
-    "2": {
-        "quest_info": {
-            "required": True,
-            "time": {"day": "", "start_time": "", "end_time": ""},
-            "activity_score": "",
-            "score": "",
-            "section": "",
-            "number_of_guesses": "",
-            "number_of_user_responses": "",
-            "user_feedback": "",
-            "difficulty": "",
-            "media": {"video": {}, "image": {}, "gif": {}},
-            "history_of_attempts": {},
-            "error_num": "",
-            "error_types": ["", "", ""],
-            "error_logs": {
-                "0": {"type": "", "details": "", "question": "", "timestamp": ""}
-            },
-            "ia": "",
-            "time_spent": "",
-        },
-        "quest": {
-            "type": "Radios",
-            "statement": 'A notícia utiliza diferentes recursos para apresentar aos leitores a perspectiva do aluno Guilherme a respeito de sua conquista no Concurso de Redação. Releia a seguir uma citação em discurso indireto presente no texto: Estudante do sétimo ano, Guilherme atribui sua vitória ao incentivo da mãe e à influência do hip-hop e da literatura negra, que moldaram sua visão de mundo e inspiraram a redação premiada.Fonte: https://www.jornaldorap.com.br/noticias/estudante-de-escola-publica-conquista-medalha-de-ouro-em-concurso-de-redacao-no-estado-de-sao-paulo/.Esse trecho enumera para o leitor quais foram as influências às quais Guilherme atribuiu sua vitória. A conjunção "e" utilizada nessa enumeração expressa sentido de...',
-            "alternatives": {
-                "media": {},
-                "alternative": [
-                    {
-                        "text": "A) adição.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "B) oposição.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "C) conclusão.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "D) alternativa.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "E) consequência.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                ],
-            },
-            "answer": "",
-        },
-    },
-    "3": {
-        "quest_info": {
-            "required": True,
-            "time": {"day": "", "start_time": "", "end_time": ""},
-            "activity_score": "",
-            "score": "",
-            "section": "",
-            "number_of_guesses": "",
-            "number_of_user_responses": "",
-            "user_feedback": "",
-            "difficulty": "",
-            "media": {"video": {}, "image": {}, "gif": {}},
-            "history_of_attempts": {},
-            "error_num": "",
-            "error_types": ["", "", ""],
-            "error_logs": {
-                "0": {"type": "", "details": "", "question": "", "timestamp": ""}
-            },
-            "ia": "",
-            "time_spent": "",
-        },
-        "quest": {
-            "type": "Radios",
-            "statement": "(COMVEST Vestibular Indígena, 2019 - Adaptado)Turismo em Terras IndígenasMais do que a possibilidade de visitar belezas naturais intocadas, o turista em uma terra indígena tem a oportunidade de entrar em contato com línguas, narrativas, conhecimentos e comidas da comunidade, algo antes restrito a populações originárias e a uma pequena parcela de não indígenas. Esse intercâmbio gera ainda outros desdobramentos, como afirma o Coordenador-Geral de Etnodesenvolvimento da Funai, Juan Scalia. “O turismo de base comunitária em terras indígenas fortalece a autonomia dos povos, propiciando uma alternativa de geração de renda com mínimos impactos ambientais e com uma distribuição mais justa dos lucros da atividade. Valorizar os diversos atrativos ecológicos e culturais, por outro lado, também contribui para a proteção dos territórios e fortalecimento das tradições”, afirmou.Fonte: http://www.funai.gov.br/index.php/comunicacao/noticias/5224-etnoturismo-ealternativa-sustentavel-de-renda-para-comunidades-indigenas-do-rio-negro.Segundo o texto, o turismo em terras indígenas",
-            "alternatives": {
-                "media": {},
-                "alternative": [
-                    {
-                        "text": "A) constitui a principal fonte de renda da comunidade indígena mencionada no texto.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "B) é útil para a divulgação respeitosa das especificidades culturais da comunidade.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "C) favorece alianças entre as comunidades e as agências de turismo envolvidas.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "D) provoca, inevitavelmente, impactos ambientais sérios e indesejáveis.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                    {
-                        "text": "E) substitui os saberes ancestrais por práticas turísticas comerciais.",
-                        "media": {"video": {}, "image": {}, "gif": {}},
-                    },
-                ],
-            },
-            "answer": "",
-        },
-    },
-}

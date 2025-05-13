@@ -79,7 +79,7 @@ class Tarefas:
 
         sections = Sections(page=self.page, sections_turmas_class=':nth-match(div.css-39ukww, 1)', sections_status_class=':nth-match(div.css-39ukww, 2)', sections_componentes_class='input.css-scvshb')
 
-        activities = Activities(page=self.page, total_activities_class='div.css-fm7u1u', get_component_name_class='p.css-1is68np', get_component_day_class='p.css-1d78sd9', get_component_date_class='p.css-1gwkyaz')
+        activities = Activities(page=self.page, total_activities_class='div.css-wiwm8n', get_component_name_class='p.css-1is68np', get_component_day_class='p.css-1d78sd9', get_component_date_class='p.css-1gwkyaz')
 
         os.system('cls' if os.name == 'nt' else 'clear')
 

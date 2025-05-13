@@ -61,7 +61,7 @@ class DoTarefas:
 
                 for choice in user_choices:
                     print(f'\n[{LogType.INFO}] Executando escolha: {choice}\n')
-                    self.activities.enter_activity(activity_class=f':nth-match(div.css-fm7u1u, {choice})', btn_enter_activity_class='button.css-g82asz')
+                    self.activities.enter_activity(activity_class=f':nth-match(div.css-wiwm8n, {choice})', btn_enter_activity_class='button.css-g82asz')
                     self.realizarTarefa.run(user=user, id_usuario=id_usuario)
                 
                 input(f'\n[{LogType.MSG}] Pressione Enter para continuar...')

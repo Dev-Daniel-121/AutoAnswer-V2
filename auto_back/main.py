@@ -3,17 +3,22 @@ from project import MenuSystem
 import os
 
 def run():
-	base_dir = os.path.dirname(os.path.abspath(__file__))
-	img_path = os.path.join(
-		base_dir,
-		'project', 'apps', 'sala_do_futuro', 'models',
-		'realizar_atividades', 'data', 'img'
-	)
+    base_dir = os.path.dirname(os.path.abspath(__file__))
 
-	delete_media = DeleteMedia(base_path=img_path, max_age_days=7)
-	delete_media.update_folder_names()
+    img_path = os.path.join(
+        base_dir,
+        'project', 'apps', 'sala_do_futuro', 'models',
+        'realizar_atividades', 'data', 'img'
+    )
+
+    os.makedirs(img_path, exist_ok=True)
+
+    delete_media = DeleteMedia(base_path=img_path, max_age_days=7)
     
-	menu_system = MenuSystem()
-	menu_system.run()
+    delete_media.update_folder_names()
 
-run()
+    menu_system = MenuSystem()
+    menu_system.run()
+
+if __name__ == '__main__':
+    run()

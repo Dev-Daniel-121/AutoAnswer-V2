@@ -1,4 +1,4 @@
-from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media import TranscriptYoutube, ExtractImg, DeleteMedia
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_media import ExtractImg, DeleteMedia, SaveMetadata, TranscriptYoutube
 from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info import TaskInfo
 from project.utils.logger import log
 from project import LogType
@@ -29,25 +29,18 @@ class CollectMedia:
             activity_title_class='p.css-zscg42'
         )
 
-        user, author, class_school, expires_in, site_activity_id = self.task_info.get_activity_infos()
+        user, author, class_school, first_access, expires_in, site_activity_id = self.task_info.get_activity_infos()
 
-        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-        media_base = os.path.join(base_dir, 'data', 'img')
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        media_base = os.path.abspath(os.path.join(base_dir, '..', '..', '..', 'data', 'img'))
         os.makedirs(media_base, exist_ok=True)
 
-        existing_path = None
-        for item in os.listdir(media_base):
-            if item.startswith(str(site_activity_id)):
-                existing_path = os.path.join(media_base, item)
-                break
+        SaveMetadata().save(activity_id=site_activity_id, days_to_expire=self.expiration_days)
 
         delete_media = DeleteMedia(base_path=media_base, max_age_days=self.expiration_days)
-        if existing_path and os.path.isdir(existing_path):
-            days_remaining = delete_media.get_remaining_days(existing_path)
-        else:
-            days_remaining = self.expiration_days
+        days_remaining = delete_media.get_remaining_days_by_json(str(site_activity_id))
 
-        folder_name = f"{site_activity_id} ({days_remaining}d)"
+        folder_name = f'{site_activity_id} ({days_remaining}d)'
         img_path = os.path.join(media_base, folder_name)
 
         self.image_downloader = ExtractImg(

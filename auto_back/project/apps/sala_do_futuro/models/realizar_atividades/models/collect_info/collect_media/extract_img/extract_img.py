@@ -16,7 +16,7 @@ class ExtractImg:
 
             filename = os.path.basename(urlparse(url).path)
             if not filename:
-                filename = f'image_{idx or "unknown"}.jpg'
+                filename = f'image_{idx or 'unknown'}.jpg'
 
             filepath = os.path.join(self.download_path, filename)
 
@@ -30,11 +30,18 @@ class ExtractImg:
 
             duration = time.time() - start_time
 
-            log(LogType.INSTALL, f"Imagem salva em: {filepath} (tempo: {duration:.2f}s)")
-            log(LogType.WARNING, f"Os arquivos de mídia serão armazenados por {self.days_to_expire} dias. Verifique '{self.id_folder}' ({self.time_remaining} dias restantes)")
+            log(LogType.INSTALL, f'Imagem salva em: {filepath} (tempo: {duration:.2f}s)')
+            log(
+                LogType.WARNING,
+                f'Os arquivos de mídia serão armazenados por {self.days_to_expire} dias. '
+                f'Verifique \'{self.id_folder}\' ({self.time_remaining} dias restantes)'
+            )
 
             return filepath
 
         except Exception as e:
-            log(LogType.ERROR, f"Erro ao salvar imagem em: {filepath if 'filepath' in locals() else url}: {e}")
+            log(
+                LogType.ERROR,
+                f'Erro ao salvar imagem em: {filepath if 'filepath' in locals() else url}: {e}'
+            )
             return None

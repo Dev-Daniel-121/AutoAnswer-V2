@@ -64,9 +64,9 @@ class TaskInfo:
 
                 extracted_texts.append(full_text)
 
-            user, author, class_school, expires_in, site_activity_id = extracted_texts[:5]
+            user, author, class_school, first_access, expires_in, site_activity_id = extracted_texts[:6]
 
-            return user, author, class_school, expires_in, site_activity_id
+            return user, author, class_school, first_access, expires_in, site_activity_id
 
         except Exception as e:
             print(f'Erro ao obter cabeçalho da atividade: {e}')
@@ -79,7 +79,7 @@ class TaskInfo:
         activity_type = self.get_activity_type()
         material_activity = self.get_material_activity()
         activity_title = self.get_activity_title()
-        user, author, class_school, expires_in, site_activity_id = self.get_activity_infos()
+        user, author, class_school, first_access, expires_in, site_activity_id = self.get_activity_infos()
         auto_activity_id = self.get_auto_activity_id()
 
         task_info = {
@@ -92,6 +92,7 @@ class TaskInfo:
             'user': user or '',
             'author': author or '',
             'class_school': class_school or '',
+            'first_access': first_access or '',
             'expires_in': expires_in or '',
             'time_spent': '',
             'draft': '',
