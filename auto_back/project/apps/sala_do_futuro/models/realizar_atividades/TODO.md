@@ -251,37 +251,21 @@
 
 | O que está sendo feito                                                                   |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
 | :--------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-| Autoanswer (Melhorando Sistema de Deletar Img)                                           | 13/05/2025 |    13:41     |   14:07   |    26min    |
-| Autoanswer (Melhorando Sistema de Deletar Img)                                           | 13/05/2025 |    14:18     |   14:27   |    9min     |
-| Autoanswer (Testando Sistema de Deletar Media)                                           | 13/05/2025 |    14:27     |   14:38   |    11min    |
-| Autoanswer (Alterando Class das Atividades de div.css-fm7u1u para div.css-wiwm8n)        | 13/05/2025 |    14:30     |   14:32   |    2min     |
-| Autoanswer (Analisando Problemas)                                                        | 13/05/2025 |    14:38     |   14:43   |    5min     |
-| Autoanswer (Analisando Problemas)                                                        | 13/05/2025 |    14:48     |   15:00   |    12min    |
-| Autoanswer (Testando Sistema de Deltar Media)                                            | 13/05/2025 |    15:00     |   15:03   |    3min     |
-| Autoanswer (Corrindo Bug no SaveMedia (JSON))                                            | 13/05/2025 |    15:04     |   15:05   |    1min     |
-| Autoanswer (Testando Sistema de Deltar Media)                                            | 13/05/2025 |    15:05     |   15:06   |    1min     |
-| Autoanswer (Achando Problema com TaskInfo)                                               | 13/05/2025 |    15:06     |   15:08   |    2min     |
-| Autoanswer (Corrigindo Problema com TaskInfo)                                            | 13/05/2025 |    15:07     |   15:14   |    7min     |
-| Autoanswer (Testando TaskInfo e Sistema de Deltar Media)                                 | 13/05/2025 |    15:24     |   15:28   |    4min     |
-| Autoanswer (Testando o Sistema de Deltar Media)                                          | 13/05/2025 |    15:32     |   15:33   |    1min     |
-| Autoanswer (Corrigindo problema de não deletar a Media)                                  | 13/05/2025 |    15:33     |   15:36   |    3min     |
-| Autoanswer (Testando o Sistema de Deltar Media)                                          | 13/05/2025 |    15:36     |   15:37   |    1min     |
-| Autoanswer (Corrigindo problema de não deletar a Media)                                  | 13/05/2025 |    15:37     |   15:40   |    3min     |
-| Autoanswer (Testando o Sistema de Deltar Media)                                          | 13/05/2025 |    15:40     |   15:42   |    2min     |
-| Autoanswer (Atualziando o Sistema de Deltar Media)                                       | 13/05/2025 |    16:07     |   16:09   |    2min     |
-| Autoanswer (Testando Sistema de Deltar Media)                                            | 13/05/2025 |    16:09     |   16:11   |    2min     |
-| Autoanswer (Planejando passos para criar a Automação de Coleta de Respostas)             | 13/05/2025 |    16:16     |   16:31   |    15min    |
-| Autoanswer (Criando Arquivos para automação para coletar Respostas)                      | 13/05/2025 |    17:25     |   17:36   |    11min    |
-| Autoanswer (Criar automação para coletar Respostas)                                      | 13/05/2025 |    17:25     |   17:36   |    11min    |
-|                                                                                          | 13/05/2025 |              |           |             |
-| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 13/05/2025 |              |           |             |
-| Autoanswer (Responder as questões)                                                       | 13/05/2025 |              |           |             |
-| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 13/05/2025 |              |           |             |
-| Autoanswer (Mostrar Resultado)                                                           | 13/05/2025 |              |           |             |
-|                                                                                          | 13/05/2025 |              |           |             |
-| Autoanswer (Planejar Dashboard para Ánalise)                                             | 13/05/2025 |              |           |             |
-| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 13/05/2025 |              |           |             |
-|                                                                                          | 13/05/2025 |              |           |             |
+| Autoanswer (Planejando Automação para Coletar Resposat CollectAutoGui)                   | 14/05/2025 |    12:59     |   13:17   |    18min    |
+| Autoanswer (Melhorando planejameto para Automação para Coletar Resposta (AutoGui))       | 14/05/2025 |    12:29     |   12:54   |    25min    |
+| Autoanswer (Alterando nome de AutoGUI para CollectAutoGUI)                               | 14/05/2025 |    15:01     |   15:04   |    3min     |
+| Autoanswer (Planejando Automação para Coletar Resposat CollectAutoGui)                   | 14/05/2025 |    15:05     |   15:30   |    25min    |
+| Autoanswer (Planejando Automação para Coletar Resposat CollectAutoGui)                   | 14/05/2025 |    15:59     |   16:24   |    25min    |
+|                                                                                          | 14/05/2025 |              |           |             |
+| Autoanswer (Criando Automação para Coletar Resposta (AutoGui))                           | 14/05/2025 |              |           |             |
+| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 14/05/2025 |              |           |             |
+| Autoanswer (Responder as questões)                                                       | 14/05/2025 |              |           |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 14/05/2025 |              |           |             |
+| Autoanswer (Mostrar Resultado)                                                           | 14/05/2025 |              |           |             |
+|                                                                                          | 14/05/2025 |              |           |             |
+| Autoanswer (Planejar Dashboard para Ánalise)                                             | 14/05/2025 |              |           |             |
+| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 14/05/2025 |              |           |             |
+|                                                                                          | 14/05/2025 |              |           |             |
 
 
 

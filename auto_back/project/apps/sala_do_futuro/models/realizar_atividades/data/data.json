@@ -3199,7 +3199,7 @@
                                 "0": {
                                     "type": "image",
                                     "src": "https://edusp-static.ip.tv/tms/edusp/tspcnt3/8g11VIDoYuLUjwK91YBQhaUkXfKWBr.png",
-                                    "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\68392375 (0d)\\8g11VIDoYuLUjwK91YBQhaUkXfKWBr.png"
+                                    "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\68392375 (6d)\\8g11VIDoYuLUjwK91YBQhaUkXfKWBr.png"
                                 }
                             },
                             "gif": {}
@@ -3723,6 +3723,930 @@
                                 },
                                 {
                                     "text": "E) substitui os saberes ancestrais por práticas turísticas comerciais.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "67467346": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "67467346",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "História",
+                "activity_title": "Crise da democracia liberal: a ascensão do nazismo",
+                "user": "Daniel Oliveira Matias",
+                "author": "rafaelcandido3034757-sp",
+                "class_school": "3º B EM",
+                "first_access": "06/05/2025 - 09:50:03",
+                "expires_in": "16/05/2025 - 23:59:59",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2,
+                    "Checkbox": 1
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Leia o trecho de artigo abaixo para responder às questões:Por que devemos recordar os anos da República de WeimarA história nunca se repete seguindo o mesmo roteiro. Será que nossa situação atual se parece em algo à daqueles turbulentos anos 1930 na Alemanha?Weimar é uma pequena cidade do Estado alemão da Turíngia, muito próxima de outras com óbvias ressonâncias marxistas, como Erfurt, Gota e a hegeliana Jena. No final do século XVIII, quando mal tinha 6.000 habitantes, foi habitada pelos dois grandes escritores alemães, Goethe e Schiller. Lá também passou grande parte de sua vida o músico Franz Liszt. E, como se tivesse um ímã para atrair gênios, foi nesse mesmo lugar que F. Nietzsche morreu, em 1900, e que nasceu o movimento arquitetônico da escola Bauhaus. Com o tempo, Weimar deixou de ser associada exclusivamente a uma população alemã de afortunado passado artístico e cultural e acabou se tornando uma grande metáfora, o epítome do fracasso da democracia liberal parlamentar. Não em vão, o que nasceu como produto de um impulso otimista de regeneração nacional e democrática acabou nas trevas do nazismo. Por isso, quando hoje em dia falamos da “síndrome de Weimar”, estamos nos referindo às tensões que ameaçam pôr em perigo a estabilidade da democracia liberal − tensões provocadas principalmente pela revitalização do populismo e pela guinada iliberal, quando não autoritária, que verificamos em alguns lugares da Europa.Fonte: https://brasil.elpais.com/brasil/2019/07/26/cultura/1564148647_990100.html.",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
+                                "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
+                                "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
+                                "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
+                                "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
+                                "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
+                                "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) O regime de Weimar teve um enorme sucesso econômico, mas não compensou as perdas sofridas com a Primeira Guerra, como prometiam os nazistas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O modelo comunista adotado por Weimar aumentou a insatisfação popular e facilitou a oposição nazista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) O governo de Weimar cancelou o Tratado de Versalhes, enfurecendo os nazistas, que apoiavam o tratado de fim da Primeira Guerra.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) A estratégia econômica de Weimar causou a crise de 1929 no mundo, o que fez com que os nazistas parassem de apoiar o governo.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) O cenário de crise econômica, política e social, gerado pela guerra e agravado pela crise de 1929, levou os nazistas a conspirarem contra Weimar.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Checkbox",
+                        "statement": "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) Em 1923, em sua primeira tentativa de golpe, conhecida como o \"Putsch de Munique\", Hitler obteve pela primeira vez o poder político na Alemanha.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O oportunismo de Hitler ao usar um incêndio no parlamento em 1933 como propaganda anticomunista foi um marco do estabelecimento da ditadura nazista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) As ambições totalitárias de Hitler se traduziram na sua ideia de reconstrução do \"império alemão\", o Terceiro Reich.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) O envolvimento da população foi pequeno, uma vez que Hitler efetuou seu assalto ao poder com apoio do exército.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) A criação de órgãos de repressão, como grupos paramilitares e órgãos policiais, foi essencial para o controle social e silenciamento da oposição.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) repudiadas – Estado – medo – eliminados – racista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) repudiadas – povo – medo – educados – racista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) defendidas – povo – diálogo – educados – econômico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) repudiadas – Estado – diálogo – educados – racista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) defendidas – povo – diálogo – eliminados – econômico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "68389422": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "68389422",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "História",
+                "activity_title": "Crise da democracia liberal: a ascensão do nazismo",
+                "user": "Daniel Oliveira Matias",
+                "author": "rafaelcandido3034757-sp",
+                "class_school": "3º B EM",
+                "first_access": "14/05/2025 - 12:31:25",
+                "expires_in": "15/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2,
+                    "Checkbox": 1
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Leia o trecho de artigo abaixo para responder às questões:Por que devemos recordar os anos da República de WeimarA história nunca se repete seguindo o mesmo roteiro. Será que nossa situação atual se parece em algo à daqueles turbulentos anos 1930 na Alemanha?Weimar é uma pequena cidade do Estado alemão da Turíngia, muito próxima de outras com óbvias ressonâncias marxistas, como Erfurt, Gota e a hegeliana Jena. No final do século XVIII, quando mal tinha 6.000 habitantes, foi habitada pelos dois grandes escritores alemães, Goethe e Schiller. Lá também passou grande parte de sua vida o músico Franz Liszt. E, como se tivesse um ímã para atrair gênios, foi nesse mesmo lugar que F. Nietzsche morreu, em 1900, e que nasceu o movimento arquitetônico da escola Bauhaus. Com o tempo, Weimar deixou de ser associada exclusivamente a uma população alemã de afortunado passado artístico e cultural e acabou se tornando uma grande metáfora, o epítome do fracasso da democracia liberal parlamentar. Não em vão, o que nasceu como produto de um impulso otimista de regeneração nacional e democrática acabou nas trevas do nazismo. Por isso, quando hoje em dia falamos da “síndrome de Weimar”, estamos nos referindo às tensões que ameaçam pôr em perigo a estabilidade da democracia liberal − tensões provocadas principalmente pela revitalização do populismo e pela guinada iliberal, quando não autoritária, que verificamos em alguns lugares da Europa.Fonte: https://brasil.elpais.com/brasil/2019/07/26/cultura/1564148647_990100.html.",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
+                                "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
+                                "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
+                                "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
+                                "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
+                                "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
+                                "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "O artigo traz uma reflexão sobre a cidade de Weimar, na Alemanha, e sua relação com o nazismo nas décadas de 1920 e 1930, demonstrando uma característica essencial do regime totalitário alemão. Ordene as palavras para completar corretamente a frase sobre a característica do nazismo evidenciada no texto.O nazismo se fez em oposição à República de Weimar, por isso se caracteriza como um regime....",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A República de Weimar foi um governo estabelecido na Alemanha após a Primeira Guerra Mundial. O partido fez forte oposição a esse governo republicano até derrubá-lo, substituindo-o por um regime totalitário. Assinale a alternativa que demonstra corretamente a situação da República de Weimar que proporcionou a ascensão da oposição nazista e a consequente queda desse governo.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) O regime de Weimar teve um enorme sucesso econômico, mas não compensou as perdas sofridas com a Primeira Guerra, como prometiam os nazistas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O modelo comunista adotado por Weimar aumentou a insatisfação popular e facilitou a oposição nazista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) O governo de Weimar cancelou o Tratado de Versalhes, enfurecendo os nazistas, que apoiavam o tratado de fim da Primeira Guerra.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) A estratégia econômica de Weimar causou a crise de 1929 no mundo, o que fez com que os nazistas parassem de apoiar o governo.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) O cenário de crise econômica, política e social, gerado pela guerra e agravado pela crise de 1929, levou os nazistas a conspirarem contra Weimar.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Checkbox",
+                        "statement": "Os nazistas e Hitler percorreram um longo caminho até chegarem ao poder, utilizando-se de diversos expedientes, inclusive criminosos. Assinale a(s) alternativa(s) correta(s) sobre o processo de tomada de poder pelos nazistas na Alemanha.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) Em 1923, em sua primeira tentativa de golpe, conhecida como o \"Putsch de Munique\", Hitler obteve pela primeira vez o poder político na Alemanha.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O oportunismo de Hitler ao usar um incêndio no parlamento em 1933 como propaganda anticomunista foi um marco do estabelecimento da ditadura nazista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) As ambições totalitárias de Hitler se traduziram na sua ideia de reconstrução do \"império alemão\", o Terceiro Reich.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) O envolvimento da população foi pequeno, uma vez que Hitler efetuou seu assalto ao poder com apoio do exército.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) A criação de órgãos de repressão, como grupos paramilitares e órgãos policiais, foi essencial para o controle social e silenciamento da oposição.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A partir da leitura do texto e de seus conhecimentos sobre a ideologia nazista, assinale a alternativa que completa corretamente as lacunas do parágrafo.As liberdades econômicas, políticas e sociais eram ________ pela ideologia nazista. Deveria prevalecer o ideal do ________ soberano, que domina e controla a sociedade para levá-la a um suposto momento de grandeza, que estaria, ainda supostamente, perdido no passado e esperando para ser resgatado pelo líder. Usando o ________ como forma de manipular a população, dizem que existem \"inimigos\" do povo que destruíram essa grandeza e que, portanto, devem ser ________, acrescentando a essa ideia de inimigo um elemento ________ ao apontar para os judeus como os supostos causadores dos males. A manipulação social, a violência política e o racismo são, portanto, os elementos fundamentais que compõem a ideologia nazista.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) repudiadas – Estado – medo – eliminados – racista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) repudiadas – povo – medo – educados – racista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) defendidas – povo – diálogo – educados – econômico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) repudiadas – Estado – diálogo – educados – racista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) defendidas – povo – diálogo – eliminados – econômico.",
                                     "media": {
                                         "video": {},
                                         "image": {},

@@ -1,7 +1,7 @@
-from .answer import Answer, AutoGui, AutoStealph
+from .answer import Answer, CollectAutoGui, CollectAutoStealph
 from .sala_do_futuro import SalaDoFuturo, MenuSystem, Agenda, Data, Geral, Tarefas, Activities, Go, Sections, LoginUser, LoginAluno, VerifyLogin, RealizarAtividades, CollectJson, SaveJson, DeleteMedia, ExtractImg, TranscriptYoutube, SaveMetadata, CollectMedia, CollectProvas, CollectRedacoes, CollectSection, CollectTarefas, CollectTaskInfos, GeneralQuests, QuestionInfo, Questions, AnswerCheckbox, GetCheckbox, Checkbox, AnswerRadios, GetRadios, Radios, Questionarie, GeneralText, Text, TaskInfo, CollectTaskInfo, Time, CollectInfo, DoProvas, DoRedacao, DoTarefas, RealizarProva, RealizarRedacao, RealizarTarefa
 
 __all__ = [
-    'Answer', 'AutoGui', 'AutoStealph',
+    'Answer', 'CollectAutoGui', 'CollectAutoStealph',
     'SalaDoFuturo', 'MenuSystem', 'Agenda', 'Data', 'Geral', 'Tarefas', 'Activities', 'Go', 'Sections', 'LoginUser', 'LoginAluno', 'VerifyLogin', 'RealizarAtividades', 'CollectJson', 'SaveJson', 'DeleteMedia', 'ExtractImg', 'TranscriptYoutube', 'SaveMetadata', 'CollectMedia', 'CollectProvas', 'CollectRedacoes', 'CollectSection', 'CollectTarefas', 'CollectTaskInfos', 'GeneralQuests', 'QuestionInfo', 'Questions', 'AnswerCheckbox', 'GetCheckbox', 'Checkbox', 'AnswerRadios', 'GetRadios', 'Radios', 'Questionarie', 'GeneralText', 'Text', 'TaskInfo', 'CollectTaskInfo', 'Time', 'CollectInfo', 'DoProvas', 'DoRedacao', 'DoTarefas', 'RealizarProva', 'RealizarRedacao', 'RealizarTarefa'
 ]

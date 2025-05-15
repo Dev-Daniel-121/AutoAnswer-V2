@@ -5,7 +5,7 @@ from project import LogType
 import os
 
 class CollectMedia:
-    def __init__(self, page, card, video_media_selector, img_media_selector, expiration_days=1):
+    def __init__(self, page, card, video_media_selector, img_media_selector, expiration_days=7):
         if hasattr(card, 'element_handle'):
             card = card.element_handle()
 
