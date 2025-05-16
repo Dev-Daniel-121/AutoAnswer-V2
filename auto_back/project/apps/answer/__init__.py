@@ -1,7 +1,7 @@
-from .models import CollectAutoGui, CollectAutoStealph
+from .models import Media, Search, CollectAutoGui, CollectAutoStealph
 from .answer import Answer
 
 __all__ = [
-    'CollectAutoGui', 'CollectAutoStealph',
+    'Media', 'Search', 'CollectAutoGui', 'CollectAutoStealph',
     'Answer'
 ]

@@ -249,24 +249,47 @@
 
 <br><br><br>
 
-| O que está sendo feito                                                                   |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
-| :--------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-| Autoanswer (Planejando Automação para Coletar Resposat CollectAutoGui)                   | 14/05/2025 |    12:59     |   13:17   |    18min    |
-| Autoanswer (Melhorando planejameto para Automação para Coletar Resposta (AutoGui))       | 14/05/2025 |    12:29     |   12:54   |    25min    |
-| Autoanswer (Alterando nome de AutoGUI para CollectAutoGUI)                               | 14/05/2025 |    15:01     |   15:04   |    3min     |
-| Autoanswer (Planejando Automação para Coletar Resposat CollectAutoGui)                   | 14/05/2025 |    15:05     |   15:30   |    25min    |
-| Autoanswer (Planejando Automação para Coletar Resposat CollectAutoGui)                   | 14/05/2025 |    15:59     |   16:24   |    25min    |
-|                                                                                          | 14/05/2025 |              |           |             |
-| Autoanswer (Criando Automação para Coletar Resposta (AutoGui))                           | 14/05/2025 |              |           |             |
-| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 14/05/2025 |              |           |             |
-| Autoanswer (Responder as questões)                                                       | 14/05/2025 |              |           |             |
-| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 14/05/2025 |              |           |             |
-| Autoanswer (Mostrar Resultado)                                                           | 14/05/2025 |              |           |             |
-|                                                                                          | 14/05/2025 |              |           |             |
-| Autoanswer (Planejar Dashboard para Ánalise)                                             | 14/05/2025 |              |           |             |
-| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 14/05/2025 |              |           |             |
-|                                                                                          | 14/05/2025 |              |           |             |
-
+| O que está sendo feito                                                                            |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
+| :------------------------------------------------------------------------------------------------ | :--------: | :----------: | :-------: | :---------: |
+| Autoanswer (Planejamento para PROMPT da IA)                                                       | 15/05/2025 |    13:09     |   14:01   |    52min    |
+| Autoanswer (Planejamento Desing do ColletAutoGUI)                                                 | 15/05/2025 |    14:30     |   14:49   |    19min    |
+| Autoanswer (Planejamento para PROMPT da IA)                                                       | 15/05/2025 |    14:30     |   14:55   |    25min    |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal)                                               | 15/05/2025 |    16:35     |   16:49   |    14min    |
+| Autoanswer (Testando CollectAutoGui - Abrindo novo Terminal)                                      | 15/05/2025 |    16:50     |   16:52   |    2min     |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal)                                               | 15/05/2025 |    16:52     |   16:53   |    1min     |
+| Autoanswer (Testando CollectAutoGui - Abrindo novo Terminal)                                      | 15/05/2025 |    16:53     |   16:55   |    2min     |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal)                                               | 15/05/2025 |    16:55     |   16:57   |    2min     |
+| Autoanswer (Testando CollectAutoGui - Abrindo novo Terminal)                                      | 15/05/2025 |    16:57     |   16:58   |    1min     |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal)                                               | 15/05/2025 |    16:58     |   16:59   |    1min     |
+| Autoanswer (Testando CollectAutoGui - Abrindo novo Terminal)                                      | 15/05/2025 |    16:59     |   17:00   |    1min     |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal)                                               | 15/05/2025 |    17:00     |   17:02   |    2min     |
+| Autoanswer (Testando CollectAutoGui - Abrindo novo Terminal)                                      | 15/05/2025 |    17:02     |   17:03   |    1min     |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal)                                               | 15/05/2025 |    17:03     |   17:07   |    4min     |
+| Autoanswer (Testando CollectAutoGui - Abrindo novo Terminal)                                      | 15/05/2025 |    17:07     |   17:07   |    0min     |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal)                                               | 15/05/2025 |    17:07     |   17:10   |    3min     |
+| Autoanswer (Testando CollectAutoGui - Abrindo novo Terminal)                                      | 15/05/2025 |    17:10     |   17:12   |    2min     |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal na classe que irá ultilizálo)                  | 15/05/2025 |    22:37     |   22:42   |    5min     |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal)                                               | 15/05/2025 |    22:42     |   22:44   |    2min     |
+| Autoanswer (CollectAutoGui - Melhorando Função para Abrinr novo Terminal)                         | 15/05/2025 |    22:44     |   22:49   |    5min     |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal)                                               | 15/05/2025 |    22:50     |   22:52   |    2min     |
+| Autoanswer (CollectAutoGui - Removendo Melhoria da Função para Abrinr novo Terminal)              | 15/05/2025 |    22:52     |   22:53   |    1min     |
+| Autoanswer (CollectAutoGui - Abrindo novo Terminal)                                               | 15/05/2025 |    22:53     |   22:54   |    1min     |
+| Autoanswer (CollectAutoGui - Main Menu)                                                           | 15/05/2025 |    00:17     |   00:27   |    10min    |
+| Autoanswer (Testando CollectAutoGui - Main Menu)                                                  | 15/05/2025 |    00:27     |   00:28   |    1min     |
+| Autoanswer (CollectAutoGui - Resolvendo passagem de paramentros Main Menu)                        | 15/05/2025 |    00:28     |   00:31   |    3min     |
+| Autoanswer (Testando CollectAutoGui - Main Menu)                                                  | 15/05/2025 |    00:31     |   00:32   |    1min     |
+| Autoanswer (CollectAutoGui - Resolvendo passagem de paramentros Main Menu)                        | 15/05/2025 |    00:32     |   00:33   |    1min     |
+| Autoanswer (Testando CollectAutoGui - Main Menu)                                                  | 15/05/2025 |    00:35     |   00:45   |    10min    |
+|                                                                                                   | 15/05/2025 |              |           |             |
+| Autoanswer (Criando Automação para Coletar Resposta (CollectAutoGui - Search))                    | 15/05/2025 |              |           |             |
+| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)            | 15/05/2025 |              |           |             |
+| Autoanswer (Responder as questões)                                                                | 15/05/2025 |              |           |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                                 | 15/05/2025 |              |           |             |
+| Autoanswer (Mostrar Resultado)                                                                    | 15/05/2025 |              |           |             |
+|                                                                                                   | 15/05/2025 |              |           |             |
+| Autoanswer (Planejar Dashboard para Ánalise)                                                      | 15/05/2025 |              |           |             |
+| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão)          | 15/05/2025 |              |           |             |
+|                                                                                                   | 15/05/2025 |              |           |             |
 
 
 <!--

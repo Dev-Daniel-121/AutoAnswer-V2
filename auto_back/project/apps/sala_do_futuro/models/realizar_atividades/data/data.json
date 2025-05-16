@@ -4659,6 +4659,826 @@
                     }
                 }
             }
+        },
+        "68389474": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "68389474",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "História",
+                "activity_title": "O Estado Nazista e a Volksgemeinschaft: a disseminação ideológica ",
+                "user": "Daniel Oliveira Matias",
+                "author": "rafaelcandido3034757-sp",
+                "class_school": "3º B EM",
+                "first_access": "14/05/2025 - 12:31:08",
+                "expires_in": "23/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {
+                            "0": {
+                                "type": "image",
+                                "src": "https://edusp-static.ip.tv/tms/edusp/tspchs6/3ODCtsqnRhoUrOWYvOf7gAg5A90dax.jpg",
+                                "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\68389474 (6d)\\3ODCtsqnRhoUrOWYvOf7gAg5A90dax.jpg"
+                            }
+                        },
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Analise a imagem para responder às questões:PICTURE ALLIANCELegenda:No centro do cartaz, lê-se: \"um povo, um império, um líder\".Na parte de baixo do cartaz, lê-se: \"Congresso do Partido do Reich em Nuremberg\"",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "Uma das características da historiografia sobre o nazismo é a abundância de fontes históricas, dos mais diversos tipos, que facilitam a comprovação das violências desse regime. O cartaz acima é um exemplo de documento histórico do nazismo. Analise essa fonte e selecione as palavras para completar corretamente as lacunas da frase.",
+                                "A propaganda teve um lugar central no regime nazista. Houve um maciço investimento em diversos meios de exaltação e propagação das ideias nazistas, desde cartazes, como o que vemos, até propagandas em livros didáticos, teatro, cinema e outros meios. Assinale a alternativa correta sobre a propaganda do regime nazista, suas características e seus objetivos.",
+                                "O cartaz tem uma conotação abertamente política, já que se refere a um congresso partidário do nazismo na cidade de Nuremberg. Além disso, mostra uma clara concepção de Estado da ideologia nazista. A partir da análise da imagem e de seus conhecimentos sobre a política e o Estado nazista, assinale a(s) alternativa(s) correta(s).",
+                                "(ENEM, 2012) A primeira produção cinematográfica de propaganda nitidamente antissemita foi Os Rotschilds (1940), de Erich Waschneck. Ambientado na Europa conturbada pelas guerras napoleônicas, o filme mostrava como essa importante família de banqueiros judeus beneficiou-se das discórdias entre as nações europeias, acumulando fortuna à custa da guerra, do sofrimento e da morte de milhões de pessoas. O judeu é retratado como uma criatura perigosa, de mãos aduncas, rosto encarniçado e olhar sádico e maléfico.PEREIRA, W. Cinema e genocídio judaico: dimensões da memória audiovisual do nazismo e do holocausto. In: Educando para a cidadania e a democracia. 6ª Jornada Interdisciplinar. Rio de Janeiro: SME; UERJ, jun. 2008 (fragmento). Os Rotschilds foi produzido na Alemanha nazista. A partir do texto e naquela conjuntura política, o principal objetivo do filme foi..."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "Uma das características da historiografia sobre o nazismo é a abundância de fontes históricas, dos mais diversos tipos, que facilitam a comprovação das violências desse regime. O cartaz acima é um exemplo de documento histórico do nazismo. Analise essa fonte e selecione as palavras para completar corretamente as lacunas da frase.",
+                                "A propaganda teve um lugar central no regime nazista. Houve um maciço investimento em diversos meios de exaltação e propagação das ideias nazistas, desde cartazes, como o que vemos, até propagandas em livros didáticos, teatro, cinema e outros meios. Assinale a alternativa correta sobre a propaganda do regime nazista, suas características e seus objetivos.",
+                                "O cartaz tem uma conotação abertamente política, já que se refere a um congresso partidário do nazismo na cidade de Nuremberg. Além disso, mostra uma clara concepção de Estado da ideologia nazista. A partir da análise da imagem e de seus conhecimentos sobre a política e o Estado nazista, assinale a(s) alternativa(s) correta(s).",
+                                "(ENEM, 2012) A primeira produção cinematográfica de propaganda nitidamente antissemita foi Os Rotschilds (1940), de Erich Waschneck. Ambientado na Europa conturbada pelas guerras napoleônicas, o filme mostrava como essa importante família de banqueiros judeus beneficiou-se das discórdias entre as nações europeias, acumulando fortuna à custa da guerra, do sofrimento e da morte de milhões de pessoas. O judeu é retratado como uma criatura perigosa, de mãos aduncas, rosto encarniçado e olhar sádico e maléfico.PEREIRA, W. Cinema e genocídio judaico: dimensões da memória audiovisual do nazismo e do holocausto. In: Educando para a cidadania e a democracia. 6ª Jornada Interdisciplinar. Rio de Janeiro: SME; UERJ, jun. 2008 (fragmento). Os Rotschilds foi produzido na Alemanha nazista. A partir do texto e naquela conjuntura política, o principal objetivo do filme foi..."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Uma das características da historiografia sobre o nazismo é a abundância de fontes históricas, dos mais diversos tipos, que facilitam a comprovação das violências desse regime. O cartaz acima é um exemplo de documento histórico do nazismo. Analise essa fonte e selecione as palavras para completar corretamente as lacunas da frase.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A propaganda teve um lugar central no regime nazista. Houve um maciço investimento em diversos meios de exaltação e propagação das ideias nazistas, desde cartazes, como o que vemos, até propagandas em livros didáticos, teatro, cinema e outros meios. Assinale a alternativa correta sobre a propaganda do regime nazista, suas características e seus objetivos.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) O principal objetivo da propaganda era fazer o povo temer o governo nazista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O tema central das peças propagandísticas era o povo alemão, não havendo menção a nenhum outro povo ou etnia, pois eram considerados inferiores.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) A propaganda nazista era um assunto de Estado, sob responsabilidade de órgãos como o Ministério da Propaganda.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) Apesar dos esforços, o pouco alcance da propaganda entre a população levou ao fracasso do regime.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) O único tema da propaganda nazista era a preparação para a Segunda Guerra Mundial.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "O cartaz tem uma conotação abertamente política, já que se refere a um congresso partidário do nazismo na cidade de Nuremberg. Além disso, mostra uma clara concepção de Estado da ideologia nazista. A partir da análise da imagem e de seus conhecimentos sobre a política e o Estado nazista, assinale a(s) alternativa(s) correta(s).",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(ENEM, 2012) A primeira produção cinematográfica de propaganda nitidamente antissemita foi Os Rotschilds (1940), de Erich Waschneck. Ambientado na Europa conturbada pelas guerras napoleônicas, o filme mostrava como essa importante família de banqueiros judeus beneficiou-se das discórdias entre as nações europeias, acumulando fortuna à custa da guerra, do sofrimento e da morte de milhões de pessoas. O judeu é retratado como uma criatura perigosa, de mãos aduncas, rosto encarniçado e olhar sádico e maléfico.PEREIRA, W. Cinema e genocídio judaico: dimensões da memória audiovisual do nazismo e do holocausto. In: Educando para a cidadania e a democracia. 6ª Jornada Interdisciplinar. Rio de Janeiro: SME; UERJ, jun. 2008 (fragmento). Os Rotschilds foi produzido na Alemanha nazista. A partir do texto e naquela conjuntura política, o principal objetivo do filme foi...",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) defender a liberdade religiosa.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) controlar o genocídio racial.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) aprofundar a intolerância étnica.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) legitimar o expansionismo territorial.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) contestar o nacionalismo autoritário.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "68389424": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "68389424",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "História",
+                "activity_title": "\"Uma marcha sobre Roma\": o fascismo no poder",
+                "user": "Daniel Oliveira Matias",
+                "author": "rafaelcandido3034757-sp",
+                "class_school": "3º B EM",
+                "first_access": "14/05/2025 - 12:31:17",
+                "expires_in": "23/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 1
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {
+                            "0": {
+                                "type": "video",
+                                "src": "https://www.youtube.com/embed/CppNPV0gA3M",
+                                "transcription": {
+                                    "lang": "it",
+                                    "transcript": "da questa città di frontiera che non ha mai temuto la [Applauso] guerra io dichiaro perché tutti intendano che l'Italia segue una politica di pace di vera pace che non può essere dissociata dalla Giustizia di quella pace che deve ridare l'equilibrio l'Europa di quella pace che deve scendere nei fori come una speranza ed una Fede Nessun nemico peggiore della Pace di colui che fa di professione il pancia fista o il pacia fondaro Ma la partita è decisa sin dal principio poiché tra i principi che sorgono e che nascono e i principi che declinano la vittoria è per noi per i primi [Applauso] [Applauso] ma è dal punto di vista umano perché il pensiero che una famiglia soffra dà a me stesso Una sofferenza fisica perché io so so per averlo provato Che cosa vuol dire Che cosa vuol [Applauso] dire la casa deserta è il descon nudo camerati torinesi la parola è questa camminare costruire e se necessario combattere e vincere"
+                                }
+                            }
+                        },
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Assista ao vídeo para responder às questões:",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "O vídeo é um trecho de um discurso do líder político italiano Benito Mussolini, que governou um dos mais famigerados regimes totalitários da Europa. As imagens e o discurso devem ser compreendidos como documentos históricos, colocados em seu contexto e analisados de maneira crítica. A partir desse olhar crítico sobre o vídeo, ordene as palavras a seguir para completar as lacunas da frase. ",
+                                "A ascensão do regime fascista está intimamente ligada ao contexto de seu nascimento. Para compreender o regime e suas características ditatoriais, é preciso analisar a situação política, econômica e social na qual a Itália se encontrava naquele momento histórico. Ordene corretamente as frases para que se compreenda o contexto de ascensão e estabelecimento do regime fascista na Itália.",
+                                "As falas de Mussolini no vídeo evidenciam as estratégias políticas e discursivas do fascismo e dos regimes totalitários em geral. Analise as falas do ditador no vídeo, relacionando-as às características do fascismo e assinale a(s) alternativa(s) correta(s) sobre as intenções políticas do ditador.",
+                                "O fascismo é um regime político e, portanto, possui uma proposta sobre o papel que o Estado deveria cumprir frente à sociedade. Com base no contexto histórico e político do período e levando em conta as propostas e características do regime, analise se são verdadeiras ou falsas as afirmações sobre o papel do Estado no fascismo.I - O apoio da burguesia ao fascismo se deu às propostas liberais do regime, ou seja, de não intervenção do Estado na economia.II - O caráter autoritário do Estado fascista visava garantir o equilíbrio entre as forças políticas e sociais da Itália do período.III - O Estado fascista se propunha a ser o centro de toda a estrutura social e política, impondo à sociedade a subordinação e o controle.IV - A presença do Estado se fazia nas mais diferentes esferas da sociedade através da adoção de medidas como o corporativismo e o controle dos programas escolares.Agora, assinale a alternativa correspondente."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "O vídeo é um trecho de um discurso do líder político italiano Benito Mussolini, que governou um dos mais famigerados regimes totalitários da Europa. As imagens e o discurso devem ser compreendidos como documentos históricos, colocados em seu contexto e analisados de maneira crítica. A partir desse olhar crítico sobre o vídeo, ordene as palavras a seguir para completar as lacunas da frase. ",
+                                "A ascensão do regime fascista está intimamente ligada ao contexto de seu nascimento. Para compreender o regime e suas características ditatoriais, é preciso analisar a situação política, econômica e social na qual a Itália se encontrava naquele momento histórico. Ordene corretamente as frases para que se compreenda o contexto de ascensão e estabelecimento do regime fascista na Itália.",
+                                "As falas de Mussolini no vídeo evidenciam as estratégias políticas e discursivas do fascismo e dos regimes totalitários em geral. Analise as falas do ditador no vídeo, relacionando-as às características do fascismo e assinale a(s) alternativa(s) correta(s) sobre as intenções políticas do ditador.",
+                                "O fascismo é um regime político e, portanto, possui uma proposta sobre o papel que o Estado deveria cumprir frente à sociedade. Com base no contexto histórico e político do período e levando em conta as propostas e características do regime, analise se são verdadeiras ou falsas as afirmações sobre o papel do Estado no fascismo.I - O apoio da burguesia ao fascismo se deu às propostas liberais do regime, ou seja, de não intervenção do Estado na economia.II - O caráter autoritário do Estado fascista visava garantir o equilíbrio entre as forças políticas e sociais da Itália do período.III - O Estado fascista se propunha a ser o centro de toda a estrutura social e política, impondo à sociedade a subordinação e o controle.IV - A presença do Estado se fazia nas mais diferentes esferas da sociedade através da adoção de medidas como o corporativismo e o controle dos programas escolares.Agora, assinale a alternativa correspondente."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "O vídeo é um trecho de um discurso do líder político italiano Benito Mussolini, que governou um dos mais famigerados regimes totalitários da Europa. As imagens e o discurso devem ser compreendidos como documentos históricos, colocados em seu contexto e analisados de maneira crítica. A partir desse olhar crítico sobre o vídeo, ordene as palavras a seguir para completar as lacunas da frase. ",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "A ascensão do regime fascista está intimamente ligada ao contexto de seu nascimento. Para compreender o regime e suas características ditatoriais, é preciso analisar a situação política, econômica e social na qual a Itália se encontrava naquele momento histórico. Ordene corretamente as frases para que se compreenda o contexto de ascensão e estabelecimento do regime fascista na Itália.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "As falas de Mussolini no vídeo evidenciam as estratégias políticas e discursivas do fascismo e dos regimes totalitários em geral. Analise as falas do ditador no vídeo, relacionando-as às características do fascismo e assinale a(s) alternativa(s) correta(s) sobre as intenções políticas do ditador.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "O fascismo é um regime político e, portanto, possui uma proposta sobre o papel que o Estado deveria cumprir frente à sociedade. Com base no contexto histórico e político do período e levando em conta as propostas e características do regime, analise se são verdadeiras ou falsas as afirmações sobre o papel do Estado no fascismo.I - O apoio da burguesia ao fascismo se deu às propostas liberais do regime, ou seja, de não intervenção do Estado na economia.II - O caráter autoritário do Estado fascista visava garantir o equilíbrio entre as forças políticas e sociais da Itália do período.III - O Estado fascista se propunha a ser o centro de toda a estrutura social e política, impondo à sociedade a subordinação e o controle.IV - A presença do Estado se fazia nas mais diferentes esferas da sociedade através da adoção de medidas como o corporativismo e o controle dos programas escolares.Agora, assinale a alternativa correspondente.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) V – F – F – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) V – F – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) F – V – V – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) F – F – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) V – F – V – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
         }
     },
     "redacao": {
