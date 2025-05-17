@@ -5479,6 +5479,437 @@
                     }
                 }
             }
+        },
+        "68679837": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "68679837",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Física",
+                "activity_title": "Trocas de calor: entendendo a transferência de energia",
+                "user": "Daniel Oliveira Matias",
+                "author": "francineidean1769666-sp",
+                "class_school": "3º B EM",
+                "first_access": "16/05/2025 - 23:03:32",
+                "expires_in": "19/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {
+                            "0": {
+                                "type": "video",
+                                "src": "https://www.youtube.com/embed/TCERsaXaxRA",
+                                "transcription": {
+                                    "lang": "ar",
+                                    "transcript": "[موسيقى]"
+                                }
+                            }
+                        },
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Assista ao vídeo para responder às questões:",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "A partir da análise do vídeo, organize as frases a seguir com base na ordem dos processos observados.Considere: A temperatura inicial do cubo de gelo T = - 5 °C.",
+                                "Considerando processos de troca de calor como o apresentado no vídeo, complete a frase a seguir.",
+                                "Se a massa de água, inicialmente a 20 °C, possui uma massa dez vezes maior que a do gelo, inicialmente a 0 °C, é possível determinar que a temperatura de equilíbrio da situação apresentada vale, aproximadamente...Considere:Calor específico da água: cágua = 1 cal/g.°CCalor específico do gelo: cgelo = 0,5 cal/g.°CCalor latente de fusão: L = 80 cal/g",
+                                "(FUVEST, 2019)Em uma garrafa térmica, são colocados 200 g de água à temperatura de 30 °C e uma pedra de gelo de 50 g, à temperatura de –10 °C. Após o equilíbrio térmico...Considere:Calor específico da água: cágua = 1 cal/g.°CCalor específico do gelo: cgelo = 0,5 cal/g.°CCalor latente de fusão: L = 80 cal/g"
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "A partir da análise do vídeo, organize as frases a seguir com base na ordem dos processos observados.Considere: A temperatura inicial do cubo de gelo T = - 5 °C.",
+                                "Considerando processos de troca de calor como o apresentado no vídeo, complete a frase a seguir.",
+                                "Se a massa de água, inicialmente a 20 °C, possui uma massa dez vezes maior que a do gelo, inicialmente a 0 °C, é possível determinar que a temperatura de equilíbrio da situação apresentada vale, aproximadamente...Considere:Calor específico da água: cágua = 1 cal/g.°CCalor específico do gelo: cgelo = 0,5 cal/g.°CCalor latente de fusão: L = 80 cal/g",
+                                "(FUVEST, 2019)Em uma garrafa térmica, são colocados 200 g de água à temperatura de 30 °C e uma pedra de gelo de 50 g, à temperatura de –10 °C. Após o equilíbrio térmico...Considere:Calor específico da água: cágua = 1 cal/g.°CCalor específico do gelo: cgelo = 0,5 cal/g.°CCalor latente de fusão: L = 80 cal/g"
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "A partir da análise do vídeo, organize as frases a seguir com base na ordem dos processos observados.Considere: A temperatura inicial do cubo de gelo T = - 5 °C.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Considerando processos de troca de calor como o apresentado no vídeo, complete a frase a seguir.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Se a massa de água, inicialmente a 20 °C, possui uma massa dez vezes maior que a do gelo, inicialmente a 0 °C, é possível determinar que a temperatura de equilíbrio da situação apresentada vale, aproximadamente...Considere:Calor específico da água: cágua = 1 cal/g.°CCalor específico do gelo: cgelo = 0,5 cal/g.°CCalor latente de fusão: L = 80 cal/g",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 0 °C.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 10,9 °C.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 11,4 °C.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 18,2 °C.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 19,0 °C.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(FUVEST, 2019)Em uma garrafa térmica, são colocados 200 g de água à temperatura de 30 °C e uma pedra de gelo de 50 g, à temperatura de –10 °C. Após o equilíbrio térmico...Considere:Calor específico da água: cágua = 1 cal/g.°CCalor específico do gelo: cgelo = 0,5 cal/g.°CCalor latente de fusão: L = 80 cal/g",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) todo o gelo derreteu e a temperatura de equilíbrio é 7 °C.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) todo o gelo derreteu e a temperatura de equilíbrio é 0,4 °C.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) todo o gelo derreteu e a temperatura de equilíbrio é 20 °C.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) nem todo o gelo derreteu e a temperatura de equilíbrio é 0 °C.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) o gelo não derreteu e a temperatura de equilíbrio é –2 °C.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
         }
     },
     "redacao": {

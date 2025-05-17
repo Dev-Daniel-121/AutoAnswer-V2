@@ -1,25 +1,12 @@
-from project import Display, LogType
+from project.apps.answer import MenuSystem
 
 class Answer:
     def __init__(self, user):
         self.user = user
 
     def run(self):
-        options_data = [(LogType.OPTION, 'Start'), (LogType.OPTION, 'Settings'), (LogType.OPTION, 'Sair')]
-        options = Display(options_data, 'Answer', answer=True, user=self.user, title_quest='', clear_enabled=False)
-        user_choice = options.display()
-
-        if user_choice == 1:
-            print('Start')
-            input('al')
-        elif user_choice == 2:
-            print('Settings')
-            input('al')
-        elif user_choice == 3:
-            return
-        else:
-            print(f'[{LogType.ERROR}] Opção inválida, tente novamente.')
-
+        menu = MenuSystem(user=self.user)
+        menu.menu()
 
 
 """
@@ -57,19 +44,53 @@ todo ATALHOS
 2. Settings     <- Abri configurações
 3. Sair         <- Sair da Automação
 
-~~~~~~ Start ~~~~~~
+~~~~~~ IA (USER) ~~~~~~
+
+1. Grok
+2. ChatGPT
+3. Voltar
+
+~~~~~~ Prompt {IA} (USER) ~~~~~~
+
+[1]. NOME DO PROMPT             A: 100 C: 70% W: 30%
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlk...
+
+TENDENCIA:           Mate: 50%  Hist: 45%  Mult: 20%
+ANSWERS: +99.999 - CORRECTS: +9.999 - WRONGS: +9.999
+
+[2]. NOME DO PROMPT            A: 100% C: 70% W: 30%
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlk...
+
+TENDENCIA:           ----: --%  ----: --%  ----: --%
+ANSWERS: 000.000 - CORRECTS: 00.000 - WRONGS: 00.000
+
+[3]. NOME DO PROMPT            A: 100% C: 70% W: 30%
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlk...
+
+TENDENCIA:        Quim: 010%  Biol: 004%  Reda: 001%
+ANSWERS: 100 - CORRECTS: 70 - WRONGS: 30
+
+[Task] Escolha apenas 1 prompt: 
+
+~~~~~~ Working - CollectAutoGUI - {IA} (USER) ~~~~~~
 
 Etapa 1 de 5 - TÍTULO DA ETAPA
 
-Duração: 5s
-Duração restante: 0s
+Duração:
+Total    5s
+Retante  0s
 
 Atalhos:
 [a] Aumenta o tempo em {5s}             [d] Diminui o tempo em {5s}
 [c] Cancela a Automação                 [s] Pausa e Despausa a Automação
 [f] Sair da Automação CollectAutoGUI
 
-Progresso: ( ==================== ) 100%
+Progresso:
+Etapa Atual  ( ======================================== ) 100% - 10s
+Geral        ( ======================================== ) 100% - 60s
 
 ~~~~~~ Settings ~~~~~~
 
