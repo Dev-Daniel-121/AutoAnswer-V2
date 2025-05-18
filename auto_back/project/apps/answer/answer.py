@@ -1,20 +1,19 @@
-from project.apps.answer import MenuSystem
-import platform
-import pyautogui
-import subprocess
+from project.apps import MenuSystem
 from project import LogType
+import platform, pyautogui
 
 class Answer:
-    def __init__(self, user, open_in_new_terminal=False):
+    def __init__(self, user, close_on_exit=False):
         self.user = user
-        self.open_in_new_terminal = open_in_new_terminal
+        self.close_on_exit = close_on_exit
 
     def run(self):
-        if self.open_in_new_terminal:
-            self.open_in_new_terminal_func()
-        else:
-            menu = MenuSystem(user=self.user)
-            menu.menu()
+        menu = MenuSystem(user=self.user)
+        menu.menu()
+
+        if self.close_on_exit:
+            print(f'[{LogType.WARNING}] Finalizando processos...')
+            self.close_terminal()
 
     def close_terminal(self):
         system = platform.system().lower()
@@ -29,27 +28,6 @@ class Answer:
                 print(f'[{LogType.ERROR}] Sistema operacional não suportado: {system}')
         except Exception as e:
             print(f'[{LogType.ERROR}] Erro ao tentar enviar o comando Alt + F4: {e}')
-    
-    def open_in_new_terminal_func(self):
-        system = platform.system().lower()
-
-        print(f'[{LogType.INFO}] Tentando abrir outro terminal...')
-
-        try:
-            if system == 'windows':
-                subprocess.Popen(f'start cmd /K "python -c \"from project.apps.answer import Answer; a = Answer(user=\'{self.user}\', open_in_new_terminal=True); a.run()\""', shell=True)
-            elif system == 'linux' or system == 'darwin':
-                subprocess.Popen(['gnome-terminal', '--', 'bash', '-c', f'python3 -c "from project.apps.answer import Answer; a = Answer(user=\'{self.user}\', open_in_new_terminal=True); a.run()"'])
-            else:
-                print(f'[{LogType.ERROR}] Sistema operacional não suportado para abrir novo terminal: {system}')
-        except Exception as e:
-            print(f'[{LogType.ERROR}] Erro ao tentar abrir novo terminal: {e}')
-
-    def text(self):
-        print(f'[{LogType.INFO}] Em outro terminal!')
-        input('Pressione qualquer tecla para continuar...')
-
-
 
 
 
