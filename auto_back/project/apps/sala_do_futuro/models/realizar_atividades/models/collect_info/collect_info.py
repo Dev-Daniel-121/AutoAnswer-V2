@@ -192,7 +192,28 @@ class CollectInfo:
         if unknown_type_questions:
             print(f'\n[{LogType.INFO}] Questões Desconhecidas Encontradas:')
             print(f'   [{LogType.INFO}] Questões: {', '.join(unknown_type_questions)}\n')
-
+    
+    def open_new_terminal(self, user):
+        try:
+            print(f'[{LogType.WARNING}] Abrindo Novo Terminal para Coleta de Respostas...')
+            if sys.platform == 'win32':
+                print(f'[{LogType.SUCCESS}] Novo Terminal Windows Aberto!\n')
+                subprocess.Popen(['start', 'cmd', '/k', 'python', '-c', f'from project.apps import Answer; Answer(\'{user}\').run()'], shell=True)
+            elif sys.platform == 'darwin' or sys.platform.startswith('linux'):
+                print(f'[{LogType.SUCCESS}] Novo Terminal Linux Aberto!\n')
+                terminal = os.environ.get('TERM', '').lower()
+                if 'gnome-terminal' in terminal:
+                    subprocess.Popen(['gnome-terminal', '--', 'python3', '-c', f'from project.apps import Answer; Answer(\'{user}\').run()'])
+                elif 'xterm' in terminal:
+                    subprocess.Popen(['xterm', '-e', 'python3', '-c', f'from project.apps import Answer; Answer(\'{user}\').run()'])
+                else:
+                    subprocess.Popen(['x-terminal-emulator', '-e', 'python3', '-c', f'from project.apps import Answer; Answer(\'{user}\').run()'])
+            else:
+                print(f'[{LogType.ERROR}] Sistema operacional não suportado para abrir um novo terminal: {sys.platform}')
+        except FileNotFoundError as e:
+            print(f'[{LogType.ERROR}] Erro ao tentar abrir o terminal. O terminal não foi encontrado: {e}')
+        except Exception as e:
+            print(f'[{LogType.ERROR}] Erro inesperado ao tentar abrir um novo terminal: {e}')
 
     def run(self, user, id_usuario):
         task_info = self.task_info.run()

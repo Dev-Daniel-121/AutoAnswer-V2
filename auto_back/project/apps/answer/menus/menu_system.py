@@ -1,5 +1,5 @@
-from project.apps.answer.models import Grok
 from project import Display, LogType
+from project.apps import Grok
 
 class MenuSystem:
     def __init__(self, user):
