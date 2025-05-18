@@ -69,7 +69,7 @@ class TaskInfo:
             return user, author, class_school, first_access, expires_in, site_activity_id
 
         except Exception as e:
-            print(f'Erro ao obter cabeçalho da atividade: {e}')
+            print(f'[{LogType.ERROR}] Erro ao obter cabeçalho da atividade: {e}')
             return
 
     def run(self):

@@ -1,0 +1,84 @@
+{
+    "ia": {
+        "grok": {
+            "prompts": {
+                "1": {
+                    "title": "title",
+                    "prompt": "asçdfkjasd asçlkdfj asdçflk çsakdlf jasdf",
+                    "results": {
+                        "general": {
+                            "components": {
+                                "matematica": 2,
+                                "historia": 1
+                            },
+                            "performance": {
+                                "answers": 27,
+                                "corrects": 19,
+                                "wrongs": 8
+                            }
+                        },
+                        "matematica": [
+                            {
+                                "activity_id": "id_activity",
+                                "corrects": 5,
+                                "wrongs": 0
+                            },
+                            {
+                                "activity_id": "id_activity_2",
+                                "corrects": 7,
+                                "wrongs": 5
+                            }
+                        ],
+                        "historia": [
+                            {
+                                "activity_id": "id_activity",
+                                "corrects": 7,
+                                "wrongs": 3
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "chatgpt": {
+            "prompts": {
+                "1": {
+                    "title": "title",
+                    "prompt": "asçdfkjasd asçlkdfj asdçflk çsakdlf jasdf",
+                    "results": {
+                        "general": {
+                            "components": {
+                                "matematica": 2,
+                                "historia": 1
+                            },
+                            "performance": {
+                                "answers": 27,
+                                "corrects": 19,
+                                "wrongs": 8
+                            }
+                        },
+                        "matematica": [
+                            {
+                                "activity_id": "id_activity",
+                                "corrects": 5,
+                                "wrongs": 0
+                            },
+                            {
+                                "activity_id": "id_activity_2",
+                                "corrects": 7,
+                                "wrongs": 5
+                            }
+                        ],
+                        "historia": [
+                            {
+                                "activity_id": "id_activity",
+                                "corrects": 7,
+                                "wrongs": 3
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

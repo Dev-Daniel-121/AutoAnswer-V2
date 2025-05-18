@@ -251,21 +251,25 @@
 
 | O que está sendo feito                                                                   |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
 | :--------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-| Autoanswer (CollectAutoGui - Criando Settings)                                           | 16/05/2025 |    16:17     |   16:38   |    21min    |
-| Autoanswer (CollectAutoGui - Planejando JSON)                                            | 16/05/2025 |    16:41     |   16:43   |    2min     |
-| Autoanswer (CollectAutoGui - Planejando Design para JSON)                                | 16/05/2025 |    16:48     |   17:13   |    25min    |
-| Autoanswer (CollectAutoGUI - Start)                                                      | 16/05/2025 |    23:00     |   23:04   |    4min     |
-| Autoanswer (CollectAutoGUI - Grok)                                                       | 16/05/2025 |    23:04     |   23:23   |    19min    |
-|                                                                                          | 16/05/2025 |              |           |             |
-| Autoanswer (Criando Automação para Coletar Resposta (CollectAutoGui - Search))           | 16/05/2025 |              |           |             |
-| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 16/05/2025 |              |           |             |
-| Autoanswer (Responder as questões)                                                       | 16/05/2025 |              |           |             |
-| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 16/05/2025 |              |           |             |
-| Autoanswer (Mostrar Resultado)                                                           | 16/05/2025 |              |           |             |
-|                                                                                          | 16/05/2025 |              |           |             |
-| Autoanswer (Planejar Dashboard para Ánalise)                                             | 16/05/2025 |              |           |             |
-| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 16/05/2025 |              |           |             |
-|                                                                                          | 16/05/2025 |              |           |             |
+| Autoanswer (Resolvendo Bug no Transcript)                                                | 17/05/2025 |    14:14     |   14:24   |    10min    |
+| Autoanswer (CollectAutoGui - Flag para ver se é preciso fechar o terminal)               | 17/05/2025 |    14:27     |   14:44   |    17min    |
+| Autoanswer (CollectAutoGui - Flag para ver se é preciso fechar o terminal)               | 17/05/2025 |    16:12     |   16:27   |    15min    |
+| Autoanswer (CollectAutoGui - Planejando JSON)                                            | 17/05/2025 |    16:27     |   16:41   |    14min    |
+| Autoanswer (CollecctAutoGui - Fechando terminal)                                         | 17/05/2025 |    20:37     |   21:32   |    55min    |
+| Autoanswer (CollecctAutoGui - Fechando terminal)                                         | 17/05/2025 |    22:17     |   22:42   |    25min    |
+| Autoanswer (CollecctAutoGui - Fechando terminal)                                         | 17/05/2025 |    22:59     |   23:28   |    29min    |
+|                                                                                          | 17/05/2025 |              |           |             |
+| Autoanswer (CollecctAutoGui - Criando Arquivo de comunicação com JSON)                   | 17/05/2025 |              |           |             |
+| Autoanswer (CollecctAutoGui - Atualizar o Menu para usar o JSON como base)               | 17/05/2025 |              |           |             |
+|                                                                                          | 17/05/2025 |              |           |             |
+| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 17/05/2025 |              |           |             |
+| Autoanswer (Responder as questões)                                                       | 17/05/2025 |              |           |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 17/05/2025 |              |           |             |
+| Autoanswer (Mostrar Resultado)                                                           | 17/05/2025 |              |           |             |
+|                                                                                          | 17/05/2025 |              |           |             |
+| Autoanswer (Planejar Dashboard para Ánalise)                                             | 17/05/2025 |              |           |             |
+| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 17/05/2025 |              |           |             |
+|                                                                                          | 17/05/2025 |              |           |             |
 
 <!--
 

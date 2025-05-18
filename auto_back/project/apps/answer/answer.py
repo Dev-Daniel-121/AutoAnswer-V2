@@ -1,12 +1,34 @@
-from project.apps.answer import MenuSystem
+from project.apps import MenuSystem
+from project import LogType
+import platform, pyautogui
 
 class Answer:
-    def __init__(self, user):
+    def __init__(self, user, close_on_exit=False):
         self.user = user
+        self.close_on_exit = close_on_exit
 
     def run(self):
         menu = MenuSystem(user=self.user)
         menu.menu()
+
+        if self.close_on_exit:
+            print(f'[{LogType.WARNING}] Finalizando processos...')
+            self.close_terminal()
+
+    def close_terminal(self):
+        system = platform.system().lower()
+
+        print(f'[{LogType.WARNING}] Tentando fechar o terminal com Alt + F4...')
+        try:
+            if system == 'windows':
+                pyautogui.hotkey('alt', 'f4')
+            elif system == 'linux' or system == 'darwin':
+                pyautogui.hotkey('alt', 'f4')
+            else:
+                print(f'[{LogType.ERROR}] Sistema operacional não suportado: {system}')
+        except Exception as e:
+            print(f'[{LogType.ERROR}] Erro ao tentar enviar o comando Alt + F4: {e}')
+
 
 
 """
