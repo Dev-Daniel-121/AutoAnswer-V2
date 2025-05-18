@@ -5,7 +5,8 @@ from .collect_json import CollectJson, SaveJson
 from .collect_task_info.texts import Text
 from project import Display, LogType
 from .collect_time import Time
-import sys, subprocess, os
+from project.apps.answer import Answer
+# import sys, subprocess, os
 
 class CollectInfo:
     def __init__(self, page, activity_status, component):
@@ -191,32 +192,6 @@ class CollectInfo:
         if unknown_type_questions:
             print(f'\n[{LogType.INFO}] Questões Desconhecidas Encontradas:')
             print(f'   [{LogType.INFO}] Questões: {', '.join(unknown_type_questions)}\n')
-    
-    def open_new_terminal(self, user):
-        try:
-            print(f'[{LogType.WARNING}] Abrindo Novo Terminal para Coleta de Respostas...')
-
-            if sys.platform == 'win32':
-                print(f'[{LogType.SUCCESS}] Novo Terminal Windows Aberto!\n')
-                subprocess.Popen(['start', 'cmd', '/k', 'python', '-c', f'from project.apps import Answer; Answer(\'{user}\', close_on_exit=True).run(); exit()'], shell=True)
-
-            elif sys.platform == 'darwin' or sys.platform.startswith('linux'):
-                print(f'[{LogType.SUCCESS}] Novo Terminal Linux/macOS Aberto!\n')
-                terminal = os.environ.get('TERM', '').lower()
-                if 'gnome-terminal' in terminal:
-                    subprocess.Popen(['gnome-terminal', '--', 'bash', '-c', f'python3 -c "from project.apps import Answer; Answer(\'{user}\', close_on_exit=True).run()"; exit()'])
-                elif 'xterm' in terminal:
-                    subprocess.Popen(['xterm', '-e', f'python3 -c "from project.apps import Answer; Answer(\'{user}\', close_on_exit=True).run()"; exit()'])
-                else:
-                    subprocess.Popen(['x-terminal-emulator', '-e', f'python3 -c "from project.apps import Answer; Answer(\'{user}\', close_on_exit=True).run()"; exit()'])
-
-            else:
-                print(f'[{LogType.ERROR}] Sistema operacional não suportado para abrir um novo terminal: {sys.platform}')
-
-        except FileNotFoundError as e:
-            print(f'[{LogType.ERROR}] Erro ao tentar abrir o terminal. O terminal não foi encontrado: {e}')
-        except Exception as e:
-            print(f'[{LogType.ERROR}] Erro inesperado ao tentar abrir um novo terminal: {e}')
 
 
     def run(self, user, id_usuario):
@@ -253,7 +228,8 @@ class CollectInfo:
         print(f'{questionarie}\n\n\n')
         '''
 
-        self.open_new_terminal(user=user)
+        answer = Answer(user=user, open_in_new_terminal=True)
+        answer.run()
 
         self.time.tempo_restante()
 

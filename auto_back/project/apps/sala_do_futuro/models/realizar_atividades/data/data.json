@@ -5910,6 +5910,835 @@
                     }
                 }
             }
+        },
+        "68957417": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "68957417",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Química",
+                "activity_title": "Tratamento da água e esgoto",
+                "user": "Daniel Oliveira Matias",
+                "author": "palomamathias4274686-sp",
+                "class_school": "3º B EM",
+                "first_access": "18/05/2025 - 14:50:32",
+                "expires_in": "21/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 5,
+                "question_types": {
+                    "Radios": 4,
+                    "Checkbox": 1
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": "",
+                        "1": "💡 Introdução ",
+                        "2": "💡 Introdução ",
+                        "3": "💡 Introdução ",
+                        "4": "🎯 Construção "
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "💡 Introdução ",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "1": {
+                    "informative_content": {
+                        "video": {
+                            "0": {
+                                "type": "video",
+                                "src": "https://www.youtube.com/embed/hRZcupJbnpg",
+                                "transcription": {
+                                    "lang": "pt",
+                                    "transcript": "Olá você sabia que de toda a água existente no planeta apenas três por cento é doce e dessa fração menos de um porcento está disponível para o uso ou seja precisamos cuidar desse bem tão precioso a Sabesp responsável pelo tratamento e distribuição da água no estado de São Paulo funciona assim a água das chuvas e Nascente 0 a z nada em represas em seguida a água é transferida por gravidade ou bombeamento para as estações de tratamento de água na chegada a água passa por telas que já tem folhas e gravetos na próxima etapa é adicionado cloro para eliminar bactérias e outros microrganismos têm seguida a água recebe adição de coagulantes já no tanque de floculação a água é agitada para que é sujeira forma e flocos no tanque de decantação os flocos vão para o fundo formando uma camada de louro que é tratado no local ou nas estações de tratamento de esgoto conhecidas como Apps e a água então é recolhida através de canaletas e escoado para os filtros a sujeira que ainda sobrou fica retida nas camadas de carvão areia Pedregulho e cascalho no final do processo a água recebe flúor para melhorar a saúde dos dentes da população produtos alcalinizantes quando necessários para a proteção da tubulação e mais uma aplicação de cloro para garantir qualidade microbiológica da água por fim a água segue para reservatórios que depois para torneira da sua casa legal né mesmo como vocês viram o trabalho da Sabesp é fundamental Sabesp trabalhando para melhorar a vida das pessoas"
+                                }
+                            }
+                        },
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "💡 Introdução ",
+                    "conteudo": "Assista ao vídeo até o minuto (1:40) para responder às questões: ",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "2": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "💡 Introdução ",
+                    "conteudo": "📝Leia o texto a seguir para responder às questões: O Impacto dos Resíduos Domésticos na Qualidade da ÁguaO descarte inadequado de resíduos domésticos é um dos principais fatores de contaminação da água, afetando tanto o meio ambiente quanto a saúde humana. Resíduos sólidos, como plásticos, metais e materiais orgânicos, podem poluir rios e lagos, comprometendo os ecossistemas aquáticos. Além disso, os rejeitos, que não podem ser reciclados ou tratados, aumentam a degradação ambiental. Para garantir a preservação dos recursos hídricos, é essencial adotar práticas sustentáveis, como a separação correta do lixo e o tratamento adequado da água. Estratégias como saneamento básico eficiente e programas de conscientização são fundamentais para minimizar esses impactos. Ações individuais e políticas públicas podem contribuir para a proteção dos mananciais, assegurando água potável para as futuras gerações.Fonte: BRASIL. Política Nacional de Resíduos Sólidos. Lei nº 12.305, de 2 de agosto de 2010. Disponível em: https://www.planalto.gov.br. Acesso em: 23 mar. 2025.",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "3": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "💡 Introdução ",
+                    "conteudo": "🎯 Construção ",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "4": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "🎯 Construção ",
+                    "conteudo": "⚡ Superação ",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 7,
+                    "number_of_sections": 3,
+                    "sections": {
+                        "💡 Introdução": 2,
+                        "🎯 Construção": 3,
+                        "⚡ Superação": 2
+                    },
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "A partir das etapas do processo de tratamento de água em uma ETA descritas no vídeo, avalie as palavras sugeridas e preencha as lacunas corretamente.",
+                                "A água pode ser contaminada por diferentes tipos de resíduos, exigindo tratamento adequado antes do consumo. Considerando a importância da preservação da água e o descarte correto de resíduos, assinale a alternativa correta.",
+                                "Com base no diagrama abaixo sobre resíduos, lixo e seus destinos, assinale a alternativa correta.Fontes: COELHO, 2019; SILVA et al., 2017.Produzido pela SEDUC-SP, 2025.",
+                                "Sobre a classificação dos resíduos segundo a ABNT NBR 10004 descrita abaixo, marque as alternativas que estão corretas.Classe I – Perigosos, que possuem as seguintes propriedades:Inflamabilidade: catalisadores gastos; solventes, como acetona, acetato de etila, éter etílico, n-butanol e metanol; resíduos de solventes e outros.Corrosividade: borras e resíduos ácidos; acumuladores elétricos à base de chumbo; resíduos de ácidos carboxílicos, ácido sulfúrico, cromo, chumbo e outros.Reatividade: iodo industrial e soluções exauridas de operações de galvanoplastia; carvão usado em tratamento de efluentes líquidos que contêm explosivos e outros.Toxicidade: solventes halogenados; lodo de tinta; pós e fibras de amianto; lâmpadas com vapor de mercúrio (após uso); óleos lubrificantes; fluidos e outros.Patogenicidade: resíduos que contêm microrganismos patogênicos ou qualquer substância que possa causar doenças.Classe II A – Não inertes: podem se decompor e causar poluição, por exemplo, os resíduos orgânicos, alimentos, papel etc.Classe II B – Inertes: não sofrem decomposição significativa nem poluem, por exemplo, vidro, concreto, cerâmica, rochas, restos de metais etc. ",
+                                "Assinale a alternativa certa ou errada para as seguintes afirmações sobre a água potável.",
+                                "(FATEC, 2022) Devido ao consumo exagerado de bebidas alcoólicas, vários problemas sociais e de saúde são ocasionados.O etilômetro (bafômetro) é um aparelho que mede a concentração de etanol no sangue de uma pessoa mediante análise do ar expirado. A concentração em gramas por litro expressa a razão entre a massa do soluto dissolvido em um litro de solução.Considere que uma pessoa adulta, após ingerir 100 mL de vinho, submeteu-se ao teste do etilômetro. Supondo que todo etanol ingerido esteja diluído no sangue, é correto afirmar que a concentração de etanol no sangue dessa pessoa, apresentada pelo etilômetro é, em g/L, aproximadamente...Dados:- concentração de etanol no vinho = 80,2 g /L- uma pessoa adulta apresenta, em média, 5 L de sangue",
+                                "(UNIFENAS-MG, 2020) Analise os dados e marque a opção que indica o volume correspondente de uma solução para que um cozinheiro prepare uma solução 0,8 mol/L de cloreto de sódio, sabendo que ele adiciona 234 g de NaCl em um caldeirão.Dados: (Na = 23u e Cl = 35,5u)."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "A partir das etapas do processo de tratamento de água em uma ETA descritas no vídeo, avalie as palavras sugeridas e preencha as lacunas corretamente.",
+                                "A água pode ser contaminada por diferentes tipos de resíduos, exigindo tratamento adequado antes do consumo. Considerando a importância da preservação da água e o descarte correto de resíduos, assinale a alternativa correta.",
+                                "Com base no diagrama abaixo sobre resíduos, lixo e seus destinos, assinale a alternativa correta.Fontes: COELHO, 2019; SILVA et al., 2017.Produzido pela SEDUC-SP, 2025.",
+                                "Sobre a classificação dos resíduos segundo a ABNT NBR 10004 descrita abaixo, marque as alternativas que estão corretas.Classe I – Perigosos, que possuem as seguintes propriedades:Inflamabilidade: catalisadores gastos; solventes, como acetona, acetato de etila, éter etílico, n-butanol e metanol; resíduos de solventes e outros.Corrosividade: borras e resíduos ácidos; acumuladores elétricos à base de chumbo; resíduos de ácidos carboxílicos, ácido sulfúrico, cromo, chumbo e outros.Reatividade: iodo industrial e soluções exauridas de operações de galvanoplastia; carvão usado em tratamento de efluentes líquidos que contêm explosivos e outros.Toxicidade: solventes halogenados; lodo de tinta; pós e fibras de amianto; lâmpadas com vapor de mercúrio (após uso); óleos lubrificantes; fluidos e outros.Patogenicidade: resíduos que contêm microrganismos patogênicos ou qualquer substância que possa causar doenças.Classe II A – Não inertes: podem se decompor e causar poluição, por exemplo, os resíduos orgânicos, alimentos, papel etc.Classe II B – Inertes: não sofrem decomposição significativa nem poluem, por exemplo, vidro, concreto, cerâmica, rochas, restos de metais etc. ",
+                                "Assinale a alternativa certa ou errada para as seguintes afirmações sobre a água potável.",
+                                "(FATEC, 2022) Devido ao consumo exagerado de bebidas alcoólicas, vários problemas sociais e de saúde são ocasionados.O etilômetro (bafômetro) é um aparelho que mede a concentração de etanol no sangue de uma pessoa mediante análise do ar expirado. A concentração em gramas por litro expressa a razão entre a massa do soluto dissolvido em um litro de solução.Considere que uma pessoa adulta, após ingerir 100 mL de vinho, submeteu-se ao teste do etilômetro. Supondo que todo etanol ingerido esteja diluído no sangue, é correto afirmar que a concentração de etanol no sangue dessa pessoa, apresentada pelo etilômetro é, em g/L, aproximadamente...Dados:- concentração de etanol no vinho = 80,2 g /L- uma pessoa adulta apresenta, em média, 5 L de sangue",
+                                "(UNIFENAS-MG, 2020) Analise os dados e marque a opção que indica o volume correspondente de uma solução para que um cozinheiro prepare uma solução 0,8 mol/L de cloreto de sódio, sabendo que ele adiciona 234 g de NaCl em um caldeirão.Dados: (Na = 23u e Cl = 35,5u)."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 7,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "4_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "5_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "6_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "💡 Introdução ",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "A partir das etapas do processo de tratamento de água em uma ETA descritas no vídeo, avalie as palavras sugeridas e preencha as lacunas corretamente.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "💡 Introdução ",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "A água pode ser contaminada por diferentes tipos de resíduos, exigindo tratamento adequado antes do consumo. Considerando a importância da preservação da água e o descarte correto de resíduos, assinale a alternativa correta.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) A água contaminada por resíduos domésticos pode ser consumida sem tratamento, pois a maioria dos resíduos é biodegradável.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O descarte inadequado de resíduos domésticos pode causar contaminação da água, prejudicando ecossistemas aquáticos e a saúde humana.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) O rejeito é um tipo de resíduo que pode ser facilmente reciclado e reutilizado no abastecimento de água potável.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) Os resíduos domésticos são compostos exclusivamente por materiais orgânicos, não havendo necessidade de separação para descarte correto.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) A filtração é suficiente para remover todos os contaminantes da água, eliminando qualquer risco ao consumo humano.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "🎯 Construção ",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {
+                                "0": {
+                                    "type": "image",
+                                    "src": "https://edusp-static.ip.tv/tms/edusp/tspcnt5/OE3rGFevauMXnEtKf27sFS217y7V6P.png",
+                                    "local_path": "C:\\Users\\Administrador\\Desktop\\Back_UP\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\68957417 (6d)\\OE3rGFevauMXnEtKf27sFS217y7V6P.png"
+                                }
+                            },
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Com base no diagrama abaixo sobre resíduos, lixo e seus destinos, assinale a alternativa correta.Fontes: COELHO, 2019; SILVA et al., 2017.Produzido pela SEDUC-SP, 2025.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) O Brasil lidera mundialmente a reciclagem de plásticos, com uma taxa superior a 50% do total produzido anualmente.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O conceito de reutilização refere-se apenas à reciclagem de papel e plástico, excluindo outros materiais como vidro e alumínio.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) O atraso do Brasil em relação a países como a Alemanha na reciclagem se deve exclusivamente à falta de tecnologia para processamento de resíduos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) Os rejeitos, como papel higiênico e cerâmica, não podem ser reciclados e devem ser encaminhados para aterros sanitários.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) A compostagem é um processo que transforma qualquer tipo de resíduo em adubo orgânico, sem restrições de material.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "🎯 Construção ",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Checkbox",
+                        "statement": "Sobre a classificação dos resíduos segundo a ABNT NBR 10004 descrita abaixo, marque as alternativas que estão corretas.Classe I – Perigosos, que possuem as seguintes propriedades:Inflamabilidade: catalisadores gastos; solventes, como acetona, acetato de etila, éter etílico, n-butanol e metanol; resíduos de solventes e outros.Corrosividade: borras e resíduos ácidos; acumuladores elétricos à base de chumbo; resíduos de ácidos carboxílicos, ácido sulfúrico, cromo, chumbo e outros.Reatividade: iodo industrial e soluções exauridas de operações de galvanoplastia; carvão usado em tratamento de efluentes líquidos que contêm explosivos e outros.Toxicidade: solventes halogenados; lodo de tinta; pós e fibras de amianto; lâmpadas com vapor de mercúrio (após uso); óleos lubrificantes; fluidos e outros.Patogenicidade: resíduos que contêm microrganismos patogênicos ou qualquer substância que possa causar doenças.Classe II A – Não inertes: podem se decompor e causar poluição, por exemplo, os resíduos orgânicos, alimentos, papel etc.Classe II B – Inertes: não sofrem decomposição significativa nem poluem, por exemplo, vidro, concreto, cerâmica, rochas, restos de metais etc. ",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) Os resíduos classificados como Classe I – Perigosos apresentam propriedades como inflamabilidade, corrosividade, reatividade, toxicidade e patogenicidade, podendo representar riscos sérios à saúde pública e ao meio ambiente.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) Os resíduos da Classe II A – Não inertes podem ser compostos por materiais orgânicos, como alimentos e papel, que, devido à sua decomposição, podem causar poluição ambiental.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) Os resíduos da Classe II B – Inertes incluem substâncias que se decompõem rapidamente e podem causar poluição, como restos de metais e papel.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) A Classe I inclui resíduos perigosos, como solventes industriais, e também lixo comum, como restos de lanche e embalagens de salgadinho, por causarem mau cheiro e atrair insetos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) A Classe II A é composta por resíduos como vidro e concreto, que não se decompõem e não causam impacto ambiental.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "4": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "🎯 Construção ",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Assinale a alternativa certa ou errada para as seguintes afirmações sobre a água potável.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "5": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "⚡ Superação ",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(FATEC, 2022) Devido ao consumo exagerado de bebidas alcoólicas, vários problemas sociais e de saúde são ocasionados.O etilômetro (bafômetro) é um aparelho que mede a concentração de etanol no sangue de uma pessoa mediante análise do ar expirado. A concentração em gramas por litro expressa a razão entre a massa do soluto dissolvido em um litro de solução.Considere que uma pessoa adulta, após ingerir 100 mL de vinho, submeteu-se ao teste do etilômetro. Supondo que todo etanol ingerido esteja diluído no sangue, é correto afirmar que a concentração de etanol no sangue dessa pessoa, apresentada pelo etilômetro é, em g/L, aproximadamente...Dados:- concentração de etanol no vinho = 80,2 g /L- uma pessoa adulta apresenta, em média, 5 L de sangue",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 1,05.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 1,60.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 2,57.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 3,58.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 4,16.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "6": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "⚡ Superação ",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(UNIFENAS-MG, 2020) Analise os dados e marque a opção que indica o volume correspondente de uma solução para que um cozinheiro prepare uma solução 0,8 mol/L de cloreto de sódio, sabendo que ele adiciona 234 g de NaCl em um caldeirão.Dados: (Na = 23u e Cl = 35,5u).",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 2 L.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 10 L.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 5 L.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 8 L.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 0,8 L.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
         }
     },
     "redacao": {
