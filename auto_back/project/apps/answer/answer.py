@@ -1,15 +1,60 @@
 from project.apps.answer import MenuSystem
+import subprocess, sys, pyautogui
+from project import LogType
 
 class Answer:
-    def __init__(self, user):
+    def __init__(self, user, open_in_new_terminal=False):  
         self.user = user
+        self.open_in_new_terminal = open_in_new_terminal
+        self.close_terminal_flag = open_in_new_terminal
 
     def run(self):
         if self.open_in_new_terminal:
-            self.open_in_new_terminal_func()
+            print(f'[{LogType.INFO}] Abrindo novo terminal...')
+            self.process = self.open_in_new_terminal_func()
         else:
-            menu = MenuSystem(user=self.user)
+            print(f'[{LogType.INFO}] Executando o menu normalmente...')
+            menu = MenuSystem(user=self.user, close_terminal_flag=self.close_terminal_flag)
             menu.menu()
+
+    def open_in_new_terminal_func(self):
+        try:
+            if sys.platform == 'win32':
+                command = f'python -c "from project.apps.answer import MenuSystem; MenuSystem(user=\'{self.user}\', close_terminal_flag={self.close_terminal_flag}).menu()"'
+                return subprocess.Popen(f'start cmd /k {command}', shell=True)
+            elif sys.platform == 'darwin':
+                command = f'osascript -e \'tell application "Terminal" to do script "python3 -c \"from project.apps.answer import MenuSystem; MenuSystem(user=\"{self.user}\", close_terminal_flag={self.close_terminal_flag}).menu()\""\''
+                return subprocess.Popen(command, shell=True)
+            elif sys.platform in ['linux', 'linux2']:
+                command = f'gnome-terminal -- bash -c "python3 -c \"from project.apps.answer import MenuSystem; MenuSystem(user=\'{self.user}\', close_terminal_flag={self.close_terminal_flag}).menu()\""'
+                return subprocess.Popen(command, shell=True)
+            else:
+                print(f'[{LogType.WARNING}] Sistema operacional não suportado para abrir terminal automaticamente.')
+                return None
+        except Exception as e:
+            print(f'[{LogType.ERROR}] Erro ao tentar abrir o terminal: {e}')
+            return None
+
+
+    def close_terminal(self):
+        try:
+            if sys.platform == 'win32':
+                pyautogui.hotkey('alt', 'f4')
+                print(f'[{LogType.INFO}] Fechando terminal no Windows...')
+            elif sys.platform == 'darwin':
+                osascript_command = 'osascript -e "tell application \\"Terminal\\" to quit"'
+                subprocess.run(osascript_command, shell=True)
+                print(f'[{LogType.INFO}] Fechando terminal no macOS...')
+            elif sys.platform in ['linux', 'linux2']:
+                if self.process:
+                    self.process.terminate()
+                    print(f'[{LogType.INFO}] Fechando terminal no Linux...')
+                else:
+                    print(f'[{LogType.WARNING}] Processo do terminal não encontrado.')
+            else:
+                print(f'[{LogType.WARNING}] Sistema operacional não suportado para fechar terminal automaticamente.')
+        except Exception as e:
+            print(f'[{LogType.ERROR}] Erro ao tentar fechar o terminal: {e}')
 
 
 """

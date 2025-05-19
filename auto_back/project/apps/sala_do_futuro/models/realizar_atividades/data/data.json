@@ -5531,10 +5531,7 @@
                             "0": {
                                 "type": "video",
                                 "src": "https://www.youtube.com/embed/TCERsaXaxRA",
-                                "transcription": {
-                                    "lang": "ar",
-                                    "transcript": "[موسيقى]"
-                                }
+                                "transcription": null
                             }
                         },
                         "image": {},

@@ -1,10 +1,11 @@
+from project.apps.answer.models import Grok
 from project import Display, LogType
-from project.apps import Grok
 
 class MenuSystem:
-    def __init__(self, user):
+    def __init__(self, user, close_terminal_flag=False):
         self.user = user
         self.grok = Grok(user=self.user)
+        self.close_terminal_flag = close_terminal_flag
 
     def menu(self):
         options_data = [(LogType.OPTION, 'Start'), (LogType.OPTION, 'Settings'), (LogType.OPTION, 'Sair')]
@@ -16,7 +17,7 @@ class MenuSystem:
         elif user_choice == 2:
             self.settings()
         elif user_choice == 3:
-            return
+            self.close()
         else:
             print(f'[{LogType.ERROR}] Opção inválida, tente novamente.')
 
@@ -49,3 +50,11 @@ class MenuSystem:
             self.menu()
         else:
             print(f'[{LogType.ERROR}] Opção inválida, tente novamente.')
+
+    def close(self):
+        print(f'[{LogType.WARNING}] Finalizando processos...\n')
+        print(f'[{LogType.WARNING}] Fechando terminal\n')
+        if self.close_terminal_flag:
+            from project import Answer
+            answer = Answer(user=self.user)
+            answer.close_terminal()
