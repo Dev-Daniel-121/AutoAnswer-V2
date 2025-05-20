@@ -92,10 +92,10 @@ class MenuSystem:
         user_choice = options.display()
 
         if user_choice == 1:
-            print('WEB...')
+            print(f'[{LogType.INFO}] WEB...')
             sys.exit()
         elif user_choice == 2:
-            print('CMD...')
+            print(f'[{LogType.INFO}] CMD...')
             sys.exit()
         elif user_choice == 3:
             self.settings()
@@ -109,10 +109,10 @@ class MenuSystem:
         user_choice = options.display()
 
         if user_choice == 1:
-            print('WEB...')
+            print(f'[{LogType.INFO}] WEB...')
             sys.exit()
         elif user_choice == 2:
-            print('CMD...')
+            print(f'[{LogType.INFO}] CMD...')
             sys.exit()
         elif user_choice == 3:
             self.settings()

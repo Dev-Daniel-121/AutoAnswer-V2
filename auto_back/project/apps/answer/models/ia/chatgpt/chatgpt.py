@@ -1,3 +1,3 @@
-class Search:
+class ChatGpt:
     def __init__(self):
         pass

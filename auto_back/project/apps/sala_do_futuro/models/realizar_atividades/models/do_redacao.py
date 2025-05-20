@@ -54,7 +54,7 @@ class DoRedacao:
                 print(f'[{LogType.ANSWER}] Sua escolha foi: {user_choices}')
 
                 for choice in user_choices:
-                    print(f'\nExecutando escolha: {choice}\n')
+                    print(f'\n[{LogType.INFO}] Executando escolha: {choice}\n')
                 
                 input('\nPressione Enter para continuar...')
                 return
@@ -82,7 +82,7 @@ class DoRedacao:
                 print(f'[{LogType.ANSWER}] Sua escolha foi: {user_choices}')
 
                 for choice in user_choices:
-                    print(f'\nExecutando escolha: {choice}\n')
+                    print(f'\n[{LogType.INFO}] Executando escolha: {choice}\n')
                 
                 input('\nPressione Enter para continuar...')
                 return

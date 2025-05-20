@@ -1,4 +1,5 @@
 from youtube_transcript_api import YouTubeTranscriptApi
+from project import LogType
 import re
 
 class TranscriptYoutube:
@@ -39,7 +40,7 @@ class TranscriptYoutube:
                     }
 
             except Exception as e2:
-                print(f'Erro ao obter transcrição alternativa: {e2}')
+                print(f'[{LogType.ERROR}] Erro ao obter transcrição alternativa: {e2}')
                 return None
 
     def _fetch_transcript(self, video_id, languages):

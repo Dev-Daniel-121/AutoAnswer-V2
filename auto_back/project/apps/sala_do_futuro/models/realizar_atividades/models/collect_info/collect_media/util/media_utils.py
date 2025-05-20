@@ -1,3 +1,5 @@
+from project import LogType
+
 def collect_media_if_exists(page, card, video_media_selector, img_media_selector):
     try:
         if (
@@ -15,5 +17,5 @@ def collect_media_if_exists(page, card, video_media_selector, img_media_selector
         )
         return media_collector.extract_media()
     except Exception as e:
-        print(f'[MediaUtils] Erro ao coletar mídia condicionalmente: {e}')
+        print(f'[{LogType.ERRORg}] Erro ao coletar mídia condicionalmente: {e}')
         return {'video': {}, 'image': {}, 'gif': {}}

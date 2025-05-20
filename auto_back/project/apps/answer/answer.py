@@ -94,8 +94,9 @@ todo ATALHOS
 
 ~~~~~~ IA (USER) ~~~~~~
 
-1. Grok
-2. ChatGPT
+1. Grok       (Em funcionamento - pronto para ajudar)
+2. ChatGPT    (Em funcionamento - pronto para ajudar)
+3. DeepSeak   (Fora de serviço - Sistema temporariamente inativo)
 3. Voltar
 
 ~~~~~~ Prompt {IA} (USER) ~~~~~~

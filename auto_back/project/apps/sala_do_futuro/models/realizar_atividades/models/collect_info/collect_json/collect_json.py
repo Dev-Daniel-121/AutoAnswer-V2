@@ -39,9 +39,9 @@ class CollectJson:
             response = 'Y'
         
         if response == 'Y':
-            print('Usando \'data.json\'\n')
+            print(f'[{LogType.INFO}] Usando \'data.json\'\n')
         else:
-            print('\'data.json\' não será utilizado\n')
+            print(f'[{LogType.INFO}] \'data.json\' não será utilizado\n')
 
     def run(self, component, id_activity):
         json_path = self.check_json_file()

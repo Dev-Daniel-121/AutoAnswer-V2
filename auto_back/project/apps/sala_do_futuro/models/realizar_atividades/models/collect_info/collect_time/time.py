@@ -15,14 +15,14 @@ class Time:
 
     def tempo_restante(self):
         if self.tempo_final is None:
-            print('Você ainda não iniciou o timer.')
+            print(f'[{LogType.WARNING}] Você ainda não iniciou o timer.')
             return
 
         now = datetime.now()
         restante = self.tempo_final - now
 
         if restante.total_seconds() <= 0:
-            print('O tempo já terminou!')
+            print(f'[{LogType.WARNING}] O tempo já terminou!')
         else:
             minutos, segundos = divmod(int(restante.total_seconds()), 60)
             print(f'[{LogType.INFO}] Tempo restante: {minutos} min {segundos} s\n')

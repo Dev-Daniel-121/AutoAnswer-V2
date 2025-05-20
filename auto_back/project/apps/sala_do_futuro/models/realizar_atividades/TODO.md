@@ -251,16 +251,18 @@
 
 | O que está sendo feito                                                                   |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
 | :--------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-|                                                                                          | 18/05/2025 |              |           |             |
-| Autoanswer (Criando Automação para Coletar Resposta (CollectAutoGui - Search))           | 18/05/2025 |              |           |             |
-| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 18/05/2025 |              |           |             |
-| Autoanswer (Responder as questões)                                                       | 18/05/2025 |              |           |             |
-| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 18/05/2025 |              |           |             |
-| Autoanswer (Mostrar Resultado)                                                           | 18/05/2025 |              |           |             |
-|                                                                                          | 18/05/2025 |              |           |             |
-| Autoanswer (Planejar Dashboard para Ánalise)                                             | 18/05/2025 |              |           |             |
-| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 18/05/2025 |              |           |             |
-|                                                                                          | 18/05/2025 |              |           |             |
+| Autoanswer (Answer - Identificando IAs pelo JSON e se estão disponíveis ou não)          | 19/05/2025 |    14:12     |   14:47   |    35min    |
+| Autoanswer (Answer - Melhorando Estrutura de Arquivos e Melhorado arquivos)              | 19/05/2025 |    17:14     |   17:41   |    27min    |
+|                                                                                          | 19/05/2025 |              |           |             |
+| Autoanswer (Criando Automação para Coletar Resposta (CollectAutoGui - Search))           | 19/05/2025 |              |           |             |
+| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 19/05/2025 |              |           |             |
+| Autoanswer (Responder as questões)                                                       | 19/05/2025 |              |           |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 19/05/2025 |              |           |             |
+| Autoanswer (Mostrar Resultado)                                                           | 19/05/2025 |              |           |             |
+|                                                                                          | 19/05/2025 |              |           |             |
+| Autoanswer (Planejar Dashboard para Ánalise)                                             | 19/05/2025 |              |           |             |
+| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 19/05/2025 |              |           |             |
+|                                                                                          | 19/05/2025 |              |           |             |
 
 <!--
 
