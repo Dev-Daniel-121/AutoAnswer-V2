@@ -108,19 +108,19 @@ fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlk...
 TENDENCIA:           Mate: 50%  Hist: 45%  Mult: 20%
 ANSWERS: +99.999 - CORRECTS: +9.999 - WRONGS: +9.999
 
-[2]. NOME DO PROMPT            A: 100% C: 70% W: 30%
+[2]. NOME DO PROMPT LONG...    A: 100% C: 70% W: 30%
 asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
 fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlk...
 
 TENDENCIA:           ----: --%  ----: --%  ----: --%
-ANSWERS: 000.000 - CORRECTS: 00.000 - WRONGS: 00.000
+ANSWERS: 00.0  -   CORRECTS: 00.0   -   WRONGS: 00.0
 
 [3]. NOME DO PROMPT            A: 100% C: 70% W: 30%
 asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
 fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlk...
 
 TENDENCIA:        Quim: 010%  Biol: 004%  Reda: 001%
-ANSWERS: 100 - CORRECTS: 70 - WRONGS: 30
+ANSWERS: 100    -    CORRECTS: 70    -    WRONGS: 30
 
 [Task] Escolha apenas 1 prompt: 
 

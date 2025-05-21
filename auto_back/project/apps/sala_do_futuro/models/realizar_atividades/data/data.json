@@ -6736,6 +6736,434 @@
                     }
                 }
             }
+        },
+        "69140772": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "69140772",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "História",
+                "activity_title": "“O começo do fim”: a ofensiva dos Aliados na Segunda Guerra Mundial e desdobramentos finais",
+                "user": "Daniel Oliveira Matias",
+                "author": "rafaelcandido3034757-sp",
+                "class_school": "3º B EM",
+                "first_access": "20/05/2025 - 13:15:27",
+                "expires_in": "22/05/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {
+                            "0": {
+                                "type": "video",
+                                "src": "https://www.youtube.com/embed/XE8OUZuF9vA",
+                                "transcription": null
+                            }
+                        },
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Assista ao vídeo para responder às questões:",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "O vídeo apresenta um momento crucial da Segunda Guerra Mundial, que já se desenrolava havia mais de dois anos. A importância da campanha alemã retratada, a Operação Barbarossa, é evidente para a maneira como a guerra se encerrou. A partir do vídeo, ordene corretamente as palavras para completar frase a seguir:O vídeo retrata um momento de virada no conflito, com a...",
+                                "Apesar de focar a chamada Operação Barbarossa, o documentário dá pistas para a compreensão dos movimentos militares anteriores e dos desdobramentos desse evento do conflito. A partir da narrativa do vídeo e de seus conhecimentos, assinale a(s) alternativa(s) correta(s) sobre o desenvolvimento militar da Segunda Guerra Mundial.",
+                                "(UNESP, 2013) \"Enquanto a economia balançava, as instituições da democracia liberal praticamente desapareceram entre 1917 e 1942; restou apenas uma borda da Europa e partes da América do Norte e da Austrália. Enquanto isso, avançavam o fascismo e seu corolário de movimentos e regimes autoritários.A democracia só se salvou porque, para enfrentá-lo, houve uma aliança temporária e bizarra entre capitalismo liberal e comunismo [...]. Uma das ironias deste estranho século é que o resultado mais duradouro da Revolução de Outubro, cujo objetivo era a derrubada global do capitalismo, foi salvar seu antagonista, tanto na guerra quanto na paz, fornecendo-lhe o incentivo — o medo — para reformar-se após a Segunda Guerra Mundial [...].\"(Eric Hobsbawm. Era dos extremos, 1995.)Ao mencionar a aliança temporária e bizarra entre capitalismo liberal e comunismo, o texto refere-se...",
+                                "O final da Segunda Guerra Mundial começava a ser definido com o desdobramento da Operação Barbarossa. A partir daí, uma série de eventos levou à vitória dos Aliados, que derrotaram as forças do Eixo em diversas frentes de batalha. Analise se são verdadeiras ou falsas as afirmações sobre o final da Segunda Guerra Mundial.I - A Operação Barbarossa marca o avanço dos Aliados contra a Alemanha que culmina com a invasão de Berlim, ato que deu fim à guerra.II - O avanço soviético sobre os alemães foi ainda mais problemático para a Alemanha nazista depois da perda de um aliado, a Itália, em 1943.III - Após o avanço sobre a Alemanha nazista, os soviéticos se empenharam na campanha de libertação da França, membro de sua aliança militar que havia sido dominada pelos nazistas em 1940.IV - O avanço tecnológico e a busca por maior poder de destruição levaram à produção de uma arma muito mais potente que qualquer esquadrão de bombardeiros como o demonstrado no vídeo, a bomba atômica.Agora, assinale a alternativa correspondente."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "O vídeo apresenta um momento crucial da Segunda Guerra Mundial, que já se desenrolava havia mais de dois anos. A importância da campanha alemã retratada, a Operação Barbarossa, é evidente para a maneira como a guerra se encerrou. A partir do vídeo, ordene corretamente as palavras para completar frase a seguir:O vídeo retrata um momento de virada no conflito, com a...",
+                                "Apesar de focar a chamada Operação Barbarossa, o documentário dá pistas para a compreensão dos movimentos militares anteriores e dos desdobramentos desse evento do conflito. A partir da narrativa do vídeo e de seus conhecimentos, assinale a(s) alternativa(s) correta(s) sobre o desenvolvimento militar da Segunda Guerra Mundial.",
+                                "(UNESP, 2013) \"Enquanto a economia balançava, as instituições da democracia liberal praticamente desapareceram entre 1917 e 1942; restou apenas uma borda da Europa e partes da América do Norte e da Austrália. Enquanto isso, avançavam o fascismo e seu corolário de movimentos e regimes autoritários.A democracia só se salvou porque, para enfrentá-lo, houve uma aliança temporária e bizarra entre capitalismo liberal e comunismo [...]. Uma das ironias deste estranho século é que o resultado mais duradouro da Revolução de Outubro, cujo objetivo era a derrubada global do capitalismo, foi salvar seu antagonista, tanto na guerra quanto na paz, fornecendo-lhe o incentivo — o medo — para reformar-se após a Segunda Guerra Mundial [...].\"(Eric Hobsbawm. Era dos extremos, 1995.)Ao mencionar a aliança temporária e bizarra entre capitalismo liberal e comunismo, o texto refere-se...",
+                                "O final da Segunda Guerra Mundial começava a ser definido com o desdobramento da Operação Barbarossa. A partir daí, uma série de eventos levou à vitória dos Aliados, que derrotaram as forças do Eixo em diversas frentes de batalha. Analise se são verdadeiras ou falsas as afirmações sobre o final da Segunda Guerra Mundial.I - A Operação Barbarossa marca o avanço dos Aliados contra a Alemanha que culmina com a invasão de Berlim, ato que deu fim à guerra.II - O avanço soviético sobre os alemães foi ainda mais problemático para a Alemanha nazista depois da perda de um aliado, a Itália, em 1943.III - Após o avanço sobre a Alemanha nazista, os soviéticos se empenharam na campanha de libertação da França, membro de sua aliança militar que havia sido dominada pelos nazistas em 1940.IV - O avanço tecnológico e a busca por maior poder de destruição levaram à produção de uma arma muito mais potente que qualquer esquadrão de bombardeiros como o demonstrado no vídeo, a bomba atômica.Agora, assinale a alternativa correspondente."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "O vídeo apresenta um momento crucial da Segunda Guerra Mundial, que já se desenrolava havia mais de dois anos. A importância da campanha alemã retratada, a Operação Barbarossa, é evidente para a maneira como a guerra se encerrou. A partir do vídeo, ordene corretamente as palavras para completar frase a seguir:O vídeo retrata um momento de virada no conflito, com a...",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Apesar de focar a chamada Operação Barbarossa, o documentário dá pistas para a compreensão dos movimentos militares anteriores e dos desdobramentos desse evento do conflito. A partir da narrativa do vídeo e de seus conhecimentos, assinale a(s) alternativa(s) correta(s) sobre o desenvolvimento militar da Segunda Guerra Mundial.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(UNESP, 2013) \"Enquanto a economia balançava, as instituições da democracia liberal praticamente desapareceram entre 1917 e 1942; restou apenas uma borda da Europa e partes da América do Norte e da Austrália. Enquanto isso, avançavam o fascismo e seu corolário de movimentos e regimes autoritários.A democracia só se salvou porque, para enfrentá-lo, houve uma aliança temporária e bizarra entre capitalismo liberal e comunismo [...]. Uma das ironias deste estranho século é que o resultado mais duradouro da Revolução de Outubro, cujo objetivo era a derrubada global do capitalismo, foi salvar seu antagonista, tanto na guerra quanto na paz, fornecendo-lhe o incentivo — o medo — para reformar-se após a Segunda Guerra Mundial [...].\"(Eric Hobsbawm. Era dos extremos, 1995.)Ao mencionar a aliança temporária e bizarra entre capitalismo liberal e comunismo, o texto refere-se...",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) ao esforço conjunto de União Soviética, França, Inglaterra e Estados Unidos na reunificação da Alemanha, após a Segunda Guerra Mundial.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) à articulação militar que uniu Estados Unidos e União Soviética, na Segunda Guerra Mundial, contra os países do Eixo.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) à constituição da Entente que, na Primeira Guerra Mundial, permitiu que países do Ocidente e a Rússia lutassem lado a lado contra a Alemanha.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) corrida armamentista entre União Soviética e Estados Unidos, que estimulou o crescimento econômico e industrial dos dois países.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) aos acordos de paz que, ao final das duas guerras mundiais, ampliaram a influência política e comercial da Rússia e dos países liberais europeus.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "O final da Segunda Guerra Mundial começava a ser definido com o desdobramento da Operação Barbarossa. A partir daí, uma série de eventos levou à vitória dos Aliados, que derrotaram as forças do Eixo em diversas frentes de batalha. Analise se são verdadeiras ou falsas as afirmações sobre o final da Segunda Guerra Mundial.I - A Operação Barbarossa marca o avanço dos Aliados contra a Alemanha que culmina com a invasão de Berlim, ato que deu fim à guerra.II - O avanço soviético sobre os alemães foi ainda mais problemático para a Alemanha nazista depois da perda de um aliado, a Itália, em 1943.III - Após o avanço sobre a Alemanha nazista, os soviéticos se empenharam na campanha de libertação da França, membro de sua aliança militar que havia sido dominada pelos nazistas em 1940.IV - O avanço tecnológico e a busca por maior poder de destruição levaram à produção de uma arma muito mais potente que qualquer esquadrão de bombardeiros como o demonstrado no vídeo, a bomba atômica.Agora, assinale a alternativa correspondente.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) V – V – F – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) V – F – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) V – V – F – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) F – F – V – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) F – V – F – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
         }
     },
     "redacao": {

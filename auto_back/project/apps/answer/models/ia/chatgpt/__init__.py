@@ -1,3 +1,7 @@
-from chatgpt import ChatGpt
+from .models import AutoGUIGPT, AutoStealphGPT
+from .chatgpt import ChatGPT
 
-__all__ = ['ChatGpt']
+__all__ = [
+    'AutoGUIGPT', 'AutoStealphGPT',
+    'ChatGPT'
+]

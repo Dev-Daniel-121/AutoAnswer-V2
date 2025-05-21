@@ -6,7 +6,6 @@ from .collect_task_info.texts import Text
 from project import Display, LogType
 from .collect_time import Time
 from project.apps.answer import Answer
-# import sys, subprocess, os
 
 class CollectInfo:
     def __init__(self, page, activity_status, component):

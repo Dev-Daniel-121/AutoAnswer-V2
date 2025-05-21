@@ -1,5 +1,11 @@
-from .chatgpt import ChatGpt
-from .grok import Grok
-from .ia import Ia
+from .chatgpt import AutoGUIGPT, AutoStealphGPT, ChatGPT
+from .grok import AutoGUIGROK, AutoStealphGROK, Grok
+from .ia_handler import IAHandler
+from .ia import IA
 
-__all__ = ['ChatGpt', 'Grok', 'Ia']
+__all__ = [
+    'AutoGUIGPT', 'AutoStealphGPT', 'ChatGPT',
+    'AutoGUIGROK', 'AutoStealphGROK', 'Grok',
+    'IAHandler',
+    'IA'
+]
