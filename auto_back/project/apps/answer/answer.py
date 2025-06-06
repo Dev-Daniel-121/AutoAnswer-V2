@@ -101,36 +101,55 @@ todo ATALHOS
 
 ~~~~~~ Prompt {IA} (USER) ~~~~~~
 
-[1]. NOME DO PROMPT             A: 100 C: 70% W: 30%
+----------------------------------------------------
+[1]. NOME DO PROMPT               A: 100 C: 70 W: 30
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
 asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlk...
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
+asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
 
-TENDENCIA:           Mate: 50%  Hist: 45%  Mult: 20%
+TENDENCIA:              Mat: 50%  His: 45%  Mul: 20%
 ANSWERS: +99.999 - CORRECTS: +9.999 - WRONGS: +9.999
 
-[2]. NOME DO PROMPT LONG...    A: 100% C: 70% W: 30%
+[2]. NOME DO PROMPT...       A: ---- C: ---- W: ----
 asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlk...
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
 
 TENDENCIA:           ----: --%  ----: --%  ----: --%
 ANSWERS: 00.0  -   CORRECTS: 00.0   -   WRONGS: 00.0
 
-[3]. NOME DO PROMPT            A: 100% C: 70% W: 30%
+[3]. NOME DO PROMPT               A: 100 C: 70 W: 30
 asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlk...
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
 
-TENDENCIA:        Quim: 010%  Biol: 004%  Reda: 001%
+TENDENCIA:                Qui: 10%  Bio: 4%  Red: 1%
 ANSWERS: 100    -    CORRECTS: 70    -    WRONGS: 30
 
+[30]. NOME DO PROMPT MUITO LO...   A: -- C: -- W: --
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
+
+TENDENCIA:           ----: --%  ----: --%  ----: --%
+ANSWERS: 00.0  -   CORRECTS: 00.0   -   WRONGS: 00.0
+ 
 [Task] Escolha apenas 1 prompt: 
+[Answer] 1
+
+[Info] Executando prompt {USER_CHOICE}
 
 ~~~~~~ Working - CollectAutoGUI - {IA} (USER) ~~~~~~
 
-Etapa 1 de 5 - TÍTULO DA ETAPA
+Etapa 1 de 5- TÍTULO DA ETAPA
 
 Duração:
-Total    5s
-Retante  0s
+Total:  195s  -  Retante:  0s
+Acrés: +999s  -  Descrés: -999s
 
 Atalhos:
 [a] Aumenta o tempo em {5s}             [d] Diminui o tempo em {5s}

@@ -7164,6 +7164,2750 @@
                     }
                 }
             }
+        },
+        "69891373": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "69891373",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Orientação de Estudos Língua Portuguesa",
+                "activity_title": "Avaliação: Orientação de Estudos - Língua Portuguesa (3ª série EM)",
+                "user": "Daniel Oliveira Matias",
+                "author": "elizangelamar2741150-sp",
+                "class_school": "3º B EM",
+                "first_access": "30/05/2025 - 23:12:39",
+                "expires_in": "06/06/2025 - 23:59:59",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 2,
+                "question_types": {
+                    "Radios": 4,
+                    "Checkbox": 3
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": "",
+                        "1": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {
+                            "0": {
+                                "type": "gif",
+                                "src": "https://edusp-static.ip.tv/tms/edusp/tarefasp8/3TixRac6iEm0pb6y7waRjNtudT7308.gif"
+                            }
+                        }
+                    },
+                    "secao": "",
+                    "conteudo": "Leia este trecho de artigo de divulgação científica e a imagem que o acompanha para responder às questões de 2 a 4: Estas são as “abelhas do mar” que ajudam a fertilizar algas marinhasAo contrário do que se pensava, a fertilização em plantas auxiliada por animais também acontece no mar. Estas são as “idoteas”, um isópode minúsculo que se abriga nas algas e aumenta o seu sucesso de reprodução.As partículas verdes na imagem correspondem aos gâmetas masculinos \"agarrados\" a este pequeno animal, que depois os dispersará junto das estruturas femininas da algaSÉBASTIEN COLINHá uns pequenos animais marinhos chamados idoteas (Idotea balthica) que funcionam como os animais polinizadores que temos em terra – é como se fossem as “abelhas do mar”. É o nome dado por um grupo de cientistas que descobriu o papel que estes minúsculos animais têm no ciclo de reprodução da alga vermelha Gracilaria gracilis. O estudo que mostra que este tipo de “polinização” também acontece nas águas foi publicado na revista científica Science esta quinta-feira.Estes isópodes – pequenos crustáceos invertebrados – têm entre dois milímetros e 2,5 centímetros de comprimento, mas “aumentam significativamente” o sucesso de fertilização da alga vermelha. Antes, pensava-se que a fertilização desta planta acontecia somente pela movimentação das águas, mas o grupo de cientistas descobriu que estes animais dão uma ajuda preciosa.Fonte: https://www.publico.pt/2022/07/29/azul/noticia/sao-abelhas-mar-ajudam-fertilizar-algas-marinhas-2015360#&gid=1&pid=1 (adaptado)",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "1": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Leia o fragmento deste conto de Lygia Fagundes Telles e responda às questões 5 e 6:Os Objetos— Para que serve isto, Lorena?— É um peso de papel, amor.— Mas se não está pesando em nenhum papel — estranhou ele, lançando um olhar à mesa. Pousou o globo e inclinou-se para a imagem de um anjo dourado, deitado de costas, os braços abertos. — E este anjinho? O que significa este anjinho?Com a ponta da agulha ela tentava desobstruir o furo da conta de coral. Franziu as sobrancelhas.— É um anjo, ora.— Eu sei. Mas para que serve? — insistiu. E apressando-se antes de ser interrompido: — Veja, Lorena, aqui na mesa este anjinho vale tanto quanto o peso de papel sem papel ou aquele cinzeiro sem cinza, quer dizer, não tem sentido nenhum. Quando olhamos para as coisas, quando tocamos nelas é que começam a viver como nós, muito mais importantes do que nós, porque continuam. O cinzeiro recebe a cinza e fica cinzeiro, o vidro pisa o papel e se impõe, esse colar que você está enfiando... É um colar ou um terço?— Um colar.— Podia ser um terço?— Podia.— Então é você que decide. Este anjinho não é nada, mas se toco nele vira anjo mesmo, com funções de anjo.[...] Colocou o anjo na mesa. E apertou os olhos molhados de lágrimas, de costas para ela e inclinado para o abajur. — Veja, Lorena, veja... Os objetos só têm sentido quando têm sentido, fora disso... Eles precisam ser olhados, manuseados. Como nós. Se ninguém me ama, viro uma coisa ainda mais triste do que essas, porque ando, falo, indo e vindo como uma sombra, vazio, vazio.Fonte: https://www.companhiadasletras.com.br/trecho/9788535914313",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 10,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "Os textos narrativos podem apresentar diferentes vozes, de narrador e personagens, e utilizar diferentes recursos para diferenciar essas vozes no texto. Identifique qual trecho a seguir apresenta em destaque a voz do narrador e assinale a alternativa correta.",
+                                "(EBMSP 2016 – Adaptado) Leia a campanha institucional para responder à questão:Fonte: http://imagem.vermelho.org.br/biblioteca/2911_ms71615.jpg. Acesso em 20 ago. 2025 (adaptado.)A campanha institucional em destaque, em sua frase de impacto “Não fique em silêncio”, traz a desconstrução de um discurso formal e tradicional, próprio do ambiente hospitalar, gerando um novo contexto temático, que se propõe a...",
+                                "A composição dos diferentes gêneros jornalísticos contribui para a função comunicativa do texto. Analise a relação entre a imagem presente nesse artigo de divulgação científica e sua função comunicativa e, em seguida, preencha corretamente as lacunas a seguir.",
+                                "Releia o trecho na íntegra e identifique os sinais de pontuação utilizados nesse fragmento do conto que contribuem para a diferenciação no texto da fala do narrador da fala dos personagens. Em seguida, assinale a(s) alternativa(s) correta(s).",
+                                "Leia este fragmento de entrevista para responder à questão:“A solidão é um abrigo”, diz Tamara Klink após viagem de oito meses no ÁrticoPresa de barco no mar congelado, velejadora revela as lições e desafios da última expedição [...]O que mudou em você depois dessa jornada?Sinto que sou mais racional do que antes. E que me tornei tão íntima da minha solidão que ela é uma companhia que posso ter onde quiser. É um refúgio, onde quer que eu esteja. E não é um problema, pena ou punição. A solidão é um abrigo, uma amiga! (risos)Outra coisa que mudou foi minha visão da natureza. Eu cresci em São Paulo e me acostumei, quando criança, a ver a natureza como algo distante. E hoje é impossível separar humano de natureza.Também me sinto mais autoconfiante. Muita gente me disse que meus braços eram fracos, que ia faltar um homem comigo, que eu não saberia me defender sozinha, que o inverno era duro demais, que era nova demais, que não tinha experiência, que ia me faltar razão, que eu ia sofrer de solidão. Várias dessas coisas eram associadas ao meu gênero. E hoje eu vejo que muitas das crenças limitantes que temos como mulheres são mentiras. Agora eu sei o que é ser humana antes de ser mulher.Fonte: https://vejasp.abril.com.br/cultura-lazer/tamara-klink-amarelinhasConforme o relato de Tamara Klink nessa entrevista, assinale a(s) alternativa(s) correta(s).",
+                                "Considerando a finalidade do texto de divulgação científica, ordene corretamente as palavras a seguir para completar as informações do texto abaixo.As menções a pesquisas científicas e o uso de estratégias de impessoalização no texto de divulgação científica contribuem para a credibilidade do texto...",
+                                "Leia este cartaz de conscientização e responda à questão: Fonte: https://www.ceara.gov.br/2024/11/22/seja-voce-com-confianca-campanha-e-mutirao-da-sspds-e-seir-destacam-a-importancia-da-autoidentificacao-na-emissao-de-cins/A finalidade comunicativa desse cartaz é...",
+                                "Leia este trecho de notícia e responda à questão: Moradores reclamam de água suja e com mau cheiro em SP, e Promotoria abre investigaçãoProblema acontece desde janeiro, de acordo com moradores da zona sul da cidade; Sabesp diz que abastecimento está nos padrões de qualidade\"A água ou vem suja, ou não vem\", diz Josefina Cardoso, 65, moradora do Capão Redondo, na zona sul de São Paulo. Desde o início de janeiro, ela e outras pessoas que vivem na região reclamam sobre problemas no abastecimento [...]. As dificuldades persistem, afirmam os atingidos.O líquido estaria saindo das torneiras com mau cheiro e coloração escura. Isso quando o abastecimento não é interrompido por horas. Normalmente, por volta das 16h, só voltando pela manhã do dia seguinte, dizem os usuários. Procurada, a empresa diz que tudo está dentro de seus padrões de qualidade.Fonte: https://www1.folha.uol.com.br/cotidiano/2025/03/moradores-reclamam-de-agua-suja-e-com-mau-cheiro-em-sp-e-promotoria-abre-abre-investigacao.shtmlConsiderando a temática abordada nessa notícia, analise as afirmativas a seguir acerca do efeito de sentido da citação em discurso direto presente no texto. Em seguida, indique se elas estão certas ou erradas.",
+                                "Releia o título e a linha fina do artigo de divulgação científica para responder à questão: Estas são as “abelhas do mar” que ajudam a fertilizar algas marinhasAo contrário do que se pensava, a fertilização em plantas auxiliada por animais também acontece no mar. Estas são as “idoteas”, um isópode minúsculo que se abriga nas algas e aumenta o seu sucesso de reprodução.Fonte: https://www.publico.pt/2022/07/29/azul/noticia/sao-abelhas-mar-ajudam-fertilizar-algas-marinhas-2015360#&gid=1&pid=1Um dos objetivos dos textos de divulgação científica é compartilhar conhecimentos científicos com o leitor. Para isso, diferentes estratégias são utilizadas na composição do texto. A respeito disso, julgue se as afirmativas a seguir são verdadeiras (V) ou falsas (F). Em seguida, assinale a alternativa correta.I. A presença do pronome demonstrativo \"estas\" no título dialoga diretamente com o leitor, atraindo sua atenção.II. O uso da voz passiva em \"ao contrário do que se pensava\" emprega um tom impessoal e objetivo ao texto.III. A composição do texto privilegia o uso de termos técnicos relacionados às ciências biológicas.",
+                                "Leia este infográfico para responder à questão:Fonte: https://www.nexojornal.com.br/grafico/2025/03/13/brasil-cultura-habito-pesquisa-dados-2024Com relação aos motivos apresentados no infográfico para a realização de atividades culturais presenciais no Brasil, assinale a(s) alternativa(s) correta(s)."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "Os textos narrativos podem apresentar diferentes vozes, de narrador e personagens, e utilizar diferentes recursos para diferenciar essas vozes no texto. Identifique qual trecho a seguir apresenta em destaque a voz do narrador e assinale a alternativa correta.",
+                                "(EBMSP 2016 – Adaptado) Leia a campanha institucional para responder à questão:Fonte: http://imagem.vermelho.org.br/biblioteca/2911_ms71615.jpg. Acesso em 20 ago. 2025 (adaptado.)A campanha institucional em destaque, em sua frase de impacto “Não fique em silêncio”, traz a desconstrução de um discurso formal e tradicional, próprio do ambiente hospitalar, gerando um novo contexto temático, que se propõe a...",
+                                "A composição dos diferentes gêneros jornalísticos contribui para a função comunicativa do texto. Analise a relação entre a imagem presente nesse artigo de divulgação científica e sua função comunicativa e, em seguida, preencha corretamente as lacunas a seguir.",
+                                "Releia o trecho na íntegra e identifique os sinais de pontuação utilizados nesse fragmento do conto que contribuem para a diferenciação no texto da fala do narrador da fala dos personagens. Em seguida, assinale a(s) alternativa(s) correta(s).",
+                                "Leia este fragmento de entrevista para responder à questão:“A solidão é um abrigo”, diz Tamara Klink após viagem de oito meses no ÁrticoPresa de barco no mar congelado, velejadora revela as lições e desafios da última expedição [...]O que mudou em você depois dessa jornada?Sinto que sou mais racional do que antes. E que me tornei tão íntima da minha solidão que ela é uma companhia que posso ter onde quiser. É um refúgio, onde quer que eu esteja. E não é um problema, pena ou punição. A solidão é um abrigo, uma amiga! (risos)Outra coisa que mudou foi minha visão da natureza. Eu cresci em São Paulo e me acostumei, quando criança, a ver a natureza como algo distante. E hoje é impossível separar humano de natureza.Também me sinto mais autoconfiante. Muita gente me disse que meus braços eram fracos, que ia faltar um homem comigo, que eu não saberia me defender sozinha, que o inverno era duro demais, que era nova demais, que não tinha experiência, que ia me faltar razão, que eu ia sofrer de solidão. Várias dessas coisas eram associadas ao meu gênero. E hoje eu vejo que muitas das crenças limitantes que temos como mulheres são mentiras. Agora eu sei o que é ser humana antes de ser mulher.Fonte: https://vejasp.abril.com.br/cultura-lazer/tamara-klink-amarelinhasConforme o relato de Tamara Klink nessa entrevista, assinale a(s) alternativa(s) correta(s).",
+                                "Considerando a finalidade do texto de divulgação científica, ordene corretamente as palavras a seguir para completar as informações do texto abaixo.As menções a pesquisas científicas e o uso de estratégias de impessoalização no texto de divulgação científica contribuem para a credibilidade do texto...",
+                                "Leia este cartaz de conscientização e responda à questão: Fonte: https://www.ceara.gov.br/2024/11/22/seja-voce-com-confianca-campanha-e-mutirao-da-sspds-e-seir-destacam-a-importancia-da-autoidentificacao-na-emissao-de-cins/A finalidade comunicativa desse cartaz é...",
+                                "Leia este trecho de notícia e responda à questão: Moradores reclamam de água suja e com mau cheiro em SP, e Promotoria abre investigaçãoProblema acontece desde janeiro, de acordo com moradores da zona sul da cidade; Sabesp diz que abastecimento está nos padrões de qualidade\"A água ou vem suja, ou não vem\", diz Josefina Cardoso, 65, moradora do Capão Redondo, na zona sul de São Paulo. Desde o início de janeiro, ela e outras pessoas que vivem na região reclamam sobre problemas no abastecimento [...]. As dificuldades persistem, afirmam os atingidos.O líquido estaria saindo das torneiras com mau cheiro e coloração escura. Isso quando o abastecimento não é interrompido por horas. Normalmente, por volta das 16h, só voltando pela manhã do dia seguinte, dizem os usuários. Procurada, a empresa diz que tudo está dentro de seus padrões de qualidade.Fonte: https://www1.folha.uol.com.br/cotidiano/2025/03/moradores-reclamam-de-agua-suja-e-com-mau-cheiro-em-sp-e-promotoria-abre-abre-investigacao.shtmlConsiderando a temática abordada nessa notícia, analise as afirmativas a seguir acerca do efeito de sentido da citação em discurso direto presente no texto. Em seguida, indique se elas estão certas ou erradas.",
+                                "Releia o título e a linha fina do artigo de divulgação científica para responder à questão: Estas são as “abelhas do mar” que ajudam a fertilizar algas marinhasAo contrário do que se pensava, a fertilização em plantas auxiliada por animais também acontece no mar. Estas são as “idoteas”, um isópode minúsculo que se abriga nas algas e aumenta o seu sucesso de reprodução.Fonte: https://www.publico.pt/2022/07/29/azul/noticia/sao-abelhas-mar-ajudam-fertilizar-algas-marinhas-2015360#&gid=1&pid=1Um dos objetivos dos textos de divulgação científica é compartilhar conhecimentos científicos com o leitor. Para isso, diferentes estratégias são utilizadas na composição do texto. A respeito disso, julgue se as afirmativas a seguir são verdadeiras (V) ou falsas (F). Em seguida, assinale a alternativa correta.I. A presença do pronome demonstrativo \"estas\" no título dialoga diretamente com o leitor, atraindo sua atenção.II. O uso da voz passiva em \"ao contrário do que se pensava\" emprega um tom impessoal e objetivo ao texto.III. A composição do texto privilegia o uso de termos técnicos relacionados às ciências biológicas.",
+                                "Leia este infográfico para responder à questão:Fonte: https://www.nexojornal.com.br/grafico/2025/03/13/brasil-cultura-habito-pesquisa-dados-2024Com relação aos motivos apresentados no infográfico para a realização de atividades culturais presenciais no Brasil, assinale a(s) alternativa(s) correta(s)."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 10,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "4_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "5_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "6_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "7_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "8_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "9_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Os textos narrativos podem apresentar diferentes vozes, de narrador e personagens, e utilizar diferentes recursos para diferenciar essas vozes no texto. Identifique qual trecho a seguir apresenta em destaque a voz do narrador e assinale a alternativa correta.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) \"— Mas se não está pesando em nenhum papel — estranhou ele, lançando um olhar à mesa. Pousou o globo e inclinou-se para a imagem de um anjo dourado, deitado de costas, os braços abertos.\"",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) \"— E este anjinho? O que significa este anjinho? Com a ponta da agulha ela tentava desobstruir o furo da conta de coral. Franziu as sobrancelhas.\"",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) \"— Eu sei. Mas para que serve? — insistiu. E apressando-se antes de ser interrompido: — Veja, Lorena, aqui na mesa este anjinho vale tanto quanto o peso de papel sem papel ou aquele cinzeiro sem cinza, quer dizer, não tem sentido nenhum.\"",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) \"— Então é você que decide. Este anjinho não é nada, mas se toco nele vira anjo mesmo, com funções de anjo.\"",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) \"— Veja, Lorena, veja... Os objetos só têm sentido quando têm sentido, fora disso... Eles precisam ser olhados, manuseados. Como nós. Se ninguém me ama, viro uma coisa ainda mais triste do que essas, porque ando, falo, indo e vindo como uma sombra, vazio, vazio.\"",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {
+                                "0": {
+                                    "type": "image",
+                                    "src": "https://edusp-static.ip.tv/tms/edusp/tarefasp8/niDh991wGMMtZqFvgOaBnTxSlOMveh.png",
+                                    "local_path": "C:\\Users\\PC\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\69891373 (6d)\\niDh991wGMMtZqFvgOaBnTxSlOMveh.png"
+                                }
+                            },
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(EBMSP 2016 – Adaptado) Leia a campanha institucional para responder à questão:Fonte: http://imagem.vermelho.org.br/biblioteca/2911_ms71615.jpg. Acesso em 20 ago. 2025 (adaptado.)A campanha institucional em destaque, em sua frase de impacto “Não fique em silêncio”, traz a desconstrução de um discurso formal e tradicional, próprio do ambiente hospitalar, gerando um novo contexto temático, que se propõe a...",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) refletir sobre a importância do silêncio para a restituição da saúde dos indivíduos que estão em recuperação nos hospitais das redes públicas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) revisitar a antiga ideologia de que os ambientes médicos precisam de silêncio absoluto, distanciando os pacientes de uma dinâmica mais social.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) convidar os interlocutores a discutir, de forma aberta, os atos de racismo que ainda acontecem em relação a muitos profissionais da área de saúde.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) revelar à população como as segregações sociais ou as discriminações raciais comprometem a saúde de muitas pessoas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) incentivar a população a denunciar qualquer situação que envolva discriminação racial nas unidades da rede de saúde.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "A composição dos diferentes gêneros jornalísticos contribui para a função comunicativa do texto. Analise a relação entre a imagem presente nesse artigo de divulgação científica e sua função comunicativa e, em seguida, preencha corretamente as lacunas a seguir.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Checkbox",
+                        "statement": "Releia o trecho na íntegra e identifique os sinais de pontuação utilizados nesse fragmento do conto que contribuem para a diferenciação no texto da fala do narrador da fala dos personagens. Em seguida, assinale a(s) alternativa(s) correta(s).",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) Aspas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) Travessão.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) Dois-pontos.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) Ponto de exclamação.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) Ponto de interrogação.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "4": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Checkbox",
+                        "statement": "Leia este fragmento de entrevista para responder à questão:“A solidão é um abrigo”, diz Tamara Klink após viagem de oito meses no ÁrticoPresa de barco no mar congelado, velejadora revela as lições e desafios da última expedição [...]O que mudou em você depois dessa jornada?Sinto que sou mais racional do que antes. E que me tornei tão íntima da minha solidão que ela é uma companhia que posso ter onde quiser. É um refúgio, onde quer que eu esteja. E não é um problema, pena ou punição. A solidão é um abrigo, uma amiga! (risos)Outra coisa que mudou foi minha visão da natureza. Eu cresci em São Paulo e me acostumei, quando criança, a ver a natureza como algo distante. E hoje é impossível separar humano de natureza.Também me sinto mais autoconfiante. Muita gente me disse que meus braços eram fracos, que ia faltar um homem comigo, que eu não saberia me defender sozinha, que o inverno era duro demais, que era nova demais, que não tinha experiência, que ia me faltar razão, que eu ia sofrer de solidão. Várias dessas coisas eram associadas ao meu gênero. E hoje eu vejo que muitas das crenças limitantes que temos como mulheres são mentiras. Agora eu sei o que é ser humana antes de ser mulher.Fonte: https://vejasp.abril.com.br/cultura-lazer/tamara-klink-amarelinhasConforme o relato de Tamara Klink nessa entrevista, assinale a(s) alternativa(s) correta(s).",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) Após os meses passados no inverno glacial, Tamara compreendeu a impossibilidade de o homem viver nesse ambiente.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) A visão de Tamara Klink sobre a natureza foi transformada, ela agora a vê como algo inseparável do ser humano.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) A solidão, para Tamara Klink, é vista como um refúgio e uma amiga, não como um problema ou uma punição.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) A velejadora sente-se mais autoconfiante após enfrentar desafios e superá-los durante a expedição.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) Durante a expedição, Tamara Klink superou diversos preconceitos relacionados ao seu gênero.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "5": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Considerando a finalidade do texto de divulgação científica, ordene corretamente as palavras a seguir para completar as informações do texto abaixo.As menções a pesquisas científicas e o uso de estratégias de impessoalização no texto de divulgação científica contribuem para a credibilidade do texto...",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "6": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {
+                                "0": {
+                                    "type": "image",
+                                    "src": "https://edusp-static.ip.tv/tms/edusp/tarefasp8/hpGz2IMvAmPD8FiPKsVAOo95sG0k74.jpg",
+                                    "local_path": "C:\\Users\\PC\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\69891373 (6d)\\hpGz2IMvAmPD8FiPKsVAOo95sG0k74.jpg"
+                                }
+                            },
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Leia este cartaz de conscientização e responda à questão: Fonte: https://www.ceara.gov.br/2024/11/22/seja-voce-com-confianca-campanha-e-mutirao-da-sspds-e-seir-destacam-a-importancia-da-autoidentificacao-na-emissao-de-cins/A finalidade comunicativa desse cartaz é...",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) promover reflexões a respeito da diversidade racial existente no Brasil.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) divulgar novas modalidades de cotas raciais em universidades públicas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) convencer os jovens a utilizarem a nova carteira de identidade nacional.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) incentivar a população a assumir sua identidade étnica na autoidentificação.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) explicar quais são as diferenças fenotípicas entre pretos, pardos e indígenas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "7": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Leia este trecho de notícia e responda à questão: Moradores reclamam de água suja e com mau cheiro em SP, e Promotoria abre investigaçãoProblema acontece desde janeiro, de acordo com moradores da zona sul da cidade; Sabesp diz que abastecimento está nos padrões de qualidade\"A água ou vem suja, ou não vem\", diz Josefina Cardoso, 65, moradora do Capão Redondo, na zona sul de São Paulo. Desde o início de janeiro, ela e outras pessoas que vivem na região reclamam sobre problemas no abastecimento [...]. As dificuldades persistem, afirmam os atingidos.O líquido estaria saindo das torneiras com mau cheiro e coloração escura. Isso quando o abastecimento não é interrompido por horas. Normalmente, por volta das 16h, só voltando pela manhã do dia seguinte, dizem os usuários. Procurada, a empresa diz que tudo está dentro de seus padrões de qualidade.Fonte: https://www1.folha.uol.com.br/cotidiano/2025/03/moradores-reclamam-de-agua-suja-e-com-mau-cheiro-em-sp-e-promotoria-abre-abre-investigacao.shtmlConsiderando a temática abordada nessa notícia, analise as afirmativas a seguir acerca do efeito de sentido da citação em discurso direto presente no texto. Em seguida, indique se elas estão certas ou erradas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "8": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Releia o título e a linha fina do artigo de divulgação científica para responder à questão: Estas são as “abelhas do mar” que ajudam a fertilizar algas marinhasAo contrário do que se pensava, a fertilização em plantas auxiliada por animais também acontece no mar. Estas são as “idoteas”, um isópode minúsculo que se abriga nas algas e aumenta o seu sucesso de reprodução.Fonte: https://www.publico.pt/2022/07/29/azul/noticia/sao-abelhas-mar-ajudam-fertilizar-algas-marinhas-2015360#&gid=1&pid=1Um dos objetivos dos textos de divulgação científica é compartilhar conhecimentos científicos com o leitor. Para isso, diferentes estratégias são utilizadas na composição do texto. A respeito disso, julgue se as afirmativas a seguir são verdadeiras (V) ou falsas (F). Em seguida, assinale a alternativa correta.I. A presença do pronome demonstrativo \"estas\" no título dialoga diretamente com o leitor, atraindo sua atenção.II. O uso da voz passiva em \"ao contrário do que se pensava\" emprega um tom impessoal e objetivo ao texto.III. A composição do texto privilegia o uso de termos técnicos relacionados às ciências biológicas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) F – V – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) F – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) V – F – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) V – F – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) V – V – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "9": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {
+                                "0": {
+                                    "type": "image",
+                                    "src": "https://edusp-static.ip.tv/tms/edusp/tarefasp8/aVajWeukPt6eIJ91UimrwKl9kp65jC.JPG",
+                                    "local_path": "C:\\Users\\PC\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\69891373 (6d)\\aVajWeukPt6eIJ91UimrwKl9kp65jC.JPG"
+                                }
+                            },
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Checkbox",
+                        "statement": "Leia este infográfico para responder à questão:Fonte: https://www.nexojornal.com.br/grafico/2025/03/13/brasil-cultura-habito-pesquisa-dados-2024Com relação aos motivos apresentados no infográfico para a realização de atividades culturais presenciais no Brasil, assinale a(s) alternativa(s) correta(s).",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) O infográfico destaca que os mais velhos priorizam melhorar a saúde (32%).",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) Conhecer novos lugares é o segundo motivo mais citado, com 40% das respostas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) A maioria dos entrevistados gosta de fazer atividades presenciais para conhecer pessoas novas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) Metade das pessoas que participaram da pesquisa realiza atividades culturais presenciais para espairecer.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) Melhorar a saúde é uma razão relevante para 25% dos entrevistados, mas inferior ao interesse por diminuir o estresse.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "70201843": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "70201843",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Língua Portuguesa",
+                "activity_title": "Oralidade: Entrevista - Parte 2",
+                "user": "Daniel Oliveira Matias",
+                "author": "wesleydinizpe4165238-sp",
+                "class_school": "3º B EM",
+                "first_access": "01/06/2025 - 13:51:29",
+                "expires_in": "02/06/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 2,
+                "question_types": {
+                    "Checkbox": 1,
+                    "Radios": 1
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": "",
+                        "1": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {
+                            "0": {
+                                "type": "video",
+                                "src": "https://www.youtube.com/embed/i6uCdGi_JTs",
+                                "transcription": {
+                                    "lang": "en",
+                                    "transcritp": "Aon thank you foring us no thanks for having me so this will be our first time at Rock and re have you ever heard of the festival before and what are your expectations for the concert no absolutely you know rock and Rio is globally known man everyone comes to Brazil cuz they want to go to the Rock and real you know Festival so yeah we was definitely looking forward to coming great great and there is any artist that you want to see the concert you went to Kate Perry's concert last night right yeah yeah I got my kids with me so they they a huge Kate Perry I mean Katy Perry fan so we definitely have to go see her amazing well you are one of the most well-known names in music from the 2000s along with Neo and Maria KY who will be performing on the same day we have been we have seen a lot of excitement around the 2000s music and culture why do you think this is happening again um I think the nostalgic moments of just you know memories and music of the old is definitely coming back because there's a whole different wave of new music coming and um there's obviously a new generation that need to be introduced to the music that inspired what's happening today so I think a lot of that happens and plus social media plays a big part too as why isal is coming in back for sure so you have been to Brazil before what is your best memory here with your fans uh best memories o it's so tough because I'm it's like every day something new is happening and I got the shortest memory span so it would have to be something so crazy that I will always remember but that moment hasn't happened yet wow I don't think remember he went to a Brazilian reality show here Big Brother Brazil in 2010 out I remember I think I do I think I did I want to love you um which was interesting because I think that was was that the show where I was saying I want to love you and the crowd was singing I want to [ __ ] you oh it this was in see it's too many shows yeah yeah yeah there's a lot of memories here there a lot of memories it's so hard to remember you know well Aon you're a hit maker with many popular songs can you share a behind the scenes story about one of Your Biggest Hits something have never told before um that's the thing most of my hits were all based on like real life experiences so I don't think it's nothing that I've never a story that I've never told relating to any of the songs cuz they were all based on something that actually happened but I think obviously the the the tale of me being locked up in jail and not being in a position to see my my my my now wife at the time was the reason why I wrote Mr Lonely wow yeah it's tough you know yeah yeah it's tough It's no joke what is your favorite hit and why that's the thing like only because of these like a lot of these songs all again based on you know more you know intimate and personal experiences that's not really a favorite um but I I can't tell you the song that probably had the most impact in my life was probably Hold My Hand the one I did with Michael Jackson a great song yeah why well I mean because Michael Jackson is a you know iconic figure man that I don't I think the whole universe looked up to at one point of time in the life and Me growing up he was a huge impact of me just understanding music and the dynamic of power and fame and just what he represented to the globe man it was always something that everyone inspired to want to be and me I was able to actually work with him before he passed away so that meant a lot great so let's have a play play a game here uh I will ask you some questions and you'll answer the first thing that comes to your mind and and I will give you this megaphone so you can answer on it uh let just check if it's uh on I testing testing testing one two one2 okay I think it is yes so Aon tell us an artist you love to have a fit with Kendrick Lamar and artist who is on rocking real lineup to collaborate with oh I got to find out who's all on the lineup cuz I collaborated with everybody on the lineup right now almost except the Brazilian artist you said L J I did I did a song with her that's coming wow it's coming a new song with L J coming it's coming next month wow can you tell us about it oh no no but I want the world so yes me and Lou Jam coming out with a amazing song that's dropping next month so definitely look out for it it's going to be it's going to kill Brazil I promise you wow I'm excited so okay my next question would be the Brazilian artist you love to meet but you know I think it's Li it was little jam cuz I got me and Anita we already worked and then um the next record was with L Jam so we're going to see what happens your favorite word in Portuguese uh Gusto okay I hear it a lot I hear it a lot and I was like what is that she's like boy you're so sexy yeah I like that word I like that the best song ever made by anyone my favorite song ever is change comes by Sam cook a song of you that you can't get out of your head it is Mr Lonely and I'll sing as a song of yours that you want to hear the Brazilian crowd singing at Rock and real nobody want to see us together but it don't matter no cuz I Got You Babe amazing Aon thank you so much can you say hi to your Brazilian fans and to the tracklist audience yes Brazilian fans I love you guys it's Aon big shouts to the track list audience peace see you soon"
+                                }
+                            }
+                        },
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Assista ao vídeo a seguir e leia, na sequência, a transcrição de um trecho (00:03 a 05:10) dessa entrevista para responder às questões: ",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "1": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Entrevista: Akon anuncia parceria com Ludmilla, fala sobre carreira e Rock in RioCantor revelou com exclusividade que sua parceria com Ludmilla será lançada em outubro.No dia 22 de setembro, o Rock in Rio será tomado por grandes ícones da música dos anos 2000, prometendo shows memoráveis para o público. Entre os destaques estão Akon, Mariah Carey e Ne-Yo, que devem agitar a multidão com seus hits que marcaram uma geração. Akon, um dos maiores hitmakers da década, levará ao palco toda a energia e carisma que o tornaram uma lenda da música global.Em uma entrevista ao Tracklist, Akon revelou com exclusividade e animação uma nova parceria com Ludmilla, anunciando que a música será lançada no próximo mês. [...]. Entrevista: Akon revela parceria com Ludmilla, fala sobre carreira e expectativas para o Rock in RioTracklist: Esta será a sua primeira vez no Rock in Rio. Você já ouviu falar do festival antes? E quais são as suas expectativas para o show? Akon: Com certeza. Você sabe, o Rock in Rio é conhecido globalmente, cara. Todo mundo vem para o Brasil porque quer ir ao Rock in Rio. Então sim, estávamos definitivamente ansiosos para vir. [...]Tracklist: Ótimo! Um artista que está no lineup do Rock in Rio para colaborar. Akon: Ah, preciso ver quem está no lineup porque já colaborei com quase todo mundo no lineup agora, exceto os artistas brasileiros. Você conhece a Ludmilla? Fiz uma música com ela que está chegando.  Tracklist: Está chegando? Uma nova música com a Ludmilla?Akon: Sai no próximo mês! Tracklist: Uau! Pode nos contar sobre ela? Akon: Ah, não, não. Mas eu quero que o mundo saiba. Sim. Eu e a Ludmilla vamos lançar uma música incrível no próximo mês. Então, fiquem atentos. Vai arrasar! Brasil, eu prometo. ",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "As entrevistas são gêneros textuais tipicamente orais, porque acontecem em diálogos entre um jornalista (o entrevistador) e a pessoa entrevistada. Contudo, é bastante comum que sua circulação aconteça também de forma escrita, em jornais e revistas. Para isso, é necessário transcrever o diálogo da entrevista. Relembre os diferentes tipos de transcrição de entrevista e associe as colunas a seguir.I. Transcrição literalII. Transcrição adaptadaIII. Transcrição para linguagem-padrão( ) Remove elementos irrelevantes da fala, como ruídos e repetições, tornando a transcrição mais objetiva e focada nas informações essenciais.( ) Registra exatamente como a fala ocorreu, incluindo pausas, interjeições e marcas de oralidade, sendo útil para entrevistas, mas trabalhosa.( ) Além de transcrever, ajusta desvios gramaticais para maior clareza, sendo ideal para documentos formais e contextos acadêmicos.",
+                                "Analise as características da transcrição e preencha corretamente as lacunas a seguir.",
+                                "Avalie diferenças existentes entre o vídeo da entrevista e sua respectiva transcrição. Em seguida, assinale as alternativas corretas.",
+                                "(UECE-CEV, 2010 - Adaptado)Não existe memória sem emoçãoO português Antônio Damásio, de 65 anos, é considerado um dos neurocientistas mais respeitados da atualidade. Damásio modificou a compreensão que se tem da biologia das emoções, e de como elas se relacionam com a memória. Ele concedeu a seguinte entrevista à VEJA, de sua sala na Universidade do Sul da Califórnia, em Los Angeles, onde leciona.QUAL É O PAPEL DAS EMOÇÕES NO PROCESSO DE FORMAÇÃO E ARMAZENAMENTO DA MEMÓRIA?A emoção modula constantemente a forma como os dados e os acontecimentos são guardados na memória. Isso é especialmente verdadeiro no que diz respeito à memória para pessoas e para as características relacionadas a elas. Afinal de contas, a sociabilidade faz parte da nossa memória genética, com a qual nascemos e que é resultado de milhões de anos de evolução.COMO AS EMOÇÕES CONTROLAM A MEMORIZAÇÃO?Grande parte de nossas decisões é tomada de maneira mais ou menos automática e inconsciente. Esse processo é guiado pelo valor que se dá às diversas experiências do passado. Por exemplo, se eu conheço uma pessoa que desperta boas emoções em mim, toda vez que eu a encontrar vou reviver uma memória que se divide em dois aspectos: o cognitivo (saber quem é a pessoa) e o emocional (é alguém de quem se gosta). Tais aspectos guiam a forma como conduzimos a relação com os outros.[...]Fonte: VEJA, 13/01/2010. (Adaptado)Julgue as afirmativas a seguir em verdadeiras (V) ou falsas (F), com relação ao que se diz sobre o gênero entrevista em geral e sobre a entrevista lida. Em seguida, assinale a alternativa correta.I. Uma entrevista pressupõe a interação entre duas ou mais pessoas.II. O gênero \"entrevista\", embora tenha uma estrutura geral, realiza-se como gêneros diversos ou \"subgêneros\", que apresentam estilos e propósitos diferentes e variam de acordo com o público-alvo.III. É o entrevistador quem fecha e abre a entrevista. Na abertura, há a apresentação do entrevistado com dados que justificam a entrevista. O entrevistador pode fechar a entrevista com o resumo do que foi dito ou com a última pergunta.IV. A entrevista é um gênero primordialmente escrito. Por isso, ao editá-la, o jornalista geralmente inclui só parte do material colhido, excluindo as marcas da oralidade (hesitações, falsos começos, repetições etc.) e da interação (comentários do ouvinte, sobreposições, pausas etc.)."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "As entrevistas são gêneros textuais tipicamente orais, porque acontecem em diálogos entre um jornalista (o entrevistador) e a pessoa entrevistada. Contudo, é bastante comum que sua circulação aconteça também de forma escrita, em jornais e revistas. Para isso, é necessário transcrever o diálogo da entrevista. Relembre os diferentes tipos de transcrição de entrevista e associe as colunas a seguir.I. Transcrição literalII. Transcrição adaptadaIII. Transcrição para linguagem-padrão( ) Remove elementos irrelevantes da fala, como ruídos e repetições, tornando a transcrição mais objetiva e focada nas informações essenciais.( ) Registra exatamente como a fala ocorreu, incluindo pausas, interjeições e marcas de oralidade, sendo útil para entrevistas, mas trabalhosa.( ) Além de transcrever, ajusta desvios gramaticais para maior clareza, sendo ideal para documentos formais e contextos acadêmicos.",
+                                "Analise as características da transcrição e preencha corretamente as lacunas a seguir.",
+                                "Avalie diferenças existentes entre o vídeo da entrevista e sua respectiva transcrição. Em seguida, assinale as alternativas corretas.",
+                                "(UECE-CEV, 2010 - Adaptado)Não existe memória sem emoçãoO português Antônio Damásio, de 65 anos, é considerado um dos neurocientistas mais respeitados da atualidade. Damásio modificou a compreensão que se tem da biologia das emoções, e de como elas se relacionam com a memória. Ele concedeu a seguinte entrevista à VEJA, de sua sala na Universidade do Sul da Califórnia, em Los Angeles, onde leciona.QUAL É O PAPEL DAS EMOÇÕES NO PROCESSO DE FORMAÇÃO E ARMAZENAMENTO DA MEMÓRIA?A emoção modula constantemente a forma como os dados e os acontecimentos são guardados na memória. Isso é especialmente verdadeiro no que diz respeito à memória para pessoas e para as características relacionadas a elas. Afinal de contas, a sociabilidade faz parte da nossa memória genética, com a qual nascemos e que é resultado de milhões de anos de evolução.COMO AS EMOÇÕES CONTROLAM A MEMORIZAÇÃO?Grande parte de nossas decisões é tomada de maneira mais ou menos automática e inconsciente. Esse processo é guiado pelo valor que se dá às diversas experiências do passado. Por exemplo, se eu conheço uma pessoa que desperta boas emoções em mim, toda vez que eu a encontrar vou reviver uma memória que se divide em dois aspectos: o cognitivo (saber quem é a pessoa) e o emocional (é alguém de quem se gosta). Tais aspectos guiam a forma como conduzimos a relação com os outros.[...]Fonte: VEJA, 13/01/2010. (Adaptado)Julgue as afirmativas a seguir em verdadeiras (V) ou falsas (F), com relação ao que se diz sobre o gênero entrevista em geral e sobre a entrevista lida. Em seguida, assinale a alternativa correta.I. Uma entrevista pressupõe a interação entre duas ou mais pessoas.II. O gênero \"entrevista\", embora tenha uma estrutura geral, realiza-se como gêneros diversos ou \"subgêneros\", que apresentam estilos e propósitos diferentes e variam de acordo com o público-alvo.III. É o entrevistador quem fecha e abre a entrevista. Na abertura, há a apresentação do entrevistado com dados que justificam a entrevista. O entrevistador pode fechar a entrevista com o resumo do que foi dito ou com a última pergunta.IV. A entrevista é um gênero primordialmente escrito. Por isso, ao editá-la, o jornalista geralmente inclui só parte do material colhido, excluindo as marcas da oralidade (hesitações, falsos começos, repetições etc.) e da interação (comentários do ouvinte, sobreposições, pausas etc.)."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "As entrevistas são gêneros textuais tipicamente orais, porque acontecem em diálogos entre um jornalista (o entrevistador) e a pessoa entrevistada. Contudo, é bastante comum que sua circulação aconteça também de forma escrita, em jornais e revistas. Para isso, é necessário transcrever o diálogo da entrevista. Relembre os diferentes tipos de transcrição de entrevista e associe as colunas a seguir.I. Transcrição literalII. Transcrição adaptadaIII. Transcrição para linguagem-padrão( ) Remove elementos irrelevantes da fala, como ruídos e repetições, tornando a transcrição mais objetiva e focada nas informações essenciais.( ) Registra exatamente como a fala ocorreu, incluindo pausas, interjeições e marcas de oralidade, sendo útil para entrevistas, mas trabalhosa.( ) Além de transcrever, ajusta desvios gramaticais para maior clareza, sendo ideal para documentos formais e contextos acadêmicos.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Analise as características da transcrição e preencha corretamente as lacunas a seguir.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Checkbox",
+                        "statement": "Avalie diferenças existentes entre o vídeo da entrevista e sua respectiva transcrição. Em seguida, assinale as alternativas corretas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) As perguntas realizadas pela jornalista foram transcritas utilizando recursos gráficos de discurso indireto, como aspas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) As formas verbais empregadas durante o diálogo no vídeo se referem à entrevista como um evento ocorrido no passado.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) A situação comunicativa da entrevista, de interação entre a jornalista e Akon, apresenta também diálogos diretos com o espectador.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) A publicação da transcrição inclui parágrafos introdutórios, ausentes no vídeo, que antecipam as informações da entrevista.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) A transcrição adaptou algumas falas para a versão escrita, modificando e encurtando algumas informações.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(UECE-CEV, 2010 - Adaptado)Não existe memória sem emoçãoO português Antônio Damásio, de 65 anos, é considerado um dos neurocientistas mais respeitados da atualidade. Damásio modificou a compreensão que se tem da biologia das emoções, e de como elas se relacionam com a memória. Ele concedeu a seguinte entrevista à VEJA, de sua sala na Universidade do Sul da Califórnia, em Los Angeles, onde leciona.QUAL É O PAPEL DAS EMOÇÕES NO PROCESSO DE FORMAÇÃO E ARMAZENAMENTO DA MEMÓRIA?A emoção modula constantemente a forma como os dados e os acontecimentos são guardados na memória. Isso é especialmente verdadeiro no que diz respeito à memória para pessoas e para as características relacionadas a elas. Afinal de contas, a sociabilidade faz parte da nossa memória genética, com a qual nascemos e que é resultado de milhões de anos de evolução.COMO AS EMOÇÕES CONTROLAM A MEMORIZAÇÃO?Grande parte de nossas decisões é tomada de maneira mais ou menos automática e inconsciente. Esse processo é guiado pelo valor que se dá às diversas experiências do passado. Por exemplo, se eu conheço uma pessoa que desperta boas emoções em mim, toda vez que eu a encontrar vou reviver uma memória que se divide em dois aspectos: o cognitivo (saber quem é a pessoa) e o emocional (é alguém de quem se gosta). Tais aspectos guiam a forma como conduzimos a relação com os outros.[...]Fonte: VEJA, 13/01/2010. (Adaptado)Julgue as afirmativas a seguir em verdadeiras (V) ou falsas (F), com relação ao que se diz sobre o gênero entrevista em geral e sobre a entrevista lida. Em seguida, assinale a alternativa correta.I. Uma entrevista pressupõe a interação entre duas ou mais pessoas.II. O gênero \"entrevista\", embora tenha uma estrutura geral, realiza-se como gêneros diversos ou \"subgêneros\", que apresentam estilos e propósitos diferentes e variam de acordo com o público-alvo.III. É o entrevistador quem fecha e abre a entrevista. Na abertura, há a apresentação do entrevistado com dados que justificam a entrevista. O entrevistador pode fechar a entrevista com o resumo do que foi dito ou com a última pergunta.IV. A entrevista é um gênero primordialmente escrito. Por isso, ao editá-la, o jornalista geralmente inclui só parte do material colhido, excluindo as marcas da oralidade (hesitações, falsos começos, repetições etc.) e da interação (comentários do ouvinte, sobreposições, pausas etc.).",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) F – V – F – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) F – V – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) V – F – F – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) V – F – V – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) V – V – V – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "70919780": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "70919780",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Física",
+                "activity_title": "Retomando e aprofundando aprendizagem: calorimetria e gases perfeitos",
+                "user": "Daniel Oliveira Matias",
+                "author": "francineidean1769666-sp",
+                "class_school": "3º B EM",
+                "first_access": "05/06/2025 - 15:28:15",
+                "expires_in": "09/06/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 2,
+                "question_types": {
+                    "Radios": 1
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": "",
+                        "1": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {
+                            "0": {
+                                "type": "image",
+                                "src": "https://edusp-static.ip.tv/tms/edusp/tspcnt3/Uyksge1BlOb4ihyEP4mqxQasq28Ay8.png",
+                                "local_path": "C:\\Users\\PC\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\70919780 (6d)\\Uyksge1BlOb4ihyEP4mqxQasq28Ay8.png"
+                            }
+                        },
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Analise a imagem a seguir para responder às próximas questões:Fonte: SEDUC-SP, 2025",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "1": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {
+                            "0": {
+                                "type": "image",
+                                "src": "https://edusp-static.ip.tv/tms/edusp/tspcnt3/wQSozbaxplIKocspUKioVOeIjAorTo.jpg",
+                                "local_path": "C:\\Users\\PC\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\70919780 (6d)\\wQSozbaxplIKocspUKioVOeIjAorTo.jpg"
+                            }
+                        },
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Leia o texto para responder às questões:CICLO DE CARNOTEsse ciclo foi inicialmente proposto pelo físico e engenheiro militar Nicolas Léonard Sadi Carnot no ano de 1824. Ele pode ser representado por uma sequência de transformações gasosas onde uma máquina térmica tem o seu rendimento máximo operando em ciclos, diante de duas fontes térmicas. Carnot mostrou que quanto maior a temperatura da fonte quente, maior seria seu rendimento para uma substância que se comportasse como um gás ideal.O ciclo de Carnot é constituído de duas transformações isotérmicas: uma para a temperatura T1 da fonte quente onde ocorre o processo de expansão e a outra temperatura T2 referente a fonte fria onde ocorre o processo de compressão. Cada uma dessas transformações é intercalada com duas transformações adiabáticas.Fonte: https://www.if.ufrgs.br/~dschulz/web/ciclo_carnot.htm",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "Com base na análise do gráfico e na sua compreensão a respeito de transformações térmicas, aponte as afirmações corretas.",
+                                "Imagine que um bloco de gelo com massa de 1000 gramas precise ser derretido. Para isso, é colocado em um recipiente e aquecido por uma chama que fornece energia de forma constante ao longo de um minuto.Se, inicialmente, o bloco de gelo possuía temperatura de -10 °C e, após o derretimento, alcance uma temperatura de 10 °C, calcule a potência, em watts, da chama que aquece o recipiente.Dados:Calor específico do gelo: cgelo = 0,5 cal/g.°CCalor latente do gelo: L = 80 cal/gCalor específico da água: cágua = 1 cal/g.°C1 caloria = 4,2 joule",
+                                "Sobre o ciclo de Carnot e máquinas térmicas, preencha as lacunas para completar a frase.",
+                                "Analise o ciclo de Carnot apresentado e aponte as afirmativas corretas."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "Com base na análise do gráfico e na sua compreensão a respeito de transformações térmicas, aponte as afirmações corretas.",
+                                "Imagine que um bloco de gelo com massa de 1000 gramas precise ser derretido. Para isso, é colocado em um recipiente e aquecido por uma chama que fornece energia de forma constante ao longo de um minuto.Se, inicialmente, o bloco de gelo possuía temperatura de -10 °C e, após o derretimento, alcance uma temperatura de 10 °C, calcule a potência, em watts, da chama que aquece o recipiente.Dados:Calor específico do gelo: cgelo = 0,5 cal/g.°CCalor latente do gelo: L = 80 cal/gCalor específico da água: cágua = 1 cal/g.°C1 caloria = 4,2 joule",
+                                "Sobre o ciclo de Carnot e máquinas térmicas, preencha as lacunas para completar a frase.",
+                                "Analise o ciclo de Carnot apresentado e aponte as afirmativas corretas."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Com base na análise do gráfico e na sua compreensão a respeito de transformações térmicas, aponte as afirmações corretas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Imagine que um bloco de gelo com massa de 1000 gramas precise ser derretido. Para isso, é colocado em um recipiente e aquecido por uma chama que fornece energia de forma constante ao longo de um minuto.Se, inicialmente, o bloco de gelo possuía temperatura de -10 °C e, após o derretimento, alcance uma temperatura de 10 °C, calcule a potência, em watts, da chama que aquece o recipiente.Dados:Calor específico do gelo: cgelo = 0,5 cal/g.°CCalor latente do gelo: L = 80 cal/gCalor específico da água: cágua = 1 cal/g.°C1 caloria = 4,2 joule",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 250 W.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 1050 W.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 6650 W.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 63000 W.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 399000 W.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Sobre o ciclo de Carnot e máquinas térmicas, preencha as lacunas para completar a frase.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Analise o ciclo de Carnot apresentado e aponte as afirmativas corretas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "70910545": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "70910545",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Língua Portuguesa",
+                "activity_title": "A mídia molda a percepção social? - Parte 2",
+                "user": "Daniel Oliveira Matias",
+                "author": "wesleydinizpe4165238-sp",
+                "class_school": "3º B EM",
+                "first_access": "06/06/2025 - 00:50:09",
+                "expires_in": "09/06/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {},
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Leia os trechos destas reportagens e responda às atividades: Texto IReforçar o papel social de \"rainha do lar\" sobrecarrega apenas a mulherMuitos empregadores se preocupam na contratação de mulheres, quando sabem que elas são mães, mas não se preocupam quando contratam homens pelo fato de eles serem paisHá uma construção histórica em torno dos papéis de gênero na sociedade. Homens e mulheres são divididos em dois grupos sociais que seriam responsáveis por tarefas diferentes. Essas “responsabilidades familiares” é o tema do segundo episódio da série Mulheres e Justiça. A professora Fabiana Severi recebe Regina Stela Vieira, professora da Faculdade de Direito da Universidade Federal de Pernambuco e do Programa de Pós-Graduação em Direito da Universidade do Oeste de Santa Catarina. Regina lembra que enquanto os homens são vistos como provedores, responsáveis por ocupar os espaços públicos, o mercado de trabalho e a política, as mulheres são tidas como cuidadoras, como se naturalmente estivessem predispostas ao espaço privado, à manutenção da casa e à criação dos filhos, o que nos estudos feministas é chamado de divisão sexual do trabalho. “O papel social dos homens é muito mais valorizado, isso fica evidenciado nas desigualdades que acontecem no mercado de trabalho. Muitos dos empregadores se preocupam na contratação de mulheres, quando sabem que elas são mães, mas não se preocupam quando contratam homens pelo fato de eles serem pais.” Fonte: https://jornal.usp.br/atualidades/reforcar-o-papel-social-de-rainha-do-lar-sobrecarrega-apenas-a-mulher/.Texto II Reforma do Código Civil prevê compensação por trabalho domésticoMudança valerá somente para relacionamentos no regime de separação de bensSão PauloO projeto de reforma do Código Civil prevê que o trabalho na residência da família e os cuidados com os filhos darão direito a uma compensação a ser fixada pelo juiz em caso de divórcio ou morte do cônjuge ou companheiro.O dispositivo será aplicado apenas às uniões no regime de separação total de bens e busca remunerar o chamado trabalho invisível, em que a pessoa que assumiu a tarefa doméstica, muitas vezes abandonando um emprego fora de casa, corre o risco de sair do relacionamento sem direito a nada.O código atual, sancionado em 2002, não prevê essa compensação. Alguns juízes estabelecem indenizações nesses casos, mas não há uma jurisprudência definida sobre a questão. Há também pactos antenupciais que preveem essa remuneração, algo que ainda é raro no país.Fonte: https://www1.folha.uol.com.br/mercado/2025/03/reforma-do-codigo-civil-preve-compensacao-por-trabalho-domestico.shtml.",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "Nessa aula, vimos diferentes abordagens jornalísticas a respeito de um mesmo fato. Qual é o fato abordado nos textos I e II? Assinale a alternativa que responde corretamente à questão.",
+                                "As palavras escolhidas na composição de um texto jornalístico são fundamentais na exposição de um ponto de vista acerca do fato abordado. Analise a seguir expressões utilizadas no Texto I e associe corretamente cada expressão ao seu efeito de sentido no texto.( ) \"os homens são vistos como provedores”( ) \"direito a uma compensação a ser fixada pelo juiz”( ) \"construção histórica em torno dos papéis de gênero”( ) \"mas não há uma jurisprudência definida sobre a questão”I. Os homens são considerados os responsáveis pelo sustento financeiro da família.II. Ainda não existe uma decisão judicial padronizada sobre a compensação pelo trabalho doméstico.III. Os papéis sociais de homens e mulheres na sociedade não são naturais, mas construções culturais.IV. O valor da indenização financeira para mulheres viúvas e/ou divorciadas seria determinado por um juiz.",
+                                "Releia este trecho do Texto II.\"O código atual, sancionado em 2002, não prevê essa compensação. Alguns juízes estabelecem indenizações nesses casos, mas não há uma jurisprudência definida sobre a questão. Há também pactos antenupciais que preveem essa remuneração, algo que ainda é raro no país.\"Fonte: https://www1.folha.uol.com.br/mercado/2025/03/reforma-do-codigo-civil-preve-compensacao-por-trabalho-domestico.shtml.Qual é a diferença central na abordagem do Texto II em relação ao Texto I? Analise as afirmativas a seguir e assinale as alternativas como \"certas\" ou \"erradas\".",
+                                "Analise as afirmativas a seguir a respeito dos efeitos da abordagem de cada um dos textos nos leitores e julgue-as como verdadeiras (V) ou falsas (F). Depois, assinale a alternativa com a sequência correta.I. A apresentação de especialistas e referências acadêmicas no texto I pode conferir credibilidade ao texto, incentivando o leitor a enxergar a desigualdade como um problema social histórico.II. O uso de termos como \"rainha do lar\" em tom crítico no texto I pode despertar no leitor um questionamento sobre o caráter religioso dessa visão a respeito das mulheres.III. O fato de a mudança legal ser restrita ao regime de separação total de bens pode fazer com que o leitor do texto II aceite a medida como suficiente para garantir justiça às mulheres que desempenham trabalho doméstico.IV. A menção à falta de jurisprudência no texto II pode fazer com que o leitor perceba a insegurança jurídica existente para quem se dedica ao trabalho doméstico sem garantias."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "Nessa aula, vimos diferentes abordagens jornalísticas a respeito de um mesmo fato. Qual é o fato abordado nos textos I e II? Assinale a alternativa que responde corretamente à questão.",
+                                "As palavras escolhidas na composição de um texto jornalístico são fundamentais na exposição de um ponto de vista acerca do fato abordado. Analise a seguir expressões utilizadas no Texto I e associe corretamente cada expressão ao seu efeito de sentido no texto.( ) \"os homens são vistos como provedores”( ) \"direito a uma compensação a ser fixada pelo juiz”( ) \"construção histórica em torno dos papéis de gênero”( ) \"mas não há uma jurisprudência definida sobre a questão”I. Os homens são considerados os responsáveis pelo sustento financeiro da família.II. Ainda não existe uma decisão judicial padronizada sobre a compensação pelo trabalho doméstico.III. Os papéis sociais de homens e mulheres na sociedade não são naturais, mas construções culturais.IV. O valor da indenização financeira para mulheres viúvas e/ou divorciadas seria determinado por um juiz.",
+                                "Releia este trecho do Texto II.\"O código atual, sancionado em 2002, não prevê essa compensação. Alguns juízes estabelecem indenizações nesses casos, mas não há uma jurisprudência definida sobre a questão. Há também pactos antenupciais que preveem essa remuneração, algo que ainda é raro no país.\"Fonte: https://www1.folha.uol.com.br/mercado/2025/03/reforma-do-codigo-civil-preve-compensacao-por-trabalho-domestico.shtml.Qual é a diferença central na abordagem do Texto II em relação ao Texto I? Analise as afirmativas a seguir e assinale as alternativas como \"certas\" ou \"erradas\".",
+                                "Analise as afirmativas a seguir a respeito dos efeitos da abordagem de cada um dos textos nos leitores e julgue-as como verdadeiras (V) ou falsas (F). Depois, assinale a alternativa com a sequência correta.I. A apresentação de especialistas e referências acadêmicas no texto I pode conferir credibilidade ao texto, incentivando o leitor a enxergar a desigualdade como um problema social histórico.II. O uso de termos como \"rainha do lar\" em tom crítico no texto I pode despertar no leitor um questionamento sobre o caráter religioso dessa visão a respeito das mulheres.III. O fato de a mudança legal ser restrita ao regime de separação total de bens pode fazer com que o leitor do texto II aceite a medida como suficiente para garantir justiça às mulheres que desempenham trabalho doméstico.IV. A menção à falta de jurisprudência no texto II pode fazer com que o leitor perceba a insegurança jurídica existente para quem se dedica ao trabalho doméstico sem garantias."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Nessa aula, vimos diferentes abordagens jornalísticas a respeito de um mesmo fato. Qual é o fato abordado nos textos I e II? Assinale a alternativa que responde corretamente à questão.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) A preocupação de empregadores na contratação de mulheres que sejam mães.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) O papel social exercido pelos homens de provedores financeiros de suas famílias.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) O dever de o Estado compensar as mulheres pelo exercício do trabalho doméstico.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) As fragilidades da legislação brasileira no amparo de mulheres viúvas e divorciadas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) A vulnerabilidade das mulheres em decorrência da sobrecarga dos trabalhos de cuidado.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "As palavras escolhidas na composição de um texto jornalístico são fundamentais na exposição de um ponto de vista acerca do fato abordado. Analise a seguir expressões utilizadas no Texto I e associe corretamente cada expressão ao seu efeito de sentido no texto.( ) \"os homens são vistos como provedores”( ) \"direito a uma compensação a ser fixada pelo juiz”( ) \"construção histórica em torno dos papéis de gênero”( ) \"mas não há uma jurisprudência definida sobre a questão”I. Os homens são considerados os responsáveis pelo sustento financeiro da família.II. Ainda não existe uma decisão judicial padronizada sobre a compensação pelo trabalho doméstico.III. Os papéis sociais de homens e mulheres na sociedade não são naturais, mas construções culturais.IV. O valor da indenização financeira para mulheres viúvas e/ou divorciadas seria determinado por um juiz.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Releia este trecho do Texto II.\"O código atual, sancionado em 2002, não prevê essa compensação. Alguns juízes estabelecem indenizações nesses casos, mas não há uma jurisprudência definida sobre a questão. Há também pactos antenupciais que preveem essa remuneração, algo que ainda é raro no país.\"Fonte: https://www1.folha.uol.com.br/mercado/2025/03/reforma-do-codigo-civil-preve-compensacao-por-trabalho-domestico.shtml.Qual é a diferença central na abordagem do Texto II em relação ao Texto I? Analise as afirmativas a seguir e assinale as alternativas como \"certas\" ou \"erradas\".",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Analise as afirmativas a seguir a respeito dos efeitos da abordagem de cada um dos textos nos leitores e julgue-as como verdadeiras (V) ou falsas (F). Depois, assinale a alternativa com a sequência correta.I. A apresentação de especialistas e referências acadêmicas no texto I pode conferir credibilidade ao texto, incentivando o leitor a enxergar a desigualdade como um problema social histórico.II. O uso de termos como \"rainha do lar\" em tom crítico no texto I pode despertar no leitor um questionamento sobre o caráter religioso dessa visão a respeito das mulheres.III. O fato de a mudança legal ser restrita ao regime de separação total de bens pode fazer com que o leitor do texto II aceite a medida como suficiente para garantir justiça às mulheres que desempenham trabalho doméstico.IV. A menção à falta de jurisprudência no texto II pode fazer com que o leitor perceba a insegurança jurídica existente para quem se dedica ao trabalho doméstico sem garantias.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) F – V – F – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) V – F – F – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) V – F – F – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) V – F – V – F.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) V – V – F – V.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        },
+        "71051809": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "71051809",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Matemática",
+                "activity_title": "Relações métricas entre elementos de uma pirâmide",
+                "user": "Daniel Oliveira Matias",
+                "author": "anaselmaxavie2495862-sp",
+                "class_school": "3º B EM",
+                "first_access": "06/06/2025 - 00:55:29",
+                "expires_in": "10/06/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {
+                            "0": {
+                                "type": "image",
+                                "src": "https://edusp-static.ip.tv/tms/edusp/tspmat8/FYQyDvcyS4XJdJONACqpw4Xp9KjgLz.png",
+                                "local_path": "C:\\Users\\PC\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\71051809 (6d)\\FYQyDvcyS4XJdJONACqpw4Xp9KjgLz.png"
+                            }
+                        },
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Veja a imagem para responder às questões: Fonte: https://es.aliexpress.com/i/1005006083913378.html.",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "Identifique os triângulos presentes nas faces laterais da vela cônico-hexagonal e preencha a lacuna a seguir.",
+                                "Sobre as medidas da vela cônico-hexagonal, julgue as afirmativas a seguir e as classifique como certas ou erradas.",
+                                "Outra vela cônico-hexagonal foi produzida, com aresta laterais de 17 cm e altura de 15 cm. Assinale a alternativa que apresenta corretamente a medida das arestas da base dessa vela.",
+                                "(Unilago, 2018) Na Figura 2, temos a representação do projeto de uma pirâmide em acrílico (Figura 1) que será utilizada na disciplina de Nutrição para discutir reeducação alimentar. A pirâmide [ABCDV], representada na Figura 2, é quadrangular regular. A Figura 2 não está desenhada em escala.Admita que, na Figura 2:a) a base [ABCD] da pirâmide pertence ao sistema cartesiano ortogonal xOy.b) o ponto A tem coordenadas (1, 1).c) o ponto B tem coordenadas (3, 1).d) a medida da altura da pirâmide é 2﻿6\\sqrt{6}6​﻿ unidades.Com base nessas informações, considere as afirmativas a seguir.I. O apótema da pirâmide mede ﻿6\\sqrt{6}6​﻿ unidades.II. A distância entre os pontos A e B mede 2 unidades.III. O raio da circunferência inscrita na base [ABCD] da pirâmide mede 1 unidade.IV. O centro da base [ABCD] da pirâmide é o centro da circunferência inscrita nesse polígono.Assinale a alternativa correta."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "Identifique os triângulos presentes nas faces laterais da vela cônico-hexagonal e preencha a lacuna a seguir.",
+                                "Sobre as medidas da vela cônico-hexagonal, julgue as afirmativas a seguir e as classifique como certas ou erradas.",
+                                "Outra vela cônico-hexagonal foi produzida, com aresta laterais de 17 cm e altura de 15 cm. Assinale a alternativa que apresenta corretamente a medida das arestas da base dessa vela.",
+                                "(Unilago, 2018) Na Figura 2, temos a representação do projeto de uma pirâmide em acrílico (Figura 1) que será utilizada na disciplina de Nutrição para discutir reeducação alimentar. A pirâmide [ABCDV], representada na Figura 2, é quadrangular regular. A Figura 2 não está desenhada em escala.Admita que, na Figura 2:a) a base [ABCD] da pirâmide pertence ao sistema cartesiano ortogonal xOy.b) o ponto A tem coordenadas (1, 1).c) o ponto B tem coordenadas (3, 1).d) a medida da altura da pirâmide é 2﻿6\\sqrt{6}6​﻿ unidades.Com base nessas informações, considere as afirmativas a seguir.I. O apótema da pirâmide mede ﻿6\\sqrt{6}6​﻿ unidades.II. A distância entre os pontos A e B mede 2 unidades.III. O raio da circunferência inscrita na base [ABCD] da pirâmide mede 1 unidade.IV. O centro da base [ABCD] da pirâmide é o centro da circunferência inscrita nesse polígono.Assinale a alternativa correta."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Identifique os triângulos presentes nas faces laterais da vela cônico-hexagonal e preencha a lacuna a seguir.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Sobre as medidas da vela cônico-hexagonal, julgue as afirmativas a seguir e as classifique como certas ou erradas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Outra vela cônico-hexagonal foi produzida, com aresta laterais de 17 cm e altura de 15 cm. Assinale a alternativa que apresenta corretamente a medida das arestas da base dessa vela.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 5 cm",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 6 cm",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 7 cm",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 8 cm",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 9 cm",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {
+                                "0": {
+                                    "type": "image",
+                                    "src": "https://edusp-static.ip.tv/tms/edusp/tspmat8/1lhPauu9dF8BvKZGA3Sw2QHyHJRwoq.png",
+                                    "local_path": "C:\\Users\\PC\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\71051809 (6d)\\1lhPauu9dF8BvKZGA3Sw2QHyHJRwoq.png"
+                                }
+                            },
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(Unilago, 2018) Na Figura 2, temos a representação do projeto de uma pirâmide em acrílico (Figura 1) que será utilizada na disciplina de Nutrição para discutir reeducação alimentar. A pirâmide [ABCDV], representada na Figura 2, é quadrangular regular. A Figura 2 não está desenhada em escala.Admita que, na Figura 2:a) a base [ABCD] da pirâmide pertence ao sistema cartesiano ortogonal xOy.b) o ponto A tem coordenadas (1, 1).c) o ponto B tem coordenadas (3, 1).d) a medida da altura da pirâmide é 2﻿6\\sqrt{6}6​﻿ unidades.Com base nessas informações, considere as afirmativas a seguir.I. O apótema da pirâmide mede ﻿6\\sqrt{6}6​﻿ unidades.II. A distância entre os pontos A e B mede 2 unidades.III. O raio da circunferência inscrita na base [ABCD] da pirâmide mede 1 unidade.IV. O centro da base [ABCD] da pirâmide é o centro da circunferência inscrita nesse polígono.Assinale a alternativa correta.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) Somente as afirmativas I e II são corretas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) Somente as afirmativas I e IV são corretas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) Somente as afirmativas III e IV são corretas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) Somente as afirmativas I, II e III são corretas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) Somente as afirmativas II, III e IV são corretas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
         }
     },
     "redacao": {

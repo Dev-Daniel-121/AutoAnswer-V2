@@ -251,29 +251,118 @@
 
 | O que está sendo feito                                                                   |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
 | :--------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-| Autoanswer (Answer - Melhorando Desingdo mostrar Prompt)                                 | 20/05/2025 |    13:25     |   13:30   |    5min     |
-| Autoanswer (Answer - Planejando mostrar o Status de cada IA)                             | 20/05/2025 |    13:31     |   13:49   |    18min    |
-| Autoanswer (Answer - Fazendo mostrar o Status de cada IA)                                | 20/05/2025 |    14:48     |   15:00   |    2min     |
-| Autoanswer (Answer - Fazendo mostrar o Status de cada IA)                                | 20/05/2025 |    15:35     |   16:14   |    39min    |
-| Autoanswer (Answer - Fazendo mostrar o Status dos modos de cada IA)                      | 20/05/2025 |    16:47     |   17:15   |    27min    |
-| Autoanswer (Answer - Analisando Workflow)                                                | 20/05/2025 |    17:28     |   17:30   |    2min     |
-| Autoanswer (Answer - Planejando mostrar o prompt formatado)                              | 20/05/2025 |    17:28     |   17:30   |    2min     |
-|                                                                                          | 20/05/2025 |              |           |             |
-|                                                                                          | 20/05/2025 |              |           |             |
-| Autoanswer (Answer - Planejando mostrar o prompt formatado)                              | 20/05/2025 |              |           |             |
-| Autoanswer (Answer - Fazendo mostrar o prompt formatado)                                 | 20/05/2025 |              |           |             |
-| Autoanswer (Answer - Melhorar desing do Settings)                                        | 20/05/2025 |              |           |             |
-| Autoanswer (Answer - Melhorar o Settings)                                                | 20/05/2025 |              |           |             |
-|                                                                                          | 20/05/2025 |              |           |             |
-| Autoanswer (Criando Automação para Coletar Resposta (CollectAutoGui - Search))           | 20/05/2025 |              |           |             |
-| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 20/05/2025 |              |           |             |
-| Autoanswer (Responder as questões)                                                       | 20/05/2025 |              |           |             |
-| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 20/05/2025 |              |           |             |
-| Autoanswer (Mostrar Resultado)                                                           | 20/05/2025 |              |           |             |
-|                                                                                          | 20/05/2025 |              |           |             |
-| Autoanswer (Planejar Dashboard para Ánalise)                                             | 20/05/2025 |              |           |             |
-| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 20/05/2025 |              |           |             |
-|                                                                                          | 20/05/2025 |              |           |             |
+| Autoanswer (Preparando e planejando passos para hoje)                                    | 06/06/2025 |    12:34     |   12:45   |             |
+|                                                                                          | 06/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                      | 06/06/2025 |              |           |             |
+| Autoanswer (Commitando código)                                                           | 06/06/2025 |    13:17     |   13:17   |             |
+| Autoanswer (Commitando código)                                                           | 06/06/2025 |    13:21     |   13:24   |             |
+| Autoanswer (Configurando as contas)                                                      | 06/06/2025 |    13:24     |   13:27   |             |
+| Autoanswer (Criando repositório)                                                         | 06/06/2025 |    13:35     |   13:37   |             |
+| Autoanswer (Dar git pull no repositório)                                                 | 06/06/2025 |    13:37     |   13:   |             |
+| Autoanswer (Pausa)                                                                       | 06/06/2025 |              |           |             |
+|                                                                                          | 06/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                      | 06/06/2025 |              |           |             |
+| Autoanswer (Adicionar mais informações aos prompts)                                      | 06/06/2025 |              |           |             |
+| Autoanswer (Data e hora de criação ao prompt)                                            | 06/06/2025 |              |           |             |
+| Autoanswer (Criar histório no prompt do JSON)                                            | 06/06/2025 |              |           |             |
+| Autoanswer (Adicionar datas, horários, matéria e id da matéria ao histórico do prompt)   | 06/06/2025 |              |           |             |
+| Autoanswer (Exibir os prompt mais usados e com as melhores métricas)                     | 06/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                       | 06/06/2025 |              |           |             |
+|                                                                                          | 06/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 40/45min                                                      | 06/06/2025 |              |           |             |
+| Autoanswer (Answer - Melhorar desing do Settings)                                        | 06/06/2025 |              |           |             |
+| Autoanswer (Answer - Melhorar o Settings)                                                | 06/06/2025 |              |           |             |
+| Autoanswer (Answer - Criando Automação para Coletar Resposta (CollectAutoGui - Search))  | 06/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                       | 06/06/2025 |              |           |             |
+|                                                                                          | 06/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                      | 06/06/2025 |              |           |             |
+| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 06/06/2025 |              |           |             |
+| Autoanswer (Responder as questões)                                                       | 06/06/2025 |              |           |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 06/06/2025 |              |           |             |
+| Autoanswer (Mostrar Resultado)                                                           | 06/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                       | 06/06/2025 |              |           |             |
+|                                                                                          | 06/06/2025 |              |           |             |
+| Autoanswer (Planejar Dashboard para Ánalise)                                             | 07/06/2025 |              |           |             |
+| Autoanswer (Criar dashboard para Ánalise)                                                | 07/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                       | 07/06/2025 |              |           |             |
+| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 07/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                       | 07/06/2025 |              |           |             |
+|                                                                                          | 07/06/2025 |              |           |             |
+
+<!--
+
+Quase lá, está assim, vou explicar melhor como irá funcionar o design, atualizei o design
+
+[1]. Title Prompt                   A: 27  C: 19  W: 8
+Prompt for Grok
+
+TENDENCIA:                        Mat: 67%    His: 33%
+ANSWERS: 27      -  CORRECTS: 19      -  WRONGS: 8
+
+
+O design terá o width de 52 caracteres e irá exibr até 99 prompts, terão o width de 52 caracteres para pegar 100% do width do design
+
+
+Explicando o design do prompt 
+
+HEADER
+   Aqui termos 2 tipos de informações e no meio espaço, dados do prompt (ID e Título) e dados gerais (A - Answers, C - Corrects, W - Wrongs), o espaço tem que ter no minimo 3 espaço (   )
+
+   Os "dados do prompt" irão ficar a esquerda e terão no máximo 32 caracteres (essa será o tamanho máximo: "[100]. NOME DO PROMPT MUITO L..."), se ultrapassar 32 caracteres iremos exibir 29 caracteres e iremos adicinar "..." para dar os 32 caracteres
+
+   Tem que ter no minimo 3 espaços para o user ver e saber o que é título e o que são dados gerais do prompt
+
+   Os "dados gerais" irão ficar a direita e para cada item (A, C e W) terá no máximo o valor de 99999999 se for maior iremos colocar +9999999
+
+   Uma outra coisa, se os "dados gerais" tiver mais caracateres, digo ter uma quantidade de caracteres que somando o total de caracteres header do prompt for maior que o limite que é width 52 caracteres iremos remover alguns caracteres do "dados do prompt" para compensar, não se esqueça o "espaço" será flexivel pois ele irá espçar e deixar os "dados do prompt" a esquerda e os "dados gerais" a direita, porém ela terá um limite de no minimo 3 espaços (   )
+
+BODY
+   Aqui teremos o prompt em si
+
+   O prompt terá os mesmo width 100% (52 caracteres por linha) para cada prompt iremos exibir no máximo 208 caracteres se for maior iremos exibir 205 caracteres e iremos colocar "..." para dar os 208, para não ficar tudo em uma linha iremos contar 51 caracteres pular uma linha e colocar "-" para ficar mais bonito e mostrar para o user que pulou a linha, iremos fazer isso até terminar os 208 caracteres
+
+FOOTER
+   Aqui teremos os dados de "TENDENCIA" do prompt que irá exbir no máximo 3 matérias que ele teve mais acerto, aqui será em porcentagens ou seja o máximo é 100%, iremos ter espaço para dividir, "TENDENCIA:" irá ficar a esquerda "dados de tendencias" irá ficar a direita, o espaço será flexivel, ou seja a linha tem que ter no máximo 52 caractres no total se for a mais iremos diminuir o espaço, para cada matéria iremos exibir os primeiro 4 caracteres
+
+Exemplo
+
+[1]. NOME D...   A: +9999999 C: +9999999 W: +9999999
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
+
+TENDENCIA:            Mate: 50%  Hist 45%  Mult: 20%
+
+[2]. NOME DO PROMPT +LONG...       A: -- C: -- W: --
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
+
+TENDENCIA:           ----: --%  ----: --%  ----: --%
+ANSWERS: 00.0  -   CORRECTS: 00.0   -   WRONGS: 00.0
+
+[3]. NOME DO PROMPT               A: 100 C: 70 W: 30
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
+
+TENDENCIA:                Qui: 10%  Bio: 4%  Red: 1%
+ANSWERS: 100    -    CORRECTS: 70    -    WRONGS: 30
+
+[30]. NOME DO PROMPT +LON...       A: -- C: -- W: --
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
+asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
+asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
+
+TENDENCIA:           ----: --%  ----: --%  ----: --%
+ANSWERS: 00.0  -   CORRECTS: 00.0   -   WRONGS: 00.0
+
+
+-->
 
 <!--
 
