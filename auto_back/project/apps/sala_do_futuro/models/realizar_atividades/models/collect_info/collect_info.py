@@ -3,9 +3,9 @@ from .collect_task_info.collect_task_info import TaskInfo
 from .collect_task_info.questionarie import Questionarie
 from .collect_json import CollectJson, SaveJson
 from .collect_task_info.texts import Text
+from project.apps.answer import Answer
 from project import Display, LogType
 from .collect_time import Time
-from project.apps.answer import Answer
 
 class CollectInfo:
     def __init__(self, page, activity_status, component):

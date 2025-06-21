@@ -40,6 +40,7 @@ class QuestionInfo:
         
         except Exception as e:
             print(f'[{LogType.WARNING}] Erro ao obter pontuações: {e}')
+            input('Algo')
             return {
                 'activity_score': '',
                 'score': ''

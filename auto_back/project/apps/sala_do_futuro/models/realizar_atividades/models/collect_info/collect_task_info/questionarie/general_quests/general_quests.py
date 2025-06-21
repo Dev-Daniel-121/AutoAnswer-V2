@@ -11,28 +11,30 @@ class GeneralQuests:
             'number_of_questions': len(self.data),
             'number_of_sections': 0,
             'sections': {},
+            'required_questions': '',
+            'unrequired_questions': '',
             'number_of_guesses': '',
             'number_of_user_responses': '',
             'user_feedback': '',
             'difficulty': '',
             'history_of_attempts': {},
             'ia': {
-                'ia1': {
-                    'overall_performance': '',
-                    'questions': [],
-                    'suggestions': {
-                        '0': '',
-                        '1': ''
-                    }
-                },
-                'ia2': {
-                    'desempenho_geral': '',
-                    'questoes': [],
-                    'sugestoes': {
-                        '0': '',
-                        '1': ''
-                    }
-                }
+                # 'ia1': {
+                #     'overall_performance': '',
+                #     'questions': [],
+                #     'suggestions': {
+                #         '0': '',
+                #         '1': ''
+                #     }
+                # },
+                # 'ia2': {
+                #     'desempenho_geral': '',
+                #     'questoes': [],
+                #     'sugestoes': {
+                #         '0': '',
+                #         '1': ''
+                #     }
+                # }
             },
             'error_number': '',
             'error_types': ['', '', ''],
@@ -65,8 +67,8 @@ class GeneralQuests:
                     'time': attempt.get('time', '')
                 }
 
-            general['ia']['ia1']['questions'].append(quest.get('statement', ''))
-            general['ia']['ia2']['questoes'].append(quest.get('statement', ''))
+            # general['ia']['ia1']['questions'].append(quest.get('statement', ''))
+            # general['ia']['ia2']['questoes'].append(quest.get('statement', ''))
 
         general['sections'] = dict(section_counter)
         general['number_of_sections'] = len(section_counter)

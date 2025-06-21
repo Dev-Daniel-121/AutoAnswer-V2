@@ -1,9 +1,14 @@
-from project.apps.sala_do_futuro.models.realizar_atividades.models import CollectInfo#, CollectTaskInfo, Questionarie
+from project.apps.sala_do_futuro.models.realizar_atividades.models import CollectInfo, AnswerFlowManager#, CollectTaskInfo, Questionarie
+
 
 class RealizarTarefa:
     def __init__(self, page):
         self.page = page
         self.collect_info = CollectInfo(page=self.page, activity_status='A Fazer', component='tarefas')
+        # self.AnswerFlowManager = AnswerFlowManager(
+            
+        # )
+        
         """
         self.collect_task_info = CollectTaskInfo(page=self.page, activity_status='A Fazer')
         self.questionarie = Questionarie(
@@ -15,6 +20,25 @@ class RealizarTarefa:
 
     def run(self, user, id_usuario):
         self.collect_info.run(user=user, id_usuario=id_usuario)
+
+        # answer = Answer(user=user, open_in_new_terminal=True)
+        # answer.run()
+
+        '''
+
+        Coletar informações
+            Coletar Respostas
+        
+        Responder
+            Validar
+            Colocar Resposta
+
+        Enviar respostas
+
+        Mostrar Resultado
+            
+        '''
+
         """
         self.collect_task_info.run()
         self.questionarie.run()

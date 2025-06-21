@@ -94,9 +94,9 @@ todo ATALHOS
 
 ~~~~~~ IA (USER) ~~~~~~
 
-1. Grok       (Em funcionamento - pronto para ajudar)
-2. ChatGPT    (Em funcionamento - pronto para ajudar)
-3. DeepSeak   (Fora de serviço - Sistema temporariamente inativo)
+1. Grok (Em funcionamento - pronto para ajudar)
+2. ChatGPT (Em funcionamento - pronto para ajudar)
+3. DeepSeak (Fora de serviço - Sistema temporariamente inativo)
 3. Voltar
 
 ~~~~~~ Prompt {IA} (USER) ~~~~~~
@@ -145,11 +145,11 @@ ANSWERS: 00.0  -   CORRECTS: 00.0   -   WRONGS: 00.0
 
 ~~~~~~ Working - CollectAutoGUI - {IA} (USER) ~~~~~~
 
-Etapa 1 de 5- TÍTULO DA ETAPA
+Etapa 1 de 5 - TÍTULO DA ETAPA
 
 Duração:
 Total:  195s  -  Retante:  0s
-Acrés: +999s  -  Descrés: -999s
+Acrés: +999s  -  Decrésc: -999s
 
 Atalhos:
 [a] Aumenta o tempo em {5s}             [d] Diminui o tempo em {5s}
@@ -162,11 +162,29 @@ Geral        ( ======================================== ) 100% - 60s
 
 ~~~~~~ Settings ~~~~~~
 
-1. Etapas da Automação          <- Exibir as Etapas da Automação
-2. Localização dos circulos     <- Mostra a localização nos Circulos na Tela para se o User quise, ele alterar
-3. Voltar                       <- Volta para Menu Principal
+1. IA              <- Configuração das IA
+2. Automações      <- Exibir as Etapas da Automação
+4. Voltar
 
-~~~~~~ Etapas da Automação ~~~~~~
+~~~~~~ Automações ~~~~~~
+
+1. Coleta de respostas (ChatGpt - AutoGui)
+1. Coleta de respostas (Grok - AutoGui)
+2. Voltar
+
+~~~~~~ Coleta de respostas ~~~~~~
+
+1. Test
+2. Settings
+3. Voltar
+
+~~~~~~ Coleta de respostas (Settings) ~~~~~~
+
+1. Etapas da automação
+2. Nome
+3. Voltar
+
+~~~~~~ Coleta de respostas (Settings) ~~~~~~
 
 [1]. Entrar no Chrome
 [2]. Pesquisar por https://{IA}
@@ -174,37 +192,137 @@ Geral        ( ======================================== ) 100% - 60s
     [3.1]. Passar MÍdia para {IA}
 [4]. Coletar Resposta
 
-1. Voltar
-[Answser] 
+------------------------------
 
-~~~~~~ Localização dos circullos ~~~~~~
+~~~~~~ ETAPAS DA AUTOMAÇÃO ~~~~~~
 
-1. Coleta de Media
-2. Coleta de Resposta
+1. Adicionar Etapa
+2. Editar Etapa
+3. Deletar Etapa
+4. Voltar
+
+[Task] Digite a opção: 
+[Answer] 1
+
+[Task] Será uma Etapa ou Subetapa de uma etapa existente? ([N] - nova etapa, [S] - subetapa)
+[Answer] N
+
+[Info] Digite o nome da nova etapa: 
+[Info] Coloque a URL ou o PATH para uma img que irá auxiliar você a configurar a ação (OPCIONAL): 
+
+~~~~~~ AÇÕES COM O MOUSE ~~~~~~
+1. Click (esquerdo, direito ou meio)
+2. Clique duplo
+3. Arrasta o mouse até a posição especificada
+4. Rola a tela para cima ou para baixo
+
+~~~~~~ AÇÕES COM O TECLADO ~~~~~~
+5. Digita texto como se fosse teclado
+6. Pressiona uma tecla (ex: 'enter', 'tab', 'ctrl')
+7. Pressiona ou solta uma tecla (útil para atalhos)
+8. Pressiona uma combinação de teclas
+
+[Info] Selecione a ação que será usada (Digite mais de 1 ação separada por ',' para mais de 1 ação): 
+
+~~~~~~ AÇÕES SELECIONADAS ~~~~~~
+
+* [1]. MOUSE (x: 00, y: 00)
+  [2]. TECLADO ()
+
+[Info] Mova o circulo da ação [1] para a posição que a ação será executada
+
+[Info] Digite a(s) tecla(s) que serão precionadas
+
+[Info] Digite a ordem com que as ações serão realizadas (deixe em branco se a ordem de AÇÕES SELECIONADAS está correto)
+
+[Success] Etapa [ID] NOME ETEPA adicionada com Sucesso!
+
+===
+
+[Task] Será uma Etapa ou Subetapa de uma etapa existente? ([N] - nova etapa, [S] - subetapa)
+[Answer] S
+
+[Task] Digite o ID da etapa ou subetapa que será adiciona essa nova subetapa
+[USA O MESMO PROCESSO DE CRIAR, troque apenas etapa para subetapa]
+
+---
+
+[Task] Digite a opção: 
+[Answer] 2
+
+[Task] Digite os IDs das etapas ou subetapas separadas por ',' que seram atualizados
+
+[USA O MESMO PROCESSO DE CRIAR porém para atualizar]
+
+---
+
+[Task] Digite a opção: 
+[Answer] 3
+
+[Task] Digite os IDs das etapas separadas por ',' que serão deletadas
+
+~~~~~~ IA ~~~~~~
+
+1. ChatGPT - Operação parcial
+2. Grok - Operando normalmente
+
+~~~~~~ ChatGpt ~~~~~~
+
+1. Prompts
+2. Métodos
 3. Voltar
 
-~~~~~~ Localização dos circullos (Search) ~~~~~~
+~~~~~~ ChatGPT - Métodos ~~~~~~
 
-* [1]. (x: 00, y: 00)
-  [2]. (x: 00, y: 00)
-  [3]. (x: 00, y: 00)
+1. ChatGPT - AutoGUI: Operando normalmente
+2. ChatGPT - AutoStealph: Indisponível
 
-Mova os circulospar o Lugares desejados (O '*' mostra o circulo atual que você está movendo, o número é a ordem que eles irão ser acionados)
+~~~~~~ ChatGPT - AutoGUI ~~~~~~
 
-1. Voltar
-[Answser] 
+Descrição
 
-~~~~~~ Localização dos circullos (Media) ~~~~~~
+[MSG] Precione ENTER para voltar...
 
-* [1]. (x: 00, y: 00)
-  [2]. (x: 00, y: 00)
-  [3]. (x: 00, y: 00)
-  [4]. (x: 00, y: 00)
-  [5]. (x: 00, y: 00)
+~~~~~~ ChatGPT - Prompts ~~~~~~
 
-Mova os circulospar o Lugares desejados (O '*' mostra o circulo atual que você está movendo, o número é a ordem que eles irão ser acionados)
+[1]. NOME DO PROMPT               A: 100 C: 70 W: 30
+[2]. NOME DO PROMPT               A: 100 C: 70 W: 30
+[3]. NOME DO PROMPT               A: 100 C: 70 W: 30
+[4]. NOME DO PROMPT               A: 100 C: 70 W: 30
 
-1. Voltar
-[Answser] 
+------------------------------
+
+~~~~~~ PROMPT ~~~~~~
+
+1. Adicionar Prompt
+2. Editar Prompt
+3. Deletar Prompt
+4. Visualizar informações completa
+5. Voltar
+
+[Task] Digite a opção: 
+[Answer] 1
+
+[Info] Digite o nome do Prompt
+[Info] Digite o prompt
+
+[Success] Prompt [ID] NOME PROMPT adicionado com Sucesso!
+
+---
+
+[Task] Digite a opção: 
+[Answer] 2
+
+[Task] Digite os IDs dos prompts separadas por ',' que seram atualizados
+2
+
+[USA O MESMO PROCESSO DE CRIAR porém para atualizar]
+
+---
+
+[Task] Digite a opção: 
+[Answer] 3
+
+[Task] Digite os IDs das etapas separadas por ',' que serão deletadas
 
 """

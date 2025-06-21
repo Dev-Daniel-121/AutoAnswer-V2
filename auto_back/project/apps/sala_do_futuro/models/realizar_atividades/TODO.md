@@ -249,132 +249,838 @@
 
 <br><br><br>
 
-| O que está sendo feito                                                                   |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
-| :--------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
-| Autoanswer (Preparando e planejando passos para hoje)                                    | 06/06/2025 |    12:34     |   12:45   |             |
-|                                                                                          | 06/06/2025 |              |           |             |
-| Tempo no bloco: de 25min à 30/35min                                                      | 06/06/2025 |              |           |             |
-| Autoanswer (Commitando código)                                                           | 06/06/2025 |    13:17     |   13:17   |             |
-| Autoanswer (Commitando código)                                                           | 06/06/2025 |    13:21     |   13:24   |             |
-| Autoanswer (Configurando as contas)                                                      | 06/06/2025 |    13:24     |   13:27   |             |
-| Autoanswer (Criando repositório)                                                         | 06/06/2025 |    13:35     |   13:37   |             |
-| Autoanswer (Dar git pull no repositório)                                                 | 06/06/2025 |    13:37     |   13:   |             |
-| Autoanswer (Pausa)                                                                       | 06/06/2025 |              |           |             |
-|                                                                                          | 06/06/2025 |              |           |             |
-| Tempo no bloco: de 25min à 30/35min                                                      | 06/06/2025 |              |           |             |
-| Autoanswer (Adicionar mais informações aos prompts)                                      | 06/06/2025 |              |           |             |
-| Autoanswer (Data e hora de criação ao prompt)                                            | 06/06/2025 |              |           |             |
-| Autoanswer (Criar histório no prompt do JSON)                                            | 06/06/2025 |              |           |             |
-| Autoanswer (Adicionar datas, horários, matéria e id da matéria ao histórico do prompt)   | 06/06/2025 |              |           |             |
-| Autoanswer (Exibir os prompt mais usados e com as melhores métricas)                     | 06/06/2025 |              |           |             |
-| Autoanswer (Pausa)                                                                       | 06/06/2025 |              |           |             |
-|                                                                                          | 06/06/2025 |              |           |             |
-| Tempo no bloco: de 25min à 40/45min                                                      | 06/06/2025 |              |           |             |
-| Autoanswer (Answer - Melhorar desing do Settings)                                        | 06/06/2025 |              |           |             |
-| Autoanswer (Answer - Melhorar o Settings)                                                | 06/06/2025 |              |           |             |
-| Autoanswer (Answer - Criando Automação para Coletar Resposta (CollectAutoGui - Search))  | 06/06/2025 |              |           |             |
-| Autoanswer (Pausa)                                                                       | 06/06/2025 |              |           |             |
-|                                                                                          | 06/06/2025 |              |           |             |
-| Tempo no bloco: de 25min à 30/35min                                                      | 06/06/2025 |              |           |             |
-| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)   | 06/06/2025 |              |           |             |
-| Autoanswer (Responder as questões)                                                       | 06/06/2025 |              |           |             |
-| Autoanswer (Enviar ou Salvar como Rascunho a Atividade respostas)                        | 06/06/2025 |              |           |             |
-| Autoanswer (Mostrar Resultado)                                                           | 06/06/2025 |              |           |             |
-| Autoanswer (Pausa)                                                                       | 06/06/2025 |              |           |             |
-|                                                                                          | 06/06/2025 |              |           |             |
-| Autoanswer (Planejar Dashboard para Ánalise)                                             | 07/06/2025 |              |           |             |
-| Autoanswer (Criar dashboard para Ánalise)                                                | 07/06/2025 |              |           |             |
-| Autoanswer (Pausa)                                                                       | 07/06/2025 |              |           |             |
-| Autoanswer (Planejar próximos passos para o Redação, Leia, Speak, Khanacademy, Expansão) | 07/06/2025 |              |           |             |
-| Autoanswer (Pausa)                                                                       | 07/06/2025 |              |           |             |
-|                                                                                          | 07/06/2025 |              |           |             |
+| O que está sendo feito                                                                    |    Dia     | Tempo Inicio | Tempo Fim | Tempo Total |
+| :---------------------------------------------------------------------------------------- | :--------: | :----------: | :-------: | :---------: |
+| Autoanswer (Preparando e planejando passos para hoje)                                     | 06/06/2025 |    12:34     |   12:45   |             |
+|                                                                                           | 06/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                       | 06/06/2025 |              |           |             |
+| Autoanswer (Commitando código)                                                            | 06/06/2025 |    13:17     |   13:17   |             |
+| Autoanswer (Commitando código)                                                            | 06/06/2025 |    13:21     |   13:24   |             |
+| Autoanswer (Configurando as contas)                                                       | 06/06/2025 |    13:24     |   13:27   |             |
+| Autoanswer (Criando repositório)                                                          | 06/06/2025 |    13:35     |   13:37   |             |
+| Autoanswer (Dar git pull no repositório)                                                  | 06/06/2025 |    13:37     |   13:53   |             |
+| Autoanswer (Pausa)                                                                        | 06/06/2025 |    13:53     |   14:03   |             |
+|                                                                                           | 06/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                       | 06/06/2025 |              |           |             |
+| Autoanswer (Adicionar mais informações aos prompts)                                       | 06/06/2025 |    16:42     |   17:01   |             |
+| Autoanswer (Data e hora de criação ao prompt)                                             | 06/06/2025 |    17:01     |   17:03   |             |
+| Autoanswer (Criar histório no prompt do JSON)                                             | 06/06/2025 |    17:03     |   17:04   |             |
+| Autoanswer (Adicionar datas, horários, matéria e id da matéria ao histórico do prompt)    | 06/06/2025 |    17:04     |   17:07   |             |
+| Autoanswer (Melhorando Json dos prompts)                                                  | 06/06/2025 |    17:07     |   17:10   |             |
+| Autoanswer (Exibir os prompt mais usados e com as melhores métricas)                      | 06/06/2025 |    17:10     |   17:15   |             |
+| Autoanswer (Criando status para os prompts)                                               | 06/06/2025 |    17:15     |   17:25   |             |
+| Autoanswer (Criar arquivo .md para guardar os status)                                     | 06/06/2025 |    17:25     |   17:27   |             |
+| Autoanswer (Exibir os prompts com o status)                                               | 06/06/2025 |    17:27     |   17:47   |             |
+| Autoanswer (Criar histórico no JSON para os prompts)                                      | 06/06/2025 |    17:47     |   17:53   |             |
+| Autoanswer (Atualizar código para poder receber o history)                                | 06/06/2025 |    17:53     |   18:07   |             |
+| Autoanswer (Pausa)                                                                        | 06/06/2025 |    18:07     |   18:17   |             |
+|                                                                                           | 06/06/2025 |              |           |             |
+| Autoanswer (Answer - Planejando passos para criar a Automação)                            | 06/06/2025 |    23:10     |   23:51   |             |
+|                                                                                           | 06/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 40/45min                                                       | 06/06/2025 |              |           |             |
+| Autoanswer (Answer - Criando Automação para Coletar Resposta (CollectAutoGui - Search))   | 06/06/2025 |    23:51     |   00:45   |             |
+| Autoanswer (Answer - Exibir circulos)                                                     | 06/06/2025 |    23:51     |   00:45   |             |
+|                                                                                           | 06/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 50/55min                                                       | 07/06/2025 |              |           |             |
+| Autoanswer (Answer - Criando Automação para Coletar Resposta (CollectAutoGui - Search))   | 07/06/2025 |    13:00     |   14:31   |             |
+| Autoanswer (Answer - Exibir circulos)                                                     | 07/06/2025 |    13:00     |   14:31   |             |
+|                                                                                           | 07/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                       | 07/06/2025 |              |           |             |
+| Autoanswer (Criar validação para cada tipo de questão e resposta recebida para o tipo)    | 07/06/2025 |    13:41     |   14:31   |             |
+| Autoanswer (Planejar Responder as questões)                                               | 07/06/2025 |    14:31     |   15:10   |             |
+| Autoanswer (Atualizando estrutura do projeto)                                             | 07/06/2025 |    00:15     |   00:28   |             |
+| Autoanswer (Responder as questões)                                                        | 07/06/2025 |    00:28     |   00:33   |             |
+|                                                                                           | 07/06/2025 |              |           |             |
+| Tempo no bloco: de 35min à 50/55min                                                       | 08/06/2025 |              |           |             |
+| Autoanswer (Melhorando Planejamento Responder as questões)                                | 08/06/2025 |    21:18     |   21:30   |             |
+|                                                                                           | 08/06/2025 |              |           |             |
+| Tempo no bloco: de 35min à 50/55min                                                       | 12/06/2025 |              |           |             |
+| Autoanswer (Alimentando a IA)                                                             | 12/06/2025 |    22:47     |   22:53   |             |
+| Autoanswer (Alimentando a IA)                                                             | 12/06/2025 |    23:10     |   23:50   |             |
+| Autoanswer (Gerenciar dados, Validar e Responder)                                         | 12/06/2025 |    23:51     |   00:07   |             |
+| Autoanswer (Pausa)                                                                        | 12/06/2025 |    00:07     |   00:14   |             |
+| Autoanswer (Planejando design Mostrar Resultado)                                          | 12/06/2025 |    01:00     |   01:55   |             |
+|                                                                                           | 12/06/2025 |              |           |             |
+| Tempo no bloco: de 35min à 50/55min                                                       | 13/06/2025 |              |           |             |
+| Autoanswer (Planejando design Mostrar Resultado)                                          | 13/06/2025 |    10:31     |   10:47   |             |
+| Autoanswer (Mostrar Resultado)                                                            | 13/06/2025 |    14:57     |   14:59   |             |
+| Autoanswer (Mostrar Resultado (Planejar Respostas Corretas))                              | 13/06/2025 |    21:47     |   22:12   |             |
+| Autoanswer (Mostrar Resultado (Planejamento))                                             | 13/06/2025 |    22:17     |   22:34   |             |
+| Autoanswer (Mostrar Resultado (Atualizando JSON))                                         | 13/06/2025 |    00:32     |   00:34   |             |
+|                                                                                           | 15/06/2025 |              |           |             |
+| Tempo no bloco: de 35min à 50/55min                                                       | 15/06/2025 |              |           |             |
+| Autoanswer (Mostrar Resultado (Planejamento))                                             | 15/06/2025 |    16:09     |   16:14   |             |
+| Autoanswer (Mostrar Resultado (Atualizando JSON))                                         | 15/06/2025 |    16:14     |   16:20   |             |
+| Autoanswer (Mostrar Resultado (Atualizando JSON))                                         | 15/06/2025 |    16:14     |   16:20   |             |
+| Autoanswer (Planejando próximos passos)                                                   | 15/06/2025 |    16:20     |   16:47   |             |
+| Autoanswer (Pausa)                                                                        | 15/06/2025 |    16:47     |   17:19   |             |
+| Autoanswer (Mostrar Resultado (Criando CollectResult))                                    | 15/06/2025 |    21:57     |   23:12   |             |
+| Autoanswer (Mostrar Resultado (Melhorando CollectResult))                                 | 15/06/2025 |    23:24     |   23:52   |             |
+| Autoanswer (Mostrar Resultado (Criando método Show para CollectResult))                   | 15/06/2025 |    23:52     |   23:57   |             |
+|                                                                                           | 15/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                       | 16/06/2025 |              |           |             |
+| Autoanswer (Mostrar Resultado (Validar por melhor forma))                                 | 16/06/2025 |    23:19     |   23:24   |             |
+| Autoanswer (Mostrar Resultado (Criando método Show para CollectResult))                   | 16/06/2025 |    23:24     |   00:45   |             |
+| Autoanswer (Mostrar Resultado (Melhorar o Espaçamento (coluna) do _print_group - Lógica)) | 16/06/2025 |    01:17     |   01:27   |             |
+|                                                                                           | 17/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                       | 17/06/2025 |              |           |             |
+| Autoanswer (Mostrar Resultado (Melhorar o Espaçamento (coluna) do _print_group - Código)) | 17/06/2025 |    12:07     |   12:37   |             |
+| Autoanswer (Pausa)                                                                        | 17/06/2025 |    12:37     |   12:47   |             |
+| Autoanswer (Configurando INIT Mostrar Resultado)                                          | 17/06/2025 |    12:47     |   12:57   |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade (Planejamento))                    | 17/06/2025 |    12:57     |   13:19   |             |
+|                                                                                           | 18/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                       | 18/06/2025 |              |           |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade (Código))                          | 18/06/2025 |    22:01     |   23:09   |             |
+| Autoanswer (Enviar atividade SdF)                                                         | 18/06/2025 |    22:01     |   23:09   |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade (Código))                          | 18/06/2025 |    23:57     |           |             |
+|                                                                                           | 18/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 19/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                       | 19/06/2025 |              |           |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade (Passando dados para o Answer))    | 19/06/2025 |    13:00     |   13:15   |             |
+| Autoanswer (Instalando Fira Code)                                                         | 19/06/2025 |    13:15     |   13:29   |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade (Passando dados para o Answer))    | 19/06/2025 |    13:30     |   14:00   |             |
+| Autoanswer (Pausa)                                                                        | 19/06/2025 |    14:00     |   14:08   |             |
+| Autoanswer (Enviar ou Salvar como Rascunho a Atividade (Passando dados para o Answer))    | 19/06/2025 |    14:10     |   14:17   |             |
+| Autoanswer (Mostrar Resultado (Mostrar questões anuladas - DESCARTADO))                   | 19/06/2025 |    14:17     |   14:25   |             |
+| Autoanswer (Pausa)                                                                        | 19/06/2025 |    14:25     |   14:47   |             |
+| Autoanswer (Answer - Melhorar desing do Settings (Planejamento e atualização do design))  | 19/06/2025 |    15:03     |   15:07   |             |
+|                                                                                           | 19/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 20/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                       | 20/06/2025 |              |           |             |
+| Autoanswer (Answer - Melhorar desing do Settings (Planejamento e atualização do design))  | 20/06/2025 |    19:28     |   19:37   |             |
+| Autoanswer (Answer - Melhorar desing do Settings (Planejamento e atualização do design))  | 20/06/2025 |    19:50     |   20:30   |             |
+| Autoanswer (Pausa)                                                                        | 20/06/2025 |    20:30     |   20:50   |             |
+| Autoanswer (Answer - Melhorar desing do Settings (Planejamento e atualização do design))  | 20/06/2025 |    20:50     |   21:20   |             |
+| Autoanswer (Pausa)                                                                        | 20/06/2025 |    21:20     |   21:30   |             |
+| Autoanswer (Commitando código)                                                            | 20/06/2025 |    21:20     |   21:30   |             |
+|                                                                                           | 20/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 21/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 40/45min                                                       | 21/06/2025 |              |           |             |
+| Autoanswer (Answer - Planejar criação do settings para prompts)                           | 21/06/2025 |              |           |             |
+| Autoanswer (Answer - Criar settings para Prompts)                                         | 21/06/2025 |              |           |             |
+|                                                                                           | 21/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 40/45min                                                       | 21/06/2025 |              |           |             |
+| Autoanswer (Answer - Planejar criação do settings para Automações)                        | 21/06/2025 |              |           |             |
+| Autoanswer (Answer - Criar settings para Automações)                                      | 21/06/2025 |              |           |             |
+|                                                                                           | 21/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 40/45min                                                       | 21/06/2025 |              |           |             |
+| Autoanswer (Melhorando o Gerenciar dados, Validar e Responder)                            | 21/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                        | 21/06/2025 |              |           |             |
+|                                                                                           | 21/06/2025 |              |           |             |
+|                                                                                           | 21/06/2025 |              |           |             |
+| Tempo no bloco: de 35min à 40/45min                                                       | 21/06/2025 |              |           |             |
+| Autoanswer (Planejar Dashboard para Ánalise)                                              | 21/06/2025 |              |           |             |
+| Autoanswer (Criar dashboard para Ánalise)                                                 | 21/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                        | 21/06/2025 |              |           |             |
+| Autoanswer (Planejar próximos passos para o Redação, Leia, Expansão, Khanacademy, Speak)  | 21/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                        | 21/06/2025 |              |           |             |
+|                                                                                           | 21/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 22/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                       | 22/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                        | 22/06/2025 |              |           |             |
+| Autoanswer (Melhorando validação de Login)                                                | 22/06/2025 |              |           |             |
+| Autoanswer (Exibindo mais dados (Página inicial))                                         | 22/06/2025 |              |           |             |
+| Autoanswer (Consertando problema com card abertos)                                        | 22/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                        | 22/06/2025 |              |           |             |
+| Autoanswer (Melhorando sistema de login para caso não entrar)                             | 22/06/2025 |              |           |             |
+| Autoanswer (Melhorando sistema de realizar atividade para caso não processar os dados)    | 22/06/2025 |              |           |             |
+|                                                                                           | 22/06/2025 |              |           |             |
 
 <!--
 
-Quase lá, está assim, vou explicar melhor como irá funcionar o design, atualizei o design
-
-[1]. Title Prompt                   A: 27  C: 19  W: 8
-Prompt for Grok
-
-TENDENCIA:                        Mat: 67%    His: 33%
-ANSWERS: 27      -  CORRECTS: 19      -  WRONGS: 8
+Estava conversando com outro Chat, sobre a melhor maneira de gerenciar algumas informações que o código irá receber, esse é o workflow
 
 
-O design terá o width de 52 caracteres e irá exibr até 99 prompts, terão o width de 52 caracteres para pegar 100% do width do design
+1. Class CollectQuest, irá coletar as informação da prova (Questões, etc) e para cada questão irá identificar o tipo e charmará o Extractor para coleta de informações da questão.
+1.1. Com todas as questões coletadas irá criar um JSON
 
+1. Class Answer, com base nos dados do JSON (questões) irá ir até uma IA para coletar as respostas (PyAutoGUI)
+2.1. Irá atualizar o JSON agora com as repostas obtidas
 
-Explicando o design do prompt 
+1. Class AnswerFlowManager, irá gerenciar o Flow dos dados, iremos usar uma factory aqui que para as questões, ela irá chamar o service certo para o tipo da questão
+3.1 Sevice irá receber os dados da questão e irá chamar o Validador da Questão e se tiver correto irá dar True se não irá dar False e irá mostrar o Erro
+3.2 Depois de validar o Service irá chamar o answer da questão para responder a questão no site.
 
-HEADER
-   Aqui termos 2 tipos de informações e no meio espaço, dados do prompt (ID e Título) e dados gerais (A - Answers, C - Corrects, W - Wrongs), o espaço tem que ter no minimo 3 espaço (   )
+Note: No "3. " no caso estava conversando com o outro chat sobre uma forma boa, sem que necessite de ficar if, elif, etc ele me deu a alternativa de usar um factory
 
-   Os "dados do prompt" irão ficar a esquerda e terão no máximo 32 caracteres (essa será o tamanho máximo: "[100]. NOME DO PROMPT MUITO L..."), se ultrapassar 32 caracteres iremos exibir 29 caracteres e iremos adicinar "..." para dar os 32 caracteres
+Esse é um exemplo de JSON
 
-   Tem que ter no minimo 3 espaços para o user ver e saber o que é título e o que são dados gerais do prompt
+JSON
 
-   Os "dados gerais" irão ficar a direita e para cada item (A, C e W) terá no máximo o valor de 99999999 se for maior iremos colocar +9999999
+{
+    "tarefas": {
+        "71051809": {
+            "ia": {
+                "ia": "Grok 3 - Smartest",
+                "prompt": "\n                ### Instruções\n                Você receberá algumas questões em formato de um JSON (dicionário Python). Seu trabalho é processar cada questão e retornar as respostas no mesmo formato JSON especificado abaixo. Algumas questões podem incluir imagens anexadas, outras podem não ter alternativas, e há casos em que a 'questão' pode ser apenas uma imagem, sem texto. Analise cada caso e preencha o JSON de acordo com as regras fornecidas. Todas as respostas devem ser em português.\n\n                ### Formato JSON Esperado\n                {\n                '0': {\n                    'type': 'TIPO DA QUESTÃO',\n                    'alternatives': {\n                        'media': {DADOS DE MÍDIA DA QUESTÃO},\n                        'alternative': ['ALTERNATIVAS']\n                    },\n                    'answer': 'RESPOSTA PARA TAREFA'\n                }\n                }\n\n                ### Regras para Preenchimento\n                - Índice: Cada questão será representada por um número sequencial começando de 0 (ex.: '0', '1', etc.).\n                - Campo `type`:\n                - Identifique o tipo da questão (ex.: 'Múltipla Escolha', 'Resposta Curta', etc.).\n                - Se o tipo não puder ser determinado (como uma imagem sem contexto), defina `type` como uma string vazia (`''`).\n                - Campo `alternatives`:\n                - Se houver alternativas, inclua um objeto `alternatives` com:\n                    - `media`: Dados da mídia, como `{ 'type': 'image', 'url': '[link ou descrição]' }` se houver imagem, ou `null` se não houver.\n                    - `alternative`: Lista de alternativas (ex.: `['A) Opção 1', 'B) Opção 2']`).\n                - Se não houver alternativas, defina `alternatives` como `null`.\n                - Campo `answer`:\n                - Para questões com alternativas, forneça a resposta correta (ex.: 'A)', 'B)', etc.).\n                - Para questões sem alternativas, forneça uma resposta curta ou descritiva adequada.\n                - Para questões que são apenas imagens, analise a imagem e forneça uma descrição ou resposta baseada na análise.\n                - Se não for possível responder a questão (ex.: falta de informações ou contexto insuficiente), deixe o campo `answer` como uma string vazia (`''`).\n\n                ### Exemplo de Entrada e Saída\n                1. **Entrada**: Questão com imagem e alternativas\n                {\n                    '0': {\n                        'question': 'Qual animal está na imagem?',\n                        'media': {'type': 'image', 'url': '[link]'},\n                        'alternatives': ['A) Cachorro', 'B) Gato']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Múltipla Escolha',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': ['A) Cachorro', 'B) Gato']\n                        },\n                        'answer': 'B)'\n                    }\n                }\n\n                2. **Entrada**: Questão sem alternativas\n                {\n                    '0': {\n                        'question': 'Qual é a capital do Brasil?'\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': 'Resposta Curta',\n                        'alternatives': null,\n                        'answer': 'Brasília'\n                    }\n                }\n\n                3. **Entrada**: Apenas uma imagem\n                {\n                    '0': {\n                        'media': {'type': 'image', 'url': '[link]'}\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': {'type': 'image', 'url': '[link]'},\n                            'alternative': null\n                        },\n                        'answer': 'Descrição ou resposta baseada na análise da imagem'\n                    }\n                }\n\n                4. **Entrada**: Questão sem informações suficientes\n                {\n                    '0': {\n                        'question': 'Ordene as palavras.',\n                        'alternatives': ['']\n                    }\n                }\n                **Saída**:\n                {\n                    '0': {\n                        'type': '',\n                        'alternatives': {\n                            'media': null,\n                            'alternative': ['']\n                        },\n                        'answer': ''\n                    }\n                }\n\n                ### Notas Finais\n                - Retorne um único JSON com todas as questões processadas.\n                - Para tipos desconhecidos, use `type` como `''`.\n                - Analise imagens quando necessário para gerar respostas adequadas.\n                - Se não for possível responder, deixe `answer` como `''`.\n            "
+            },
+            "task_info": {
+                "status_activity": "A Fazer",
+                "site_activity_id": "71051809",
+                "auto_activity_id": "",
+                "activity_type": "Tarefa SP",
+                "material_activity": "Matemática",
+                "activity_title": "Relações métricas entre elementos de uma pirâmide",
+                "user": "",
+                "author": "anaselmaxavie2495862-sp",
+                "class_school": "3º B EM",
+                "first_access": "06/06/2025 - 00:55:29",
+                "expires_in": "10/06/2025 - 00:00:00",
+                "time_spent": "",
+                "draft": "",
+                "submitted": "",
+                "text_num": 1,
+                "question_types": {
+                    "Radios": 2
+                }
+            },
+            "texts": {
+                "general": {
+                    "secoes": {
+                        "0": ""
+                    },
+                    "num_de_erros": 0,
+                    "tipos_de_erros": {
+                        "0": "",
+                        "1": "",
+                        "2": ""
+                    },
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "informative_content": {
+                        "video": {},
+                        "image": {
+                            "0": {
+                                "type": "image",
+                                "src": "https://edusp-static.ip.tv/tms/edusp/tspmat8/FYQyDvcyS4XJdJONACqpw4Xp9KjgLz.png",
+                                "local_path": "C:\\Users\\PC\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\71051809 (6d)\\FYQyDvcyS4XJdJONACqpw4Xp9KjgLz.png"
+                            }
+                        },
+                        "gif": {}
+                    },
+                    "secao": "",
+                    "conteudo": "Veja a imagem para responder às questões: Fonte: https://es.aliexpress.com/i/1005006083913378.html.",
+                    "num_de_erros": "",
+                    "tipos_de_erros": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "logs_de_erros": {
+                        "0": {
+                            "tipo": "",
+                            "detalhes": "",
+                            "questao": "",
+                            "timestamp": ""
+                        }
+                    }
+                }
+            },
+            "1": {
+                "general": {
+                    "activity_score": "",
+                    "score_acquired": "",
+                    "number_of_questions": 4,
+                    "number_of_sections": 0,
+                    "sections": {},
+                    "number_of_guesses": "",
+                    "number_of_user_responses": "",
+                    "user_feedback": "",
+                    "difficulty": "",
+                    "history_of_attempts": {},
+                    "ia": {
+                        "ia1": {
+                            "overall_performance": "",
+                            "questions": [
+                                "Identifique os triângulos presentes nas faces laterais da vela cônico-hexagonal e preencha a lacuna a seguir.",
+                                "Sobre as medidas da vela cônico-hexagonal, julgue as afirmativas a seguir e as classifique como certas ou erradas.",
+                                "Outra vela cônico-hexagonal foi produzida, com aresta laterais de 17 cm e altura de 15 cm. Assinale a alternativa que apresenta corretamente a medida das arestas da base dessa vela.",
+                                "(Unilago, 2018) Na Figura 2, temos a representação do projeto de uma pirâmide em acrílico (Figura 1) que será utilizada na disciplina de Nutrição para discutir reeducação alimentar. A pirâmide [ABCDV], representada na Figura 2, é quadrangular regular. A Figura 2 não está desenhada em escala.Admita que, na Figura 2:a) a base [ABCD] da pirâmide pertence ao sistema cartesiano ortogonal xOy.b) o ponto A tem coordenadas (1, 1).c) o ponto B tem coordenadas (3, 1).d) a medida da altura da pirâmide é 2﻿6\\sqrt{6}6​﻿ unidades.Com base nessas informações, considere as afirmativas a seguir.I. O apótema da pirâmide mede ﻿6\\sqrt{6}6​﻿ unidades.II. A distância entre os pontos A e B mede 2 unidades.III. O raio da circunferência inscrita na base [ABCD] da pirâmide mede 1 unidade.IV. O centro da base [ABCD] da pirâmide é o centro da circunferência inscrita nesse polígono.Assinale a alternativa correta."
+                            ],
+                            "suggestions": {
+                                "0": "",
+                                "1": ""
+                            }
+                        },
+                        "ia2": {
+                            "desempenho_geral": "",
+                            "questoes": [
+                                "Identifique os triângulos presentes nas faces laterais da vela cônico-hexagonal e preencha a lacuna a seguir.",
+                                "Sobre as medidas da vela cônico-hexagonal, julgue as afirmativas a seguir e as classifique como certas ou erradas.",
+                                "Outra vela cônico-hexagonal foi produzida, com aresta laterais de 17 cm e altura de 15 cm. Assinale a alternativa que apresenta corretamente a medida das arestas da base dessa vela.",
+                                "(Unilago, 2018) Na Figura 2, temos a representação do projeto de uma pirâmide em acrílico (Figura 1) que será utilizada na disciplina de Nutrição para discutir reeducação alimentar. A pirâmide [ABCDV], representada na Figura 2, é quadrangular regular. A Figura 2 não está desenhada em escala.Admita que, na Figura 2:a) a base [ABCD] da pirâmide pertence ao sistema cartesiano ortogonal xOy.b) o ponto A tem coordenadas (1, 1).c) o ponto B tem coordenadas (3, 1).d) a medida da altura da pirâmide é 2﻿6\\sqrt{6}6​﻿ unidades.Com base nessas informações, considere as afirmativas a seguir.I. O apótema da pirâmide mede ﻿6\\sqrt{6}6​﻿ unidades.II. A distância entre os pontos A e B mede 2 unidades.III. O raio da circunferência inscrita na base [ABCD] da pirâmide mede 1 unidade.IV. O centro da base [ABCD] da pirâmide é o centro da circunferência inscrita nesse polígono.Assinale a alternativa correta."
+                            ],
+                            "sugestoes": {
+                                "0": "",
+                                "1": ""
+                            }
+                        }
+                    },
+                    "error_number": 4,
+                    "error_types": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "error_logs": {
+                        "0_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "1_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "2_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        },
+                        "3_0": {
+                            "type": "",
+                            "details": "",
+                            "question": "",
+                            "timestamp": ""
+                        }
+                    }
+                },
+                "0": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Identifique os triângulos presentes nas faces laterais da vela cônico-hexagonal e preencha a lacuna a seguir.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "1": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Unknown Type",
+                        "statement": "Sobre as medidas da vela cônico-hexagonal, julgue as afirmativas a seguir e as classifique como certas ou erradas.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                ""
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "2": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {},
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "Outra vela cônico-hexagonal foi produzida, com aresta laterais de 17 cm e altura de 15 cm. Assinale a alternativa que apresenta corretamente a medida das arestas da base dessa vela.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) 5 cm",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) 6 cm",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) 7 cm",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) 8 cm",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) 9 cm",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                },
+                "3": {
+                    "quest_info": {
+                        "required": true,
+                        "time": {
+                            "day": "",
+                            "start_time": "",
+                            "end_time": ""
+                        },
+                        "activity_score": "",
+                        "score": "",
+                        "section": "",
+                        "number_of_guesses": "",
+                        "number_of_user_responses": "",
+                        "user_feedback": "",
+                        "difficulty": "",
+                        "media": {
+                            "video": {},
+                            "image": {
+                                "0": {
+                                    "type": "image",
+                                    "src": "https://edusp-static.ip.tv/tms/edusp/tspmat8/1lhPauu9dF8BvKZGA3Sw2QHyHJRwoq.png",
+                                    "local_path": "C:\\Users\\PC\\Desktop\\project\\FullStack\\_AutoAnswer\\auto_back\\project\\apps\\sala_do_futuro\\models\\realizar_atividades\\data\\img\\71051809 (6d)\\1lhPauu9dF8BvKZGA3Sw2QHyHJRwoq.png"
+                                }
+                            },
+                            "gif": {}
+                        },
+                        "history_of_attempts": {},
+                        "error_num": "",
+                        "error_types": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "error_logs": {
+                            "0": {
+                                "type": "",
+                                "details": "",
+                                "question": "",
+                                "timestamp": ""
+                            }
+                        },
+                        "ia": "",
+                        "time_spent": ""
+                    },
+                    "quest": {
+                        "type": "Radios",
+                        "statement": "(Unilago, 2018) Na Figura 2, temos a representação do projeto de uma pirâmide em acrílico (Figura 1) que será utilizada na disciplina de Nutrição para discutir reeducação alimentar. A pirâmide [ABCDV], representada na Figura 2, é quadrangular regular. A Figura 2 não está desenhada em escala.Admita que, na Figura 2:a) a base [ABCD] da pirâmide pertence ao sistema cartesiano ortogonal xOy.b) o ponto A tem coordenadas (1, 1).c) o ponto B tem coordenadas (3, 1).d) a medida da altura da pirâmide é 2﻿6\\sqrt{6}6​﻿ unidades.Com base nessas informações, considere as afirmativas a seguir.I. O apótema da pirâmide mede ﻿6\\sqrt{6}6​﻿ unidades.II. A distância entre os pontos A e B mede 2 unidades.III. O raio da circunferência inscrita na base [ABCD] da pirâmide mede 1 unidade.IV. O centro da base [ABCD] da pirâmide é o centro da circunferência inscrita nesse polígono.Assinale a alternativa correta.",
+                        "alternatives": {
+                            "media": {},
+                            "alternative": [
+                                {
+                                    "text": "A) Somente as afirmativas I e II são corretas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "B) Somente as afirmativas I e IV são corretas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "C) Somente as afirmativas III e IV são corretas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "D) Somente as afirmativas I, II e III são corretas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                },
+                                {
+                                    "text": "E) Somente as afirmativas II, III e IV são corretas.",
+                                    "media": {
+                                        "video": {},
+                                        "image": {},
+                                        "gif": {}
+                                    }
+                                }
+                            ]
+                        },
+                        "answer": ""
+                    }
+                }
+            }
+        }
+    },
+}
 
-   Uma outra coisa, se os "dados gerais" tiver mais caracateres, digo ter uma quantidade de caracteres que somando o total de caracteres header do prompt for maior que o limite que é width 52 caracteres iremos remover alguns caracteres do "dados do prompt" para compensar, não se esqueça o "espaço" será flexivel pois ele irá espçar e deixar os "dados do prompt" a esquerda e os "dados gerais" a direita, porém ela terá um limite de no minimo 3 espaços (   )
+Estrutura do código (o quest_types era a forma anterior, irei tirar ele depois)
 
-BODY
-   Aqui teremos o prompt em si
+C:.
+│   answerflowmanager.py
+│   questions.py
+│   __init__.py
+│
+├───answers
+│       base_answer.py
+│       checkbox_answer.py
+│       radios_answer.py
+│       __init__.py
+│
+├───extractor
+│       base_extractor.py
+│       checkbox_extractor.py
+│       radios_extractor.py
+│       __init__.py
+│
+├───quest_types
+│   │   __init__.py
+│   │
+│   ├───checkbox
+│   │   │   checkbox.py
+│   │   │   __init__.py
+│   │   │
+│   │   ├───answer_checkbox
+│   │   │   │   answer_checkbox.py
+│   │   │   │   __init__.py
+│   │   │   │
+│   │   │   └───__pycache__
+│   │   │           answer_checkbox.cpython-313.pyc
+│   │   │           __init__.cpython-313.pyc
+│   │   │
+│   │   ├───get_checkbox
+│   │   │   │   get_checkbox.py
+│   │   │   │   __init__.py
+│   │   │   │
+│   │   │   └───__pycache__
+│   │   │           get_checkbox.cpython-313.pyc
+│   │   │           __init__.cpython-313.pyc
+│   │   │
+│   │   └───__pycache__
+│   │           checkbox.cpython-313.pyc
+│   │           __init__.cpython-313.pyc
+│   │
+│   ├───radios
+│   │   │   radios.py
+│   │   │   __init__.py
+│   │   │
+│   │   ├───answer_radios
+│   │   │   │   answer_radios.py
+│   │   │   │   __init__.py
+│   │   │   │
+│   │   │   └───__pycache__
+│   │   │           answer_radios.cpython-313.pyc
+│   │   │           __init__.cpython-313.pyc
+│   │   │
+│   │   ├───get_radios
+│   │   │   │   get_radios.py
+│   │   │   │   __init__.py
+│   │   │   │
+│   │   │   └───__pycache__
+│   │   │           get_radios.cpython-313.pyc
+│   │   │           __init__.cpython-313.pyc
+│   │   │
+│   │   └───__pycache__
+│   │           radios.cpython-313.pyc
+│   │           __init__.cpython-313.pyc
+│   │
+│   └───__pycache__
+│           __init__.cpython-313.pyc
+│
+├───services
+│       base_service.py
+│       checkbox_service.py
+│       radios_service.py
+│       __init__.py
+│
+├───validations
+│   │   common.py
+│   │   validate_checkbox.py
+│   │   validate_radios.py
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           common.cpython-313.pyc
+│           validate_checkbox.cpython-313.pyc
+│           validate_radios.cpython-313.pyc
+│           __init__.cpython-313.pyc
+│
+└───__pycache__
+        questions.cpython-313.pyc
+        __init__.cpython-313.pyc
 
-   O prompt terá os mesmo width 100% (52 caracteres por linha) para cada prompt iremos exibir no máximo 208 caracteres se for maior iremos exibir 205 caracteres e iremos colocar "..." para dar os 208, para não ficar tudo em uma linha iremos contar 51 caracteres pular uma linha e colocar "-" para ficar mais bonito e mostrar para o user que pulou a linha, iremos fazer isso até terminar os 208 caracteres
+Esse foi o código que ele me propos
 
-FOOTER
-   Aqui teremos os dados de "TENDENCIA" do prompt que irá exbir no máximo 3 matérias que ele teve mais acerto, aqui será em porcentagens ou seja o máximo é 100%, iremos ter espaço para dividir, "TENDENCIA:" irá ficar a esquerda "dados de tendencias" irá ficar a direita, o espaço será flexivel, ou seja a linha tem que ter no máximo 52 caractres no total se for a mais iremos diminuir o espaço, para cada matéria iremos exibir os primeiro 4 caracteres
+AnswerFlowManager
 
-Exemplo
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie.questions.services import ServiceFactory
 
-[1]. NOME D...   A: +9999999 C: +9999999 W: +9999999
-asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
-asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
+class AnswerFlowManager:
+    def __init__(self, questions: dict):
+        self.questions = questions
 
-TENDENCIA:            Mate: 50%  Hist 45%  Mult: 20%
+    def process_all(self):
+        for qid, qdata in self.questions.items():
+            q_type = qdata.get('type', '')
+            try:
+                service = ServiceFactory.get_service(q_type)
+                is_valid, error = service.validate(qdata)
+                if not is_valid:
+                    print(f'Questão {qid} inválida: {error}')
+                    continue
+                service.answer(qdata)
+            except Exception as e:
+                print(f'Erro na questão {qid}: {str(e)}')
 
-[2]. NOME DO PROMPT +LONG...       A: -- C: -- W: --
-asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
-asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
+ValidateCheckbox
 
-TENDENCIA:           ----: --%  ----: --%  ----: --%
-ANSWERS: 00.0  -   CORRECTS: 00.0   -   WRONGS: 00.0
+class ValidateCheckbox:
+    def __init__(self):
+        pass
 
-[3]. NOME DO PROMPT               A: 100 C: 70 W: 30
-asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
-asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
+    def validate(self, respostas, opcoes):
+        try:
+            if not isinstance(respostas, list):
+                raise ValueError('As respostas devem ser uma lista.')
+            if not respostas:
+                raise ValueError('Pelo menos uma opção deve ser selecionada.')
+            if len(respostas) > len(opcoes):
+                raise ValueError('Número de respostas excede o número de opções.')
+            for resposta in respostas:
+                if resposta not in opcoes:
+                    raise ValueError(f'\'{resposta}\' não é uma opção válida.')
+            return True
+        except ValueError as e:
+            print(f'Erro de validação: {e}')
+            return False
 
-TENDENCIA:                Qui: 10%  Bio: 4%  Red: 1%
-ANSWERS: 100    -    CORRECTS: 70    -    WRONGS: 30
+ValidateRadios
 
-[30]. NOME DO PROMPT +LON...       A: -- C: -- W: --
-asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-fasdfasdfa asdfas asd fasdf asdfasdf asdfasdf çlklj-
-asdf asdf asf asdf asfd asdf asdf asdf asdf asdf as-
-asdf gasdgasdf ashasdçlk jasçkldf asçdlkfjaçlsdka...
+class ValidateRadios:
+    def __init__(self):
+        pass
 
-TENDENCIA:           ----: --%  ----: --%  ----: --%
-ANSWERS: 00.0  -   CORRECTS: 00.0   -   WRONGS: 00.0
+    def validate(self, resposta, opcoes):
+        try:
+            if not isinstance(resposta, str):
+                raise ValueError('A resposta deve ser uma string.')
+            if resposta not in opcoes:
+                raise ValueError(f'\'{resposta}\' não é uma opção válida.')
+            return True
+        except ValueError as e:
+            print(f'Erro de validação: {e}')
+            return False
+
+CheckboxService
+
+from .baseservice import BaseService
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie.questions.validations.validate_checkbox import ValidateCheckbox #?ATUALIZAR_INIT
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie.questions.answers import CheckboxAnswer #?ATUALIZAR_INIT
+
+class CheckboxService(BaseService):
+    def validate(self, question_data: dict):
+        return ValidateCheckbox(question_data)
+
+    def answer(self, question_data: dict):
+        CheckboxAnswer().execute(question_data)
+
+RadiosService
+
+from .baseservice import BaseService
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie.questions.validations import ValidateRadios #?ATUALIZAR_INIT
+from project.apps.sala_do_futuro.models.realizar_atividades.models.collect_info.collect_task_info.questionarie.questions.answers import RadiosAnswer #?ATUALIZAR_INIT
+
+class RadiosService(BaseService):
+    def validate(self, question_data: dict):
+        return ValidateRadios(question_data)
+
+    def answer(self, question_data: dict):
+        RadiosAnswer().execute(question_data)
+
+ServiceFactory
+
+from .checkbox_service import CheckboxService
+from .radios_service import RadiosService
+
+class ServiceFactory:
+    _services = {
+        'Radios': RadiosService,
+        'Checkbox': CheckboxService,
+    }
+
+    ''''''
+    @classmethod
+    def get_service(cls, question_type: str):
+        service_class = cls._services.get(question_type)
+        if not service_class:
+            raise ValueError(f'Serviço não implementado para o tipo: {question_type}')
+        return service_class()
+
+RadiosAnswer
+
+class RadiosAnswer:
+    def __init__(self):
+        pass
+    
+    def execute(self, question_data):
+        # Aqui você usaria PyAutoGUI, simulação ou IA
+        print(f"[RadiosAnswer] Respondendo: {question_data['statement']}")
+        # Atualiza a resposta, se for o caso:
+        question_data["answer"] = "A)"  # Simulado
+
+CheckboxAnswer
+
+class CheckboxAnswer:
+    def __init__(self):
+        pass
+        
+    def execute(self, question_data):
+        # Aqui você usaria PyAutoGUI, simulação ou IA
+        print(f"[RadiosAnswer] Respondendo: {question_data['statement']}")
+        # Atualiza a resposta, se for o caso:
+        question_data["answer"] = "A)"  # Simulado
 
 
 -->
 
 <!--
 
-| Cronometrar e verificar tempo gasto na atividade |    12:15     |   12:30   |     15min     |
-| Coletar informações da Lição                     |    14:25     |   14:50   |     25min     |
-| Coletar inforamções das Questões                 |    17:57     |   18:21   |     25min     |
-| melhorado códiog task_info (self)                |    18:00     |   18:09   |     9min      |
-| Teste das altearções                             |    18:09     |   18:16   |     7min      |
-| Criar JSON para receber resposta                 |              |           |               |
-| Colocar na área de Transferencia do Usuário      |              |           |               |
-| Esperar respostas                                |              |           |               |
-| Respondendo a Lição                              |              |           | 30min + 15min |
 | Esperar 1min pela resposta                       |              |           |               |
 
 -->

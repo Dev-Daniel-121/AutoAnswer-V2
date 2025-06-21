@@ -1,0 +1,152 @@
+Questões sem responder div.css-1atur2t
+Questões anuladas div.css-13mbp5r
+
+~~~~~~ Tarefas SP ~~~~~~
+
+[Info] Turmas: Todas as Turmas | Status: A Fazer/Expiradas | Componente: Todos os Componentes
+
+~~~~~~ Realizar Atividades (USER) ~~~~~~
+
+[Question] Selecione os componentes (separando o por , ou use * para todos)
+
+[Question] Selecione as atividades separando as por , ou use * para todas
+
+[Option] 1. Matéria - Data final (Dias)
+[Option] 2. Matéria - Data final (Dias)
+
+
+~~~~~~ MATERIA - ID MATERIA (USER) ~~~~~~
+
+Duração minima: Usuário
+Tempo Inicial: Horario Atual
+Tempo Final: Horario Atual depois de 1 minuto
+
+
+[Info] Verificando se há JSON respostas para essa Atividade...
+[Error] Nenhum JSON resposta existente para essa Atividade...
+
+
+------ (Apenas se for encontrado 1 JSON respostas)
+[Success] Encontrado JSON respostas para essa Atividade!
+
+[Question] Usar "id_atividade.json" para essa Atividade? (Y/n)
+------
+
+
+[Info] Número de textos: NUM
+[Info] Número de questões: NUM
+
+[Info] Tipos de questões encontradas:
+   [Info] Radios: NUM
+   [Info] Checkbox: NUM
+   [Info] Select: NUM
+
+
+------ (Apenas se for encontrado 1 questão diferente)
+[Info] Questões diferentes encontradas: 
+   [info] Questões [1, 5, 6]
+
+[Question] Criar Json com as informações coletadas? (Y/n)
+------
+
+
+[Info] Preparando arquivo para as Respostas...
+
+[Success] Arquivo Preparado!
+
+
+------ (Apenas se der erro na criação do Json)
+[Error] Erro ao crair o Arquivo para as Respostas: {e}
+
+[Question] Tentar novamente? (Y/n)
+------
+
+[Info] Passando informações para a Área de Transferência do Usuário...
+
+[Success] Questões e Prompt para a IA já estão na Área de Transferência!
+
+------ (Apenas se der erro na criação do Json)
+[Error] Erro ao passar informações para a Área de Transferência do Usuário: {e}
+
+[Question] Tentar novamente? (Y/n)
+------
+
+[Info] Esperando Respostas... (30s)
+
+[Success] Respostas Encontrado!
+
+
+------ (Apenas se demorar mais de 30s ou erro)
+[Quest] Nenhum resposta encontrada após 30s, esperar mais 30s? (Y/n)
+
+
+(Se der algum erro)
+[Error] Erro ao pegar Respostas: {e}
+------
+
+
+[Info] Válidando respostas...
+
+[Success] Respostas válidas!
+
+
+------ (Apenas se houver 1 ou mais respostas invalidas)
+[Warning] Respostas inválidas
+
+
+   ~~~~~~ Resposta Recebida ~~~~~~
+   [Warning] Questão 1 - Radios
+
+
+   ------ Tipo do erro
+
+
+   ~~~~~~ Resposta esperada na Atividade ~~~~~~
+   [Warning] Questão 1 - Select
+
+[Info] Coloque aqui a resposta correta ou coloque mais de 1 alter. entre '()' para sortear: 
+
+------
+
+
+[Info] Colocando respostas...
+
+[Success] Todas perguntas respondidas!
+
+
+------ (Apenas se der algum erro ou o user deixou vazio)
+[Erro] Questões não repondidas:
+   [Info] Questões: 1, 3, 5
+------
+
+
+[Option] 1. Enviar respostas
+[Option] 2. Salvar como rascunho
+
+[Success] Atividade enviada!
+[Success] Atividade Salva como Rascunho!
+
+
+------ (Apenas se der algum erro)
+[Error] Respostas não foram enviadas: {e}
+------
+
+   { Limpar tela }
+
+~~~~~~ MATERIA - ID MATERIA (USER) ~~~~~~
+
+[Info] Acertos: NUM
+[Info] Erros: NUM
+
+[Info] Questões acertadas: 1, 2, 5
+[Info] Questões erradas: 
+   [Info] Questão 3 (era A
+      [Info] Resp. Errada (A), Resp. Correta (B)
+   [Info] Questão 4 (era A
+      [Info] Resp. Errada (A), Resp. Correta (B)
+
+------ (Apenas se der algum erro)
+[Error] Acertos não foram enviadas: {e}
+------
+
+[Msg] Precione ENTER para continuar

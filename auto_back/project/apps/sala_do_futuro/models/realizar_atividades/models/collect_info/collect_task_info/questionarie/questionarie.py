@@ -43,9 +43,7 @@ class Questionarie:
                 actual_quest = elements.nth(i)
                 question_obj = Questions(
                     page=self.page,
-                    required_class='p.css-sz9ejl',
-                    question_statement_class='div.css-1a4wlpz',
-                    has_radios_class='div.css-1h7anqn',
+                    required_class='p.css-sz9ejl', question_statement_class='div.css-1a4wlpz', has_radios_class='div.css-1h7anqn',
                     has_checkbox_class='div.css-107ow6p',
                     actual_quest=actual_quest
                 )
@@ -77,11 +75,8 @@ class Questionarie:
                 questionarie[str(i)] = {
                     'quest_info': {
                         'required': isRequired or '',
-                        'time': {
-                            'day': '',
-                            'start_time': '',
-                            'end_time': ''
-                        },
+                        'user_guess': False, # Chute (True/False)
+                        'answered_by_user': False, # Respondido pelo User (True/False)
                         'activity_score': activity_score or '',
                         'score': score or '',
                         'section': section_text or '',
@@ -106,6 +101,11 @@ class Questionarie:
                         },
                         'ia': '',
                         'time_spent': '',
+                        'time': {
+                            'day': '',
+                            'start_time': '',
+                            'end_time': ''
+                        },
                     },
                     'quest': {
                         'type': quest_type or '',
@@ -114,7 +114,8 @@ class Questionarie:
                             'media': {},
                             'alternative': alternatives if alternatives else [''],
                         },
-                        'answer': ''
+                        'answer': '', # Resposta User
+                        'answer_key': '' # Gabarito
                     }
                 }
 
