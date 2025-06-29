@@ -274,13 +274,14 @@
 | Autoanswer (Criar histórico no JSON para os prompts)                                      | 06/06/2025 |    17:47     |   17:53   |             |
 | Autoanswer (Atualizar código para poder receber o history)                                | 06/06/2025 |    17:53     |   18:07   |             |
 | Autoanswer (Pausa)                                                                        | 06/06/2025 |    18:07     |   18:17   |             |
-|                                                                                           | 06/06/2025 |              |           |             |
 | Autoanswer (Answer - Planejando passos para criar a Automação)                            | 06/06/2025 |    23:10     |   23:51   |             |
 |                                                                                           | 06/06/2025 |              |           |             |
 | Tempo no bloco: de 25min à 40/45min                                                       | 06/06/2025 |              |           |             |
 | Autoanswer (Answer - Criando Automação para Coletar Resposta (CollectAutoGui - Search))   | 06/06/2025 |    23:51     |   00:45   |             |
 | Autoanswer (Answer - Exibir circulos)                                                     | 06/06/2025 |    23:51     |   00:45   |             |
 |                                                                                           | 06/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 07/06/2025 |              |           |             |
 | Tempo no bloco: de 30min à 50/55min                                                       | 07/06/2025 |              |           |             |
 | Autoanswer (Answer - Criando Automação para Coletar Resposta (CollectAutoGui - Search))   | 07/06/2025 |    13:00     |   14:31   |             |
 | Autoanswer (Answer - Exibir circulos)                                                     | 07/06/2025 |    13:00     |   14:31   |             |
@@ -291,9 +292,13 @@
 | Autoanswer (Atualizando estrutura do projeto)                                             | 07/06/2025 |    00:15     |   00:28   |             |
 | Autoanswer (Responder as questões)                                                        | 07/06/2025 |    00:28     |   00:33   |             |
 |                                                                                           | 07/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 08/06/2025 |              |           |             |
 | Tempo no bloco: de 35min à 50/55min                                                       | 08/06/2025 |              |           |             |
 | Autoanswer (Melhorando Planejamento Responder as questões)                                | 08/06/2025 |    21:18     |   21:30   |             |
 |                                                                                           | 08/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 12/06/2025 |              |           |             |
 | Tempo no bloco: de 35min à 50/55min                                                       | 12/06/2025 |              |           |             |
 | Autoanswer (Alimentando a IA)                                                             | 12/06/2025 |    22:47     |   22:53   |             |
 | Autoanswer (Alimentando a IA)                                                             | 12/06/2025 |    23:10     |   23:50   |             |
@@ -301,12 +306,16 @@
 | Autoanswer (Pausa)                                                                        | 12/06/2025 |    00:07     |   00:14   |             |
 | Autoanswer (Planejando design Mostrar Resultado)                                          | 12/06/2025 |    01:00     |   01:55   |             |
 |                                                                                           | 12/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 13/06/2025 |              |           |             |
 | Tempo no bloco: de 35min à 50/55min                                                       | 13/06/2025 |              |           |             |
 | Autoanswer (Planejando design Mostrar Resultado)                                          | 13/06/2025 |    10:31     |   10:47   |             |
 | Autoanswer (Mostrar Resultado)                                                            | 13/06/2025 |    14:57     |   14:59   |             |
 | Autoanswer (Mostrar Resultado (Planejar Respostas Corretas))                              | 13/06/2025 |    21:47     |   22:12   |             |
 | Autoanswer (Mostrar Resultado (Planejamento))                                             | 13/06/2025 |    22:17     |   22:34   |             |
 | Autoanswer (Mostrar Resultado (Atualizando JSON))                                         | 13/06/2025 |    00:32     |   00:34   |             |
+|                                                                                           | 13/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
 |                                                                                           | 15/06/2025 |              |           |             |
 | Tempo no bloco: de 35min à 50/55min                                                       | 15/06/2025 |              |           |             |
 | Autoanswer (Mostrar Resultado (Planejamento))                                             | 15/06/2025 |    16:09     |   16:14   |             |
@@ -318,16 +327,22 @@
 | Autoanswer (Mostrar Resultado (Melhorando CollectResult))                                 | 15/06/2025 |    23:24     |   23:52   |             |
 | Autoanswer (Mostrar Resultado (Criando método Show para CollectResult))                   | 15/06/2025 |    23:52     |   23:57   |             |
 |                                                                                           | 15/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 16/06/2025 |              |           |             |
 | Tempo no bloco: de 25min à 30/35min                                                       | 16/06/2025 |              |           |             |
 | Autoanswer (Mostrar Resultado (Validar por melhor forma))                                 | 16/06/2025 |    23:19     |   23:24   |             |
 | Autoanswer (Mostrar Resultado (Criando método Show para CollectResult))                   | 16/06/2025 |    23:24     |   00:45   |             |
 | Autoanswer (Mostrar Resultado (Melhorar o Espaçamento (coluna) do _print_group - Lógica)) | 16/06/2025 |    01:17     |   01:27   |             |
+|                                                                                           | 16/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
 |                                                                                           | 17/06/2025 |              |           |             |
 | Tempo no bloco: de 25min à 30/35min                                                       | 17/06/2025 |              |           |             |
 | Autoanswer (Mostrar Resultado (Melhorar o Espaçamento (coluna) do _print_group - Código)) | 17/06/2025 |    12:07     |   12:37   |             |
 | Autoanswer (Pausa)                                                                        | 17/06/2025 |    12:37     |   12:47   |             |
 | Autoanswer (Configurando INIT Mostrar Resultado)                                          | 17/06/2025 |    12:47     |   12:57   |             |
 | Autoanswer (Enviar ou Salvar como Rascunho a Atividade (Planejamento))                    | 17/06/2025 |    12:57     |   13:19   |             |
+|                                                                                           | 17/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
 |                                                                                           | 18/06/2025 |              |           |             |
 | Tempo no bloco: de 25min à 30/35min                                                       | 18/06/2025 |              |           |             |
 | Autoanswer (Enviar ou Salvar como Rascunho a Atividade (Código))                          | 18/06/2025 |    22:01     |   23:09   |             |
@@ -354,41 +369,77 @@
 | Autoanswer (Pausa)                                                                        | 20/06/2025 |    20:30     |   20:50   |             |
 | Autoanswer (Answer - Melhorar desing do Settings (Planejamento e atualização do design))  | 20/06/2025 |    20:50     |   21:20   |             |
 | Autoanswer (Pausa)                                                                        | 20/06/2025 |    21:20     |   21:30   |             |
-| Autoanswer (Commitando código)                                                            | 20/06/2025 |    21:20     |   21:30   |             |
+| Autoanswer (Commitando código)                                                            | 20/06/2025 |    23:27     |   23:42   |             |
 |                                                                                           | 20/06/2025 |              |           |             |
 | ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
-|                                                                                           | 21/06/2025 |              |           |             |
-| Tempo no bloco: de 30min à 40/45min                                                       | 21/06/2025 |              |           |             |
-| Autoanswer (Answer - Planejar criação do settings para prompts)                           | 21/06/2025 |              |           |             |
-| Autoanswer (Answer - Criar settings para Prompts)                                         | 21/06/2025 |              |           |             |
-|                                                                                           | 21/06/2025 |              |           |             |
-| Tempo no bloco: de 30min à 40/45min                                                       | 21/06/2025 |              |           |             |
-| Autoanswer (Answer - Planejar criação do settings para Automações)                        | 21/06/2025 |              |           |             |
-| Autoanswer (Answer - Criar settings para Automações)                                      | 21/06/2025 |              |           |             |
-|                                                                                           | 21/06/2025 |              |           |             |
-| Tempo no bloco: de 30min à 40/45min                                                       | 21/06/2025 |              |           |             |
-| Autoanswer (Melhorando o Gerenciar dados, Validar e Responder)                            | 21/06/2025 |              |           |             |
-| Autoanswer (Pausa)                                                                        | 21/06/2025 |              |           |             |
-|                                                                                           | 21/06/2025 |              |           |             |
-|                                                                                           | 21/06/2025 |              |           |             |
-| Tempo no bloco: de 35min à 40/45min                                                       | 21/06/2025 |              |           |             |
-| Autoanswer (Planejar Dashboard para Ánalise)                                              | 21/06/2025 |              |           |             |
-| Autoanswer (Criar dashboard para Ánalise)                                                 | 21/06/2025 |              |           |             |
-| Autoanswer (Pausa)                                                                        | 21/06/2025 |              |           |             |
-| Autoanswer (Planejar próximos passos para o Redação, Leia, Expansão, Khanacademy, Speak)  | 21/06/2025 |              |           |             |
-| Autoanswer (Pausa)                                                                        | 21/06/2025 |              |           |             |
-|                                                                                           | 21/06/2025 |              |           |             |
+|                                                                                           | 26/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 40/45min                                                       | 26/06/2025 |              |           |             |
+| Autoanswer (Answer - Melhorar desing do Settings (Planejamento e atualização do design))  | 26/06/2025 |    20:50     |   21:20   |             |
+| Autoanswer (Answer - Planejamento do Answer)                                              | 26/06/2025 |    19:07     |   22:07   |             |
+|                                                                                           | 26/06/2025 |              |           |             |
 | ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
-|                                                                                           | 22/06/2025 |              |           |             |
-| Tempo no bloco: de 25min à 30/35min                                                       | 22/06/2025 |              |           |             |
-| Autoanswer (Pausa)                                                                        | 22/06/2025 |              |           |             |
-| Autoanswer (Melhorando validação de Login)                                                | 22/06/2025 |              |           |             |
-| Autoanswer (Exibindo mais dados (Página inicial))                                         | 22/06/2025 |              |           |             |
-| Autoanswer (Consertando problema com card abertos)                                        | 22/06/2025 |              |           |             |
-| Autoanswer (Pausa)                                                                        | 22/06/2025 |              |           |             |
-| Autoanswer (Melhorando sistema de login para caso não entrar)                             | 22/06/2025 |              |           |             |
-| Autoanswer (Melhorando sistema de realizar atividade para caso não processar os dados)    | 22/06/2025 |              |           |             |
-|                                                                                           | 22/06/2025 |              |           |             |
+|                                                                                           | 27/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 40/45min                                                       | 27/06/2025 |              |           |             |
+| Autoanswer (Answer - Melhorar desing do Settings (Planejamento e atualização do design))  | 27/06/2025 |    20:50     |   21:20   |             |
+| Autoanswer (Answer - Planejamento do Answer)                                              | 27/06/2025 |    19:07     |   22:07   |             |
+|                                                                                           | 27/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 28/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 40/45min                                                       | 28/06/2025 |              |           |             |
+| Autoanswer (Answer - Melhorar desing do Settings (Planejamento e atualização do design))  | 28/06/2025 |    20:50     |   21:20   |             |
+| Autoanswer (Answer - Planejamento do Answer)                                              | 28/06/2025 |    19:07     |   22:07   |             |
+|                                                                                           | 28/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 29/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 40/45min                                                       | 29/06/2025 |              |           |             |
+| Autoanswer (Planejando próximos dias e Organizando dias anteriores)                       | 29/06/2025 |    00:27     |   00:43   |             |
+| Autoanswer (Answer - Terminando Planejamento)                                             | 29/06/2025 |    01:17     |   01:37   |             |
+| Autoanswer (Answer - Terminando Planejamento)                                             | 29/06/2025 |    01:50     |   01:55   |             |
+| Autoanswer (Answer - Planejando Pastas e Arquivos necessários)                            | 29/06/2025 |    01:55     |   01:57   |             |
+| Autoanswer (Commitando código)                                                            | 29/06/2025 |    01:57     |   02:05   |             |
+|                                                                                           | 29/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------  | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 30/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 40/45min                                                       | 30/06/2025 |              |           |             |
+| Autoanswer (Answer - Criando Arquivos e Pastas do Planejamento)                           | 30/06/2025 |              |           |             |
+| Autoanswer (Answer - Criando a Automação do Answer)                                       | 30/06/2025 |              |           |             |
+| Autoanswer (Answer - Criando o Design do Settings)                                        | 30/06/2025 |              |           |             |
+|                                                                                           | 30/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 40/45min                                                       | 30/06/2025 |              |           |             |
+| Autoanswer (Answer - Planejar criação do settings para prompts)                           | 30/06/2025 |              |           |             |
+| Autoanswer (Answer - Criar settings para Prompts)                                         | 30/06/2025 |              |           |             |
+|                                                                                           | 30/06/2025 |              |           |             |
+| Tempo no bloco: de 30min à 40/45min                                                       | 30/06/2025 |              |           |             |
+| Autoanswer (Melhorando o Gerenciar dados, Validar e Responder)                            | 30/06/2025 |              |           |             |
+| Autoanswer (Descontinuar códigos e usar suas novas versões)                               | 30/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                        | 30/06/2025 |              |           |             |
+|                                                                                           | 30/06/2025 |              |           |             |
+| Tempo no bloco: de 35min à 40/45min                                                       | 30/06/2025 |              |           |             |
+| Autoanswer (Planejar Dashboard para Ánalise)                                              | 30/06/2025 |              |           |             |
+| Autoanswer (Criar dashboard para Ánalise)                                                 | 30/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                        | 30/06/2025 |              |           |             |
+| Autoanswer (Planejar próximos passos para o Redação, Leia, Expansão, Khanacademy, Speak)  | 30/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                        | 30/06/2025 |              |           |             |
+|                                                                                           | 30/06/2025 |              |           |             |
+| ----------------------------------------------------------------------------------------- | ---------- | ------------ | --------- | ----------- |
+|                                                                                           | 01/06/2025 |              |           |             |
+| Tempo no bloco: de 25min à 30/35min                                                       | 01/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                        | 01/06/2025 |              |           |             |
+| Autoanswer (Melhorando validação de Login)                                                | 01/06/2025 |              |           |             |
+| Autoanswer (Exibindo mais dados (Página inicial))                                         | 01/06/2025 |              |           |             |
+| Autoanswer (Consertando problema com card abertos)                                        | 01/06/2025 |              |           |             |
+| Autoanswer (Pausa)                                                                        | 01/06/2025 |              |           |             |
+| Autoanswer (Melhorando sistema de login para caso não entrar)                             | 01/06/2025 |              |           |             |
+| Autoanswer (Melhorando sistema de realizar atividade para caso não processar os dados)    | 01/06/2025 |              |           |             |
+|                                                                                           | 01/06/2025 |              |           |             |
+
+<!--
+
+| Autoanswer (Answer - Planejamento do Answer Criação, Exclusão e Validação de Msg Recebidas de contas temporárias, Validação para passagem de medias para IA, Login para Gmail, Reportagem de Problemas, Login e Logout das Ia, Validação de páginas funcionando, Teste de Internet Wifi, Etapas para quando página não estiver repondendo/funcionando, etc)  | 27/06/2025 |    19:07     |   22:07   |             |
+| Autoanswer (Answer - Planejamento do Answer Criação, Exclusão e Validação de Msg Recebidas de contas temporárias, Validação para passagem de medias para IA, Login para Gmail, Reportagem de Problemas, Login e Logout das Ia, Validação de páginas funcionando, Teste de Internet Wifi, Etapas para quando página não estiver repondendo/funcionando, etc)  | 28/06/2025 |    19:07     |   22:07   |             |
+| Autoanswer (Answer - Planejamento do Answer Criação, Exclusão e Validação de Msg Recebidas de contas temporárias, Validação para passagem de medias para IA, Login para Gmail, Reportagem de Problemas, Login e Logout das Ia, Validação de páginas funcionando, Teste de Internet Wifi, Etapas para quando página não estiver repondendo/funcionando, etc)  | 29/06/2025 |    19:07     |   22:07   |             |
+
+-->
 
 <!--
 

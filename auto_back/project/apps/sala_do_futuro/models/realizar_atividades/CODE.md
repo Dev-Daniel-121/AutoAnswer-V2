@@ -1,4 +1,4 @@
-## class GeneralQuests
+### class GeneralQuests
 
 1. Atualizar JSON
     - Passar IA
@@ -12,15 +12,7 @@
     - Melhorar lógica de Erro
 2. Criar função para coletar se 
 
-## class Questionarie
-
-1. 
-
-## class Questions
-
-1. Melhorar lógica da função isRequired para receber a questão atual e validar a atual
-
-## collect_info\collect_task_info\questionarie\questions
+### collect_info\collect_task_info\questionarie\questions
 
 1. Descontinuar arquivos
    1. Answers
@@ -28,23 +20,33 @@
    3. Validations
 2. Atualizr o INIT
 
-## realizar_atividades\models\Answer_Flow_Manager
+### realizar_atividades\models\Answer_Flow_Manager
 
 1. Configurar os inits da pasta
 2. Atualizar o Answer para realmente responder
 3. Testar e válidar se está tudo funcionando
 
 
-## Descontinuar classes
+### Descontinuar classes
 
-## CollectResults
+1. CollectTaskInfo
+2. Questionarie
+
+### CollectResults
 
 1. Atualizar para encontrar questões anuladas
 
-## class CollectJson
+### class CollectJson
 
 1. Corrigir problema com salvar JSON, não sobescrever usuário mas colocar outro
 
-## class AnswerFlowManager
+### class AnswerFlowManager
 
 1. Caso o 
+
+### Revisar código por completo
+
+1. Revisar código por completo e Mapear todos os arquivos
+2. Gerar uma forma visual para ver o que está sendo ultilizado e o que não está sendo ultilizado
+
+### 
